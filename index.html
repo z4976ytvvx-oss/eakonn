@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>葛飾区鎌倉のエアコン修理｜小川親身電気工務店｜工賃10,000円</title>
-  <meta name="description" content="葛飾区鎌倉のエアコン修理。小川親身電気工務店。作業工賃10,000円、材料費は別。冷えない・水漏れ・異音・臭い・風が弱いなど親身に対応。キャンペーン：1日3組限定。" />
+  <meta name="description" content="葛飾区鎌倉のエアコン修理。小川親身電気工務店。工賃10,000円、材料費別。冷えない・水漏れ・異音・臭い・風が弱い等に対応。電話/LINE/フォームで予約。" />
 
   <style>
     :root{
@@ -15,88 +15,128 @@
       --muted:#5b6477;
       --brand:#2e7bff;
       --line:#eef1f5;
+      --accent:#ec4899;
     }
     html{scroll-behavior:smooth}
     body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif}
+    img{max-width:100%;display:block}
     a{color:inherit;text-decoration:none}
 
-    .wrap{max-width:1120px;margin:auto;padding:0 16px}
+    .wrap{max-width:1140px;margin:auto;padding:0 16px}
+
+    /* Sticky Header */
+    .header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:950;letter-spacing:.02em;color:var(--fg)}
+    .logo .dot{width:12px;height:12px;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--accent));box-shadow:0 0 0 6px rgba(46,123,255,.12)}
+
+    .nav-cta{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .pill{font-weight:850;font-size:13px;border-radius:999px;padding:8px 10px;border:1px solid var(--line);background:#fff;white-space:nowrap}
 
     /* HERO */
     .hero{
       position:relative;
       color:#fff;
-      padding:78px 0 56px;
-      overflow:hidden;
-    }
-    .hero:before{
-      content:"";
-      position:absolute;inset:-40px;
-      background:radial-gradient(1100px 520px at 20% 20%, rgba(46,123,255,.5), transparent 60%),
-                  radial-gradient(900px 520px at 85% 35%, rgba(236,72,153,.35), transparent 55%),
-                  linear-gradient(135deg, #070a12, #101f40);
-      filter: blur(.2px);
+      padding:92px 0 68px;
+      background-image:
+        linear-gradient(135deg, rgba(7,10,18,.75), rgba(16,31,64,.55)),
+        url('https://images.unsplash.com/photo-1602524205991-160e41aee2e9?auto=format&fit=crop&w=1600&q=80');
+      background-size:cover;
+      background-position:center;
     }
     .hero-inner{position:relative}
-    .brand{display:inline-flex;gap:10px;align-items:center;font-weight:900;opacity:.95}
-    .brand span.icon{width:34px;height:34px;border-radius:10px;background:rgba(255,255,255,.10);display:grid;place-items:center;border:1px solid rgba(255,255,255,.18)}
+    .badge{font-weight:950;font-size:12px;display:inline-flex;gap:8px;align-items:center;padding:8px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08)}
+    .badge .tiny{width:7px;height:7px;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--accent))}
 
-    .hero h1{margin:12px 0;font-size:42px;line-height:1.1}
-    .hero .lead{margin:0;font-size:17px;opacity:.9}
+    .hero h1{margin:14px 0 10px;font-size:40px;line-height:1.1}
+    .hero .lead{margin:0;font-size:16px;opacity:.92}
 
-    .hero-meta{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px}
-    .pill{font-weight:850;font-size:13px;border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16)}
+    .hero-meta{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+    .hero-meta span{font-weight:900;font-size:13px;border-radius:999px;padding:8px 12px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.07)}
 
     .cta{margin-top:20px;display:flex;flex-wrap:wrap;gap:12px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:12px;font-weight:900;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);backdrop-filter:blur(10px)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:12px;font-weight:950;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06)}
     .btn.primary{background:var(--brand);border-color:var(--brand)}
 
-    /* MAIN SECTIONS */
+    /* MAIN */
     main{background:#fff}
     section{padding:56px 0;border-top:1px solid var(--line)}
     h2{margin:0 0 14px;font-size:24px}
 
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
     .card{border:1px solid var(--line);border-radius:16px;padding:20px;background:var(--card)}
 
-    .price{font-size:44px;font-weight:900;line-height:1;margin-bottom:6px}
-    .muted{color:var(--muted);font-size:13px}
+    .price{font-size:46px;font-weight:950;line-height:1;margin-bottom:8px}
+    .muted{color:var(--muted);font-size:13px;line-height:1.6}
+
+    .row{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;align-items:center}
+
+    .image-block{border-radius:18px;overflow:hidden;border:1px solid var(--line)}
+    .caption{margin-top:8px;color:var(--muted);font-size:13px}
 
     ul{margin:10px 0 0;padding-left:20px}
     li{margin:7px 0}
 
-    .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-    .step{border:1px solid var(--line);border-radius:14px;padding:16px}
+    .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+    .step{border:1px solid var(--line);border-radius:14px;padding:16px;background:#fff}
     .step .num{font-weight:950;color:var(--brand)}
 
-    .faq dt{font-weight:900;margin-top:10px}
+    .faq dt{font-weight:950;margin-top:10px}
     .faq dd{margin:4px 0 0;color:var(--muted)}
 
-    footer{background:var(--bg);color:#cbd5f5;padding:24px 0;font-size:12px}
+    .two-col{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}
 
-    /* Animations */
-    .fade{opacity:0;transform:translateY(14px);will-change:transform,opacity}
+    footer{background:var(--bg);color:#cbd5f5;padding:26px 0;font-size:12px}
+
+    /* Sticky CTA on mobile */
+    .sticky{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;gap:10px;align-items:center;justify-content:center;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:12px}
+    .sticky .btn{border:1px solid rgba(0,0,0,.08);background:#fff;color:var(--fg)}
+    .sticky .btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
+    @media (min-width: 900px){
+      .sticky{display:none}
+    }
+
+    /* Fade-in */
+    .fade{opacity:0;transform:translateY(14px)}
     .fade.in{opacity:1;transform:translateY(0);transition:opacity .6s ease, transform .6s ease}
   </style>
 </head>
 
 <body>
+  <header class="header">
+    <div class="header-inner wrap">
+      <div class="logo"><span class="dot"></span>小川親身電気工務店</div>
+      <div class="nav-cta">
+        <span class="pill">営業 9:00〜21:00</span>
+        <a class="pill" href="#contact">電話（後で差し替え）</a>
+        <a class="pill" href="#contact">LINE</a>
+        <a class="pill" href="#contact">フォーム</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="sticky">
+    <a class="btn" href="#contact">電話（後で）</a>
+    <a class="btn" href="#contact">LINE</a>
+    <a class="btn primary" href="#contact">空き状況を確認</a>
+  </div>
+
   <header class="hero">
     <div class="wrap">
       <div class="hero-inner">
-        <div class="brand"><span class="icon">⚡</span>小川親身電気工務店</div>
-        <h1>葛飾区鎌倉のエアコン修理<br>作業工賃 10,000円</h1>
-        <p class="lead">材料費は別。冷えない・水漏れ・異音・臭い・風が弱いなど、親身に対応します。</p>
+        <span class="badge"><span class="tiny"></span> 関東全域対応 / まずは葛飾区優先</span>
+        <h1>葛飾区鎌倉のエアコン修理<br>工賃 10,000円</h1>
+        <p class="lead">材料費は別です。冷えない・水漏れ・異音・臭い・風が弱い…よくある症状に親身に対応します。</p>
 
         <div class="hero-meta">
-          <span class="pill">キャンペーン：1日3組限定</span>
-          <span class="pill">明朗会計</span>
-          <span class="pill">現場で追加費用を事前説明</span>
+          <span>キャンペーン：1日3組</span>
+          <span>追加が出る場合は作業前に説明</span>
+          <span>電話 / LINE / フォーム</span>
         </div>
 
         <div class="cta">
-          <a class="btn primary" href="#contact">空き状況を確認（無料）</a>
-          <a class="btn" href="#faq">よくある質問を見る</a>
+          <a class="btn primary" href="#contact">今すぐ空き状況を確認</a>
+          <a class="btn" href="#faq">FAQ</a>
         </div>
       </div>
     </div>
@@ -105,27 +145,74 @@
   <main>
     <section>
       <div class="wrap">
-        <h2>料金</h2>
+        <h2>まずはこの症状が多いです</h2>
+        <div class="row fade">
+          <div>
+            <div class="card">
+              <strong>対応例</strong>
+              <ul>
+                <li>冷えない / 暖まらない</li>
+                <li>水漏れ（室内機・室外機）</li>
+                <li>異音、ビリビリ音</li>
+                <li>臭い（カビ臭・排水臭）</li>
+                <li>風が弱い / 風が出ない</li>
+                <li>ブレーカーが落ちる</li>
+              </ul>
+              <p class="muted">「どれか分からない」でも大丈夫。症状を話すだけで、確認する場所を決めて動きます。</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="image-block">
+              <img src="https://images.unsplash.com/photo-1586495578048-9ba6b1f543d2?auto=format&fit=crop&w=1200&q=80" alt="エアコン修理のイメージ" />
+            </div>
+            <div class="caption">※画像はイメージです（後で差し替えできます）</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>料金（明朗会計）</h2>
         <div class="grid fade">
           <div class="card">
             <div class="price">10,000円</div>
             <div>作業工賃</div>
-            <div class="muted">※材料費は別（現場状況で必要分を事前に説明します）</div>
+            <div class="muted">※材料費は別。必要な場合は作業前に説明。</div>
           </div>
           <div class="card">
-            <strong>対応症状の例</strong>
+            <strong>材料費が必要になる例</strong>
             <ul>
-              <li>冷えない / 暖まらない</li>
-              <li>水漏れ</li>
-              <li>異音</li>
-              <li>臭い</li>
-              <li>風が弱い</li>
-              <li>ブレーカーが落ちる</li>
+              <li>部品交換（基板、モーター等）</li>
+              <li>ドレン詰まり改善で部材追加</li>
+              <li>配管・接続系の消耗部材</li>
             </ul>
+            <p class="muted">「現地でしか判断できない費用」は、先に納得してもらってから作業します。</p>
           </div>
           <div class="card">
-            <strong>「親身」対応をお約束</strong>
-            <p class="muted" style="margin-top:10px;">売り込みよりも、まず状況確認。無理な作業はおすすめしません。</p>
+            <strong>キャンペーン（先着）</strong>
+            <p class="muted">1日3組まで。状況次第で満枠になる場合があるので、空き状況だけでも先に確認がおすすめです。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>選ばれる理由</h2>
+        <div class="grid fade">
+          <div class="card">
+            <strong>親身な説明</strong>
+            <p class="muted">できる/できない、追加の可能性、作業時間…「どうなるか」を先に言います。</p>
+          </div>
+          <div class="card">
+            <strong>電話メインの即対応</strong>
+            <p class="muted">電話の優先度が高いので、急ぎのトラブルを拾いやすい導線にします。</p>
+          </div>
+          <div class="card">
+            <strong>地域密着で相談しやすい</strong>
+            <p class="muted">葛飾区鎌倉周辺を先に回す前提で、作業動線を組みます。</p>
           </div>
         </div>
       </div>
@@ -138,37 +225,42 @@
           <div class="step">
             <div class="num">STEP 1</div>
             <strong>ご相談</strong>
-            <p class="muted">症状とエリア（葛飾区鎌倉）を教えてください。空き状況を確認します。</p>
+            <p class="muted">症状とエリア（葛飾区鎌倉）を一言でOK。</p>
           </div>
           <div class="step">
             <div class="num">STEP 2</div>
             <strong>訪問・診断</strong>
-            <p class="muted">現場で原因特定。材料費が発生する場合は先に説明します。</p>
+            <p class="muted">原因特定。追加費用が出る場合は説明後に作業。</p>
           </div>
           <div class="step">
             <div class="num">STEP 3</div>
             <strong>修理・動作確認</strong>
-            <p class="muted">作業後に動作確認して完了です。</p>
+            <p class="muted">動作確認して完了。必要ならアドバイスも。</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact">
+    <section>
       <div class="wrap">
-        <h2>お問い合わせ</h2>
-        <div class="grid fade">
+        <h2>対応エリア（まずは葛飾区）</h2>
+        <div class="two-col fade">
           <div class="card">
-            <strong>電話・LINEの掲載について</strong>
-            <p class="muted" style="margin-top:10px;">
-              電話番号を公開すると、CV（問い合わせ）とSEOが上がります。番号を載せてOKになったら、ここを即タップ出来るボタンに変えます。
-            </p>
+            <strong>葛飾区</strong>
+            <ul>
+              <li>鎌倉</li>
+              <li>金町</li>
+              <li>柴又</li>
+              <li>新宿</li>
+              <li>亀有</li>
+            </ul>
+            <p class="muted">上記以外も相談可。順番に調整します。</p>
           </div>
-          <div class="card">
-            <strong>対応エリア</strong>
-            <p class="muted" style="margin-top:10px;">
-              葛飾区鎌倉周辺。近隣エリアはご相談ください。
-            </p>
+          <div>
+            <div class="image-block">
+              <img src="https://images.unsplash.com/photo-1526481280695-3c687fd5432c?auto=format&fit=crop&w=1200&q=80" alt="葛飾区のイメージ" />
+            </div>
+            <div class="caption">※エリア画像も後で差し替え可能です</div>
           </div>
         </div>
       </div>
@@ -178,13 +270,53 @@
       <div class="wrap">
         <h2>よくある質問</h2>
         <dl class="faq fade">
-          <dt>材料費が別なのはなぜ？</dt>
-          <dd>部品の種類や状態で費用が変わるためです。訪問後に必要なものだけ事前に説明します。</dd>
-          <dt>キャンセル料はかかる？</dt>
-          <dd>このサイト用ルール（営業ルール）に合わせて追記します。</dd>
-          <dt>支払い方法は？</dt>
-          <dd>現金・振込・その他、使える方法を教えてください（反映します）。</dd>
+          <dt>工賃は税込？</dt>
+          <dd>今は「工賃10,000円（仮）」として記載。営業ルールに合わせて税込/税別を調整します。</dd>
+          <dt>材料費はいくら？</dt>
+          <dd>必要な部材次第で変わります。訪問後に「必要な部材」と「合計目安」を先に説明します。</dd>
+          <dt>キャンセルはできる？</dt>
+          <dd>キャンセルルール（電話/LINE/フォーム）を決めたら追加で反映します。</dd>
         </dl>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <h2>お問い合わせ</h2>
+        <div class="grid fade">
+          <div class="card">
+            <strong>電話（後で差し替え）</strong>
+            <p class="muted">電話番号を載せると、CVと信用が両方上がります。番号が決まり次第、タップで発信できるボタンにします。</p>
+          </div>
+          <div class="card">
+            <strong>LINE</strong>
+            <p class="muted">友だち追加リンク（後で差し替え）。症状を送ってもらう導線を追加できます。</p>
+          </div>
+          <div class="card">
+            <strong>フォーム</strong>
+            <p class="muted">Googleフォーム等のURLを用意したら埋め込み/ボタンにします。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>会社情報（後で入れる項目）</h2>
+        <div class="grid fade">
+          <div class="card">
+            <strong>屋号</strong>
+            <p class="muted">小川親身電気工務店（仮）</p>
+          </div>
+          <div class="card">
+            <strong>所在地</strong>
+            <p class="muted">後で入れます</p>
+          </div>
+          <div class="card">
+            <strong>営業時間</strong>
+            <p class="muted">9:00〜21:00</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -194,18 +326,15 @@
   </footer>
 
   <script>
-    // Fade-in animation on scroll
     const observer = new IntersectionObserver((entries)=>{
       entries.forEach(e=>{
-        if(e.isIntersecting) {
+        if(e.isIntersecting){
           e.target.classList.add('in');
           observer.unobserve(e.target);
         }
       });
-    }, {threshold:0.15});
-
+    }, {threshold:0.12});
     document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
   </script>
-
 </body>
 </html>
