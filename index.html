@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>葛飾区鎌倉のエアコン修理｜小川親身電気工務店｜工賃10,000円</title>
-  <meta name="description" content="葛飾区鎌倉のエアコン修理。小川親身電気工務店。工賃10,000円、材料費別。冷えない・水漏れ・異音・臭い・風が弱い等に対応。電話/LINE/フォームで予約。" />
+  <title>葛飾区鎌倉のエアコン修理｜小川空調電気｜工賃10,000円</title>
+  <meta name="description" content="葛飾区鎌倉のエアコン修理。小川空調電気。工賃10,000円、材料費別。冷えない・水漏れ・異音・臭い・風が弱い等に対応。電話/LINE/フォームで予約。" />
 
   <style>
     :root{
@@ -24,7 +24,6 @@
 
     .wrap{max-width:1140px;margin:auto;padding:0 16px}
 
-    /* Sticky Header */
     .header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
     .header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px}
     .logo{display:flex;align-items:center;gap:10px;font-weight:950;letter-spacing:.02em;color:var(--fg)}
@@ -33,44 +32,35 @@
     .nav-cta{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
     .pill{font-weight:850;font-size:13px;border-radius:999px;padding:8px 10px;border:1px solid var(--line);background:#fff;white-space:nowrap}
 
-    /* HERO */
     .hero{
       position:relative;
       color:#fff;
       padding:92px 0 68px;
       background-image:
         linear-gradient(135deg, rgba(7,10,18,.75), rgba(16,31,64,.55)),
-        url('https://images.unsplash.com/photo-1602524205991-160e41aee2e9?auto=format&fit=crop&w=1600&q=80');
+        url('hero.png');
       background-size:cover;
       background-position:center;
     }
-    .hero-inner{position:relative}
     .badge{font-weight:950;font-size:12px;display:inline-flex;gap:8px;align-items:center;padding:8px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08)}
     .badge .tiny{width:7px;height:7px;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--accent))}
-
     .hero h1{margin:14px 0 10px;font-size:40px;line-height:1.1}
     .hero .lead{margin:0;font-size:16px;opacity:.92}
-
     .hero-meta{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
     .hero-meta span{font-weight:900;font-size:13px;border-radius:999px;padding:8px 12px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.07)}
-
     .cta{margin-top:20px;display:flex;flex-wrap:wrap;gap:12px}
     .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:12px;font-weight:950;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06)}
     .btn.primary{background:var(--brand);border-color:var(--brand)}
 
-    /* MAIN */
     main{background:#fff}
     section{padding:56px 0;border-top:1px solid var(--line)}
     h2{margin:0 0 14px;font-size:24px}
 
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
     .card{border:1px solid var(--line);border-radius:16px;padding:20px;background:var(--card)}
-
     .price{font-size:46px;font-weight:950;line-height:1;margin-bottom:8px}
     .muted{color:var(--muted);font-size:13px;line-height:1.6}
-
     .row{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;align-items:center}
-
     .image-block{border-radius:18px;overflow:hidden;border:1px solid var(--line)}
     .caption{margin-top:8px;color:var(--muted);font-size:13px}
 
@@ -88,15 +78,10 @@
 
     footer{background:var(--bg);color:#cbd5f5;padding:26px 0;font-size:12px}
 
-    /* Sticky CTA on mobile */
     .sticky{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;gap:10px;align-items:center;justify-content:center;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:12px}
     .sticky .btn{border:1px solid rgba(0,0,0,.08);background:#fff;color:var(--fg)}
     .sticky .btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
-    @media (min-width: 900px){
-      .sticky{display:none}
-    }
-
-    /* Fade-in */
+    @media (min-width: 900px){.sticky{display:none}}
     .fade{opacity:0;transform:translateY(14px)}
     .fade.in{opacity:1;transform:translateY(0);transition:opacity .6s ease, transform .6s ease}
   </style>
@@ -105,7 +90,7 @@
 <body>
   <header class="header">
     <div class="header-inner wrap">
-      <div class="logo"><span class="dot"></span>小川親身電気工務店</div>
+      <div class="logo"><span class="dot"></span>小川空調電気</div>
       <div class="nav-cta">
         <span class="pill">営業 9:00〜21:00</span>
         <a class="pill" href="#contact">電話（後で差し替え）</a>
@@ -123,21 +108,19 @@
 
   <header class="hero">
     <div class="wrap">
-      <div class="hero-inner">
-        <span class="badge"><span class="tiny"></span> 関東全域対応 / まずは葛飾区優先</span>
-        <h1>葛飾区鎌倉のエアコン修理<br>工賃 10,000円</h1>
-        <p class="lead">材料費は別です。冷えない・水漏れ・異音・臭い・風が弱い…よくある症状に親身に対応します。</p>
+      <span class="badge"><span class="tiny"></span> 関東全域対応 / まずは葛飾区優先</span>
+      <h1>葛飾区鎌倉のエアコン修理<br>工賃 10,000円</h1>
+      <p class="lead">材料費は別です。冷えない・水漏れ・異音・臭い・風が弱い…よくある症状に親身に対応します。</p>
 
-        <div class="hero-meta">
-          <span>キャンペーン：1日3組</span>
-          <span>追加が出る場合は作業前に説明</span>
-          <span>電話 / LINE / フォーム</span>
-        </div>
+      <div class="hero-meta">
+        <span>キャンペーン：1日3組</span>
+        <span>追加が出る場合は作業前に説明</span>
+        <span>電話 / LINE / フォーム</span>
+      </div>
 
-        <div class="cta">
-          <a class="btn primary" href="#contact">今すぐ空き状況を確認</a>
-          <a class="btn" href="#faq">FAQ</a>
-        </div>
+      <div class="cta">
+        <a class="btn primary" href="#contact">今すぐ空き状況を確認</a>
+        <a class="btn" href="#faq">FAQ</a>
       </div>
     </div>
   </header>
@@ -164,7 +147,7 @@
 
           <div>
             <div class="image-block">
-              <img src="https://images.unsplash.com/photo-1586495578048-9ba6b1f543d2?auto=format&fit=crop&w=1200&q=80" alt="エアコン修理のイメージ" />
+              <img src="hero.png" alt="エアコン水漏れのイメージ" />
             </div>
             <div class="caption">※画像はイメージです（後で差し替えできます）</div>
           </div>
@@ -175,24 +158,29 @@
     <section>
       <div class="wrap">
         <h2>料金（明朗会計）</h2>
-        <div class="grid fade">
-          <div class="card">
-            <div class="price">10,000円</div>
-            <div>作業工賃</div>
-            <div class="muted">※材料費は別。必要な場合は作業前に説明。</div>
+        <div class="row fade">
+          <div>
+            <div class="card">
+              <div class="price">10,000円</div>
+              <div>作業工賃</div>
+              <div class="muted">※材料費は別。必要な場合は作業前に説明。</div>
+            </div>
+            <div class="card">
+              <strong>材料費が必要になる例</strong>
+              <ul>
+                <li>部品交換（基板、モーター等）</li>
+                <li>ドレン詰まり改善で部材追加</li>
+                <li>配管・接続系の消耗部材</li>
+              </ul>
+              <p class="muted">「現地でしか判断できない費用」は、先に納得してもらってから作業します。</p>
+            </div>
           </div>
-          <div class="card">
-            <strong>材料費が必要になる例</strong>
-            <ul>
-              <li>部品交換（基板、モーター等）</li>
-              <li>ドレン詰まり改善で部材追加</li>
-              <li>配管・接続系の消耗部材</li>
-            </ul>
-            <p class="muted">「現地でしか判断できない費用」は、先に納得してもらってから作業します。</p>
-          </div>
-          <div class="card">
-            <strong>キャンペーン（先着）</strong>
-            <p class="muted">1日3組まで。状況次第で満枠になる場合があるので、空き状況だけでも先に確認がおすすめです。</p>
+
+          <div>
+            <div class="image-block">
+              <img src="ricing.png" alt="明朗会計の料金図" />
+            </div>
+            <div class="caption">※料金画像も後で差し替え可能です</div>
           </div>
         </div>
       </div>
@@ -201,18 +189,29 @@
     <section>
       <div class="wrap">
         <h2>選ばれる理由</h2>
-        <div class="grid fade">
-          <div class="card">
-            <strong>親身な説明</strong>
-            <p class="muted">できる/できない、追加の可能性、作業時間…「どうなるか」を先に言います。</p>
+        <div class="row fade">
+          <div>
+            <div class="grid">
+              <div class="card">
+                <strong>親身な説明</strong>
+                <p class="muted">できる/できない、追加の可能性、作業時間…「どうなるか」を先に言います。</p>
+              </div>
+              <div class="card">
+                <strong>電話メインの即対応</strong>
+                <p class="muted">電話の優先度が高いので、急ぎのトラブルを拾いやすい導線にします。</p>
+              </div>
+              <div class="card">
+                <strong>地域密着で相談しやすい</strong>
+                <p class="muted">葛飾区鎌倉周辺を先に回す前提で、作業動線を組みます。</p>
+              </div>
+            </div>
           </div>
-          <div class="card">
-            <strong>電話メインの即対応</strong>
-            <p class="muted">電話の優先度が高いので、急ぎのトラブルを拾いやすい導線にします。</p>
-          </div>
-          <div class="card">
-            <strong>地域密着で相談しやすい</strong>
-            <p class="muted">葛飾区鎌倉周辺を先に回す前提で、作業動線を組みます。</p>
+
+          <div>
+            <div class="image-block">
+              <img src="assets%3Atrust.png" alt="エアコン修理スタッフ" />
+            </div>
+            <div class="caption">※顔写真も後で差し替えできます</div>
           </div>
         </div>
       </div>
@@ -220,22 +219,32 @@
 
     <section>
       <div class="wrap">
-        <h2>ご依頼の流れ</h2>
-        <div class="steps fade">
-          <div class="step">
-            <div class="num">STEP 1</div>
-            <strong>ご相談</strong>
-            <p class="muted">症状とエリア（葛飾区鎌倉）を一言でOK。</p>
+        <h2>ご依頼の流れ（3ステップ）</h2>
+        <div class="row fade">
+          <div>
+            <div class="steps">
+              <div class="step">
+                <div class="num">STEP 1</div>
+                <strong>ご相談</strong>
+                <p class="muted">症状とエリア（葛飾区鎌倉）を一言でOK。</p>
+              </div>
+              <div class="step">
+                <div class="num">STEP 2</div>
+                <strong>訪問・診断</strong>
+                <p class="muted">原因特定。追加費用が出る場合は説明後に作業。</p>
+              </div>
+              <div class="step">
+                <div class="num">STEP 3</div>
+                <strong>修理・動作確認</strong>
+                <p class="muted">動作確認して完了。必要ならアドバイスも。</p>
+              </div>
+            </div>
           </div>
-          <div class="step">
-            <div class="num">STEP 2</div>
-            <strong>訪問・診断</strong>
-            <p class="muted">原因特定。追加費用が出る場合は説明後に作業。</p>
-          </div>
-          <div class="step">
-            <div class="num">STEP 3</div>
-            <strong>修理・動作確認</strong>
-            <p class="muted">動作確認して完了。必要ならアドバイスも。</p>
+          <div>
+            <div class="image-block">
+              <img src="flow.png" alt="3ステップの流れ" />
+            </div>
+            <div class="caption">※流れ図も後で差し替え可能です</div>
           </div>
         </div>
       </div>
@@ -258,9 +267,9 @@
           </div>
           <div>
             <div class="image-block">
-              <img src="https://images.unsplash.com/photo-1526481280695-3c687fd5432c?auto=format&fit=crop&w=1200&q=80" alt="葛飾区のイメージ" />
+              <img src="assets%3Aarea.png" alt="対応エリア（葛飾区）" />
             </div>
-            <div class="caption">※エリア画像も後で差し替え可能です</div>
+            <div class="caption">※エリア図も後で差し替え可能です</div>
           </div>
         </div>
       </div>
@@ -294,7 +303,7 @@
           </div>
           <div class="card">
             <strong>フォーム</strong>
-            <p class="muted">Googleフォーム等のURLを用意したら埋め込み/ボタンにします。</p>
+            <p class="muted">フォームURLを用意したら埋め込み/ボタンにします。</p>
           </div>
         </div>
       </div>
@@ -306,7 +315,7 @@
         <div class="grid fade">
           <div class="card">
             <strong>屋号</strong>
-            <p class="muted">小川親身電気工務店（仮）</p>
+            <p class="muted">小川空調電気</p>
           </div>
           <div class="card">
             <strong>所在地</strong>
@@ -322,7 +331,7 @@
   </main>
 
   <footer>
-    <div class="wrap">小川親身電気工務店｜葛飾区鎌倉のエアコン修理（工賃10,000円）</div>
+    <div class="wrap">小川空調電気｜葛飾区鎌倉のエアコン修理（工賃10,000円）</div>
   </footer>
 
   <script>
