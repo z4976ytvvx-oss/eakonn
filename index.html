@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>松戸のエアコン修理｜誠和電気 エアコンレスキュー｜冷えない・水漏れ・異音対応</title>
-<meta name="description" content="松戸拠点のエアコン修理なら誠和電気。冷えない・水漏れ・異音・風が出ない・臭いなどに対応。作業前見積り、明朗会計、修理後1年保証。松戸・柏・流山・我孫子・鎌ヶ谷・市川・船橋・浦安・足立区・葛飾区・江戸川区など関東一円対応。">
+<meta name="description" content="松戸拠点のエアコン修理なら誠和電気。冷えない・水漏れ・異音・風が出ない・臭いなどに対応。作業前見積り、明朗会計、修理後1年保証。松戸・柏・流山・市川・葛飾区・足立区など関東一円対応。">
 
 <style>
 *{box-sizing:border-box}
@@ -14,150 +14,327 @@ body{
   background:#fff;
   color:#111827;
   font-family:system-ui,-apple-system,"Segoe UI","Yu Gothic",Meiryo,sans-serif;
-  padding-bottom:86px;
+  padding-bottom:88px;
 }
 img{width:100%;display:block}
 a{text-decoration:none;color:inherit}
 .lp{max-width:1120px;margin:auto;background:#fff}
 
 .header{
-  position:sticky;top:0;z-index:50;background:#fff;
+  position:sticky;
+  top:0;
+  z-index:999;
+  background:#fff;
   border-bottom:1px solid #e5e7eb;
 }
 .header-inner{
-  max-width:1120px;margin:auto;padding:9px 12px;
-  display:flex;justify-content:space-between;align-items:center;gap:10px;
+  max-width:1120px;
+  margin:auto;
+  padding:9px 12px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
 }
 .logo{display:flex;align-items:center;gap:8px;line-height:1.1}
 .logo-mark{
-  width:28px;height:28px;border-radius:8px;background:#073b86;color:#fff;
-  display:flex;align-items:center;justify-content:center;font-weight:900;font-size:15px;
+  width:28px;height:28px;border-radius:8px;
+  background:#073b86;color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:900;
 }
-.logo-main{display:block;font-size:15px;font-weight:900;color:#073b86;letter-spacing:.04em}
-.logo-sub{display:block;font-size:10px;color:#667085;font-weight:700;margin-top:2px}
-.tel-btn{
-  display:flex;flex-direction:column;align-items:flex-end;justify-content:center;
-  background:#fff;border:2px solid #d71920;border-radius:12px;padding:5px 10px;
-  box-shadow:0 3px 10px rgba(0,0,0,.12);line-height:1.1;
+.logo-main{display:block;font-size:15px;font-weight:900;color:#073b86}
+.logo-sub{display:block;font-size:10px;color:#667085;font-weight:700}
+
+.header-cta{display:flex;gap:6px}
+.header-cta a{
+  color:#fff;
+  font-weight:900;
+  font-size:12px;
+  padding:8px 10px;
+  border-radius:10px;
+  text-align:center;
 }
-.tel-small{font-size:10px;font-weight:800;color:#333;margin-bottom:2px}
-.tel-number{font-size:17px;font-weight:950;color:#d71920;letter-spacing:.3px}
+.btn-phone{background:#d71920}
+.btn-line{background:#06c755}
 
 .hero{position:relative;background:#000}
 .hero-copy{
-  position:absolute;left:14px;right:14px;bottom:16px;
-  background:rgba(0,0,0,.58);color:#fff;border-radius:16px;padding:14px;
+  position:absolute;
+  left:16px;
+  bottom:20px;
+  background:rgba(0,0,0,.55);
+  color:#fff;
+  border-radius:14px;
+  padding:10px 14px;
+  max-width:360px;
 }
-.hero-copy h1{margin:0 0 8px;font-size:24px;line-height:1.28;font-weight:950}
-.hero-copy p{margin:0;font-size:13px;line-height:1.6;font-weight:700}
-.hero-now{margin-top:8px;color:#ffe082;font-weight:950;font-size:13px}
+.hero-copy h1{
+  margin:0;
+  font-size:28px;
+  line-height:1.2;
+  font-weight:950;
+}
+.hero-copy p{
+  margin:4px 0 0;
+  color:#ffe082;
+  font-size:13px;
+  font-weight:900;
+}
 
 .trust-bar{
-  background:#073b86;color:#fff;text-align:center;font-weight:900;
-  padding:10px 8px;font-size:14px;
+  background:#073b86;
+  color:#fff;
+  text-align:center;
+  font-weight:900;
+  padding:10px 8px;
+  font-size:14px;
 }
 
 .cta-top,.final-cta{
-  display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px;background:#fff;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+  padding:10px;
+  background:#fff;
 }
-.cta-top a,.final-cta a,.fixed-cta a{overflow:hidden;border-radius:14px}
-.cta-top img,.final-cta img{height:92px;object-fit:cover;object-position:center}
+.cta-top a,.final-cta a{
+  overflow:hidden;
+  border-radius:14px;
+}
+.cta-top img,.final-cta img{
+  height:92px;
+  object-fit:cover;
+  object-position:center;
+}
 
 .notice{
-  background:#fff2b8;color:#111;font-weight:900;text-align:center;
-  padding:12px 10px;border-top:1px solid #f4d34b;border-bottom:1px solid #f4d34b;
-  font-size:14px;line-height:1.5;
+  background:#fff2b8;
+  color:#111;
+  font-weight:900;
+  text-align:center;
+  padding:12px 10px;
+  border-top:1px solid #f4d34b;
+  border-bottom:1px solid #f4d34b;
+  font-size:14px;
+  line-height:1.5;
 }
 
-.block{max-width:900px;margin:18px auto;padding:0 14px}
-.block h2{margin:0 0 10px;font-size:22px;line-height:1.35;color:#073b86}
-.block p{margin:0;font-size:14px;color:#333;line-height:1.8}
+.block{
+  max-width:900px;
+  margin:18px auto;
+  padding:0 14px;
+}
+.block h2{
+  margin:0 0 10px;
+  font-size:22px;
+  line-height:1.35;
+  color:#073b86;
+}
+.block p{
+  margin:0;
+  font-size:14px;
+  color:#333;
+  line-height:1.8;
+}
 
 .cards{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:10px;
-  max-width:900px;margin:18px auto;padding:0 10px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  max-width:900px;
+  margin:18px auto;
+  padding:0 10px;
 }
 .card{
-  background:#f8fafc;border:1px solid #e5e7eb;border-radius:14px;
-  padding:14px 10px;text-align:center;font-weight:900;font-size:13px;line-height:1.5;
+  background:#f8fafc;
+  border:1px solid #e5e7eb;
+  border-radius:14px;
+  padding:14px 10px;
+  text-align:center;
+  font-weight:900;
+  font-size:13px;
+  line-height:1.5;
 }
-.card span{display:block;color:#d71920;font-size:20px;margin-bottom:4px}
+.card span{
+  display:block;
+  color:#d71920;
+  font-size:20px;
+  margin-bottom:4px;
+}
 
-.symptom-list{max-width:900px;margin:18px auto;padding:0 14px}
-.symptom-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.symptom{
-  border:1px solid #e5e7eb;border-radius:14px;padding:12px;
-  background:#fff;font-weight:800;font-size:14px;
+.symptom-list{
+  max-width:900px;
+  margin:18px auto;
+  padding:0 14px;
 }
-.symptom small{display:block;color:#667085;font-weight:600;margin-top:4px;line-height:1.5}
+.symptom-list h2{color:#073b86}
+.symptom-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+}
+.symptom{
+  border:1px solid #e5e7eb;
+  border-radius:14px;
+  padding:12px;
+  background:#fff;
+  font-weight:800;
+  font-size:14px;
+}
+.symptom small{
+  display:block;
+  color:#667085;
+  font-weight:600;
+  margin-top:4px;
+  line-height:1.5;
+}
 
 .image-stack{padding:10px 8px 8px}
 .image-stack img{
-  margin:0 auto 16px;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.08);
-}
-.trust-box{
-  background:#fff7e6;border:1px solid #ffd38a;border-radius:14px;
-  padding:12px 14px;margin:4px 10px 16px;font-weight:800;font-size:14px;line-height:1.7;
-}
-.price-note{
-  background:#eef6ff;border-left:5px solid #073b86;
-  max-width:900px;margin:14px auto;padding:14px;font-size:14px;line-height:1.8;
-}
-.mini-text{
-  max-width:900px;margin:12px auto 16px;padding:0 14px;
-  font-size:14px;color:#333;text-align:center;line-height:1.7;
+  margin:0 auto 16px;
+  border-radius:16px;
+  box-shadow:0 8px 24px rgba(0,0,0,.08);
 }
 
-.faq{max-width:900px;margin:18px auto;padding:0 14px 10px}
-.faq h2{font-size:22px;color:#073b86;margin-bottom:12px}
-.faq-item{
-  border:1px solid #e5e7eb;border-radius:14px;padding:14px;margin-bottom:10px;background:#fff;
+.trust-box{
+  background:#fff7e6;
+  border:1px solid #ffd38a;
+  border-radius:14px;
+  padding:12px 14px;
+  margin:4px 10px 16px;
+  font-weight:800;
+  font-size:14px;
+  line-height:1.7;
 }
-.faq-item h3{margin:0 0 6px;font-size:15px;color:#111827}
+.price-note{
+  background:#eef6ff;
+  border-left:5px solid #073b86;
+  max-width:900px;
+  margin:14px auto;
+  padding:14px;
+  font-size:14px;
+  line-height:1.8;
+}
+.mini-text{
+  max-width:900px;
+  margin:12px auto 16px;
+  padding:0 14px;
+  font-size:14px;
+  color:#333;
+  text-align:center;
+  line-height:1.7;
+}
+
+.faq{
+  max-width:900px;
+  margin:18px auto;
+  padding:0 14px 10px;
+}
+.faq h2{font-size:22px;color:#073b86}
+.faq-item{
+  border:1px solid #e5e7eb;
+  border-radius:14px;
+  padding:14px;
+  margin-bottom:10px;
+  background:#fff;
+}
+.faq-item h3{margin:0 0 6px;font-size:15px}
 .faq-item p{margin:0;font-size:14px;line-height:1.7;color:#333}
 
 .area-text{
-  background:#f8fafc;border-radius:16px;max-width:900px;margin:18px auto;padding:16px 14px;
-  font-size:14px;line-height:1.8;
+  background:#f8fafc;
+  border-radius:16px;
+  max-width:900px;
+  margin:18px auto;
+  padding:16px 14px;
+  font-size:14px;
+  line-height:1.8;
 }
 
 .final-message{
-  background:#073b86;color:#fff;text-align:center;padding:22px 14px;
+  background:#073b86;
+  color:#fff;
+  text-align:center;
+  padding:22px 14px;
 }
 .final-message h2{margin:0 0 8px;font-size:22px}
 .final-message p{margin:0;font-size:14px;line-height:1.7}
 .final-warning{
-  text-align:center;font-weight:950;color:#d71920;margin:16px 10px 0;
+  text-align:center;
+  font-weight:950;
+  color:#d71920;
+  margin:16px 10px 0;
 }
 
 .footer{
-  background:#071425;color:#dbeafe;text-align:center;
-  padding:22px 10px;font-size:13px;line-height:1.7;
+  background:#071425;
+  color:#dbeafe;
+  text-align:center;
+  padding:22px 10px;
+  font-size:13px;
+  line-height:1.7;
 }
+
 .fixed-cta{
-  position:fixed;left:0;right:0;bottom:0;z-index:9999;
-  background:rgba(255,255,255,.98);display:grid;grid-template-columns:1fr 1fr;
-  gap:4px;padding:4px;box-shadow:0 -4px 16px rgba(0,0,0,.18);
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:9999;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px;
+  padding:6px;
+  background:rgba(255,255,255,.98);
+  box-shadow:0 -4px 16px rgba(0,0,0,.2);
 }
-.fixed-cta img{height:68px;object-fit:cover;object-position:center}
+.fix-btn{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  border-radius:12px;
+  padding:10px 6px;
+  color:#fff;
+  font-weight:900;
+  text-align:center;
+}
+.fix-btn .big{font-size:16px}
+.fix-btn .small{font-size:11px}
+.fix-btn.phone{background:#d71920}
+.fix-btn.line{background:#06c755}
 
 @media(min-width:701px){
   body{padding-bottom:0}
   .fixed-cta{display:none}
   .cta-top img,.final-cta img{height:112px}
-  .hero-copy{left:40px;right:auto;bottom:40px;width:540px;padding:22px}
+  .hero-copy{
+    left:38px;
+    bottom:38px;
+    padding:14px 18px;
+    max-width:420px;
+  }
   .hero-copy h1{font-size:36px}
-  .hero-copy p{font-size:16px}
+  .hero-copy p{font-size:15px}
 }
+
 @media(max-width:700px){
   .logo-mark{width:24px;height:24px;font-size:13px}
   .logo-main{font-size:13px}
   .logo-sub{font-size:9px}
-  .tel-btn{padding:4px 7px;border-radius:10px}
-  .tel-small{font-size:9px}
-  .tel-number{font-size:14px}
+  .header-cta a{font-size:11px;padding:8px 9px}
+  .hero-copy{
+    left:10px;
+    right:auto;
+    bottom:12px;
+    max-width:250px;
+    padding:8px 10px;
+  }
+  .hero-copy h1{font-size:22px}
+  .hero-copy p{font-size:12px}
   .cta-top img,.final-cta img{height:78px}
-  .cards{grid-template-columns:1fr;gap:8px}
+  .cards{grid-template-columns:1fr}
   .symptom-grid{grid-template-columns:1fr}
   .image-stack{padding:8px 6px}
   .image-stack img{border-radius:12px;margin-bottom:12px}
@@ -177,10 +354,10 @@ a{text-decoration:none;color:inherit}
       </span>
     </div>
 
-    <a class="tel-btn" href="tel:0358794790">
-      <span class="tel-small">今すぐ相談</span>
-      <span class="tel-number">03-5879-4790</span>
-    </a>
+    <div class="header-cta">
+      <a class="btn-phone" href="tel:0358794790">📞 電話</a>
+      <a class="btn-line" href="#">LINE</a>
+    </div>
   </div>
 </header>
 
@@ -189,9 +366,8 @@ a{text-decoration:none;color:inherit}
   <section class="hero">
     <img src="hero-aircon.jpg" alt="松戸のエアコン修理 誠和電気">
     <div class="hero-copy">
-      <h1>エアコン修理・水漏れ・冷えない症状に対応</h1>
-      <p>松戸拠点で関東一円対応。作業前見積り・明朗会計・修理後1年保証。</p>
-      <div class="hero-now">最短30分で訪問可能｜当日対応OK</div>
+      <h1>最短30分対応</h1>
+      <p>今すぐご相談ください</p>
     </div>
   </section>
 
@@ -204,7 +380,7 @@ a{text-decoration:none;color:inherit}
       <img src="cta-phone.png" alt="今すぐ電話する 相談無料 見積り無料">
     </a>
     <a href="#">
-      <img src="cta-line.png" alt="LINEで相談する">
+      <img src="cta-line.png" alt="LINEで相談する 写真でOK 24時間受付">
     </a>
   </section>
 
@@ -229,7 +405,7 @@ a{text-decoration:none;color:inherit}
   </section>
 
   <section class="symptom-list">
-    <h2 style="color:#073b86;margin-bottom:12px;">こんな症状はご相談ください</h2>
+    <h2>こんな症状はご相談ください</h2>
     <div class="symptom-grid">
       <div class="symptom">冷えない・暖まらない<small>ガス漏れ、室外機不良、基板不良などを確認します。</small></div>
       <div class="symptom">室内機から水漏れ<small>ドレン詰まり、排水不良、勾配不良などが原因の場合があります。</small></div>
@@ -268,7 +444,7 @@ a{text-decoration:none;color:inherit}
       対応可否は当日の予約状況により異なります。
     </div>
 
-    <img src="aircon-repair-cases-3pattern.jpg" alt="エアコン修理 よくある故障パターン">
+    <img src="works-before-after.jpg" alt="エアコン修理 作業実績 ビフォーアフター">
 
     <div class="mini-text">
       水漏れ・冷えない症状・異音など、状態を確認して最適な修理方法をご提案します。
@@ -328,7 +504,7 @@ a{text-decoration:none;color:inherit}
   </section>
 
   <p class="final-warning">
-    今すぐ相談で本日対応できる可能性があります
+    本日対応できる可能性があります。まずは今すぐご相談ください。
   </p>
 
   <section class="final-cta">
@@ -336,7 +512,7 @@ a{text-decoration:none;color:inherit}
       <img src="cta-phone.png" alt="今すぐ電話する 相談無料 見積り無料">
     </a>
     <a href="#">
-      <img src="cta-line.png" alt="LINEで相談する">
+      <img src="cta-line.png" alt="LINEで相談する 写真でOK 24時間受付">
     </a>
   </section>
 
@@ -348,11 +524,13 @@ a{text-decoration:none;color:inherit}
 </footer>
 
 <div class="fixed-cta">
-  <a href="tel:0358794790">
-    <img src="cta-phone.png" alt="今すぐ電話する">
+  <a class="fix-btn phone" href="tel:0358794790">
+    <span class="big">📞 電話</span>
+    <span class="small">今すぐ対応</span>
   </a>
-  <a href="#">
-    <img src="cta-line.png" alt="LINEで相談する">
+  <a class="fix-btn line" href="#">
+    <span class="big">LINE</span>
+    <span class="small">写真で相談OK</span>
   </a>
 </div>
 
