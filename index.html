@@ -4,101 +4,341 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>松戸のエアコン修理｜誠和電気｜冷えない・水漏れ・異音 即日対応</title>
-<meta name="description" content="松戸のエアコン修理なら誠和電気。冷えない・水漏れ・異音・風が出ないなどに対応。松戸拠点で即日対応。作業前見積り・明朗会計・1年保証。">
+<title>松戸のエアコン修理｜誠和電気｜冷えない・水漏れ・異音 即日相談</title>
+<meta name="description" content="松戸のエアコン修理なら誠和電気。冷えない・水漏れ・異音・風が出ない・室外機不具合に対応。松戸拠点で関東一円対応。作業前見積り、追加費用は事前説明、明朗会計、修理後1年保証。受付9:00〜20:00。">
 
 <style>
-body{margin:0;font-family:sans-serif;background:#fff;color:#111}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:#fff;
+  color:#111827;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Yu Gothic",Meiryo,sans-serif;
+  padding-bottom:86px;
+}
 img{width:100%;display:block}
-.header{position:sticky;top:0;background:#fff;padding:10px;display:flex;justify-content:space-between;border-bottom:1px solid #eee}
-.logo{font-weight:900;color:#0b3f91}
-.tel{color:#e60023;font-weight:900}
-.section{padding:14px}
-.section img{border-radius:12px;margin-bottom:12px}
-.seo{padding:20px;font-size:14px;line-height:1.8}
-.seo h1{font-size:22px}
-.seo h2{margin-top:20px}
-.cta{position:fixed;bottom:0;left:0;right:0;display:flex;gap:8px;padding:8px;background:#fff}
-.cta img{border-radius:10px}
+a{text-decoration:none;color:inherit}
+
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(255,255,255,.96);
+  border-bottom:1px solid #e5e7eb;
+}
+.topbar-inner{
+  max-width:1140px;
+  margin:auto;
+  padding:10px 14px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+.logo{
+  font-weight:900;
+  color:#0b3f91;
+  font-size:15px;
+}
+.tel{
+  color:#d71920;
+  font-weight:900;
+  font-size:18px;
+  white-space:nowrap;
+}
+
+.lp{
+  max-width:1140px;
+  margin:auto;
+  background:#fff;
+}
+
+.hero{
+  margin:0;
+}
+.hero img{
+  width:100%;
+}
+
+.hero-cta{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  padding:10px;
+  background:#fff;
+}
+.hero-cta a{
+  display:block;
+  overflow:hidden;
+  border-radius:14px;
+}
+.hero-cta img{
+  height:95px;
+  object-fit:cover;
+  object-position:center;
+}
+
+.notice{
+  margin:0;
+  padding:12px 14px;
+  background:#fff4bf;
+  color:#111;
+  text-align:center;
+  font-weight:900;
+  font-size:16px;
+  border-top:1px solid #f3d34a;
+  border-bottom:1px solid #f3d34a;
+}
+
+.split-section{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:14px;
+  padding:18px 12px;
+  border-bottom:1px solid #eef2f7;
+}
+.split-text{
+  padding:18px;
+  border-radius:18px;
+  background:#f8fbff;
+  border:1px solid #dbeafe;
+}
+.split-text h2{
+  margin:0 0 10px;
+  color:#0b3f91;
+  font-size:24px;
+  line-height:1.3;
+}
+.split-text p{
+  margin:0 0 12px;
+  line-height:1.8;
+}
+.split-text ul{
+  margin:10px 0 0;
+  padding-left:20px;
+  line-height:1.8;
+}
+.split-img img{
+  border-radius:18px;
+  box-shadow:0 8px 22px rgba(0,0,0,.08);
+}
+
+.quick-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+  margin-top:14px;
+}
+.quick-card{
+  background:#fff;
+  border:1px solid #dbeafe;
+  border-radius:14px;
+  padding:12px;
+  font-weight:800;
+  color:#0b3f91;
+}
+
+.seo{
+  padding:28px 16px 42px;
+  line-height:1.85;
+}
+.seo h1,.seo h2{
+  color:#0b3f91;
+  line-height:1.35;
+}
+.seo h1{
+  font-size:26px;
+  margin:0 0 14px;
+}
+.seo h2{
+  font-size:22px;
+  margin:28px 0 12px;
+}
+.seo p{margin:0 0 14px}
+.seo ul{padding-left:20px}
+
+.fixed-cta{
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:9999;
+  background:#fff;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:4px;
+  padding:4px;
+  box-shadow:0 -4px 16px rgba(0,0,0,.18);
+}
+.cta-btn{
+  display:block;
+  overflow:hidden;
+  border-radius:10px;
+}
+.cta-btn img{
+  width:100%;
+  height:78px;
+  object-fit:cover;
+  object-position:center;
+}
+
+footer{
+  background:#071425;
+  color:#dbeafe;
+  text-align:center;
+  padding:24px 12px;
+  font-size:13px;
+  line-height:1.7;
+}
+
+@media(min-width:820px){
+  .split-section{
+    grid-template-columns:.9fr 1.1fr;
+    align-items:center;
+    padding:26px 18px;
+  }
+  .reverse .split-text{order:2}
+  .reverse .split-img{order:1}
+  .hero-cta img{height:120px}
+  .fixed-cta{
+    max-width:760px;
+    left:50%;
+    transform:translateX(-50%);
+    border-radius:18px 18px 0 0;
+  }
+}
 </style>
 </head>
 
 <body>
 
-<div class="header">
-<div class="logo">誠和電気｜松戸エアコン修理</div>
-<a class="tel" href="tel:0358794790">03-5879-4790</a>
-</div>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="logo">誠和電気｜松戸エアコン修理</div>
+    <a class="tel" href="tel:0358794790">03-5879-4790</a>
+  </div>
+</header>
 
-<img src="hero-aircon.jpg">
+<main class="lp">
 
-<div style="padding:10px;">
-<a href="tel:0358794790">
-<img src="cta-phone.png">
-</a>
-</div>
+  <section class="hero">
+    <img src="hero-aircon.jpg" alt="松戸のエアコン修理 誠和電気 エアコンレスキュー">
+  </section>
 
-<div class="section">
-<img src="エリア-松戸-関東.jpg">
-<img src="price-aircon.jpg">
-<img src="works-before-after.jpg">
-<img src="review-simple.jpg">
-<img src="guarantee-1year-aircon.jpg">
-</div>
+  <div class="hero-cta">
+    <a href="tel:0358794790">
+      <img src="cta-phone.png" alt="今すぐ電話する">
+    </a>
+    <a href="#line">
+      <img src="cta-line.png" alt="LINEで相談する">
+    </a>
+  </div>
 
-<div class="seo">
+  <p class="notice">夏場はご依頼が集中します。違和感を感じたら早めの点検・修理がおすすめです。</p>
 
-<h1>松戸のエアコン修理なら誠和電気</h1>
+  <section class="split-section">
+    <div class="split-text">
+      <h2>松戸拠点で関東一円対応</h2>
+      <p>松戸市を中心に、市川市・柏市・流山市・鎌ケ谷市・葛飾区・江戸川区・足立区などへ対応します。</p>
+      <div class="quick-grid">
+        <div class="quick-card">松戸市</div>
+        <div class="quick-card">市川市</div>
+        <div class="quick-card">柏市</div>
+        <div class="quick-card">流山市</div>
+      </div>
+    </div>
+    <div class="split-img">
+      <img src="エリア-松戸-関東.jpg" alt="松戸拠点 関東一円対応エリア">
+    </div>
+  </section>
 
-<p>
-松戸市でエアコン修理なら誠和電気。冷えない、水漏れ、異音、風が出ないなどのエアコン故障に対応。
-松戸拠点で即日対応可能です。
-</p>
+  <section class="split-section reverse">
+    <div class="split-text">
+      <h2>料金は作業前に確認</h2>
+      <p>作業前にお見積りをご提示し、ご確認後に作業いたします。追加費用が必要な場合も事前に必ずご説明します。</p>
+      <ul>
+        <li>冷えない・風が出ない</li>
+        <li>水漏れ</li>
+        <li>異音・エラー表示</li>
+        <li>室外機トラブル</li>
+      </ul>
+    </div>
+    <div class="split-img">
+      <img src="price-aircon.jpg" alt="エアコン故障修理 料金表">
+    </div>
+  </section>
 
-<h2>よくある症状</h2>
-<ul>
-<li>エアコンが冷えない</li>
-<li>水漏れしている</li>
-<li>異音がする</li>
-<li>風が弱い・出ない</li>
-</ul>
+  <section class="split-section">
+    <div class="split-text">
+      <h2>作業実績で安心</h2>
+      <p>水漏れ修理、カビ汚れクリーニング、冷えない症状など、状態を確認して最適な修理をご提案します。</p>
+    </div>
+    <div class="split-img">
+      <img src="works-before-after.jpg" alt="エアコン修理 作業実績 ビフォーアフター">
+    </div>
+  </section>
 
-<h2>松戸市の対応地域</h2>
-<p>
-松戸駅・新松戸・北松戸・馬橋・八柱・常盤平・五香・六実・東松戸・矢切・小金原など対応。
-</p>
+  <section class="split-section reverse">
+    <div class="split-text">
+      <h2>口コミ・お客様の声</h2>
+      <p>「すぐ来て助かった」「説明が丁寧で安心」「料金が明確で信頼できた」など、地域のお客様に選ばれる対応を目指します。</p>
+    </div>
+    <div class="split-img">
+      <img src="review-simple.jpg" alt="お客様の声 松戸 エアコン修理">
+    </div>
+  </section>
 
-<h2>近隣エリア</h2>
-<p>
-市川市・柏市・流山市・葛飾区・足立区など関東一円対応。
-</p>
+  <section class="split-section">
+    <div class="split-text">
+      <h2>修理後も安心の1年保証</h2>
+      <p>修理後の不具合にも責任をもって対応。作業後も安心してご利用いただけるよう、サポートいたします。</p>
+    </div>
+    <div class="split-img">
+      <img src="guarantee-1year-aircon.jpg" alt="修理後も安心の1年保証">
+    </div>
+  </section>
 
-<h2>料金</h2>
-<p>
-作業前見積り。追加費用は事前説明の明朗会計。
-</p>
+  <section class="seo">
+    <h1>松戸のエアコン修理なら誠和電気</h1>
+    <p>松戸市でエアコン修理なら誠和電気へ。冷えない、水漏れ、異音、風が弱い、風が出ない、室外機が動かないなどのエアコン故障に対応します。</p>
 
-<h2>保証</h2>
-<p>
-修理後1年保証で安心。
-</p>
+    <h2>松戸市の対応地域</h2>
+    <p>松戸駅・新松戸・北松戸・馬橋・八柱・常盤平・五香・六実・東松戸・松飛台・矢切・小金原・みのり台周辺のエアコン修理に対応しています。</p>
 
-<h2>夏場のエアコン修理について</h2>
-<p>
-夏はエアコン故障が集中します。冷えない・水漏れ・異音は早めの相談が重要です。
-</p>
+    <h2>近隣対応エリア</h2>
+    <p>市川市・柏市・流山市・鎌ケ谷市・船橋市・葛飾区・江戸川区・足立区など、松戸から近いエリアも対応可能です。</p>
 
-</div>
+    <h2>夏場のエアコン故障は早めの相談がおすすめ</h2>
+    <p>夏場はエアコン修理の相談が集中しやすく、冷えない・水漏れ・異音・風が出ないといった症状が増えます。真夏に故障すると修理まで時間がかかる場合があるため、違和感がある段階で早めに点検・修理をご相談ください。</p>
 
-<div style="height:90px"></div>
+    <h2>よくある症状</h2>
+    <ul>
+      <li>エアコンが冷えない、冷房が効かない</li>
+      <li>室内機から水漏れしている</li>
+      <li>異音がする、振動音がある</li>
+      <li>風が弱い、風が出ない</li>
+      <li>室外機が動かない</li>
+      <li>エラーコードが出ている</li>
+    </ul>
 
-<div class="cta">
-<a href="tel:0358794790">
-<img src="cta-phone.png">
-</a>
-<a href="https://lin.ee/XXXXX">
-<img src="cta-line.png">
-</a>
+    <h2>料金と見積りについて</h2>
+    <p>エアコン修理の料金は、症状・作業内容・必要部材によって変わります。作業前にお見積りをご提示し、お客様にご確認いただいてから作業いたします。追加費用が発生する場合も、事前に必ずご説明いたします。</p>
+  </section>
+
+</main>
+
+<footer>
+  誠和電気 エアコンレスキュー｜松戸拠点｜関東一円対応<br>
+  電話 03-5879-4790｜受付時間 9:00〜20:00
+</footer>
+
+<div class="fixed-cta">
+  <a href="tel:0358794790" class="cta-btn">
+    <img src="cta-phone.png" alt="今すぐ電話する">
+  </a>
+  <a href="#line" class="cta-btn">
+    <img src="cta-line.png" alt="LINEで相談する">
+  </a>
 </div>
 
 </body>
