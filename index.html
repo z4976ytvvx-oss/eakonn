@@ -5,28 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>松戸のエアコン修理｜誠和電気 エアコンレスキュー｜冷えない・水漏れ・異音対応</title>
-<meta name="description" content="松戸拠点のエアコン修理なら誠和電気。冷えない・水漏れ・異音・風が出ない・臭いなどに対応。作業前見積り、明朗会計、修理後1年保証。関東一円対応。">
+<meta name="description" content="松戸拠点のエアコン修理なら誠和電気。最短30分対応・見積り無料・1年保証。関東一円対応。">
 
 <style>
 *{box-sizing:border-box}
-body{margin:0;background:#fff;font-family:system-ui;padding-bottom:88px}
+body{margin:0;font-family:system-ui;background:#fff;padding-bottom:90px}
 img{width:100%;display:block}
 a{text-decoration:none;color:inherit}
 
 /* ===== ヘッダー ===== */
 .header{position:sticky;top:0;background:#fff;z-index:999;border-bottom:1px solid #ddd}
 .header-inner{display:flex;justify-content:space-between;align-items:center;padding:10px}
-.logo{display:flex;gap:8px;align-items:center}
-.logo-mark{width:28px;height:28px;background:#073b86;color:#fff;display:flex;align-items:center;justify-content:center;border-radius:8px;font-weight:900}
 
-/* CTA強化 */
 .header-cta{display:flex;gap:8px}
 .header-cta a{
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  min-width:120px;min-height:60px;
-  border-radius:14px;
-  color:#fff;font-weight:900;
-  box-shadow:0 6px 16px rgba(0,0,0,.25);
+display:flex;align-items:center;justify-content:center;
+min-width:120px;height:56px;
+border-radius:14px;
+color:#fff;font-weight:900;
+box-shadow:0 6px 16px rgba(0,0,0,.25);
 }
 .btn-phone{background:#d71920}
 .btn-line{background:#06c755}
@@ -34,47 +31,55 @@ a{text-decoration:none;color:inherit}
 /* ===== ヒーロー ===== */
 .hero{position:relative}
 .hero-copy{
-  position:absolute;
-  left:20px;
-  top:50%;
-  transform:translateY(-50%);
-  background:rgba(0,0,0,.65);
-  color:#fff;
-  padding:10px;
-  border-radius:12px;
-  max-width:240px;
+position:absolute;
+left:20px;
+top:50%;
+transform:translateY(-50%);
+background:rgba(0,0,0,.65);
+color:#fff;
+padding:12px;
+border-radius:12px;
+max-width:240px;
 }
 
-/* CTAズレ防止 */
-.cta-top,.final-cta{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:8px;
-  padding:10px;
+/* ===== セクション ===== */
+.section{max-width:900px;margin:28px auto;padding:0 14px}
+.mini-text{text-align:center;margin:10px 0;font-size:14px}
+.price-note{background:#eef6ff;padding:12px;border-left:4px solid #073b86;margin:10px 0}
+.trust-box{background:#fff7e6;padding:12px;border-radius:10px;margin:10px 0}
+
+/* ===== CTA ===== */
+.cta{margin:16px 0}
+.cta a{
+display:block;
+text-align:center;
+padding:16px;
+border-radius:16px;
+font-weight:900;
+margin-bottom:10px;
+color:#fff;
 }
-.cta-top a,.final-cta a{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-.cta-top img,.final-cta img{
-  height:auto;
-  object-fit:contain;
+.cta-phone{background:#d71920}
+.cta-line{background:#06c755}
+
+/* ===== FAQ ===== */
+.faq-item{
+border:1px solid #ddd;
+border-radius:12px;
+padding:14px;
+margin-top:10px;
+background:#fff;
 }
 
-.trust-bar{background:#073b86;color:#fff;text-align:center;padding:10px;font-weight:900}
-.notice{background:#fff2b8;padding:12px;text-align:center;font-weight:900}
-.mini-text{text-align:center;margin:12px}
-.price-note{background:#eef6ff;border-left:5px solid #073b86;padding:10px;margin:10px}
-.trust-box{background:#fff7e6;padding:10px;margin:10px;border-radius:10px}
-
+/* ===== フッター ===== */
 .footer{background:#071425;color:#fff;text-align:center;padding:20px}
 
+/* 固定CTA */
 .fixed-cta{
 position:fixed;bottom:0;left:0;right:0;
 display:grid;grid-template-columns:1fr 1fr;
 }
-.fix-btn{padding:12px;text-align:center;color:#fff;font-weight:900}
+.fix-btn{padding:14px;text-align:center;color:#fff;font-weight:900}
 .phone{background:#d71920}
 .line{background:#06c755}
 </style>
@@ -84,14 +89,7 @@ display:grid;grid-template-columns:1fr 1fr;
 
 <header class="header">
 <div class="header-inner">
-<div class="logo">
-<span class="logo-mark">誠</span>
-<div>
-<div>誠和電気</div>
-<div style="font-size:10px;color:#666">エアコンレスキュー松戸</div>
-</div>
-</div>
-
+<div>誠和電気 エアコンレスキュー</div>
 <div class="header-cta">
 <a class="btn-phone" href="tel:0358794790">📞 電話</a>
 <a class="btn-line" href="#">LINE</a>
@@ -101,6 +99,7 @@ display:grid;grid-template-columns:1fr 1fr;
 
 <main>
 
+<!-- ヒーロー -->
 <section class="hero">
 <img src="hero-aircon.jpg">
 <div class="hero-copy">
@@ -109,108 +108,92 @@ display:grid;grid-template-columns:1fr 1fr;
 </div>
 </section>
 
-<div class="trust-bar">松戸拠点｜関東一円対応｜見積り無料</div>
+<!-- CTA（最初） -->
+<div class="section cta">
+<a href="tel:0358794790" class="cta-phone">📞 今すぐ電話する</a>
+<a href="#" class="cta-line">LINEで相談する</a>
+</div>
 
-<section class="cta-top">
-<a href="tel:0358794790"><img src="cta-phone.png"></a>
-<a href="#"><img src="cta-line.png"></a>
+<!-- ★ビフォーアフター（最優先） -->
+<section class="section">
+<h2>作業実績（ビフォーアフター）</h2>
+<img src="aircon-repair-cases-3pattern.jpg">
+<p class="mini-text">
+冷えない・水漏れ・異音など、原因を特定してその場で改善します。
+</p>
 </section>
 
-<div class="notice">冷えない・水漏れは早めの相談を</div>
-
-<!-- ===== 画像＋テキスト完全復活 ===== -->
-<section class="image-stack">
-
+<!-- 安心 -->
+<section class="section">
 <div class="trust-box">
-✔ 作業前に必ずお見積り<br>
+✔ 作業前に必ず見積り<br>
 ✔ 追加費用は事前説明<br>
-✔ 無理な交換営業はしません<br>
-✔ まず修理できるかを確認します
+✔ 無理な交換営業なし<br>
+✔ 修理後1年保証
 </div>
+</section>
 
-<div class="price-note">
-<strong>安心ポイント</strong><br>
-・見積り後の追加請求なし<br>
-・作業前に必ず金額説明<br>
-・納得いただいてから作業開始
-</div>
-
+<!-- 料金 -->
+<section class="section">
 <img src="price-aircon.jpg">
-
 <div class="price-note">
-工賃は内容により異なります。部品交換・材料費が必要な場合は、作業前に必ず説明します。
-「現地で急に高額請求」のような不安を減らすため、事前説明を大切にしています。
+工賃は内容により異なります。必ず事前に説明します。
 </div>
+</section>
 
+<!-- エリア -->
+<section class="section">
 <img src="area-matsudo-kanto.jpg">
+<p class="mini-text">
+松戸市を中心に関東一円対応可能です。
+</p>
+</section>
 
-<div class="mini-text">
-松戸市を中心に、千葉・東京・埼玉・神奈川方面までご相談可能です。
+<!-- CTA（中間） -->
+<div class="section cta">
+<a href="tel:0358794790" class="cta-phone">📞 今すぐ相談する</a>
+<a href="#" class="cta-line">LINEで相談</a>
 </div>
 
-<img src="works-before-after.jpg">
-
-<div class="mini-text">
-状態を確認して最適な修理方法をご提案します。
-</div>
-
-<p style="text-align:center;font-weight:900;">こんな不安ありませんか？</p>
-
+<!-- 口コミ -->
+<section class="section">
 <img src="review-customers.jpg">
+<p class="mini-text">
+「すぐ来て助かった」「説明が丁寧で安心」
+</p>
+</section>
 
-<div class="mini-text">
-地域のお客様に選ばれる対応を目指しています。
+<!-- 保証 -->
+<section class="section">
+<img src="guarantee-1year-aircon.jpg">
+</section>
+
+<!-- FAQ -->
+<section class="section">
+<h2>よくある質問</h2>
+
+<div class="faq-item">
+<strong>エアコンが冷えない原因は？</strong>
+<p>ガス漏れ・室外機・基板など複数の原因があります。</p>
 </div>
 
-<img src="guarantee-1year-aircon.jpg">
+<div class="faq-item">
+<strong>料金は事前に分かる？</strong>
+<p>必ず作業前に説明します。</p>
+</div>
+
+<div class="faq-item">
+<strong>対応エリアは？</strong>
+<p>関東一円対応可能です。</p>
+</div>
 
 </section>
-<!-- ビフォーアフター（復活） -->
-<section style="max-width:900px;margin:30px auto;padding:0 14px;">
-  <h2 style="color:#073b86;">作業実績（ビフォーアフター）</h2>
-<!-- ここだけ差し替え -->
-<img src="aircon-repair-cases-3pattern.jpg" alt="エアコン修理 ビフォーアフター">
-  
 
-  <p style="text-align:center;margin-top:10px;font-size:14px;">
-    冷えない・水漏れ・異音など、原因を特定して最適な修理を行います。
-  </p>
-</section>
-<!-- ===== FAQ ===== -->
-<section class="faq">
-  <h2>よくある質問</h2>
-
-  <div class="faq-item">
-    <h3>エアコンが冷えない原因は何ですか？</h3>
-    <p>ガス漏れ・室外機・基板など複数の原因が考えられます。現地で原因を特定して最適な修理をご提案します。</p>
-  </div>
-
-  <div class="faq-item">
-    <h3>水漏れ修理もできますか？</h3>
-    <p>はい。ドレン詰まり・排水不良など原因に合わせて対応します。</p>
-  </div>
-
-  <div class="faq-item">
-    <h3>料金は作業前に分かりますか？</h3>
-    <p>作業前に必ずご説明します。追加費用がある場合も事前にご案内します。</p>
-  </div>
-
-  <div class="faq-item">
-    <h3>松戸以外も対応できますか？</h3>
-    <p>松戸市を中心に、東京・千葉・埼玉・神奈川など関東一円対応可能です。</p>
-  </div>
-
-  <!-- ★ここ追加：FAQ直下CTA（めちゃ効く） -->
-  <div style="margin-top:18px;">
-    <a href="tel:0358794790" style="display:block;background:#d71920;color:#fff;font-weight:900;text-align:center;padding:14px;border-radius:14px;margin-bottom:10px;">
-      📞 今すぐ電話で相談する（最短30分）
-    </a>
-    <a href="#" style="display:block;background:#06c755;color:#fff;font-weight:900;text-align:center;padding:14px;border-radius:14px;">
-      LINEで相談する（写真OK・無料）
-    </a>
-  </div>
-</section>
-</section>
+<!-- 最終CTA -->
+<div class="section cta">
+<a href="tel:0358794790" class="cta-phone">📞 今すぐ電話する（最短30分）</a>
+<a href="#" class="cta-line">LINEで相談（無料）</a>
+</div>
 
 </main>
 
