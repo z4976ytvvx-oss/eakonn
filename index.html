@@ -122,34 +122,8 @@ main{
 ========================= */
 .hero{
   position:relative;
-  background:#000;
+  background:#fff;
   overflow:hidden;
-}
-
-.hero-copy{
-  position:absolute;
-  left:20px;
-  top:50%;
-  transform:translateY(-50%);
-  background:rgba(0,0,0,.65);
-  color:#fff;
-  padding:12px 14px;
-  border-radius:14px;
-  max-width:250px;
-}
-
-.hero-copy h1{
-  margin:0;
-  font-size:24px;
-  line-height:1.25;
-  font-weight:950;
-}
-
-.hero-copy p{
-  margin:5px 0 0;
-  color:#ffe873;
-  font-size:13px;
-  font-weight:900;
 }
 
 /* =========================
@@ -247,15 +221,6 @@ main{
   font-size:14px;
   font-weight:800;
   line-height:1.85;
-}
-
-.proof-card{
-  border:1px solid #e5e7eb;
-  background:#fff;
-  border-radius:16px;
-  padding:14px;
-  margin-top:12px;
-  box-shadow:0 8px 22px rgba(0,0,0,.06);
 }
 
 /* =========================
@@ -357,21 +322,6 @@ main{
     font-size:8px;
   }
 
-  .hero-copy{
-    left:10px;
-    top:52%;
-    max-width:195px;
-    padding:9px 10px;
-  }
-
-  .hero-copy h1{
-    font-size:20px;
-  }
-
-  .hero-copy p{
-    font-size:12px;
-  }
-
   .cta-img{
     flex-direction:column;
     gap:12px;
@@ -417,13 +367,9 @@ main{
 
 <main>
 
-  <!-- Hero -->
+  <!-- Hero：画像の文字を邪魔しないため、重ね文字は削除済み -->
   <section class="hero">
     <img src="hero-aircon.jpg" alt="松戸のエアコン修理 誠和電気">
-    <div class="hero-copy">
-      <h1>最短30分対応</h1>
-      <p>まずはご相談ください</p>
-    </div>
   </section>
 
   <!-- 安心案内 -->
