@@ -18,15 +18,8 @@ body{
   padding-bottom:86px;
 }
 
-img{
-  width:100%;
-  display:block;
-}
-
-a{
-  text-decoration:none;
-  color:inherit;
-}
+img{width:100%;display:block}
+a{text-decoration:none;color:inherit}
 
 .header{
   position:sticky;
@@ -47,10 +40,39 @@ a{
 }
 
 .logo{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  line-height:1.1;
+}
+
+.logo-mark{
+  width:28px;
+  height:28px;
+  border-radius:8px;
+  background:#073b86;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:900;
+  font-size:15px;
+}
+
+.logo-main{
+  display:block;
+  font-size:15px;
   font-weight:900;
   color:#073b86;
-  font-size:15px;
-  line-height:1.2;
+  letter-spacing:.04em;
+}
+
+.logo-sub{
+  display:block;
+  font-size:10px;
+  color:#667085;
+  font-weight:700;
+  margin-top:2px;
 }
 
 .tel-btn{
@@ -86,9 +108,7 @@ a{
   background:#fff;
 }
 
-.hero img{
-  border-radius:0;
-}
+.hero img{border-radius:0}
 
 .trust-bar{
   background:#073b86;
@@ -201,13 +221,8 @@ a{
 }
 
 @media(min-width:701px){
-  body{
-    padding-bottom:0;
-  }
-
-  .fixed-cta{
-    display:none;
-  }
+  body{padding-bottom:0}
+  .fixed-cta{display:none}
 
   .cta-top img,
   .final-cta img{
@@ -216,22 +231,22 @@ a{
 }
 
 @media(max-width:700px){
-  .logo{
+  .logo-mark{
+    width:24px;
+    height:24px;
     font-size:13px;
   }
+
+  .logo-main{font-size:13px}
+  .logo-sub{font-size:9px}
 
   .tel-btn{
     padding:4px 7px;
     border-radius:10px;
   }
 
-  .tel-small{
-    font-size:9px;
-  }
-
-  .tel-number{
-    font-size:14px;
-  }
+  .tel-small{font-size:9px}
+  .tel-number{font-size:14px}
 
   .cta-top img,
   .final-cta img{
@@ -254,7 +269,13 @@ a{
 
 <header class="header">
   <div class="header-inner">
-    <div class="logo">誠和電気｜松戸エアコン修理</div>
+    <div class="logo">
+      <span class="logo-mark">誠</span>
+      <span>
+        <span class="logo-main">誠和電気</span>
+        <span class="logo-sub">エアコンレスキュー松戸</span>
+      </span>
+    </div>
 
     <a class="tel-btn" href="tel:0358794790">
       <span class="tel-small">今すぐ相談</span>
