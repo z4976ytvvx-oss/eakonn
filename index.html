@@ -8,7 +8,7 @@
 
 <style>
 *{box-sizing:border-box}
-body{margin:0;background:#fff;font-family:system-ui;padding-bottom:88px}
+body{margin:0;background:#fff;font-family:system-ui;padding-bottom:90px}
 img{width:100%;display:block}
 a{text-decoration:none;color:inherit}
 
@@ -16,38 +16,55 @@ a{text-decoration:none;color:inherit}
 .header{position:sticky;top:0;background:#fff;z-index:999;border-bottom:1px solid #eee}
 .header-inner{display:flex;justify-content:space-between;align-items:center;padding:10px}
 .header-cta{display:flex;gap:6px}
-.header-cta img{height:48px}
+.header-cta img{height:46px}
 
 /* ヒーロー */
 .hero{position:relative}
 .hero-copy{
 position:absolute;
-left:14px;
+left:20px;
 top:50%;
 transform:translateY(-50%);
 background:rgba(0,0,0,.6);
 color:#fff;
-padding:12px;
+padding:14px;
 border-radius:12px;
-max-width:240px;
+max-width:260px;
 }
 
 /* セクション */
-.section{max-width:900px;margin:24px auto;padding:0 14px;overflow:hidden}
-.mini-text{text-align:center;margin:12px 0;font-size:14px;line-height:1.6}
-.price-note{background:#eef6ff;padding:12px;border-left:4px solid #073b86;margin:12px 0}
-.trust-box{background:#fff7e6;padding:12px;border-radius:12px;margin:12px 0}
+.section{max-width:900px;margin:28px auto;padding:0 14px}
+.mini-text{text-align:center;margin:14px 0;font-size:14px;line-height:1.7}
+.price-note{background:#eef6ff;padding:14px;border-left:4px solid #073b86;margin:14px 0}
+.trust-box{background:#fff7e6;padding:14px;border-radius:12px;margin:14px 0;line-height:1.7}
 
-/* CTA（←重要修正済み） */
+/* CTA（最重要） */
 .cta-img{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:16px;
-margin:16px auto;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:24px;
+max-width:900px;
+margin:28px auto;
 }
+
+.cta-img a{
+flex:1;
+text-align:center;
+transition:.25s;
+}
+
 .cta-img img{
+max-width:420px;
 width:100%;
 height:auto;
+margin:auto;
+filter:drop-shadow(0 8px 20px rgba(0,0,0,.25));
+transition:.25s;
+}
+
+.cta-img a:hover img{
+transform:scale(1.05);
 }
 
 /* FAQ */
@@ -57,13 +74,13 @@ border-radius:14px;
 padding:14px;
 margin-bottom:12px;
 background:#fff;
-line-height:1.6;
+line-height:1.7;
 }
 
 /* フッター */
 .footer{background:#071425;color:#fff;text-align:center;padding:20px}
 
-/* 下固定CTA */
+/* 固定CTA */
 .fixed-cta{
 position:fixed;bottom:0;left:0;right:0;
 display:grid;grid-template-columns:1fr 1fr;
@@ -73,7 +90,9 @@ z-index:9999;
 
 /* スマホ */
 @media(max-width:700px){
-.cta-img{grid-template-columns:1fr}
+.cta-img{flex-direction:column}
+.cta-img img{max-width:100%}
+.hero-copy{max-width:200px;font-size:13px}
 }
 </style>
 </head>
@@ -101,7 +120,7 @@ z-index:9999;
 </div>
 </section>
 
-<!-- 注意文 -->
+<!-- 注意 -->
 <div style="text-align:center;font-size:14px;padding:12px;background:#f8fafc;font-weight:700;">
 📞 お電話は繋がらない場合があります。<br>
 LINE・SMSからのご連絡も可能です。
@@ -111,8 +130,8 @@ LINE・SMSからのご連絡も可能です。
 ※無理な営業は行いません。まずは修理可能か確認します。
 </p>
 
-<!-- CTA（1回目） -->
-<div class="section cta-img">
+<!-- CTA① -->
+<div class="cta-img">
 <a href="tel:0358794790"><img src="cta-phone.png"></a>
 <a href="#"><img src="cta-line.png"></a>
 </div>
@@ -191,8 +210,8 @@ LINE・SMSからのご連絡も可能です。
 
 </section>
 
-<!-- CTA（最後だけ） -->
-<div class="section cta-img">
+<!-- CTA②（最後） -->
+<div class="cta-img">
 <a href="tel:0358794790"><img src="cta-phone.png"></a>
 <a href="#"><img src="cta-line.png"></a>
 </div>
