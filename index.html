@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>松戸のエアコン修理｜誠和電気 エアコンレスキュー｜冷えない・水漏れ・異音対応</title>
-<meta name="description" content="松戸拠点のエアコン修理なら誠和電気。冷えない・水漏れ・異音・風が出ない・臭いなどに対応。作業前見積り、明朗会計、修理後1年保証。関東一円対応。">
+<meta name="description" content="松戸拠点のエアコン修理なら誠和電気。冷えない・水漏れ・異音・風が出ない・臭いなどに対応。作業前見積り、明朗会計、修理後1年保証。松戸・柏・流山・市川・葛飾区・足立区など関東一円対応。">
 
 <style>
 *{box-sizing:border-box}
@@ -13,12 +13,12 @@ body{
   margin:0;
   background:#fff;
   color:#111827;
-  font-family:system-ui,-apple-system,"Yu Gothic",Meiryo,sans-serif;
-  padding-bottom:90px;
+  font-family:system-ui,-apple-system,"Segoe UI","Yu Gothic",Meiryo,sans-serif;
+  padding-bottom:88px;
 }
 img{width:100%;display:block}
 a{text-decoration:none;color:inherit}
-.lp{max-width:1120px;margin:auto}
+.lp{max-width:1120px;margin:auto;background:#fff}
 
 /* ===== ヘッダー ===== */
 .header{
@@ -31,90 +31,133 @@ a{text-decoration:none;color:inherit}
 .header-inner{
   max-width:1120px;
   margin:auto;
-  padding:10px;
+  padding:9px 12px;
   display:flex;
   justify-content:space-between;
   align-items:center;
+  gap:10px;
 }
-.logo{display:flex;align-items:center;gap:8px}
+.logo{display:flex;align-items:center;gap:8px;line-height:1.1}
 .logo-mark{
   width:28px;height:28px;border-radius:8px;
   background:#073b86;color:#fff;
   display:flex;align-items:center;justify-content:center;
   font-weight:900;
 }
-.logo-main{font-size:15px;font-weight:900;color:#073b86}
-.logo-sub{font-size:10px;color:#667085}
+.logo-main{display:block;font-size:15px;font-weight:900;color:#073b86}
+.logo-sub{display:block;font-size:10px;color:#667085;font-weight:700}
 
-/* 🔥強化CTA */
+/* 🔥CTA強化（上書き） */
 .header-cta{display:flex;gap:8px}
 .header-cta a{
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
-  min-width:100px;
-  min-height:52px;
+  min-width:110px;
+  min-height:54px;
   padding:10px 12px;
   border-radius:14px;
   color:#fff;
   font-weight:900;
   font-size:14px;
   text-align:center;
-  box-shadow:0 5px 14px rgba(0,0,0,.25);
+  box-shadow:0 6px 16px rgba(0,0,0,.25);
 }
-.header-cta span{font-size:10px}
 .btn-phone{background:linear-gradient(135deg,#ff3b3b,#d71920)}
 .btn-line{background:linear-gradient(135deg,#06c755,#03a94d)}
 
 /* ===== ヒーロー ===== */
-.hero{position:relative}
+.hero{position:relative;background:#000}
+
+/* 🔥モモ左固定（被り防止） */
 .hero-copy{
   position:absolute;
   left:20px;
-  bottom:20px;
-  background:rgba(0,0,0,.6);
+  top:50%;
+  transform:translateY(-50%);
+  bottom:auto;
+  background:rgba(0,0,0,.65);
   color:#fff;
+  border-radius:14px;
   padding:10px 14px;
-  border-radius:12px;
-  max-width:260px;
+  max-width:240px;
 }
-.hero-copy h1{margin:0;font-size:22px}
-.hero-copy p{margin:4px 0 0;font-size:12px;color:#ffe082}
+.hero-copy h1{
+  margin:0;
+  font-size:28px;
+  line-height:1.2;
+  font-weight:950;
+}
+.hero-copy p{
+  margin:4px 0 0;
+  color:#ffe082;
+  font-size:13px;
+  font-weight:900;
+}
 
-/* ===== CTA画像 ===== */
+/* ===== CTA画像（ズレ防止） ===== */
 .cta-top,.final-cta{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:8px;
   padding:10px;
+  background:#fff;
+}
+.cta-top a,.final-cta a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:14px;
 }
 .cta-top img,.final-cta img{
+  width:100%;
   height:auto;
   object-fit:contain;
 }
 
-/* ===== テキストブロック ===== */
-.trust-box{
-  background:#fff7e6;
-  border:1px solid #ffd38a;
-  border-radius:14px;
-  padding:12px;
-  margin:10px;
-}
-.price-note{
-  background:#eef6ff;
-  border-left:5px solid #073b86;
-  margin:10px;
-  padding:10px;
-}
-.mini-text{
+/* ===== 既存そのまま ===== */
+.trust-bar{
+  background:#073b86;
+  color:#fff;
   text-align:center;
+  font-weight:900;
+  padding:10px 8px;
   font-size:14px;
-  margin:10px;
 }
 
-/* ===== 固定CTA ===== */
+.notice{
+  background:#fff2b8;
+  color:#111;
+  font-weight:900;
+  text-align:center;
+  padding:12px 10px;
+  border-top:1px solid #f4d34b;
+  border-bottom:1px solid #f4d34b;
+  font-size:14px;
+  line-height:1.5;
+}
+
+.block{max-width:900px;margin:18px auto;padding:0 14px}
+.block h2{margin:0 0 10px;font-size:22px;color:#073b86}
+.block p{margin:0;font-size:14px;line-height:1.8}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:900px;margin:18px auto;padding:0 10px}
+.card{background:#f8fafc;border:1px solid #e5e7eb;border-radius:14px;padding:14px 10px;text-align:center;font-weight:900;font-size:13px}
+.card span{display:block;color:#d71920;font-size:20px}
+
+.symptom-list{max-width:900px;margin:18px auto;padding:0 14px}
+.symptom-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.symptom{border:1px solid #e5e7eb;border-radius:14px;padding:12px;background:#fff;font-weight:800}
+
+.image-stack img{margin:0 auto 16px;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+
+.trust-box{background:#fff7e6;border:1px solid #ffd38a;border-radius:14px;padding:12px 14px;margin:4px 10px 16px}
+.price-note{background:#eef6ff;border-left:5px solid #073b86;max-width:900px;margin:14px auto;padding:14px}
+.mini-text{text-align:center;margin:12px}
+
+.footer{background:#071425;color:#dbeafe;text-align:center;padding:22px 10px}
+
 .fixed-cta{
   position:fixed;
   bottom:0;
@@ -122,19 +165,22 @@ a{text-decoration:none;color:inherit}
   right:0;
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:5px;
-  padding:5px;
+  gap:6px;
+  padding:6px;
   background:#fff;
 }
 .fix-btn{
-  text-align:center;
-  padding:12px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  border-radius:12px;
+  padding:10px;
   color:#fff;
-  border-radius:10px;
   font-weight:900;
 }
-.phone{background:#d71920}
-.line{background:#06c755}
+.fix-btn.phone{background:#d71920}
+.fix-btn.line{background:#06c755}
 </style>
 </head>
 
@@ -144,21 +190,15 @@ a{text-decoration:none;color:inherit}
   <div class="header-inner">
     <div class="logo">
       <span class="logo-mark">誠</span>
-      <div>
-        <div class="logo-main">誠和電気</div>
-        <div class="logo-sub">エアコンレスキュー松戸</div>
-      </div>
+      <span>
+        <span class="logo-main">誠和電気</span>
+        <span class="logo-sub">エアコンレスキュー松戸</span>
+      </span>
     </div>
 
     <div class="header-cta">
-      <a href="tel:0358794790" class="btn-phone">
-        📞 電話
-        <span>最短30分</span>
-      </a>
-      <a href="#" class="btn-line">
-        LINE
-        <span>写真OK</span>
-      </a>
+      <a class="btn-phone" href="tel:0358794790">📞 電話</a>
+      <a class="btn-line" href="#">LINE</a>
     </div>
   </div>
 </header>
@@ -173,47 +213,27 @@ a{text-decoration:none;color:inherit}
   </div>
 </section>
 
+<div class="trust-bar">松戸拠点｜関東一円対応｜作業前見積り｜修理後1年保証</div>
+
 <section class="cta-top">
   <a href="tel:0358794790"><img src="cta-phone.png"></a>
   <a href="#"><img src="cta-line.png"></a>
 </section>
 
-<div class="trust-box">
-✔ 作業前に必ずお見積り<br>
-✔ 追加費用は事前説明<br>
-✔ 無理な交換営業はしません
-</div>
+<div class="notice">冷えない・水漏れ・異音は早めの相談がおすすめです</div>
 
-<div class="price-note">
-見積り後の追加請求なし・事前説明徹底
-</div>
+<section class="image-stack">
+  <div class="trust-box">✔ 作業前見積り ✔ 明朗会計 ✔ 1年保証</div>
 
-<img src="price-aircon.jpg">
+  <img src="price-aircon.jpg">
+  <img src="area-matsudo-kanto.jpg">
 
-<div class="mini-text">
-松戸・関東一円対応
-</div>
+  <!-- 🔥修正済み -->
+  <img src="aircon-repair-cases-3pattern.jpg">
 
-<img src="area-matsudo-kanto.jpg">
-
-<div class="mini-text">
-最適な修理をご提案します
-</div>
-
-<!-- 🔥修正済み -->
-<img src="aircon-repair-cases-3pattern.jpg">
-
-<div class="mini-text">
-実際の作業事例です
-</div>
-
-<img src="review-customers.jpg">
-
-<div class="mini-text">
-お客様の声
-</div>
-
-<img src="guarantee-1year-aircon.jpg">
+  <img src="review-customers.jpg">
+  <img src="guarantee-1year-aircon.jpg">
+</section>
 
 <section class="final-cta">
   <a href="tel:0358794790"><img src="cta-phone.png"></a>
@@ -221,6 +241,10 @@ a{text-decoration:none;color:inherit}
 </section>
 
 </main>
+
+<footer class="footer">
+誠和電気 エアコンレスキュー
+</footer>
 
 <div class="fixed-cta">
   <a class="fix-btn phone" href="tel:0358794790">📞電話</a>
