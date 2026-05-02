@@ -8,48 +8,72 @@
 
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:system-ui;background:#fff;padding-bottom:90px}
+body{margin:0;background:#fff;font-family:system-ui;padding-bottom:88px}
 img{width:100%;display:block}
 a{text-decoration:none;color:inherit}
 
+/* ヘッダー */
 .header{position:sticky;top:0;background:#fff;z-index:999;border-bottom:1px solid #eee}
 .header-inner{display:flex;justify-content:space-between;align-items:center;padding:10px}
 .header-cta{display:flex;gap:6px}
-.header-cta img{height:50px}
+.header-cta img{height:48px}
 
+/* ヒーロー */
 .hero{position:relative}
 .hero-copy{
 position:absolute;
-left:16px;
+left:14px;
 top:50%;
 transform:translateY(-50%);
-background:rgba(0,0,0,.65);
+background:rgba(0,0,0,.6);
 color:#fff;
-padding:10px;
+padding:12px;
 border-radius:12px;
-max-width:220px;
+max-width:240px;
 }
 
-.section{max-width:900px;margin:24px auto;padding:0 14px}
-.mini-text{text-align:center;margin:10px 0;font-size:14px}
-.price-note{background:#eef6ff;padding:12px;border-left:4px solid #073b86;margin:10px 0}
-.trust-box{background:#fff7e6;padding:12px;border-radius:12px;margin:10px 0}
+/* セクション */
+.section{max-width:900px;margin:24px auto;padding:0 14px;overflow:hidden}
+.mini-text{text-align:center;margin:12px 0;font-size:14px;line-height:1.6}
+.price-note{background:#eef6ff;padding:12px;border-left:4px solid #073b86;margin:12px 0}
+.trust-box{background:#fff7e6;padding:12px;border-radius:12px;margin:12px 0}
 
-.cta-img a{display:block;margin-bottom:10px}
+/* CTA（←重要修正済み） */
+.cta-img{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:16px;
+margin:16px auto;
+}
+.cta-img img{
+width:100%;
+height:auto;
+}
 
+/* FAQ */
 .faq-item{
 border:1px solid #e5e7eb;
 border-radius:14px;
 padding:14px;
-margin-bottom:10px;
+margin-bottom:12px;
 background:#fff;
+line-height:1.6;
 }
 
+/* フッター */
 .footer{background:#071425;color:#fff;text-align:center;padding:20px}
 
+/* 下固定CTA */
 .fixed-cta{
 position:fixed;bottom:0;left:0;right:0;
 display:grid;grid-template-columns:1fr 1fr;
+z-index:9999;
+}
+.fix-btn img{width:100%}
+
+/* スマホ */
+@media(max-width:700px){
+.cta-img{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -73,43 +97,32 @@ display:grid;grid-template-columns:1fr 1fr;
 <img src="hero-aircon.jpg">
 <div class="hero-copy">
 <h1>最短30分対応</h1>
-<p>今すぐご相談ください</p>
+<p>まずはご相談ください</p>
 </div>
 </section>
 
-<!-- 安心テキスト（ここに入れるのが正解） -->
-<div style="
-text-align:center;
-font-size:14px;
-padding:14px;
-background:#f8fafc;
-font-weight:700;
-border-top:1px solid #eee;
-border-bottom:1px solid #eee;
-line-height:1.7;
-">
-📞 お電話は対応中で出られない場合があります。<br>
-<span style="color:#06c755;font-weight:900;">
-LINEならすぐ確認できます（写真送るだけOK）
-</span>
+<!-- 注意文 -->
+<div style="text-align:center;font-size:14px;padding:12px;background:#f8fafc;font-weight:700;">
+📞 お電話は繋がらない場合があります。<br>
+LINE・SMSからのご連絡も可能です。
 </div>
 
-<p style="text-align:center;font-size:13px;color:#555;margin:10px 0;">
-※無理な営業は行いません。まずは修理できるかを確認します。
+<p style="text-align:center;font-size:13px;color:#555;">
+※無理な営業は行いません。まずは修理可能か確認します。
 </p>
 
-<!-- CTA -->
+<!-- CTA（1回目） -->
 <div class="section cta-img">
 <a href="tel:0358794790"><img src="cta-phone.png"></a>
 <a href="#"><img src="cta-line.png"></a>
 </div>
 
-<!-- ビフォアフ -->
+<!-- ビフォーアフター -->
 <section class="section">
 <h2>作業実績（ビフォーアフター）</h2>
 <img src="aircon-repair-cases-3pattern.jpg">
 <p class="mini-text">
-冷えない・水漏れ・異音など、原因を特定してその場で改善します。
+冷えない・水漏れ・異音など、原因を特定しその場で改善します。
 </p>
 </section>
 
@@ -127,7 +140,7 @@ LINEならすぐ確認できます（写真送るだけOK）
 <section class="section">
 <img src="price-aircon.jpg">
 <div class="price-note">
-💰 工賃：10,000〜15,000円（事前説明あり）
+工賃は内容により異なります。事前説明を徹底しています。
 </div>
 </section>
 
@@ -138,12 +151,6 @@ LINEならすぐ確認できます（写真送るだけOK）
 松戸市中心に関東一円対応
 </p>
 </section>
-
-<!-- CTA -->
-<div class="section cta-img">
-<a href="tel:0358794790"><img src="cta-phone.png"></a>
-<a href="#"><img src="cta-line.png"></a>
-</div>
 
 <!-- 口コミ -->
 <section class="section">
@@ -160,39 +167,35 @@ LINEならすぐ確認できます（写真送るだけOK）
 
 <!-- FAQ -->
 <section class="section">
-
-<h2 style="color:#073b86;text-align:center;">よくある質問</h2>
+<h2 style="text-align:center;color:#073b86;">よくある質問</h2>
 
 <div class="faq-item">
 <strong>エアコンが冷えない原因は？</strong>
-<p>ガス漏れ・室外機など複数原因があります。現地で特定します。</p>
+<p>ガス漏れ・室外機・基板など複数原因。現地で特定します。</p>
 </div>
 
 <div class="faq-item">
 <strong>水漏れはすぐ直る？</strong>
-<p>ドレン詰まりなら即改善可能。放置はNGです。</p>
+<p>ドレン詰まりなら即改善可能。放置NGです。</p>
 </div>
 
 <div class="faq-item">
-<strong>料金は？</strong>
-<p>必ず事前見積り→了承後作業です。</p>
+<strong>料金はいくら？</strong>
+<p>事前見積り→了承後作業なので安心です。</p>
 </div>
 
 <div class="faq-item">
-<strong>どのくらいで来る？</strong>
+<strong>どれくらいで来る？</strong>
 <p>最短30分〜対応可能です。</p>
 </div>
 
-<div style="margin-top:16px;">
-<a href="tel:0358794790" style="display:block;background:#d71920;color:#fff;padding:16px;text-align:center;border-radius:14px;margin-bottom:10px;">
-📞 今すぐ電話する
-</a>
-<a href="#" style="display:block;background:#06c755;color:#fff;padding:16px;text-align:center;border-radius:14px;">
-LINEで相談
-</a>
-</div>
-
 </section>
+
+<!-- CTA（最後だけ） -->
+<div class="section cta-img">
+<a href="tel:0358794790"><img src="cta-phone.png"></a>
+<a href="#"><img src="cta-line.png"></a>
+</div>
 
 </main>
 
