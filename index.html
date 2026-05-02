@@ -4,8 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>松戸のエアコン修理｜誠和電気 エアコンレスキュー｜冷えない・水漏れ・異音対応</title>
-<meta name="description" content="松戸拠点のエアコン修理なら誠和電気。最短30分対応・見積り無料・1年保証。関東一円対応。">
+<title>松戸のエアコン修理｜誠和電気 エアコンレスキュー</title>
 
 <style>
 *{box-sizing:border-box}
@@ -13,75 +12,45 @@ body{margin:0;font-family:system-ui;background:#fff;padding-bottom:90px}
 img{width:100%;display:block}
 a{text-decoration:none;color:inherit}
 
-/* ===== ヘッダー ===== */
-.header{position:sticky;top:0;background:#fff;z-index:999;border-bottom:1px solid #ddd}
+.header{position:sticky;top:0;background:#fff;z-index:999;border-bottom:1px solid #eee}
 .header-inner{display:flex;justify-content:space-between;align-items:center;padding:10px}
+.header-cta{display:flex;gap:6px}
+.header-cta img{height:50px}
 
-.header-cta{display:flex;gap:8px}
-.header-cta a{
-display:flex;align-items:center;justify-content:center;
-min-width:120px;height:56px;
-border-radius:14px;
-color:#fff;font-weight:900;
-box-shadow:0 6px 16px rgba(0,0,0,.25);
-}
-.btn-phone{background:#d71920}
-.btn-line{background:#06c755}
-
-/* ===== ヒーロー ===== */
 .hero{position:relative}
 .hero-copy{
 position:absolute;
-left:20px;
+left:16px;
 top:50%;
 transform:translateY(-50%);
 background:rgba(0,0,0,.65);
 color:#fff;
-padding:12px;
+padding:10px;
 border-radius:12px;
-max-width:240px;
+max-width:220px;
 }
 
-/* ===== セクション ===== */
-.section{max-width:900px;margin:28px auto;padding:0 14px}
+.section{max-width:900px;margin:24px auto;padding:0 14px}
 .mini-text{text-align:center;margin:10px 0;font-size:14px}
 .price-note{background:#eef6ff;padding:12px;border-left:4px solid #073b86;margin:10px 0}
-.trust-box{background:#fff7e6;padding:12px;border-radius:10px;margin:10px 0}
+.trust-box{background:#fff7e6;padding:12px;border-radius:12px;margin:10px 0}
 
-/* ===== CTA ===== */
-.cta{margin:16px 0}
-.cta a{
-display:block;
-text-align:center;
-padding:16px;
-border-radius:16px;
-font-weight:900;
-margin-bottom:10px;
-color:#fff;
-}
-.cta-phone{background:#d71920}
-.cta-line{background:#06c755}
+.cta-img a{display:block;margin-bottom:10px}
 
-/* ===== FAQ ===== */
 .faq-item{
-border:1px solid #ddd;
-border-radius:12px;
+border:1px solid #e5e7eb;
+border-radius:14px;
 padding:14px;
-margin-top:10px;
+margin-bottom:10px;
 background:#fff;
 }
 
-/* ===== フッター ===== */
 .footer{background:#071425;color:#fff;text-align:center;padding:20px}
 
-/* 固定CTA */
 .fixed-cta{
 position:fixed;bottom:0;left:0;right:0;
 display:grid;grid-template-columns:1fr 1fr;
 }
-.fix-btn{padding:14px;text-align:center;color:#fff;font-weight:900}
-.phone{background:#d71920}
-.line{background:#06c755}
 </style>
 </head>
 
@@ -91,8 +60,8 @@ display:grid;grid-template-columns:1fr 1fr;
 <div class="header-inner">
 <div>誠和電気 エアコンレスキュー</div>
 <div class="header-cta">
-<a class="btn-phone" href="tel:0358794790">📞 電話</a>
-<a class="btn-line" href="#">LINE</a>
+<a href="tel:0358794790"><img src="cta-phone.png"></a>
+<a href="#"><img src="cta-line.png"></a>
 </div>
 </div>
 </header>
@@ -108,13 +77,34 @@ display:grid;grid-template-columns:1fr 1fr;
 </div>
 </section>
 
-<!-- CTA（最初） -->
-<div class="section cta">
-<a href="tel:0358794790" class="cta-phone">📞 今すぐ電話する</a>
-<a href="#" class="cta-line">LINEで相談する</a>
+<!-- 安心テキスト（ここに入れるのが正解） -->
+<div style="
+text-align:center;
+font-size:14px;
+padding:14px;
+background:#f8fafc;
+font-weight:700;
+border-top:1px solid #eee;
+border-bottom:1px solid #eee;
+line-height:1.7;
+">
+📞 お電話は対応中で出られない場合があります。<br>
+<span style="color:#06c755;font-weight:900;">
+LINEならすぐ確認できます（写真送るだけOK）
+</span>
 </div>
 
-<!-- ★ビフォーアフター（最優先） -->
+<p style="text-align:center;font-size:13px;color:#555;margin:10px 0;">
+※無理な営業は行いません。まずは修理できるかを確認します。
+</p>
+
+<!-- CTA -->
+<div class="section cta-img">
+<a href="tel:0358794790"><img src="cta-phone.png"></a>
+<a href="#"><img src="cta-line.png"></a>
+</div>
+
+<!-- ビフォアフ -->
 <section class="section">
 <h2>作業実績（ビフォーアフター）</h2>
 <img src="aircon-repair-cases-3pattern.jpg">
@@ -123,12 +113,12 @@ display:grid;grid-template-columns:1fr 1fr;
 </p>
 </section>
 
-<!-- 安心 -->
+<!-- 信頼 -->
 <section class="section">
 <div class="trust-box">
-✔ 作業前に必ず見積り<br>
-✔ 追加費用は事前説明<br>
-✔ 無理な交換営業なし<br>
+✔ 作業前見積り<br>
+✔ 追加費用なし<br>
+✔ 無理な営業なし<br>
 ✔ 修理後1年保証
 </div>
 </section>
@@ -137,7 +127,7 @@ display:grid;grid-template-columns:1fr 1fr;
 <section class="section">
 <img src="price-aircon.jpg">
 <div class="price-note">
-工賃は内容により異なります。必ず事前に説明します。
+💰 工賃：10,000〜15,000円（事前説明あり）
 </div>
 </section>
 
@@ -145,21 +135,21 @@ display:grid;grid-template-columns:1fr 1fr;
 <section class="section">
 <img src="area-matsudo-kanto.jpg">
 <p class="mini-text">
-松戸市を中心に関東一円対応可能です。
+松戸市中心に関東一円対応
 </p>
 </section>
 
-<!-- CTA（中間） -->
-<div class="section cta">
-<a href="tel:0358794790" class="cta-phone">📞 今すぐ相談する</a>
-<a href="#" class="cta-line">LINEで相談</a>
+<!-- CTA -->
+<div class="section cta-img">
+<a href="tel:0358794790"><img src="cta-phone.png"></a>
+<a href="#"><img src="cta-line.png"></a>
 </div>
 
 <!-- 口コミ -->
 <section class="section">
 <img src="review-customers.jpg">
 <p class="mini-text">
-「すぐ来て助かった」「説明が丁寧で安心」
+「すぐ来て助かった」「丁寧で安心」
 </p>
 </section>
 
@@ -170,30 +160,39 @@ display:grid;grid-template-columns:1fr 1fr;
 
 <!-- FAQ -->
 <section class="section">
-<h2>よくある質問</h2>
+
+<h2 style="color:#073b86;text-align:center;">よくある質問</h2>
 
 <div class="faq-item">
 <strong>エアコンが冷えない原因は？</strong>
-<p>ガス漏れ・室外機・基板など複数の原因があります。</p>
+<p>ガス漏れ・室外機など複数原因があります。現地で特定します。</p>
 </div>
 
 <div class="faq-item">
-<strong>料金は事前に分かる？</strong>
-<p>必ず作業前に説明します。</p>
+<strong>水漏れはすぐ直る？</strong>
+<p>ドレン詰まりなら即改善可能。放置はNGです。</p>
 </div>
 
 <div class="faq-item">
-<strong>対応エリアは？</strong>
-<p>関東一円対応可能です。</p>
+<strong>料金は？</strong>
+<p>必ず事前見積り→了承後作業です。</p>
+</div>
+
+<div class="faq-item">
+<strong>どのくらいで来る？</strong>
+<p>最短30分〜対応可能です。</p>
+</div>
+
+<div style="margin-top:16px;">
+<a href="tel:0358794790" style="display:block;background:#d71920;color:#fff;padding:16px;text-align:center;border-radius:14px;margin-bottom:10px;">
+📞 今すぐ電話する
+</a>
+<a href="#" style="display:block;background:#06c755;color:#fff;padding:16px;text-align:center;border-radius:14px;">
+LINEで相談
+</a>
 </div>
 
 </section>
-
-<!-- 最終CTA -->
-<div class="section cta">
-<a href="tel:0358794790" class="cta-phone">📞 今すぐ電話する（最短30分）</a>
-<a href="#" class="cta-line">LINEで相談（無料）</a>
-</div>
 
 </main>
 
@@ -202,8 +201,8 @@ display:grid;grid-template-columns:1fr 1fr;
 </footer>
 
 <div class="fixed-cta">
-<a class="fix-btn phone" href="tel:0358794790">📞電話</a>
-<a class="fix-btn line" href="#">LINE</a>
+<a href="tel:0358794790"><img src="cta-phone.png"></a>
+<a href="#"><img src="cta-line.png"></a>
 </div>
 
 </body>
