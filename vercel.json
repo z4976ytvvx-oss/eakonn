@@ -1,0 +1,8 @@
+{
+  "routes": [
+    {
+      "src": "/katsushika-kamakura/?",
+      "dest": "/katsushika-kamakura/index.html"
+    }
+  ]
+}
