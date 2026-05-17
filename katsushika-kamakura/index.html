@@ -62,24 +62,24 @@ a{
 }
 
 .header-btns a{
-  width:90px;
-  height:44px;
-  border-radius:12px;
+  min-width:92px;
+  height:46px;
+  border-radius:999px;
   color:#fff;
   display:flex;
-  flex-direction:column;
   align-items:center;
   justify-content:center;
-  font-size:12px;
-  font-weight:900;
+  font-size:13px;
+  font-weight:1000;
+  box-shadow:0 6px 16px rgba(0,0,0,.18);
 }
 
 .phone-btn{
-  background:#d71920;
+  background:linear-gradient(135deg,#ff4b4b,#d71920);
 }
 
 .line-btn{
-  background:#06c755;
+  background:linear-gradient(135deg,#06c755,#00a63f);
 }
 
 .hero{
@@ -89,6 +89,7 @@ a{
 
 .hero-bg{
   min-height:720px;
+
   background-image:
   linear-gradient(
     90deg,
@@ -97,7 +98,7 @@ a{
     rgba(255,255,255,.15) 62%,
     rgba(255,255,255,0) 100%
   ),
-  url("./hero-honpoman.jpg");
+  url("../hero-honpoman.jpg.png");
 
   background-size:cover;
   background-position:center right;
@@ -169,7 +170,7 @@ a{
 .hero-cta a{
   width:260px;
   height:72px;
-  border-radius:18px;
+  border-radius:999px;
   color:#fff;
   display:flex;
   flex-direction:column;
@@ -177,14 +178,16 @@ a{
   align-items:center;
   font-size:24px;
   font-weight:1000;
+  box-shadow:0 12px 26px rgba(0,0,0,.24);
+  border:3px solid rgba(255,255,255,.75);
 }
 
 .hero-phone{
-  background:#d71920;
+  background:linear-gradient(135deg,#ff4b4b,#d71920);
 }
 
 .hero-line{
-  background:#06c755;
+  background:linear-gradient(135deg,#06c755,#00a63f);
 }
 
 .hero-cta small{
@@ -299,21 +302,23 @@ a{
   right:0;
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:4px;
-  padding:4px;
-  background:#fff;
+  gap:6px;
+  padding:6px;
+  background:rgba(255,255,255,.96);
   z-index:9999;
+  box-shadow:0 -6px 18px rgba(0,0,0,.16);
 }
 
 .fixed a{
   height:58px;
-  border-radius:12px;
+  border-radius:999px;
   color:#fff;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
   font-weight:1000;
+  border:2px solid rgba(255,255,255,.75);
 }
 
 .fixed small{
@@ -335,7 +340,7 @@ a{
     rgba(255,255,255,.15) 72%,
     rgba(255,255,255,0) 100%
   ),
-  url("./hero-honpoman.jpg");
+  url("../hero-honpoman.jpg.png");
 
   background-size:cover;
   background-position:center top;
@@ -386,90 +391,110 @@ a{
 <body>
 
 <header class="header">
-  <div class="header-inner">
 
-    <div>
-      <div class="logo-main">
-        関東エアコン本舗
-      </div>
+<div class="header-inner">
 
-      <div class="logo-sub">
-        本舗マンが即対応
-      </div>
-    </div>
+<div>
 
-    <div class="header-btns">
-      <a class="phone-btn" href="tel:0358794790">
-        📞 電話
-      </a>
+<div class="logo-main">
+関東エアコン本舗
+</div>
 
-      <a class="line-btn" href="https://lin.ee/Nhppoyr">
-        LINE
-      </a>
-    </div>
+<div class="logo-sub">
+本舗マンが即対応
+</div>
 
-  </div>
+</div>
+
+<div class="header-btns">
+
+<a class="phone-btn" href="tel:0358794790">
+📞 電話
+</a>
+
+<a class="line-btn" href="https://lin.ee/Nhppoyr">
+LINE
+</a>
+
+</div>
+
+</div>
+
 </header>
 
 <section class="hero">
 
-  <div class="hero-bg">
+<div class="hero-bg">
 
-    <div class="hero-inner">
+<div class="hero-inner">
 
-      <div class="badge">
-        葛飾区鎌倉・柴又・高砂・金町周辺対応
-      </div>
+<div class="badge">
+葛飾区鎌倉・柴又・高砂・金町周辺対応
+</div>
 
-      <h1>
-        <span class="red">
-          エアコンが冷えない…
-        </span>
-        <br>
+<h1>
 
-        水漏れ・異音も
-        <br>
+<span class="red">
+エアコンが冷えない…
+</span>
 
-        <span class="blue">
-          本舗マンが即対応
-        </span>
-      </h1>
+<br>
 
-      <div class="hero-text">
-        作業前見積り・明朗会計。<br>
-        無理な交換営業はせず、
-        まず修理できるか確認します。
-      </div>
+水漏れ・異音も
 
-      <div class="problem-list">
-        <span>冷えない</span>
-        <span>水漏れ</span>
-        <span>異音</span>
-        <span>風が出ない</span>
-        <span>ガス漏れ点検</span>
-      </div>
+<br>
 
-      <div class="hero-cta">
+<span class="blue">
+本舗マンが即対応
+</span>
 
-        <a class="hero-phone" href="tel:0358794790">
-          📞 今すぐ電話
-          <small>
-            9:00〜20:00
-          </small>
-        </a>
+</h1>
 
-        <a class="hero-line" href="https://lin.ee/Nhppoyr">
-          LINE相談
-          <small>
-            写真を送るだけOK
-          </small>
-        </a>
+<div class="hero-text">
 
-      </div>
+作業前見積り・明朗会計。<br>
+無理な交換営業はせず、
+まず修理できるか確認します。
 
-    </div>
+</div>
 
-  </div>
+<div class="problem-list">
+
+<span>冷えない</span>
+<span>水漏れ</span>
+<span>異音</span>
+<span>風が出ない</span>
+<span>ガス漏れ点検</span>
+
+</div>
+
+<div class="hero-cta">
+
+<a class="hero-phone" href="tel:0358794790">
+
+📞 今すぐ電話
+
+<small>
+9:00〜20:00
+</small>
+
+</a>
+
+<a class="hero-line" href="https://lin.ee/Nhppoyr">
+
+LINE相談
+
+<small>
+写真を送るだけOK
+</small>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
@@ -484,28 +509,34 @@ a{
 <div class="grid">
 
 <div class="card">
+
 <strong>
 冷えない
 </strong>
 
 ガス漏れ・室外機・基板など原因を確認します。
+
 </div>
 
 <div class="card">
+
 <strong>
 水漏れ
 </strong>
 
 ドレン詰まりなど、
 放置すると悪化する場合があります。
+
 </div>
 
 <div class="card">
+
 <strong>
 異音
 </strong>
 
 ファン・モーターなど内部不良を点検します。
+
 </div>
 
 </div>
@@ -539,6 +570,7 @@ a{
 <div class="price-grid">
 
 <div class="price">
+
 <b>
 エアコン修理・点検
 </b>
@@ -554,6 +586,7 @@ a{
 </div>
 
 <div class="price">
+
 <b>
 交換工事
 </b>
@@ -594,29 +627,35 @@ a{
 </h2>
 
 <div class="faq">
+
 <strong>
 高額請求が不安です。
 </strong>
 
 作業前に料金をご説明し、
 ご了承後に作業します。
+
 </div>
 
 <div class="faq">
+
 <strong>
 水漏れはすぐ直りますか？
 </strong>
 
 ドレン詰まりなどであれば、
 その場で改善できる場合があります。
+
 </div>
 
 <div class="faq">
+
 <strong>
 営業時間は？
 </strong>
 
 受付時間は9:00〜20:00です。
+
 </div>
 
 </section>
@@ -633,17 +672,23 @@ a{
 <div class="fixed">
 
 <a class="phone-btn" href="tel:0358794790">
+
 📞 電話
+
 <small>
 今すぐ相談
 </small>
+
 </a>
 
 <a class="line-btn" href="https://lin.ee/Nhppoyr">
+
 LINE
+
 <small>
 写真OK
 </small>
+
 </a>
 
 </div>
