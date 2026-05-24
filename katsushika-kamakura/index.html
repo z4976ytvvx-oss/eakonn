@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>葛飾区のエアコン修理｜関東エアコン本舗</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -13,10 +14,11 @@ box-sizing:border-box;
 }
 
 body{
-font-family:sans-serif;
-background:#f4f9ff;
+font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+background:#f4f8fc;
 color:#222;
 line-height:1.7;
+padding-bottom:120px;
 }
 
 img{
@@ -32,23 +34,23 @@ margin:auto;
 
 header{
 background:#fff;
-padding:18px 0;
 position:sticky;
 top:0;
 z-index:999;
-box-shadow:0 2px 10px rgba(0,0,0,.05);
+box-shadow:0 2px 12px rgba(0,0,0,.08);
 }
 
 .header-inner{
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:18px 0;
 }
 
 .logo{
-font-size:34px;
+font-size:30px;
 font-weight:900;
-color:#0b3d91;
+color:#0b4ea2;
 }
 
 .top-buttons{
@@ -57,16 +59,16 @@ gap:12px;
 }
 
 .btn{
-padding:14px 28px;
+padding:14px 24px;
 border-radius:999px;
-font-weight:bold;
+font-weight:900;
 text-decoration:none;
 color:#fff;
-display:inline-block;
+font-size:16px;
 }
 
 .tel-btn{
-background:#ff3131;
+background:#ff3b30;
 }
 
 .line-btn{
@@ -80,36 +82,38 @@ padding:40px 0;
 .hero-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:24px;
+gap:30px;
 align-items:center;
 }
 
 .hero-text h1{
-font-size:52px;
+font-size:56px;
 line-height:1.2;
-margin-bottom:20px;
 font-weight:900;
-color:#0b3d91;
+margin-bottom:20px;
+color:#0b4ea2;
 }
 
 .hero-text p{
 font-size:22px;
-margin-bottom:24px;
+margin-bottom:30px;
 }
 
 .hero-image img{
 border-radius:24px;
+box-shadow:0 8px 30px rgba(0,0,0,.12);
 }
 
 .section{
-padding:70px 0;
+padding:80px 0;
 }
 
 .section-title{
 font-size:42px;
 font-weight:900;
 margin-bottom:40px;
-color:#0b3d91;
+color:#0b4ea2;
+text-align:center;
 }
 
 .cards{
@@ -122,11 +126,11 @@ gap:24px;
 background:#fff;
 border-radius:24px;
 overflow:hidden;
-box-shadow:0 4px 20px rgba(0,0,0,.08);
+box-shadow:0 6px 24px rgba(0,0,0,.08);
 }
 
 .card img{
-height:220px;
+height:240px;
 object-fit:cover;
 }
 
@@ -136,7 +140,11 @@ padding:24px;
 
 .card-body h3{
 font-size:24px;
-margin-bottom:10px;
+margin-bottom:12px;
+}
+
+.card-body p{
+font-size:16px;
 }
 
 .price-box{
@@ -149,6 +157,8 @@ gap:24px;
 background:#fff;
 padding:40px;
 border-radius:24px;
+box-shadow:0 6px 24px rgba(0,0,0,.08);
+text-align:center;
 }
 
 .price-card h3{
@@ -157,9 +167,62 @@ margin-bottom:20px;
 }
 
 .price{
-font-size:60px;
+font-size:58px;
 font-weight:900;
-color:#ff3131;
+color:#ff3b30;
+}
+
+.cta-area{
+padding:80px 0;
+background:#eaf4ff;
+}
+
+.cta-box{
+background:#fff;
+border-radius:30px;
+padding:40px;
+text-align:center;
+box-shadow:0 8px 30px rgba(0,0,0,.08);
+}
+
+.cta-box img{
+border-radius:24px;
+margin-bottom:30px;
+}
+
+.cta-box h2{
+font-size:42px;
+margin-bottom:20px;
+color:#0b4ea2;
+}
+
+.cta-box p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.cta-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.cta-buttons a{
+padding:20px 34px;
+border-radius:999px;
+font-size:24px;
+font-weight:900;
+text-decoration:none;
+color:#fff;
+}
+
+.phone-big{
+background:#ff3b30;
+}
+
+.line-big{
+background:#06c755;
 }
 
 .cta-fixed{
@@ -174,15 +237,15 @@ z-index:9999;
 .cta-fixed a{
 flex:1;
 text-align:center;
-padding:22px;
-font-size:28px;
+padding:20px;
+font-size:26px;
 font-weight:900;
 text-decoration:none;
 color:#fff;
 }
 
 .cta-phone{
-background:#ff3131;
+background:#ff3b30;
 }
 
 .cta-line{
@@ -211,7 +274,20 @@ font-size:38px;
 font-size:32px;
 }
 
+.cta-box h2{
+font-size:30px;
 }
+
+.cta-box p{
+font-size:18px;
+}
+
+.cta-buttons a{
+width:100%;
+}
+
+}
+
 </style>
 </head>
 
@@ -225,8 +301,13 @@ font-size:32px;
 </div>
 
 <div class="top-buttons">
-<a href="tel:0000000000" class="btn tel-btn">電話</a>
-<a href="#" class="btn line-btn">LINE</a>
+<a href="tel:0000000000" class="btn tel-btn">
+📞 電話
+</a>
+
+<a href="#" class="btn line-btn">
+LINE
+</a>
 </div>
 
 </div>
@@ -236,21 +317,28 @@ font-size:32px;
 <div class="container hero-grid">
 
 <div class="hero-text">
+
 <h1>
 葛飾区の<br>
 エアコン修理なら<br>
-即日対応
+最短30分対応
 </h1>
 
 <p>
 冷えない・水漏れ・異音<br>
-最短30分で訪問します
+即日訪問でスピード修理
 </p>
 
 <div class="top-buttons">
-<a href="tel:0000000000" class="btn tel-btn">今すぐ電話</a>
-<a href="#" class="btn line-btn">LINE相談</a>
+<a href="tel:0000000000" class="btn tel-btn">
+今すぐ電話
+</a>
+
+<a href="#" class="btn line-btn">
+LINE相談
+</a>
 </div>
+
 </div>
 
 <div class="hero-image">
@@ -261,10 +349,11 @@ font-size:32px;
 </section>
 
 <section class="section">
+
 <div class="container">
 
 <h2 class="section-title">
-こんな症状ありませんか？
+こんなお悩みありませんか？
 </h2>
 
 <div class="cards">
@@ -281,7 +370,7 @@ font-size:32px;
 <img src="./water-leak-katsushika-aircon.png">
 <div class="card-body">
 <h3>水漏れ</h3>
-<p>ポタポタ水が落ちる</p>
+<p>室内機から水が落ちる</p>
 </div>
 </div>
 
@@ -289,16 +378,18 @@ font-size:32px;
 <img src="./symptom-noise-katsushika-aircon.png">
 <div class="card-body">
 <h3>異音</h3>
-<p>ガタガタ音がする</p>
+<p>ガタガタ・ブーン音がする</p>
 </div>
 </div>
 
 </div>
 
 </div>
+
 </section>
 
 <section class="section">
+
 <div class="container">
 
 <h2 class="section-title">
@@ -319,7 +410,7 @@ font-size:32px;
 <img src="./fast-arrival-katsushika-aircon.png">
 <div class="card-body">
 <h3>最短30分訪問</h3>
-<p>葛飾区密着対応</p>
+<p>葛飾区密着で即対応</p>
 </div>
 </div>
 
@@ -334,9 +425,11 @@ font-size:32px;
 </div>
 
 </div>
+
 </section>
 
 <section class="section">
+
 <div class="container">
 
 <h2 class="section-title">
@@ -346,7 +439,7 @@ font-size:32px;
 <div class="price-box">
 
 <div class="price-card">
-<h3>エアコン修理・点検</h3>
+<h3>修理・点検</h3>
 <div class="price">10,000円〜</div>
 </div>
 
@@ -358,9 +451,11 @@ font-size:32px;
 </div>
 
 </div>
+
 </section>
 
 <section class="section">
+
 <div class="container">
 
 <h2 class="section-title">
@@ -373,7 +468,7 @@ font-size:32px;
 <img src="./trust-explanation-katsushika-aircon.png">
 <div class="card-body">
 <h3>明朗会計</h3>
-<p>事前説明後に作業</p>
+<p>事前説明後に作業します</p>
 </div>
 </div>
 
@@ -381,7 +476,7 @@ font-size:32px;
 <img src="./professional-repair-work-katsushika.png">
 <div class="card-body">
 <h3>プロ対応</h3>
-<p>経験豊富なスタッフ</p>
+<p>経験豊富なスタッフ対応</p>
 </div>
 </div>
 
@@ -389,16 +484,52 @@ font-size:32px;
 <img src="./repair-complete-katsushika-aircon.png">
 <div class="card-body">
 <h3>修理後も安心</h3>
-<p>丁寧にサポート</p>
+<p>丁寧にサポートします</p>
 </div>
 </div>
 
 </div>
 
 </div>
+
+</section>
+
+<section class="cta-area">
+
+<div class="container">
+
+<div class="cta-box">
+
+<img src="./phone-support-cta-katsushika.png">
+
+<h2>
+まずはお気軽にご相談ください
+</h2>
+
+<p>
+電話・LINEどちらでも受付中
+</p>
+
+<div class="cta-buttons">
+
+<a href="tel:0000000000" class="phone-big">
+📞 今すぐ電話
+</a>
+
+<a href="#" class="line-big">
+LINE無料相談
+</a>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 <div class="cta-fixed">
+
 <a href="tel:0000000000" class="cta-phone">
 📞 電話
 </a>
@@ -406,6 +537,7 @@ font-size:32px;
 <a href="#" class="cta-line">
 LINE相談
 </a>
+
 </div>
 
 </body>
