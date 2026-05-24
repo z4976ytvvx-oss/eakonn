@@ -1,26 +1,15 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-<title>葛飾区のエアコン修理｜最短30分対応｜関東エアコン本舗</title>
-
 <style>
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif;
 }
 
 body{
-font-family:
-"Hiragino Sans",
-"Yu Gothic",
-sans-serif;
-background:#eef3f8;
+background:#eef2f7;
 color:#111;
+padding-bottom:120px;
 }
 
 img{
@@ -28,115 +17,122 @@ width:100%;
 display:block;
 }
 
-a{
-text-decoration:none;
-}
-
 .header{
-position:sticky;
-top:0;
-z-index:999;
 background:#fff;
-padding:24px 40px;
+padding:22px 20px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-box-shadow:0 4px 20px rgba(0,0,0,.05);
+gap:20px;
+position:sticky;
+top:0;
+z-index:999;
+box-shadow:0 4px 18px rgba(0,0,0,.08);
 }
 
-.logo h1{
-font-size:62px;
-line-height:1;
-font-weight:1000;
-color:#0b4ea2;
-letter-spacing:-3px;
+.logo-wrap{
+display:flex;
+flex-direction:column;
 }
 
-.logo p{
-margin-top:8px;
-font-size:20px;
+.logo{
+font-size:58px;
 font-weight:900;
+line-height:1;
+color:#0b56b3;
+letter-spacing:-2px;
+}
+
+.logo-sub{
+margin-top:10px;
+font-size:24px;
+font-weight:700;
 }
 
 .header-center{
-font-size:34px;
-font-weight:1000;
+font-size:42px;
+font-weight:900;
+text-align:center;
+line-height:1.3;
 }
 
 .header-center span{
-font-size:74px;
-color:#ff1659;
+font-size:82px;
+color:#ff1f59;
 }
 
 .header-buttons{
 display:flex;
-gap:20px;
+gap:18px;
 }
 
 .header-btn{
-padding:24px 42px;
+padding:24px 38px;
 border-radius:999px;
-font-size:30px;
-font-weight:1000;
+font-size:34px;
+font-weight:900;
 color:#fff;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
 }
 
-.phone-btn{
-background:linear-gradient(135deg,#ff6633,#ff0033);
+.red{
+background:linear-gradient(135deg,#ff6a3d,#ff0048);
 }
 
-.line-btn{
-background:#00c73c;
+.green{
+background:linear-gradient(135deg,#18d94e,#00b63e);
 }
 
 .section{
-max-width:1450px;
-margin:42px auto;
-padding:0 20px;
+padding:28px 20px;
 }
 
 .hero-card{
 position:relative;
 overflow:hidden;
-border-radius:42px;
+border-radius:36px;
 background:#fff;
-box-shadow:0 10px 40px rgba(0,0,0,.08);
+box-shadow:0 12px 40px rgba(0,0,0,.08);
 }
 
 .hero-card img{
-display:block;
+width:100%;
 }
 
 .overlay-left{
 position:absolute;
-left:70px;
-top:50%;
-transform:translateY(-50%);
-width:40%;
+left:6%;
+top:12%;
+width:42%;
 }
 
 .overlay-right{
 position:absolute;
-right:70px;
-top:50%;
-transform:translateY(-50%);
+right:5%;
+top:16%;
 width:38%;
 }
 
 .overlay-title{
-font-size:88px;
-line-height:0.95;
-font-weight:1000;
-letter-spacing:-5px;
-color:#0b4ea2;
-margin-bottom:28px;
+font-size:76px;
+font-weight:900;
+line-height:1.05;
+color:#0b56b3;
+margin-bottom:26px;
+letter-spacing:-3px;
+}
+
+.overlay-title.pink{
+color:#ff1f59;
 }
 
 .overlay-text{
-font-size:28px;
-line-height:1.9;
-font-weight:900;
+font-size:34px;
+font-weight:800;
+line-height:1.7;
 margin-bottom:28px;
+color:#111;
 }
 
 .tags{
@@ -146,71 +142,67 @@ gap:14px;
 }
 
 .tags span{
-background:rgba(255,255,255,.95);
-padding:14px 20px;
-border-radius:999px;
-font-size:18px;
-font-weight:1000;
-box-shadow:0 4px 16px rgba(0,0,0,.08);
-}
-
-.cta-box{
-display:flex;
-gap:18px;
-margin-top:28px;
-}
-
-.cta-box a{
-padding:20px 34px;
+background:#fff;
+padding:16px 24px;
 border-radius:999px;
 font-size:26px;
-font-weight:1000;
-color:#fff;
+font-weight:800;
+box-shadow:0 6px 16px rgba(0,0,0,.08);
 }
 
-.cta-red{
-background:#ff2d2d;
+.warning{
+padding:70px 24px;
+text-align:center;
 }
 
-.cta-green{
-background:#00c73c;
+.warning h2{
+font-size:72px;
+line-height:1.2;
+font-weight:900;
+color:#ff1f59;
+margin-bottom:30px;
+}
+
+.warning p{
+font-size:36px;
+font-weight:700;
+line-height:1.8;
 }
 
 .area-box{
 background:#fff;
-padding:80px 50px;
-border-radius:42px;
+border-radius:34px;
+padding:60px 30px;
 text-align:center;
-box-shadow:0 10px 40px rgba(0,0,0,.08);
 }
 
-.area-box h2{
-font-size:72px;
-color:#0b4ea2;
-font-weight:1000;
+.area-title{
+font-size:66px;
+font-weight:900;
+color:#0b56b3;
 margin-bottom:24px;
 }
 
-.area-box p{
-font-size:28px;
-font-weight:900;
-margin-bottom:36px;
+.area-text{
+font-size:34px;
+font-weight:700;
+margin-bottom:30px;
 }
 
 .area-tags{
 display:flex;
-justify-content:center;
 flex-wrap:wrap;
-gap:14px;
+justify-content:center;
+gap:16px;
 }
 
 .area-tags span{
-background:#edf3ff;
-padding:14px 22px;
+background:#eef4ff;
+padding:16px 22px;
 border-radius:999px;
-font-size:18px;
-font-weight:1000;
-color:#0b4ea2;
+font-size:26px;
+font-weight:800;
+color:#0b56b3;
 }
 
 .bottom-fixed{
@@ -219,136 +211,118 @@ left:0;
 bottom:0;
 width:100%;
 display:flex;
+gap:12px;
+padding:12px;
+background:#fff;
 z-index:9999;
+box-shadow:0 -8px 30px rgba(0,0,0,.12);
 }
 
 .bottom-fixed a{
-width:50%;
-padding:26px 0;
+flex:1;
 text-align:center;
-font-size:34px;
-font-weight:1000;
+padding:28px 10px;
+border-radius:999px;
+font-size:40px;
+font-weight:900;
+text-decoration:none;
 color:#fff;
-}
-
-.bottom-phone{
-background:#ff2d2d;
-}
-
-.bottom-line{
-background:#00c73c;
 }
 
 @media(max-width:900px){
 
-.header{
-padding:18px;
-gap:10px;
+.logo{
+font-size:34px;
 }
 
-.logo h1{
-font-size:32px;
-}
-
-.logo p{
-font-size:12px;
+.logo-sub{
+font-size:14px;
 }
 
 .header-center{
-font-size:18px;
+font-size:20px;
 }
 
 .header-center span{
-font-size:44px;
-}
-
-.header-buttons{
-gap:10px;
+font-size:46px;
 }
 
 .header-btn{
-padding:14px 22px;
-font-size:18px;
+font-size:20px;
+padding:16px 20px;
 }
 
 .overlay-left,
 .overlay-right{
-left:34px !important;
-right:34px !important;
-width:auto;
-top:auto;
-bottom:34px;
-transform:none;
+width:46%;
 }
 
 .overlay-title{
-font-size:52px;
-line-height:1;
-margin-bottom:16px;
+font-size:38px;
+margin-bottom:14px;
 }
 
 .overlay-text{
 font-size:18px;
-line-height:1.7;
-margin-bottom:18px;
+margin-bottom:16px;
 }
 
 .tags span{
-font-size:13px;
+font-size:14px;
 padding:10px 14px;
 }
 
-.cta-box{
-flex-direction:column;
+.warning h2{
+font-size:38px;
 }
 
-.cta-box a{
-font-size:20px;
-text-align:center;
-}
-
-.area-box{
-padding:50px 24px;
-}
-
-.area-box h2{
-font-size:44px;
-}
-
-.area-box p{
+.warning p{
 font-size:18px;
-line-height:1.8;
+}
+
+.area-title{
+font-size:38px;
+}
+
+.area-text{
+font-size:18px;
+}
+
+.area-tags span{
+font-size:14px;
 }
 
 .bottom-fixed a{
-font-size:26px;
-padding:20px 0;
+font-size:22px;
+padding:18px 8px;
 }
 
 }
-
 </style>
-</head>
 
-<body>
+
+
+
 
 <header class="header">
 
-<div class="logo">
-<h1>関東エアコン本舗</h1>
-<p>葛飾区・柴又・高砂・金町周辺対応</p>
+<div class="logo-wrap">
+<div class="logo">関東エアコン本舗</div>
+<div class="logo-sub">葛飾区・柴又・高砂・金町周辺対応</div>
 </div>
 
 <div class="header-center">
-関東エリア巡回中！最短<span>30</span>分対応
+関東エリア巡回中！ 最短<span>30</span>分対応
 </div>
 
 <div class="header-buttons">
-<a href="tel:0358794790" class="header-btn phone-btn">📞 電話</a>
-<a href="https://lin.ee/Nhppoyr" class="header-btn line-btn">LINE相談</a>
+<a href="tel:0358794790" class="header-btn red">📞 電話</a>
+<a href="https://lin.ee/Nhppoyr" class="header-btn green">LINE相談</a>
 </div>
 
 </header>
+
+
 
 
 
@@ -361,8 +335,10 @@ padding:20px 0;
 <div class="overlay-left">
 
 <div class="overlay-title">
+エアコンが<br>
 冷えない…<br>
-水漏れ・異音も即対応
+水漏れ・異音も<br>
+即対応
 </div>
 
 <div class="overlay-text">
@@ -376,15 +352,13 @@ padding:20px 0;
 <span>無理な交換営業なし</span>
 </div>
 
-<div class="cta-box">
-<a href="tel:0358794790" class="cta-red">今すぐ電話</a>
-<a href="https://lin.ee/Nhppoyr" class="cta-green">LINE無料相談</a>
 </div>
 
-</div>
 </div>
 
 </section>
+
+
 
 
 
@@ -394,7 +368,7 @@ padding:20px 0;
 
 <img src="./not-cooling-katsushika-aircon.png">
 
-<div class="overlay-left">
+<div class="overlay-right">
 
 <div class="overlay-title">
 冷えない
@@ -416,6 +390,8 @@ padding:20px 0;
 </div>
 
 </section>
+
+
 
 
 
@@ -450,13 +426,15 @@ padding:20px 0;
 
 
 
+
+
 <section class="section">
 
 <div class="hero-card">
 
 <img src="./symptom-noise-katsushika-aircon.png">
 
-<div class="overlay-left">
+<div class="overlay-right">
 
 <div class="overlay-title">
 異音
@@ -478,6 +456,8 @@ padding:20px 0;
 </div>
 
 </section>
+
+
 
 
 
@@ -512,13 +492,15 @@ padding:20px 0;
 
 
 
+
+
 <section class="section">
 
 <div class="hero-card">
 
 <img src="./professional-repair-work-katsushika.png">
 
-<div class="overlay-left">
+<div class="overlay-right">
 
 <div class="overlay-title">
 原因確認後に作業
@@ -540,6 +522,41 @@ padding:20px 0;
 </div>
 
 </section>
+
+
+
+
+
+<section class="section">
+
+<div class="hero-card">
+
+<img src="./trust-explanation-katsushika-aircon.png">
+
+<div class="overlay-right">
+
+<div class="overlay-title pink">
+ぼったくり対策
+</div>
+
+<div class="overlay-text">
+説明なし作業・高額請求・<br>
+不安を煽る交換営業は行いません。
+</div>
+
+<div class="tags">
+<span>作業前料金説明</span>
+<span>追加請求なし</span>
+<span>相見積り歓迎</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
 
 
 
@@ -574,34 +591,22 @@ padding:20px 0;
 
 
 
-<section class="section">
 
-<div class="hero-card">
 
-<img src="./trust-explanation-katsushika-aircon.png">
+<section class="section warning">
 
-<div class="overlay-left">
+<h2>
+放置すると高額修理につながる場合があります
+</h2>
 
-<div class="overlay-title">
-ぼったくり対策
-</div>
-
-<div class="overlay-text">
-説明なし作業・高額請求・不安を煽る交換営業。<br>
-まずは症状だけでもご相談ください。
-</div>
-
-<div class="tags">
-<span>相見積り歓迎</span>
-<span>作業前料金説明</span>
-<span>追加請求なし</span>
-</div>
-
-</div>
-
-</div>
+<p>
+「冷えない」「水漏れ」「異音」をそのまま放置すると、<br>
+コンプレッサーや基板交換が必要になる場合があります。
+</p>
 
 </section>
+
+
 
 
 
@@ -609,11 +614,13 @@ padding:20px 0;
 
 <div class="area-box">
 
-<h2>葛飾区・関東エリア対応</h2>
+<div class="area-title">
+葛飾区・関東エリア対応
+</div>
 
-<p>
+<div class="area-text">
 葛飾区を中心に、東京・千葉・埼玉・神奈川方面まで対応しています。
-</p>
+</div>
 
 <div class="area-tags">
 <span>葛飾区</span>
@@ -634,47 +641,16 @@ padding:20px 0;
 
 
 
-<section class="section">
-
-<div class="hero-card">
-
-<img src="./phone-support-cta-katsushika.png">
-
-<div class="overlay-right">
-
-<div class="overlay-title">
-最短30分対応
-</div>
-
-<div class="overlay-text">
-冷えない・水漏れ・異音など、<br>
-まずは症状だけでもご相談ください。
-</div>
-
-<div class="cta-box">
-<a href="tel:0358794790" class="cta-red">📞 電話する</a>
-<a href="https://lin.ee/Nhppoyr" class="cta-green">LINE相談</a>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
 
 
 <div class="bottom-fixed">
 
-<a href="tel:0358794790" class="bottom-phone">
+<a href="tel:0358794790" class="red">
 📞 電話
 </a>
 
-<a href="https://lin.ee/Nhppoyr" class="bottom-line">
+<a href="https://lin.ee/Nhppoyr" class="green">
 LINE相談
 </a>
 
 </div>
-
-</body>
-</html>
