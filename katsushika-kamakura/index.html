@@ -1,9 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>葛飾区のエアコン修理｜関東エアコン本舗</title>
 
 <style>
@@ -14,658 +13,399 @@ box-sizing:border-box;
 }
 
 body{
-font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
-background:#f5fbff;
-color:#111;
+font-family:sans-serif;
+background:#f4f9ff;
+color:#222;
 line-height:1.7;
-padding-bottom:90px;
 }
 
 img{
-max-width:100%;
+width:100%;
 display:block;
 }
 
-a{
+.container{
+width:92%;
+max-width:1200px;
+margin:auto;
+}
+
+header{
+background:#fff;
+padding:18px 0;
+position:sticky;
+top:0;
+z-index:999;
+box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+.header-inner{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:34px;
+font-weight:900;
+color:#0b3d91;
+}
+
+.top-buttons{
+display:flex;
+gap:12px;
+}
+
+.btn{
+padding:14px 28px;
+border-radius:999px;
+font-weight:bold;
 text-decoration:none;
+color:#fff;
+display:inline-block;
+}
+
+.tel-btn{
+background:#ff3131;
+}
+
+.line-btn{
+background:#06c755;
 }
 
 .hero{
-height:100vh;
-min-height:760px;
-background:
-linear-gradient(90deg,
-rgba(255,255,255,.96) 0%,
-rgba(255,255,255,.92) 40%,
-rgba(255,255,255,.25) 68%,
-rgba(255,255,255,0) 100%),
-url("./hero-katsushika-kamakura-aircon.png");
-background-size:cover;
-background-position:center right;
-display:flex;
+padding:40px 0;
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:24px;
 align-items:center;
-padding:60px;
 }
 
-.hero-inner{
-max-width:700px;
-}
-
-.badge{
-display:inline-block;
-background:#fff3cd;
-color:#9b5a00;
-padding:10px 18px;
-border-radius:999px;
+.hero-text h1{
+font-size:52px;
+line-height:1.2;
+margin-bottom:20px;
 font-weight:900;
-font-size:14px;
-margin-bottom:22px;
+color:#0b3d91;
 }
 
-.hero h1{
-font-size:68px;
-line-height:1.05;
-font-weight:1000;
+.hero-text p{
+font-size:22px;
 margin-bottom:24px;
-letter-spacing:-2px;
 }
 
-.blue{
-color:#004aad;
-}
-
-.red{
-color:#e11d48;
-}
-
-.hero p{
-font-size:28px;
-font-weight:900;
-margin-bottom:30px;
-}
-
-.cta-row{
-display:flex;
-gap:16px;
-flex-wrap:wrap;
-margin-top:28px;
-}
-
-.phone-btn,
-.line-btn{
-height:74px;
-padding:0 36px;
-border-radius:999px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:24px;
-font-weight:1000;
-color:#fff;
-box-shadow:0 10px 24px rgba(0,0,0,.18);
-}
-
-.phone-btn{
-background:linear-gradient(135deg,#ff5a36,#d90429);
-}
-
-.line-btn{
-background:linear-gradient(135deg,#06c755,#00a63e);
+.hero-image img{
+border-radius:24px;
 }
 
 .section{
-max-width:1180px;
-margin:80px auto;
-padding:0 20px;
+padding:70px 0;
 }
 
 .section-title{
 font-size:42px;
-font-weight:1000;
-margin-bottom:18px;
-color:#004aad;
+font-weight:900;
+margin-bottom:40px;
+color:#0b3d91;
 }
 
-.section-sub{
-font-size:17px;
-font-weight:700;
-color:#555;
-margin-bottom:34px;
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
 }
 
 .card{
 background:#fff;
-border-radius:30px;
+border-radius:24px;
 overflow:hidden;
-margin-bottom:28px;
-box-shadow:0 12px 28px rgba(0,0,0,.08);
-border:1px solid #dbeafe;
+box-shadow:0 4px 20px rgba(0,0,0,.08);
 }
 
-.card-grid{
+.card img{
+height:220px;
+object-fit:cover;
+}
+
+.card-body{
+padding:24px;
+}
+
+.card-body h3{
+font-size:24px;
+margin-bottom:10px;
+}
+
+.price-box{
 display:grid;
 grid-template-columns:1fr 1fr;
-align-items:center;
+gap:24px;
 }
 
-.card-image{
-min-height:420px;
-background-size:cover;
-background-position:center;
+.price-card{
+background:#fff;
+padding:40px;
+border-radius:24px;
 }
 
-.card-content{
-padding:42px;
-}
-
-.card-content h3{
-font-size:38px;
-margin-bottom:14px;
-font-weight:1000;
-color:#004aad;
-}
-
-.card-content p{
-font-size:17px;
-font-weight:700;
-color:#444;
+.price-card h3{
+font-size:28px;
 margin-bottom:20px;
 }
 
 .price{
-font-size:46px;
-font-weight:1000;
-color:#e11d48;
+font-size:60px;
+font-weight:900;
+color:#ff3131;
 }
 
-.price small{
-font-size:18px;
-color:#333;
-}
-
-.trust{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:18px;
-margin-top:30px;
-}
-
-.trust-box{
-background:#fff;
-border-radius:22px;
-padding:26px;
-text-align:center;
-box-shadow:0 10px 24px rgba(0,0,0,.06);
-border:1px solid #dbeafe;
-}
-
-.trust-box h4{
-font-size:22px;
-margin-bottom:10px;
-color:#004aad;
-}
-
-.trust-box p{
-font-size:14px;
-font-weight:700;
-color:#555;
-}
-
-.flow{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:18px;
-}
-
-.flow-box{
-background:#fff;
-border-radius:22px;
-padding:30px;
-box-shadow:0 10px 24px rgba(0,0,0,.06);
-border:1px solid #dbeafe;
-}
-
-.flow-box h4{
-font-size:26px;
-margin-bottom:14px;
-color:#004aad;
-}
-
-.flow-box p{
-font-weight:700;
-color:#555;
-}
-
-.final-cta{
-background:
-linear-gradient(90deg,
-rgba(255,255,255,.15) 0%,
-rgba(255,255,255,.2) 40%,
-rgba(255,255,255,.95) 70%,
-rgba(255,255,255,.98) 100%),
-url("./phone-support-cta-katsushika.png");
-background-size:cover;
-background-position:center;
-border-radius:36px;
-padding:80px;
-display:flex;
-justify-content:flex-end;
-}
-
-.final-box{
-background:rgba(255,255,255,.88);
-padding:40px;
-border-radius:28px;
-max-width:520px;
-backdrop-filter:blur(6px);
-}
-
-.final-box h2{
-font-size:42px;
-margin-bottom:16px;
-color:#004aad;
-}
-
-.final-box p{
-font-size:18px;
-font-weight:700;
-margin-bottom:26px;
-}
-
-.fixed-bar{
+.cta-fixed{
 position:fixed;
 bottom:0;
 left:0;
-right:0;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:8px;
-padding:8px;
-background:rgba(255,255,255,.96);
-backdrop-filter:blur(10px);
+width:100%;
+display:flex;
 z-index:9999;
-box-shadow:0 -6px 18px rgba(0,0,0,.15);
 }
 
-.fixed-bar a{
-height:64px;
-border-radius:999px;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:22px;
-font-weight:1000;
+.cta-fixed a{
+flex:1;
+text-align:center;
+padding:22px;
+font-size:28px;
+font-weight:900;
+text-decoration:none;
 color:#fff;
 }
 
-.footer{
-background:#071b34;
-color:#dbeafe;
-padding:40px 20px;
-text-align:center;
-font-size:14px;
-line-height:2;
-margin-top:70px;
+.cta-phone{
+background:#ff3131;
 }
 
-@media(max-width:768px){
-
-.hero{
-padding:26px;
-height:auto;
-min-height:auto;
-padding-top:90px;
-padding-bottom:360px;
-background:
-linear-gradient(180deg,
-rgba(255,255,255,.96) 0%,
-rgba(255,255,255,.92) 46%,
-rgba(255,255,255,.25) 78%,
-rgba(255,255,255,0) 100%),
-url("./hero-katsushika-kamakura-aircon.png");
-background-position:center top;
+.cta-line{
+background:#06c755;
 }
 
-.hero h1{
-font-size:42px;
-}
+@media(max-width:900px){
 
-.hero p{
-font-size:22px;
-}
-
-.cta-row{
-flex-direction:column;
-}
-
-.phone-btn,
-.line-btn{
-width:100%;
-font-size:20px;
-}
-
-.card-grid{
+.hero-grid{
 grid-template-columns:1fr;
 }
 
-.card-image{
-min-height:320px;
-}
-
-.card-content{
-padding:28px;
-}
-
-.card-content h3{
-font-size:30px;
-}
-
-.trust{
+.cards{
 grid-template-columns:1fr;
 }
 
-.flow{
+.price-box{
 grid-template-columns:1fr;
 }
 
-.final-cta{
-padding:20px;
-justify-content:center;
+.hero-text h1{
+font-size:38px;
 }
 
-.final-box{
-max-width:100%;
-}
-
-.final-box h2{
+.section-title{
 font-size:32px;
 }
+
 }
 </style>
 </head>
 
 <body>
 
-<section class="hero">
-<div class="hero-inner">
+<header>
+<div class="container header-inner">
 
-<div class="badge">
-葛飾区・鎌倉・柴又・高砂・金町対応
+<div class="logo">
+関東エアコン本舗
 </div>
 
+<div class="top-buttons">
+<a href="tel:0000000000" class="btn tel-btn">電話</a>
+<a href="#" class="btn line-btn">LINE</a>
+</div>
+
+</div>
+</header>
+
+<section class="hero">
+<div class="container hero-grid">
+
+<div class="hero-text">
 <h1>
 葛飾区の<br>
-<span class="blue">エアコン修理</span>
+エアコン修理なら<br>
+即日対応
 </h1>
 
 <p>
 冷えない・水漏れ・異音<br>
-最短30分で即対応
+最短30分で訪問します
 </p>
 
-<div class="cta-row">
-<a href="tel:0358794790" class="phone-btn">
-📞 今すぐ電話
-</a>
+<div class="top-buttons">
+<a href="tel:0000000000" class="btn tel-btn">今すぐ電話</a>
+<a href="#" class="btn line-btn">LINE相談</a>
+</div>
+</div>
 
-<a href="https://lin.ee/Nhppoyr" class="line-btn">
-LINEで相談
-</a>
+<div class="hero-image">
+<img src="./hero-katsushika-kamakura-aircon.png">
 </div>
 
 </div>
 </section>
 
 <section class="section">
+<div class="container">
 
 <h2 class="section-title">
-よくあるエアコントラブル
+こんな症状ありませんか？
 </h2>
 
-<p class="section-sub">
-冷えない・水漏れ・異音・電源不良まで対応
-</p>
+<div class="cards">
 
 <div class="card">
-<div class="card-grid">
-
-<div class="card-image"
-style='background-image:url("./not-cooling-katsushika-aircon.png")'>
-</div>
-
-<div class="card-content">
+<img src="./not-cooling-katsushika-aircon.png">
+<div class="card-body">
 <h3>冷えない</h3>
-<p>
-ぬるい風しか出ない、
-部屋が冷えない症状。
-</p>
-<div class="price">
-11,000円〜
-<small>税込</small>
-</div>
-</div>
-
+<p>ぬるい風しか出ない</p>
 </div>
 </div>
 
 <div class="card">
-<div class="card-grid">
-
-<div class="card-image"
-style='background-image:url("./water-leak-katsushika-aircon.png")'>
-</div>
-
-<div class="card-content">
-<h3>水漏れ修理</h3>
-<p>
-室内機から水が垂れる、
-床が濡れる症状。
-</p>
-<div class="price">
-12,000円〜
-<small>税込</small>
-</div>
-</div>
-
+<img src="./water-leak-katsushika-aircon.png">
+<div class="card-body">
+<h3>水漏れ</h3>
+<p>ポタポタ水が落ちる</p>
 </div>
 </div>
 
 <div class="card">
-<div class="card-grid">
-
-<div class="card-image"
-style='background-image:url("./power-not-turning-on-katsushika-aircon.png")'>
-</div>
-
-<div class="card-content">
-<h3>電源が入らない</h3>
-<p>
-突然動かない、
-リモコンが反応しない。
-</p>
-<div class="price">
-11,000円〜
-<small>税込</small>
+<img src="./symptom-noise-katsushika-aircon.png">
+<div class="card-body">
+<h3>異音</h3>
+<p>ガタガタ音がする</p>
 </div>
 </div>
 
 </div>
-</div>
-
-<div class="card">
-<div class="card-grid">
-
-<div class="card-image"
-style='background-image:url("./symptom-noise-katsushika-aircon.png")'>
-</div>
-
-<div class="card-content">
-<h3>異音・ガタガタ音</h3>
-<p>
-ブーン音・ガタガタ音・
-振動トラブル。
-</p>
-<div class="price">
-11,000円〜
-<small>税込</small>
-</div>
-</div>
 
 </div>
-</div>
-
 </section>
 
 <section class="section">
+<div class="container">
 
 <h2 class="section-title">
-安心して頼める理由
+修理の流れ
 </h2>
 
-<div class="trust">
-
-<div class="trust-box">
-<h4>追加料金なし</h4>
-<p>
-作業前に必ず説明
-</p>
-</div>
-
-<div class="trust-box">
-<h4>地域密着</h4>
-<p>
-葛飾区周辺を即対応
-</p>
-</div>
-
-<div class="trust-box">
-<h4>LINE相談OK</h4>
-<p>
-写真を送るだけ
-</p>
-</div>
-
-<div class="trust-box">
-<h4>最短30分</h4>
-<p>
-急な故障も対応
-</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2 class="section-title">
-修理までの流れ
-</h2>
-
-<div class="flow">
-
-<div class="flow-box">
-<h4>1. 電話・LINE</h4>
-<p>
-症状を相談
-</p>
-</div>
-
-<div class="flow-box">
-<h4>2. 現地確認</h4>
-<p>
-原因を点検
-</p>
-</div>
-
-<div class="flow-box">
-<h4>3. 修理完了</h4>
-<p>
-動作確認して終了
-</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
+<div class="cards">
 
 <div class="card">
-<div class="card-grid">
-
-<div class="card-image"
-style='background-image:url("./repair-working-katsushika-aircon.png")'>
-</div>
-
-<div class="card-content">
-<h3>
-プロが丁寧に修理
-</h3>
-
-<p>
-まずは修理できるか確認。
-無理な交換営業はしません。
-</p>
-
-</div>
-
+<img src="./phone-consultation-katsushika-aircon.png">
+<div class="card-body">
+<h3>電話・LINE相談</h3>
+<p>まずは症状確認</p>
 </div>
 </div>
 
+<div class="card">
+<img src="./fast-arrival-katsushika-aircon.png">
+<div class="card-body">
+<h3>最短30分訪問</h3>
+<p>葛飾区密着対応</p>
+</div>
+</div>
+
+<div class="card">
+<img src="./repair-working-katsushika-aircon.png">
+<div class="card-body">
+<h3>その場で修理</h3>
+<p>即日復旧を目指します</p>
+</div>
+</div>
+
+</div>
+
+</div>
 </section>
 
 <section class="section">
+<div class="container">
 
-<div class="final-cta">
-
-<div class="final-box">
-
-<h2>
-今すぐ相談
+<h2 class="section-title">
+料金目安
 </h2>
 
-<p>
-冷えない・水漏れ・異音は
-早めの点検がおすすめです。
-</p>
+<div class="price-box">
 
-<div class="cta-row">
+<div class="price-card">
+<h3>エアコン修理・点検</h3>
+<div class="price">10,000円〜</div>
+</div>
 
-<a href="tel:0358794790" class="phone-btn">
-📞 電話する
-</a>
-
-<a href="https://lin.ee/Nhppoyr" class="line-btn">
-LINE相談
-</a>
-
+<div class="price-card">
+<h3>交換工事</h3>
+<div class="price">30,000円〜</div>
 </div>
 
 </div>
 
 </div>
-
 </section>
 
-<footer class="footer">
+<section class="section">
+<div class="container">
 
-関東エアコン本舗<br>
-葛飾区鎌倉・柴又・高砂・金町対応<br>
-TEL：03-5879-4790
+<h2 class="section-title">
+安心ポイント
+</h2>
 
-</footer>
+<div class="cards">
 
-<div class="fixed-bar">
+<div class="card">
+<img src="./trust-explanation-katsushika-aircon.png">
+<div class="card-body">
+<h3>明朗会計</h3>
+<p>事前説明後に作業</p>
+</div>
+</div>
 
-<a href="tel:0358794790" class="phone-btn">
+<div class="card">
+<img src="./professional-repair-work-katsushika.png">
+<div class="card-body">
+<h3>プロ対応</h3>
+<p>経験豊富なスタッフ</p>
+</div>
+</div>
+
+<div class="card">
+<img src="./repair-complete-katsushika-aircon.png">
+<div class="card-body">
+<h3>修理後も安心</h3>
+<p>丁寧にサポート</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<div class="cta-fixed">
+<a href="tel:0000000000" class="cta-phone">
 📞 電話
 </a>
 
-<a href="https://lin.ee/Nhppoyr" class="line-btn">
+<a href="#" class="cta-line">
 LINE相談
 </a>
-
 </div>
 
 </body>
