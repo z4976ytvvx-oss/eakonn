@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 <title>葛飾区のエアコン修理｜最短30分対応｜関東エアコン本舗</title>
 
@@ -18,7 +18,7 @@ box-sizing:border-box;
 
 body{
 font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
-background:#eef3f8;
+background:#f4f8fc;
 color:#222;
 line-height:1.7;
 overflow-x:hidden;
@@ -74,12 +74,13 @@ color:#666;
 .header-center{
 font-size:15px;
 font-weight:1000;
+color:#111;
 text-align:center;
 flex:1;
 }
 
 .header-center span{
-font-size:34px;
+font-size:26px;
 color:#e11d48;
 }
 
@@ -139,10 +140,10 @@ linear-gradient(
 90deg,
 rgba(255,255,255,.98) 0%,
 rgba(255,255,255,.94) 42%,
-rgba(255,255,255,.48) 65%,
-rgba(255,255,255,.08) 100%
+rgba(255,255,255,.45) 65%,
+rgba(255,255,255,.05) 100%
 ),
-url("./hero-katsushika-anime-aircon-v2.png");
+url("./hero-katsushika-anime-v1.png");
 background-size:cover;
 background-position:center right;
 background-repeat:no-repeat;
@@ -375,6 +376,14 @@ margin-bottom:14px;
 color:#0a4ea3;
 }
 
+.symptom-text p{
+font-size:16px;
+font-weight:700;
+line-height:2;
+color:#555;
+margin-bottom:20px;
+}
+
 .price{
 font-size:60px;
 font-weight:1000;
@@ -397,6 +406,20 @@ font-size:14px;
 font-weight:900;
 }
 
+.mini-btns{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.mini-btns a{
+padding:14px 20px;
+border-radius:999px;
+font-size:15px;
+font-weight:1000;
+color:#fff;
+}
+
 .reason-grid{
 display:grid;
 grid-template-columns:repeat(4,1fr);
@@ -411,6 +434,13 @@ text-align:center;
 box-shadow:0 10px 24px rgba(0,0,0,.07);
 }
 
+.reason-card b{
+display:block;
+font-size:22px;
+margin-bottom:10px;
+color:#0a4ea3;
+}
+
 .review-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
@@ -422,6 +452,26 @@ background:#fff;
 padding:30px;
 border-radius:26px;
 box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+
+.review-card h4{
+font-size:22px;
+margin-bottom:14px;
+color:#0a4ea3;
+}
+
+.review-card p{
+font-size:15px;
+font-weight:800;
+color:#555;
+margin-bottom:14px;
+line-height:2;
+}
+
+.review-card span{
+font-size:13px;
+font-weight:900;
+color:#888;
 }
 
 .flow-grid{
@@ -446,6 +496,19 @@ object-fit:cover;
 padding:24px;
 }
 
+.flow-body h3{
+font-size:28px;
+margin-bottom:10px;
+color:#0a4ea3;
+}
+
+.flow-body p{
+font-size:15px;
+font-weight:800;
+line-height:2;
+color:#555;
+}
+
 .price-grid{
 display:grid;
 grid-template-columns:repeat(4,1fr);
@@ -460,10 +523,23 @@ text-align:center;
 box-shadow:0 10px 24px rgba(0,0,0,.08);
 }
 
+.price-box h3{
+font-size:24px;
+margin-bottom:12px;
+color:#0a4ea3;
+}
+
 .big-price{
 font-size:42px;
 font-weight:1000;
 color:#e11d48;
+}
+
+.price-box p{
+font-size:14px;
+font-weight:800;
+margin-top:10px;
+color:#555;
 }
 
 .area-box{
@@ -472,6 +548,19 @@ padding:40px;
 border-radius:30px;
 text-align:center;
 box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+
+.area-box h3{
+font-size:38px;
+margin-bottom:14px;
+color:#0a4ea3;
+}
+
+.area-box p{
+font-size:17px;
+font-weight:800;
+line-height:2;
+color:#555;
 }
 
 .area-tags{
@@ -522,6 +611,20 @@ align-items:center;
 padding:60px;
 }
 
+.final-box h2{
+font-size:54px;
+margin-bottom:18px;
+color:#0a4ea3;
+}
+
+.final-box p{
+font-size:18px;
+font-weight:800;
+line-height:2;
+margin-bottom:30px;
+color:#555;
+}
+
 .final-buttons{
 display:flex;
 flex-direction:column;
@@ -545,6 +648,8 @@ color:#dbeafe;
 padding:50px 20px;
 text-align:center;
 margin-top:80px;
+line-height:2;
+font-size:14px;
 }
 
 .fixed-bar{
@@ -582,6 +687,10 @@ background:#06c755;
 
 @media(max-width:900px){
 
+.header-center{
+display:none;
+}
+
 .quick-symptoms,
 .reason-grid,
 .review-grid,
@@ -591,7 +700,7 @@ grid-template-columns:1fr;
 }
 
 .hero-image{
-height:920px;
+height:900px;
 }
 
 .hero-image::before{
@@ -600,10 +709,10 @@ linear-gradient(
 180deg,
 rgba(255,255,255,.98) 0%,
 rgba(255,255,255,.94) 48%,
-rgba(255,255,255,.42) 76%,
+rgba(255,255,255,.45) 75%,
 rgba(255,255,255,.05) 100%
 ),
-url("./hero-katsushika-anime-aircon-v2.png");
+url("./hero-katsushika-anime-v1.png");
 background-size:cover;
 background-position:center center;
 background-repeat:no-repeat;
@@ -617,6 +726,15 @@ padding-top:60px;
 
 .hero h1{
 font-size:52px;
+}
+
+.hero-lead{
+font-size:24px;
+}
+
+.hero-buttons a{
+width:100%;
+font-size:20px;
 }
 
 .symptom-overlay{
@@ -657,7 +775,8 @@ height:840px;
 </div>
 
 <div class="header-center">
-関東エリア巡回中！ 最短<span>30</span>分対応
+関東エリア巡回対応中<br>
+最短<span>30</span>分で駆けつけ
 </div>
 
 <div class="top-buttons">
@@ -708,8 +827,9 @@ height:840px;
 </div>
 
 <div class="hero-note">
-現在、葛飾区・柴又・高砂・金町周辺を中心に巡回中。<br>
-冷えない・水漏れ・異音などまずはご相談ください。
+現在、葛飾区・柴又・高砂・金町周辺を中心に対応中。<br>
+冷えない・水漏れ・異音・電源不良など、
+まずは症状だけでもご相談ください。
 </div>
 
 </div>
@@ -729,7 +849,14 @@ height:840px;
 <section class="section">
 <div class="container">
 
-<h2 class="section-title">こんな症状ありませんか？</h2>
+<h2 class="section-title">
+こんな症状でお困りではありませんか？
+</h2>
+
+<p class="section-sub">
+症状が軽いうちの相談が、
+結果的に安く済む場合があります。
+</p>
 
 <div class="quick-symptoms">
 
@@ -755,165 +882,6 @@ height:840px;
 <div class="icon">⚡</div>
 <h3>電源不良</h3>
 <p>電源が入らない</p>
-</div>
-
-</div>
-
-</div>
-</section>
-
-<section class="section">
-<div class="container">
-
-<div class="warning-box">
-
-<h3>放置すると高額修理になる場合があります</h3>
-
-<ul>
-<li>✔ 水漏れ悪化による床・壁ダメージ</li>
-<li>✔ 基板故障で高額交換</li>
-<li>✔ 真夏の完全停止</li>
-<li>✔ カビ・異臭の悪化</li>
-</ul>
-
-</div>
-
-</div>
-</section>
-
-<section class="section">
-<div class="container">
-
-<h2 class="section-title">症状別の修理目安</h2>
-
-<div class="symptom-card">
-
-<img src="./not-cooling-katsushika-aircon.png">
-
-<div class="symptom-overlay">
-<div class="symptom-text">
-
-<h3>冷えない</h3>
-
-<div class="price">11,000円〜</div>
-
-<div class="safe-points">
-<span>✔ ガス不足確認</span>
-<span>✔ 原因を説明</span>
-<span>✔ 即日対応</span>
-</div>
-
-</div>
-</div>
-</div>
-
-<div class="symptom-card">
-
-<img src="./water-leak-katsushika-aircon.png">
-
-<div class="symptom-overlay">
-<div class="symptom-text">
-
-<h3>水漏れ</h3>
-
-<div class="price">12,000円〜</div>
-
-<div class="safe-points">
-<span>✔ ドレン詰まり確認</span>
-<span>✔ 追加料金事前説明</span>
-<span>✔ 最短30分対応</span>
-</div>
-
-</div>
-</div>
-</div>
-
-<div class="symptom-card">
-
-<img src="./symptom-noise-katsushika-aircon.png">
-
-<div class="symptom-overlay">
-<div class="symptom-text">
-
-<h3>異音・異臭</h3>
-
-<div class="price">11,000円〜</div>
-
-<div class="safe-points">
-<span>✔ 異音原因説明</span>
-<span>✔ LINE写真相談OK</span>
-<span>✔ 無理な交換営業なし</span>
-</div>
-
-</div>
-</div>
-</div>
-
-</div>
-</section>
-
-<section class="section">
-<div class="container">
-
-<h2 class="section-title">修理までの流れ</h2>
-
-<div class="flow-grid">
-
-<div class="flow-card">
-<img src="./phone-consultation-katsushika-aircon.png">
-<div class="flow-body">
-<h3>電話・LINE相談</h3>
-<p>症状確認だけでもOK</p>
-</div>
-</div>
-
-<div class="flow-card">
-<img src="./fast-arrival-katsushika-aircon.png">
-<div class="flow-body">
-<h3>最短30分訪問</h3>
-<p>巡回スタッフが訪問</p>
-</div>
-</div>
-
-<div class="flow-card">
-<img src="./repair-working-katsushika-aircon.png">
-<div class="flow-body">
-<h3>その場で修理</h3>
-<p>原因説明後に作業します</p>
-</div>
-</div>
-
-</div>
-
-</div>
-</section>
-
-<section class="section">
-<div class="container">
-
-<div class="final-cta">
-
-<img src="./phone-support-cta-katsushika.png">
-
-<div class="final-overlay">
-
-<div>
-
-<h2 style="font-size:52px;color:#0a4ea3;margin-bottom:18px;">
-今すぐ相談できます
-</h2>
-
-<p style="font-size:20px;font-weight:800;margin-bottom:30px;">
-冷えない・水漏れ・異音は早めの点検がおすすめです。
-</p>
-
-<div class="final-buttons">
-<a href="tel:0358794790" class="tel-btn">📞 今すぐ電話する</a>
-<a href="https://lin.ee/Nhppoyr" class="line-btn">LINE無料相談</a>
-</div>
-
-</div>
-
 </div>
 
 </div>
