@@ -40,8 +40,6 @@ max-width:1200px;
 margin:auto;
 }
 
-/* header */
-
 header{
 position:sticky;
 top:0;
@@ -73,6 +71,19 @@ margin-top:6px;
 color:#666;
 }
 
+.header-center{
+font-size:15px;
+font-weight:1000;
+color:#111;
+text-align:center;
+flex:1;
+}
+
+.header-center span{
+color:#e11d48;
+font-size:28px;
+}
+
 .top-buttons{
 display:flex;
 gap:10px;
@@ -98,8 +109,6 @@ background:linear-gradient(135deg,#ff5a36,#d90429);
 .line-btn{
 background:linear-gradient(135deg,#06c755,#00a63e);
 }
-
-/* hero */
 
 .hero{
 padding:28px 0 60px;
@@ -134,7 +143,7 @@ rgba(255,255,255,.94) 42%,
 rgba(255,255,255,.45) 65%,
 rgba(255,255,255,.05) 100%
 ),
-url("./hero-katsushika-anime-aircon-v2.png");
+url("./hero-katsushika-anime-v1.png");
 background-size:cover;
 background-position:center right;
 background-repeat:no-repeat;
@@ -344,15 +353,15 @@ object-fit:cover;
 }
 
 .symptom-card:nth-of-type(1) img{
-content:url("./not-cooling-katsushika-aircon.png");
+content:url("./symptom-cooling-anime.png");
 }
 
 .symptom-card:nth-of-type(2) img{
-content:url("./water-leak-katsushika-aircon.png");
+content:url("./symptom-water-anime.png");
 }
 
 .symptom-card:nth-of-type(3) img{
-content:url("./symptom-noise-katsushika-aircon.png");
+content:url("./symptom-noise-anime.png");
 }
 
 .symptom-overlay{
@@ -377,6 +386,12 @@ padding:40px;
 font-size:48px;
 margin-bottom:14px;
 color:#0a4ea3;
+}
+
+.symptom-text p{
+font-size:18px;
+font-weight:800;
+margin-bottom:18px;
 }
 
 .price{
@@ -447,15 +462,15 @@ object-fit:cover;
 }
 
 .flow-card:nth-of-type(1) img{
-content:url("./phone-consultation-katsushika-aircon.png");
+content:url("./flow-phone-anime.png");
 }
 
 .flow-card:nth-of-type(2) img{
-content:url("./fast-arrival-katsushika-aircon.png");
+content:url("./flow-arrival-anime.png");
 }
 
 .flow-card:nth-of-type(3) img{
-content:url("./repair-working-katsushika-aircon.png");
+content:url("./flow-repair-anime.png");
 }
 
 .flow-body{
@@ -518,7 +533,7 @@ box-shadow:0 16px 40px rgba(0,0,0,.12);
 .final-cta img{
 height:680px;
 object-fit:cover;
-content:url("./phone-support-cta-katsushika.png");
+content:url("./cta-phone-anime.png");
 }
 
 .final-overlay{
@@ -658,6 +673,10 @@ height:840px;
 <small>葛飾区・柴又・高砂・金町周辺対応</small>
 </div>
 
+<div class="header-center">
+関東エリア巡回中！ 最短<span>30</span>分対応
+</div>
+
 <div class="top-buttons">
 <a href="tel:0358794790" class="tel-btn">📞 電話</a>
 <a href="https://lin.ee/Nhppoyr" class="line-btn">LINE相談</a>
@@ -705,6 +724,10 @@ height:840px;
 <a href="https://lin.ee/Nhppoyr" class="line-btn">LINE無料相談</a>
 </div>
 
+<div class="hero-note">
+現在、葛飾区・柴又・高砂・金町周辺を中心に対応中。
+</div>
+
 </div>
 
 </div>
@@ -718,6 +741,381 @@ height:840px;
 </div>
 
 </section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">こんな症状ありませんか？</h2>
+
+<div class="quick-symptoms">
+
+<div class="quick-card">
+<div class="icon">❄️</div>
+<h3>冷えない</h3>
+<p>ぬるい風しか出ない</p>
+</div>
+
+<div class="quick-card">
+<div class="icon">💧</div>
+<h3>水漏れ</h3>
+<p>室内機から水が落ちる</p>
+</div>
+
+<div class="quick-card">
+<div class="icon">🔊</div>
+<h3>異音</h3>
+<p>ガタガタ・ブーン音</p>
+</div>
+
+<div class="quick-card">
+<div class="icon">⚡</div>
+<h3>電源不良</h3>
+<p>電源が入らない</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<div class="warning-box">
+
+<h3>
+放置すると高額修理になる場合があります
+</h3>
+
+<ul>
+<li>✔ 水漏れ悪化による床・壁 damage</li>
+<li>✔ 基板故障で高額交換</li>
+<li>✔ 真夏の完全停止</li>
+<li>✔ カビ・異臭の悪化</li>
+</ul>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">症状別の修理目安</h2>
+
+<div class="symptom-card">
+
+<img src="./not-cooling-katsushika-aircon.png">
+
+<div class="symptom-overlay">
+<div class="symptom-text">
+
+<h3>冷えない</h3>
+
+<p>
+ぬるい風しか出ない。全然冷えない症状。
+</p>
+
+<div class="price">
+11,000円〜
+</div>
+
+<div class="safe-points">
+<span>✔ 作業前見積り</span>
+<span>✔ 無理な交換営業なし</span>
+<span>✔ 追加料金は事前説明</span>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="symptom-card">
+
+<img src="./water-leak-katsushika-aircon.png">
+
+<div class="symptom-overlay">
+<div class="symptom-text">
+
+<h3>水漏れ</h3>
+
+<p>
+室内機から水が落ちる症状。
+</p>
+
+<div class="price">
+12,000円〜
+</div>
+
+<div class="safe-points">
+<span>✔ ドレン詰まり確認</span>
+<span>✔ 原因を説明</span>
+<span>✔ 最短30分対応</span>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="symptom-card">
+
+<img src="./symptom-noise-katsushika-aircon.png">
+
+<div class="symptom-overlay">
+<div class="symptom-text">
+
+<h3>異音・異臭</h3>
+
+<p>
+ガタガタ音・ブーン音・カビ臭など。
+</p>
+
+<div class="price">
+11,000円〜
+</div>
+
+<div class="safe-points">
+<span>✔ 原因をしっかり説明</span>
+<span>✔ LINE写真相談OK</span>
+<span>✔ 追加料金は事前説明</span>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">
+選ばれる理由
+</h2>
+
+<div class="reason-grid">
+
+<div class="reason-card">
+<h3>明朗会計</h3>
+<p>作業前に料金を説明します。</p>
+</div>
+
+<div class="reason-card">
+<h3>無理な交換なし</h3>
+<p>まず修理できるか確認します。</p>
+</div>
+
+<div class="reason-card">
+<h3>LINE相談OK</h3>
+<p>写真を送るだけで相談できます。</p>
+</div>
+
+<div class="reason-card">
+<h3>関東巡回対応</h3>
+<p>近くのスタッフが最短30分で訪問。</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">
+お客様の声
+</h2>
+
+<div class="review-grid">
+
+<div class="review-card">
+<h3>すぐ来てくれて助かった</h3>
+<p>
+急に冷えなくなったがすぐ対応してくれた。
+</p>
+</div>
+
+<div class="review-card">
+<h3>説明が丁寧</h3>
+<p>
+料金説明が分かりやすく安心できた。
+</p>
+</div>
+
+<div class="review-card">
+<h3>交換じゃなく修理で直った</h3>
+<p>
+他社は交換だったが修理対応してくれた。
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">
+修理までの流れ
+</h2>
+
+<div class="flow-grid">
+
+<div class="flow-card">
+
+<img src="./phone-consultation-katsushika-aircon.png">
+
+<div class="flow-body">
+<h3>電話・LINE相談</h3>
+<p>まずは症状確認。</p>
+</div>
+
+</div>
+
+<div class="flow-card">
+
+<img src="./fast-arrival-katsushika-aircon.png">
+
+<div class="flow-body">
+<h3>最短30分訪問</h3>
+<p>近くのスタッフが巡回中。</p>
+</div>
+
+</div>
+
+<div class="flow-card">
+
+<img src="./repair-working-katsushika-aircon.png">
+
+<div class="flow-body">
+<h3>その場で修理</h3>
+<p>即日復旧を目指します。</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">
+料金目安
+</h2>
+
+<div class="price-grid">
+
+<div class="price-box">
+<h3>点検</h3>
+<div class="big-price">8,800円〜</div>
+</div>
+
+<div class="price-box">
+<h3>修理</h3>
+<div class="big-price">11,000円〜</div>
+</div>
+
+<div class="price-box">
+<h3>水漏れ</h3>
+<div class="big-price">12,000円〜</div>
+</div>
+
+<div class="price-box">
+<h3>交換工事</h3>
+<div class="big-price">25,000円〜</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<div class="area-box">
+
+<h2 class="section-title">
+対応エリア
+</h2>
+
+<div class="area-tags">
+<span>葛飾区</span>
+<span>柴又</span>
+<span>高砂</span>
+<span>金町</span>
+<span>松戸</span>
+<span>市川</span>
+<span>船橋</span>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<div class="final-cta">
+
+<img src="./phone-support-cta-katsushika.png">
+
+<div class="final-overlay">
+
+<div>
+
+<h2 style="font-size:52px;color:#0a4ea3;margin-bottom:20px;">
+今すぐ相談できます
+</h2>
+
+<p style="font-size:20px;font-weight:800;margin-bottom:30px;">
+冷えない・水漏れ・異音は早めの点検がおすすめです。
+</p>
+
+<div class="final-buttons">
+<a href="tel:0358794790" class="tel-btn">
+📞 今すぐ電話する
+</a>
+
+<a href="https://lin.ee/Nhppoyr" class="line-btn">
+LINE無料相談
+</a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<footer class="footer">
+関東エアコン本舗<br>
+葛飾区・柴又・高砂・金町周辺対応
+</footer>
+
+<div class="fixed-bar">
+
+<a href="tel:0358794790" class="fixed-phone">
+📞 電話
+</a>
+
+<a href="https://lin.ee/Nhppoyr" class="fixed-line">
+LINE相談
+</a>
+
+</div>
 
 </body>
 </html>
