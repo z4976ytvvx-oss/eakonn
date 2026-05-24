@@ -10,13 +10,103 @@
 
 <style>
 
-/* ===== アニメ画像 強制上書き ===== */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
+background:#f4f8fc;
+color:#222;
+line-height:1.7;
+overflow-x:hidden;
+padding-bottom:90px;
+}
+
+a{
+text-decoration:none;
+}
+
+.container{
+width:92%;
+max-width:1200px;
+margin:auto;
+}
+
+header{
+position:sticky;
+top:0;
+z-index:9999;
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(10px);
+box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
+.header-inner{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:16px 0;
+gap:20px;
+}
+
+.logo{
+font-size:34px;
+font-weight:1000;
+color:#0a4ea3;
+line-height:1.2;
+}
+
+.logo small{
+display:block;
+font-size:12px;
+color:#666;
+margin-top:4px;
+}
+
+.top-buttons{
+display:flex;
+gap:10px;
+}
+
+.top-buttons a{
+height:52px;
+padding:0 22px;
+border-radius:999px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:15px;
+font-weight:1000;
+color:#fff;
+}
+
+.tel-btn{
+background:linear-gradient(135deg,#ff5a36,#d90429);
+}
+
+.line-btn{
+background:linear-gradient(135deg,#06c755,#00a63e);
+}
+
+.hero{
+padding:24px 0 60px;
+}
+
+.hero-wrap{
+position:relative;
+overflow:hidden;
+border-radius:36px;
+background:#fff;
+box-shadow:0 20px 46px rgba(0,0,0,.12);
+}
 
 .hero-image{
-position:relative !important;
-height:780px !important;
-overflow:hidden !important;
-background:none !important;
+position:relative;
+height:780px;
+overflow:hidden;
 }
 
 .hero-image::before{
@@ -30,70 +120,14 @@ background:
 linear-gradient(
 90deg,
 rgba(255,255,255,.98) 0%,
-rgba(255,255,255,.95) 42%,
-rgba(255,255,255,.55) 62%,
+rgba(255,255,255,.96) 42%,
+rgba(255,255,255,.45) 65%,
 rgba(255,255,255,.05) 100%
 ),
-url("./hero-katsushika-anime-v1.png");
+url("./phone-support-cta-katsushika.png");
 background-size:cover;
 background-position:center right;
 background-repeat:no-repeat;
-z-index:1;
-}
-
-.symptom-card:nth-of-type(1) img{
-content:url("./symptom-cooling-anime.png");
-}
-
-.symptom-card:nth-of-type(2) img{
-content:url("./symptom-water-anime.png");
-}
-
-.symptom-card:nth-of-type(3) img{
-content:url("./symptom-noise-anime.png");
-}
-
-.flow-card:nth-of-type(1) img{
-content:url("./flow-phone-anime.png");
-}
-
-.flow-card:nth-of-type(2) img{
-content:url("./flow-arrival-anime.png");
-}
-
-.flow-card:nth-of-type(3) img{
-content:url("./flow-repair-anime.png");
-}
-
-.final-cta img{
-content:url("./cta-phone-anime.png");
-}
-
-/* ===== 基本CSS ===== */
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
-background:#f4f8fc;
-color:#222;
-overflow-x:hidden;
-}
-
-.hero{
-padding:30px;
-}
-
-.hero-wrap{
-position:relative;
-overflow:hidden;
-border-radius:36px;
-background:#fff;
-box-shadow:0 18px 46px rgba(0,0,0,.14);
 }
 
 .hero-overlay{
@@ -105,19 +139,31 @@ height:100%;
 display:flex;
 align-items:center;
 padding:70px;
-z-index:5;
+z-index:2;
 }
 
 .hero-content{
-max-width:650px;
+max-width:680px;
+}
+
+.hero-badge{
+display:inline-block;
+background:#fff3cd;
+padding:10px 18px;
+border-radius:999px;
+font-size:14px;
+font-weight:1000;
+margin-bottom:20px;
+color:#9b5a00;
 }
 
 .hero h1{
-font-size:72px;
-line-height:1.05;
+font-size:76px;
+line-height:1.04;
 font-weight:1000;
+margin-bottom:24px;
+letter-spacing:-2px;
 color:#0a4ea3;
-margin-bottom:20px;
 }
 
 .hero h1 span{
@@ -125,20 +171,36 @@ color:#e11d48;
 }
 
 .hero-lead{
-font-size:28px;
+font-size:30px;
+font-weight:1000;
+margin-bottom:24px;
+}
+
+.hero-points{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-bottom:28px;
+}
+
+.hero-points span{
+background:#fff;
+padding:12px 18px;
+border-radius:999px;
+font-size:14px;
 font-weight:900;
-margin-bottom:25px;
+box-shadow:0 4px 10px rgba(0,0,0,.08);
 }
 
 .hero-buttons{
 display:flex;
 gap:16px;
 flex-wrap:wrap;
-margin-top:30px;
+margin-bottom:24px;
 }
 
 .hero-buttons a{
-height:74px;
+height:78px;
 padding:0 34px;
 border-radius:999px;
 display:flex;
@@ -147,23 +209,24 @@ justify-content:center;
 font-size:24px;
 font-weight:1000;
 color:#fff;
-text-decoration:none;
+box-shadow:0 12px 24px rgba(0,0,0,.16);
 }
 
-.tel-btn{
-background:linear-gradient(135deg,#ff5a36,#d90429);
-}
-
-.line-btn{
-background:linear-gradient(135deg,#06c755,#00a63e);
+.hero-note{
+background:rgba(255,255,255,.92);
+padding:18px;
+border-radius:18px;
+font-size:15px;
+font-weight:800;
+max-width:620px;
 }
 
 .speed-badge{
 position:absolute;
-right:5%;
+right:6%;
 bottom:40px;
-width:150px;
-height:150px;
+width:160px;
+height:160px;
 border-radius:50%;
 background:#fff;
 border:6px solid #1686e3;
@@ -173,71 +236,269 @@ justify-content:center;
 text-align:center;
 font-weight:1000;
 color:#0a4ea3;
-z-index:10;
+z-index:2;
+box-shadow:0 10px 24px rgba(0,0,0,.18);
 }
 
 .speed-badge span{
-font-size:48px;
+font-size:54px;
 color:#e11d48;
+line-height:1;
 }
 
 .section{
-padding:80px 20px;
+padding:80px 0;
 }
 
 .section-title{
 font-size:48px;
 font-weight:1000;
 text-align:center;
-margin-bottom:20px;
+margin-bottom:16px;
 color:#0a4ea3;
+}
+
+.section-sub{
+text-align:center;
+font-size:18px;
+font-weight:800;
+color:#666;
+margin-bottom:44px;
+}
+
+.quick-symptoms{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+}
+
+.quick-card{
+background:#fff;
+padding:28px 18px;
+border-radius:24px;
+text-align:center;
+box-shadow:0 8px 24px rgba(0,0,0,.06);
+}
+
+.quick-card .icon{
+font-size:42px;
+margin-bottom:12px;
+}
+
+.quick-card h3{
+font-size:22px;
+margin-bottom:8px;
+color:#0a4ea3;
+}
+
+.quick-card p{
+font-size:14px;
+font-weight:800;
+color:#444;
+}
+
+.warning-box{
+background:#fff5f5;
+border:2px solid #fecaca;
+padding:36px;
+border-radius:28px;
+box-shadow:0 10px 24px rgba(0,0,0,.06);
+}
+
+.warning-box h3{
+font-size:38px;
+margin-bottom:20px;
+color:#d90429;
+}
+
+.warning-box li{
+margin-bottom:12px;
+font-size:18px;
+font-weight:900;
 }
 
 .symptom-card{
 position:relative;
 overflow:hidden;
-border-radius:34px;
-margin-bottom:34px;
+border-radius:36px;
+margin-bottom:40px;
 background:#fff;
 box-shadow:0 16px 36px rgba(0,0,0,.10);
 }
 
 .symptom-card img{
 width:100%;
-height:540px;
+height:560px;
 object-fit:cover;
+display:block;
 }
 
 .symptom-overlay{
 position:absolute;
 right:0;
 top:0;
-width:45%;
+width:48%;
 height:100%;
 background:
 linear-gradient(
 90deg,
 rgba(255,255,255,0) 0%,
-rgba(255,255,255,.92) 26%,
+rgba(255,255,255,.92) 24%,
 rgba(255,255,255,.98) 100%
 );
 display:flex;
 align-items:center;
-padding:40px;
+padding:44px;
 }
 
 .symptom-text h3{
 font-size:48px;
-font-weight:1000;
+margin-bottom:16px;
 color:#0a4ea3;
-margin-bottom:14px;
+}
+
+.symptom-text p{
+font-size:18px;
+font-weight:800;
+margin-bottom:18px;
 }
 
 .price{
-font-size:56px;
+font-size:60px;
 font-weight:1000;
 color:#e11d48;
-margin-top:20px;
+margin-bottom:20px;
+}
+
+.safe-points{
+display:flex;
+flex-direction:column;
+gap:10px;
+margin-bottom:24px;
+}
+
+.safe-points span{
+background:#fff;
+padding:10px 14px;
+border-radius:999px;
+font-size:14px;
+font-weight:900;
+box-shadow:0 4px 10px rgba(0,0,0,.06);
+}
+
+.reason-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+}
+
+.reason-card{
+background:#fff;
+padding:28px;
+border-radius:24px;
+text-align:center;
+box-shadow:0 10px 24px rgba(0,0,0,.07);
+}
+
+.reason-card b{
+display:block;
+font-size:24px;
+margin-bottom:10px;
+color:#0a4ea3;
+}
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+}
+
+.review-card{
+background:#fff;
+padding:30px;
+border-radius:26px;
+box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+
+.review-card h4{
+font-size:22px;
+margin-bottom:14px;
+color:#0a4ea3;
+}
+
+.flow-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+}
+
+.flow-card{
+background:#fff;
+overflow:hidden;
+border-radius:28px;
+box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+
+.flow-card img{
+width:100%;
+height:240px;
+object-fit:cover;
+display:block;
+}
+
+.flow-body{
+padding:24px;
+}
+
+.flow-body h3{
+font-size:28px;
+margin-bottom:10px;
+color:#0a4ea3;
+}
+
+.price-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+}
+
+.price-box{
+background:#fff;
+padding:30px 20px;
+border-radius:28px;
+text-align:center;
+box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+
+.big-price{
+font-size:40px;
+font-weight:1000;
+color:#e11d48;
+}
+
+.area-box{
+background:#fff;
+padding:40px;
+border-radius:30px;
+box-shadow:0 10px 24px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.area-tags{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+margin-top:24px;
+}
+
+.area-tags span{
+background:#eef5ff;
+padding:12px 18px;
+border-radius:999px;
+font-size:15px;
+font-weight:900;
+color:#0a4ea3;
 }
 
 .final-cta{
@@ -250,8 +511,9 @@ box-shadow:0 16px 40px rgba(0,0,0,.12);
 
 .final-cta img{
 width:100%;
-height:660px;
+height:680px;
 object-fit:cover;
+display:block;
 }
 
 .final-overlay{
@@ -264,25 +526,97 @@ background:
 linear-gradient(
 90deg,
 rgba(255,255,255,0) 0%,
-rgba(255,255,255,.90) 24%,
+rgba(255,255,255,.92) 24%,
 rgba(255,255,255,.98) 100%
 );
 display:flex;
 align-items:center;
-padding:54px;
+padding:60px;
 }
 
 .final-box h2{
-font-size:52px;
-font-weight:1000;
+font-size:54px;
+margin-bottom:18px;
 color:#0a4ea3;
-margin-bottom:20px;
+}
+
+.final-box p{
+font-size:20px;
+font-weight:800;
+margin-bottom:28px;
+}
+
+.final-buttons{
+display:flex;
+flex-direction:column;
+gap:16px;
+}
+
+.final-buttons a{
+height:78px;
+border-radius:999px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:24px;
+font-weight:1000;
+color:#fff;
+}
+
+.footer{
+background:#071b34;
+color:#dbeafe;
+padding:50px 20px;
+text-align:center;
+margin-top:80px;
+line-height:2;
+}
+
+.fixed-bar{
+position:fixed;
+left:0;
+bottom:0;
+width:100%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:8px;
+padding:8px;
+background:rgba(255,255,255,.96);
+backdrop-filter:blur(10px);
+z-index:999999;
+}
+
+.fixed-bar a{
+height:64px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+font-weight:1000;
+color:#fff;
+border-radius:999px;
+}
+
+.fixed-phone{
+background:#ff3131;
+}
+
+.fixed-line{
+background:#06c755;
 }
 
 @media(max-width:900px){
 
+.header-inner{
+padding:12px 0;
+}
+
+.logo{
+font-size:22px;
+}
+
 .hero-image{
-height:860px !important;
+height:860px;
 }
 
 .hero-image::before{
@@ -291,23 +625,23 @@ linear-gradient(
 180deg,
 rgba(255,255,255,.98) 0%,
 rgba(255,255,255,.95) 48%,
-rgba(255,255,255,.40) 75%,
+rgba(255,255,255,.40) 78%,
 rgba(255,255,255,.05) 100%
 ),
-url("./hero-katsushika-anime-v1.png");
+url("./phone-support-cta-katsushika.png");
 background-size:cover;
 background-position:center center;
 background-repeat:no-repeat;
 }
 
 .hero-overlay{
-padding:30px;
+padding:28px;
 align-items:flex-start;
-padding-top:60px;
+padding-top:50px;
 }
 
 .hero h1{
-font-size:44px;
+font-size:46px;
 }
 
 .hero-lead{
@@ -319,12 +653,23 @@ width:100%;
 font-size:20px;
 }
 
+.quick-symptoms{
+grid-template-columns:1fr 1fr;
+}
+
+.reason-grid,
+.review-grid,
+.flow-grid,
+.price-grid{
+grid-template-columns:1fr;
+}
+
 .symptom-overlay{
 width:100%;
 height:auto;
 bottom:0;
 top:auto;
-padding:26px;
+padding:24px;
 background:
 linear-gradient(
 180deg,
@@ -334,17 +679,29 @@ rgba(255,255,255,.98) 100%
 );
 }
 
+.symptom-card img{
+height:720px;
+}
+
 .final-overlay{
 width:100%;
-padding:26px;
+padding:24px;
 align-items:flex-end;
 background:
 linear-gradient(
 180deg,
 rgba(255,255,255,0) 0%,
-rgba(255,255,255,.90) 20%,
+rgba(255,255,255,.92) 20%,
 rgba(255,255,255,.98) 100%
 );
+}
+
+.final-cta img{
+height:820px;
+}
+
+.section-title{
+font-size:34px;
 }
 
 }
@@ -354,7 +711,24 @@ rgba(255,255,255,.98) 100%
 
 <body>
 
+<header>
+<div class="container header-inner">
+
+<div class="logo">
+関東エアコン本舗
+<small>葛飾区・柴又・高砂・金町周辺対応</small>
+</div>
+
+<div class="top-buttons">
+<a href="tel:0358794790" class="tel-btn">📞 電話</a>
+<a href="https://lin.ee/Nhppoyr" class="line-btn">LINE相談</a>
+</div>
+
+</div>
+</header>
+
 <section class="hero">
+<div class="container">
 
 <div class="hero-wrap">
 
@@ -363,6 +737,10 @@ rgba(255,255,255,.98) 100%
 <div class="hero-overlay">
 
 <div class="hero-content">
+
+<div class="hero-badge">
+葛飾区エリア巡回中
+</div>
 
 <h1>
 エアコンが<br>
@@ -375,18 +753,24 @@ rgba(255,255,255,.98) 100%
 最短30分で駆けつけます。
 </div>
 
+<div class="hero-points">
+<span>作業前見積り</span>
+<span>追加料金は事前説明</span>
+<span>LINE写真相談OK</span>
+<span>無理な交換営業なし</span>
+</div>
+
 <div class="hero-buttons">
-<a href="tel:0358794790" class="tel-btn">
-📞 今すぐ電話
-</a>
+<a href="tel:0358794790" class="tel-btn">📞 今すぐ電話する</a>
+<a href="https://lin.ee/Nhppoyr" class="line-btn">LINE無料相談</a>
+</div>
 
-<a href="https://lin.ee/Nhppoyr" class="line-btn">
-LINE相談
-</a>
+<div class="hero-note">
+現在、葛飾区・柴又・高砂・金町周辺を中心に対応中。<br>
+「冷えない」「水漏れ」「異音」「電源が入らない」など、まずは症状だけでもご相談ください。
 </div>
 
 </div>
-
 </div>
 
 <div class="speed-badge">
@@ -395,6 +779,7 @@ LINE相談
 
 </div>
 
+</div>
 </section>
 
 </body>
