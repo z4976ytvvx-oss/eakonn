@@ -431,6 +431,137 @@ font-weight:1000;
 color:#0a4ea3;
 }
 
+.area-box{
+background:#fff;
+padding:50px;
+border-radius:34px;
+text-align:center;
+box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+
+.area-box h3{
+font-size:44px;
+margin-bottom:14px;
+color:#0a4ea3;
+}
+
+.area-box p{
+font-size:18px;
+font-weight:800;
+margin-bottom:24px;
+}
+
+.area-tags{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+justify-content:center;
+margin-top:24px;
+}
+
+.area-tags span{
+background:#eef5ff;
+padding:12px 18px;
+border-radius:999px;
+font-size:15px;
+font-weight:900;
+color:#0a4ea3;
+}
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
+}
+
+.review-card{
+background:#fff;
+padding:34px;
+border-radius:30px;
+box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+
+.review-card h4{
+font-size:24px;
+margin-bottom:14px;
+color:#0a4ea3;
+}
+
+.review-card p{
+font-size:16px;
+font-weight:800;
+line-height:2;
+margin-bottom:14px;
+}
+
+.review-card span{
+font-size:13px;
+font-weight:900;
+color:#888;
+}
+
+.final-cta{
+position:relative;
+overflow:hidden;
+border-radius:40px;
+background:#fff;
+box-shadow:0 16px 40px rgba(0,0,0,.12);
+}
+
+.final-cta img{
+height:720px;
+object-fit:cover;
+}
+
+.final-overlay{
+position:absolute;
+right:0;
+top:0;
+width:52%;
+height:100%;
+background:
+linear-gradient(
+90deg,
+rgba(255,255,255,0) 0%,
+rgba(255,255,255,.90) 24%,
+rgba(255,255,255,.98) 100%
+);
+display:flex;
+align-items:center;
+padding:60px;
+}
+
+.final-box h2{
+font-size:64px;
+margin-bottom:20px;
+font-weight:1000;
+color:#0a4ea3;
+}
+
+.final-box p{
+font-size:22px;
+font-weight:800;
+line-height:2;
+margin-bottom:34px;
+}
+
+.final-buttons{
+display:flex;
+flex-direction:column;
+gap:16px;
+}
+
+.final-buttons a{
+height:82px;
+border-radius:999px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:26px;
+font-weight:1000;
+color:#fff;
+}
+
 .footer{
 background:#071b34;
 color:#dbeafe;
@@ -476,7 +607,8 @@ background:#06c755;
 
 @media(max-width:900px){
 
-.quick-symptoms{
+.quick-symptoms,
+.review-grid{
 grid-template-columns:1fr;
 }
 
@@ -513,6 +645,20 @@ padding:30px;
 }
 
 .scam-left h2{
+font-size:40px;
+}
+
+.final-overlay{
+width:100%;
+padding:26px;
+align-items:flex-end;
+}
+
+.final-cta img{
+height:860px;
+}
+
+.final-box h2{
 font-size:40px;
 }
 
@@ -669,12 +815,13 @@ font-size:40px;
 <div class="scam-text">
 
 夏場になると、
-エアコン修理の「高額請求トラブル」が急増します。<br><br>
+エアコン修理の「高額請求トラブル」が急増しています。<br><br>
 
 ・数万円で済む修理なのに20万円以上請求<br>
 ・不安を煽って即交換営業<br>
-・説明なしで作業開始<br>
-・点検だけと言われ高額請求<br><br>
+・説明なしで勝手に作業開始<br>
+・点検だけと言われ高額請求<br>
+・「今契約しないと危険」と急かされる<br><br>
 
 実際に、
 「他社では交換と言われたが修理で直った」
@@ -700,11 +847,20 @@ font-size:40px;
 ✔ 修理可能かを先に確認します
 </div>
 
+<div class="scam-point">
+✔ 作業後に高額請求することはありません
+</div>
+
 </div>
 
 <div class="hero-buttons">
-<a href="tel:0358794790" class="tel-btn">📞 まず電話で確認する</a>
-<a href="https://lin.ee/Nhppoyr" class="line-btn">LINEで写真相談</a>
+<a href="tel:0358794790" class="tel-btn">
+📞 まず電話で確認する
+</a>
+
+<a href="https://lin.ee/Nhppoyr" class="line-btn">
+LINEで写真相談
+</a>
 </div>
 
 </div>
@@ -714,7 +870,7 @@ font-size:40px;
 <div class="scam-card">
 
 <div class="scam-card-top">
-他社で交換提案
+悪質業者の例
 </div>
 
 <div class="scam-price ng">
@@ -723,7 +879,8 @@ font-size:40px;
 
 <div class="scam-desc">
 「全部交換です」<br>
-「今日契約しないと危険」
+「今契約しないと危険」<br>
+「今日しかこの金額は無理」
 </div>
 
 </div>
@@ -735,7 +892,7 @@ font-size:40px;
 <div class="scam-card ok-card">
 
 <div class="scam-card-top ok">
-弊社で点検
+関東エアコン本舗
 </div>
 
 <div class="scam-price ok-price">
@@ -744,7 +901,161 @@ font-size:40px;
 
 <div class="scam-desc">
 修理で直ったケース多数。<br>
+まず原因確認を行います。<br>
 作業後に高額請求することはありません。
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="area-box">
+
+<h3>
+葛飾区・関東エリア巡回対応
+</h3>
+
+<p>
+葛飾区・柴又・高砂・金町周辺を中心に、
+東京・千葉・埼玉・神奈川方面まで対応しています。
+</p>
+
+<div class="area-tags">
+
+<span>葛飾区</span>
+<span>柴又</span>
+<span>高砂</span>
+<span>金町</span>
+<span>小岩</span>
+<span>市川</span>
+<span>松戸</span>
+<span>船橋</span>
+<span>東京</span>
+<span>千葉</span>
+<span>埼玉</span>
+<span>神奈川</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+お客様の声
+</h2>
+
+<div class="review-grid">
+
+<div class="review-card">
+
+<h4>
+すぐ来てくれて助かりました
+</h4>
+
+<p>
+急に冷えなくなって困っていましたが、
+電話後すぐ来てくれて本当に助かりました。
+説明も丁寧でした。
+</p>
+
+<span>
+葛飾区柴又 / 40代女性
+</span>
+
+</div>
+
+<div class="review-card">
+
+<h4>
+他社よりかなり安かった
+</h4>
+
+<p>
+他社では交換と言われましたが、
+修理対応で直りました。
+無理な営業がなく安心できました。
+</p>
+
+<span>
+葛飾区高砂 / 50代男性
+</span>
+
+</div>
+
+<div class="review-card">
+
+<h4>
+LINE相談が便利でした
+</h4>
+
+<p>
+写真を送ったら症状を確認してくれて、
+話がスムーズでした。
+すぐ来てもらえて安心しました。
+</p>
+
+<span>
+葛飾区金町 / 30代女性
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="final-cta">
+
+<img src="./hero-katsushika-anime-aircon-v2.png">
+
+<div class="final-overlay">
+
+<div class="final-box">
+
+<h2>
+今すぐ相談できます
+</h2>
+
+<p>
+冷えない・水漏れ・異音は、
+放置すると高額修理につながる場合があります。<br><br>
+
+まずは症状だけでもご相談ください。
+</p>
+
+<div class="final-buttons">
+
+<a href="tel:0358794790" class="tel-btn">
+📞 今すぐ電話する
+</a>
+
+<a href="https://lin.ee/Nhppoyr" class="line-btn">
+LINE無料相談
+</a>
+
 </div>
 
 </div>
@@ -759,7 +1070,8 @@ font-size:40px;
 
 <footer class="footer">
 関東エアコン本舗<br>
-葛飾区・柴又・高砂・金町周辺対応
+葛飾区・柴又・高砂・金町周辺対応<br>
+受付 9:00〜20:00｜03-5879-4790
 </footer>
 
 <div class="fixed-bar">
