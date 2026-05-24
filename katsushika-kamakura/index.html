@@ -6,7 +6,87 @@
 
 <title>葛飾区のエアコン修理｜最短30分対応｜関東エアコン本舗</title>
 <meta name="description" content="葛飾区のエアコン修理なら関東エアコン本舗。冷えない・水漏れ・異音・電源が入らない症状に最短30分対応。作業前見積り・追加料金は事前説明・LINE写真相談OK。">
+/* ===== アニメ画像 強制上書き ===== */
 
+.hero-image{
+position:relative !important;
+height:780px !important;
+overflow:hidden !important;
+background:none !important;
+}
+
+.hero-image::before{
+content:"";
+position:absolute;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:
+linear-gradient(
+90deg,
+rgba(255,255,255,.98) 0%,
+rgba(255,255,255,.95) 42%,
+rgba(255,255,255,.55) 62%,
+rgba(255,255,255,.05) 100%
+),
+url("./hero-katsushika-anime-v1.png");
+background-size:cover;
+background-position:center right;
+background-repeat:no-repeat;
+z-index:1;
+}
+
+.symptom-card:nth-of-type(1) img{
+content:url("./symptom-cooling-anime.png");
+}
+
+.symptom-card:nth-of-type(2) img{
+content:url("./symptom-water-anime.png");
+}
+
+.symptom-card:nth-of-type(3) img{
+content:url("./symptom-noise-anime.png");
+}
+
+.flow-card:nth-of-type(1) img{
+content:url("./flow-phone-anime.png");
+}
+
+.flow-card:nth-of-type(2) img{
+content:url("./flow-arrival-anime.png");
+}
+
+.flow-card:nth-of-type(3) img{
+content:url("./flow-repair-anime.png");
+}
+
+.final-cta img{
+content:url("./cta-phone-anime.png");
+}
+
+@media(max-width:900px){
+
+.hero-image{
+height:860px !important;
+}
+
+.hero-image::before{
+background:
+linear-gradient(
+180deg,
+rgba(255,255,255,.98) 0%,
+rgba(255,255,255,.95) 48%,
+rgba(255,255,255,.40) 75%,
+rgba(255,255,255,.05) 100%
+),
+url("./hero-katsushika-anime-v1.png");
+background-size:cover;
+background-position:center center;
+background-repeat:no-repeat;
+}
+
+}
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{
