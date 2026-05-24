@@ -4,23 +4,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>松戸のエアコン修理｜誠和電気 エアコンレスキュー｜冷えない・水漏れ・異音対応</title>
+<title>松戸市のエアコン修理｜誠和電気 エアコンレスキュー｜最短30分対応</title>
 
-<meta name="description" content="松戸拠点のエアコン修理なら誠和電気。冷えない・水漏れ・異音・風が出ない・臭いなどに対応。作業前見積り・明朗会計・相見積り歓迎。">
+<meta name="description" content="松戸市のエアコン修理なら誠和電気。冷えない・水漏れ・異音・電源不良に最短30分対応。作業前見積り・追加料金事前説明・修理後1年保証。">
 
 <style>
 
 *{
+margin:0;
+padding:0;
 box-sizing:border-box;
 }
 
 body{
-margin:0;
-background:#f5f7fb;
-color:#111827;
-font-family:system-ui,-apple-system,"Segoe UI","Yu Gothic",Meiryo,sans-serif;
-padding-bottom:82px;
+font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
+background:#eef3f9;
+color:#222;
+line-height:1.7;
 overflow-x:hidden;
+padding-bottom:90px;
 }
 
 img{
@@ -33,423 +35,616 @@ text-decoration:none;
 color:inherit;
 }
 
-main{
-max-width:1120px;
+.container{
+width:92%;
+max-width:1280px;
 margin:auto;
-background:#fff;
 }
 
-/* =========================
+/* =======================
 HEADER
-========================= */
+======================= */
 
-.header{
+header{
 position:sticky;
 top:0;
-z-index:9999;
-background:#fff;
-border-bottom:1px solid #e5e7eb;
-box-shadow:0 2px 12px rgba(0,0,0,.05);
+z-index:99999;
+background:rgba(255,255,255,.96);
+backdrop-filter:blur(10px);
+box-shadow:0 2px 14px rgba(0,0,0,.08);
 }
 
 .header-inner{
-max-width:1120px;
-margin:auto;
-padding:10px 14px;
 display:flex;
-align-items:center;
 justify-content:space-between;
+align-items:center;
+padding:16px 0;
+gap:16px;
+}
+
+.logo{
+font-size:34px;
+font-weight:1000;
+line-height:1.1;
+color:#0a4ea3;
+}
+
+.logo small{
+display:block;
+font-size:12px;
+margin-top:6px;
+color:#666;
+}
+
+.header-center{
+font-size:18px;
+font-weight:1000;
+}
+
+.header-center span{
+font-size:42px;
+color:#e11d48;
+}
+
+.top-buttons{
+display:flex;
 gap:10px;
 }
 
-.logo-main{
-display:block;
-font-weight:1000;
-font-size:18px;
-color:#0a4ea3;
-line-height:1.1;
-}
-
-.logo-sub{
-display:block;
-font-size:11px;
-font-weight:700;
-color:#667085;
-margin-top:2px;
-}
-
-.header-cta{
+.top-buttons a{
+height:58px;
+padding:0 24px;
+border-radius:999px;
 display:flex;
-gap:8px;
-}
-
-.header-cta a{
-width:92px;
-height:48px;
-border-radius:14px;
-display:flex;
-flex-direction:column;
 align-items:center;
 justify-content:center;
-font-size:12px;
+font-size:16px;
 font-weight:1000;
 color:#fff;
-box-shadow:0 6px 18px rgba(0,0,0,.18);
+box-shadow:0 8px 20px rgba(0,0,0,.12);
 }
 
-.header-cta span{
-font-size:9px;
-margin-top:2px;
+.tel-btn{
+background:linear-gradient(135deg,#ff5a36,#d90429);
 }
 
-.head-phone{
-background:linear-gradient(135deg,#ff4040,#d90429);
+.line-btn{
+background:linear-gradient(135deg,#06c755,#00a63e);
 }
 
-.head-line{
-background:linear-gradient(135deg,#06c755,#049b43);
-}
-
-/* =========================
+/* =======================
 HERO
-========================= */
+======================= */
 
 .hero{
+padding:28px 0 60px;
+}
+
+.hero-wrap{
+position:relative;
+overflow:hidden;
+border-radius:40px;
 background:#fff;
+box-shadow:0 18px 46px rgba(0,0,0,.14);
+}
+
+.hero-image{
+position:relative;
+height:820px;
 overflow:hidden;
 }
 
-.hero img{
+.hero-image::before{
+content:"";
+position:absolute;
+left:0;
+top:0;
 width:100%;
+height:100%;
+background:
+linear-gradient(
+90deg,
+rgba(255,255,255,.97) 0%,
+rgba(255,255,255,.94) 40%,
+rgba(255,255,255,.55) 64%,
+rgba(255,255,255,.10) 100%
+),
+url("./hero-aircon.jpg");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
 }
 
-/* =========================
-NOTICE
-========================= */
+.hero-overlay{
+position:absolute;
+left:0;
+top:0;
+width:100%;
+height:100%;
+display:flex;
+align-items:center;
+padding:70px;
+z-index:2;
+}
 
-.notice{
-background:#f8fafc;
-padding:16px;
-text-align:center;
+.hero-content{
+max-width:700px;
+}
+
+.hero-badge{
+display:inline-block;
+background:#fff3cd;
+padding:12px 18px;
+border-radius:999px;
+font-size:14px;
+font-weight:1000;
+margin-bottom:22px;
+color:#9b5a00;
+}
+
+.hero h1{
+font-size:78px;
+line-height:1.05;
+font-weight:1000;
+letter-spacing:-3px;
+margin-bottom:28px;
+color:#0a4ea3;
+}
+
+.hero h1 span{
+color:#e11d48;
+}
+
+.hero-lead{
+font-size:30px;
+font-weight:1000;
+margin-bottom:26px;
+line-height:1.7;
+}
+
+.hero-points{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-bottom:30px;
+}
+
+.hero-points span{
+background:#fff;
+padding:12px 18px;
+border-radius:999px;
+font-size:14px;
+font-weight:900;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.hero-buttons{
+display:flex;
+gap:14px;
+flex-wrap:wrap;
+margin-bottom:24px;
+}
+
+.hero-buttons a{
+height:78px;
+padding:0 34px;
+border-radius:999px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:24px;
+font-weight:1000;
+color:#fff;
+box-shadow:0 14px 28px rgba(0,0,0,.16);
+}
+
+.hero-note{
+background:rgba(255,255,255,.92);
+padding:18px;
+border-radius:18px;
 font-size:15px;
 font-weight:800;
-line-height:1.8;
-border-top:1px solid #e5e7eb;
-border-bottom:1px solid #e5e7eb;
+line-height:2;
+max-width:620px;
+box-shadow:0 6px 18px rgba(0,0,0,.07);
 }
 
-.notice-green{
-display:block;
-color:#06c755;
-font-weight:1000;
-font-size:17px;
-margin-top:4px;
-}
-
-.no-sales{
+.speed-badge{
+position:absolute;
+right:6%;
+bottom:40px;
+width:170px;
+height:170px;
+border-radius:50%;
+background:#fff;
+border:6px solid #1686e3;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
-font-size:13px;
-line-height:1.7;
-padding:10px;
-color:#555;
+font-weight:1000;
+color:#0a4ea3;
+z-index:2;
+box-shadow:0 10px 26px rgba(0,0,0,.18);
 }
 
-/* =========================
-WARNING
-========================= */
-
-.warning-section{
-padding:22px 14px;
+.speed-badge span{
+font-size:64px;
+color:#e11d48;
+line-height:1;
 }
 
-.warning-wrap{
-background:linear-gradient(180deg,#fff,#fff5f5);
-border:2px solid #ffd1d1;
-border-radius:24px;
-padding:26px 18px;
-box-shadow:0 10px 24px rgba(0,0,0,.06);
+/* =======================
+SECTION
+======================= */
+
+.section{
+padding:90px 0;
 }
 
-.warning-badge{
+.section-title{
+font-size:56px;
+font-weight:1000;
+text-align:center;
+margin-bottom:18px;
+color:#0a4ea3;
+letter-spacing:-2px;
+}
+
+.section-sub{
+text-align:center;
+font-size:20px;
+font-weight:800;
+color:#666;
+margin-bottom:50px;
+}
+
+.quick-symptoms{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:22px;
+}
+
+.quick-card{
+background:#fff;
+padding:34px 20px;
+border-radius:30px;
+text-align:center;
+box-shadow:0 10px 26px rgba(0,0,0,.07);
+}
+
+.quick-card .icon{
+font-size:54px;
+margin-bottom:12px;
+}
+
+.quick-card h3{
+font-size:28px;
+margin-bottom:8px;
+color:#0a4ea3;
+}
+
+.quick-card p{
+font-size:15px;
+font-weight:800;
+color:#444;
+}
+
+/* =======================
+SCAM
+======================= */
+
+.scam-wrap{
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:36px;
+background:#fff;
+border-radius:40px;
+padding:60px;
+box-shadow:0 18px 42px rgba(0,0,0,.08);
+}
+
+.scam-badge{
 display:inline-block;
-background:#fff0f0;
+background:#fff1f2;
 color:#d90429;
-padding:9px 14px;
+font-size:15px;
+font-weight:1000;
+padding:12px 18px;
 border-radius:999px;
-font-size:12px;
+margin-bottom:24px;
+border:2px solid #fecdd3;
+}
+
+.scam-left h2{
+font-size:64px;
+line-height:1.2;
+font-weight:1000;
+margin-bottom:28px;
+letter-spacing:-2px;
+}
+
+.scam-text{
+font-size:18px;
+font-weight:700;
+line-height:2.1;
+margin-bottom:30px;
+color:#444;
+}
+
+.scam-points{
+display:flex;
+flex-direction:column;
+gap:14px;
+margin-bottom:34px;
+}
+
+.scam-point{
+background:#f8fbff;
+border:1px solid #dbeafe;
+padding:18px;
+border-radius:18px;
+font-size:16px;
+font-weight:1000;
+color:#0a4ea3;
+}
+
+.scam-right{
+display:flex;
+flex-direction:column;
+justify-content:center;
+gap:20px;
+}
+
+.scam-card{
+background:#fff5f5;
+border:3px solid #fecaca;
+border-radius:30px;
+padding:36px;
+text-align:center;
+}
+
+.ok-card{
+background:#f0fdf4;
+border:3px solid #86efac;
+}
+
+.scam-card-top{
+font-size:24px;
 font-weight:1000;
 margin-bottom:16px;
-}
-
-.warning-title{
-font-size:34px;
-line-height:1.35;
-font-weight:1000;
-margin-bottom:18px;
-color:#111827;
-letter-spacing:-1px;
-}
-
-.warning-title span{
 color:#d90429;
 }
 
-.warning-text{
-font-size:15px;
-line-height:2;
-font-weight:700;
-color:#374151;
-}
-
-.warning-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:14px;
-margin-top:24px;
-}
-
-.warning-card{
-border-radius:18px;
-padding:20px;
-}
-
-.warning-card.bad{
-background:#fff5f5;
-border:2px solid #fecaca;
-}
-
-.warning-card.good{
-background:#f0fdf4;
-border:2px solid #86efac;
-}
-
-.warning-card h3{
-margin:0 0 14px;
-font-size:20px;
-font-weight:1000;
-}
-
-.warning-card.bad h3{
-color:#d90429;
-}
-
-.warning-card.good h3{
+.scam-card-top.ok{
 color:#15803d;
 }
 
-.warning-card ul{
-margin:0;
-padding-left:18px;
+.scam-price{
+font-size:72px;
+font-weight:1000;
+line-height:1;
+margin-bottom:18px;
 }
 
-.warning-card li{
-margin-bottom:12px;
-font-size:14px;
-line-height:1.7;
-font-weight:800;
+.scam-price.ng{
+color:#d90429;
 }
 
-.warning-bottom{
-margin-top:24px;
-text-align:center;
+.ok-price{
+color:#16a34a;
+}
+
+.scam-desc{
 font-size:16px;
-line-height:1.9;
+font-weight:800;
+line-height:2;
+}
+
+.arrow{
+font-size:46px;
+text-align:center;
 font-weight:1000;
-}
-
-/* =========================
-CTA IMAGE
-========================= */
-
-.cta-img{
-max-width:920px;
-margin:28px auto;
-padding:0 14px;
-display:flex;
-gap:18px;
-}
-
-.cta-img a{
-flex:1;
-}
-
-.cta-img img{
-border-radius:18px;
-filter:drop-shadow(0 6px 16px rgba(0,0,0,.18));
-}
-
-/* =========================
-SECTION
-========================= */
-
-.section{
-max-width:920px;
-margin:36px auto;
-padding:0 14px;
-}
-
-.section h2{
-font-size:30px;
-line-height:1.4;
-margin:0 0 18px;
 color:#0a4ea3;
-font-weight:1000;
-letter-spacing:-1px;
 }
+
+/* =======================
+IMAGE SECTION
+======================= */
 
 .section-img{
-border-radius:22px;
-box-shadow:0 10px 26px rgba(0,0,0,.08);
-overflow:hidden;
+width:100%;
+border-radius:30px;
+display:block;
+box-shadow:0 12px 26px rgba(0,0,0,.10);
 }
 
 .mini-text{
-margin:16px 0 0;
-font-size:15px;
-line-height:2;
+margin-top:20px;
+font-size:17px;
 font-weight:700;
-color:#374151;
-}
-
-.price-note{
-margin-top:16px;
-padding:18px;
-background:#eef6ff;
-border-left:5px solid #0a4ea3;
-border-radius:12px;
-font-size:14px;
 line-height:2;
-font-weight:700;
-}
-
-.trust-box{
-background:#fff7e6;
-border:1px solid #ffd38a;
-padding:18px;
-border-radius:18px;
-margin-top:18px;
-font-size:15px;
-line-height:2;
-font-weight:900;
-}
-
-/* =========================
-FAQ
-========================= */
-
-.faq-title{
 text-align:center;
 }
 
-.faq-item{
+/* =======================
+REVIEW
+======================= */
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
+}
+
+.review-card{
 background:#fff;
-border-radius:18px;
-padding:20px;
+padding:34px;
+border-radius:30px;
+box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+
+.review-card h4{
+font-size:24px;
 margin-bottom:14px;
-border:1px solid #e5e7eb;
-box-shadow:0 6px 16px rgba(0,0,0,.05);
+color:#0a4ea3;
 }
 
-.faq-item strong{
-display:block;
-font-size:17px;
-margin-bottom:10px;
-line-height:1.6;
-}
-
-.faq-item p{
-margin:0;
-font-size:14px;
+.review-card p{
+font-size:16px;
+font-weight:800;
 line-height:2;
-font-weight:700;
-color:#374151;
+margin-bottom:14px;
 }
 
-/* =========================
+.review-card span{
+font-size:13px;
+font-weight:900;
+color:#888;
+}
+
+/* =======================
+AREA
+======================= */
+
+.area-box{
+background:#fff;
+padding:50px;
+border-radius:34px;
+text-align:center;
+box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+
+.area-box h3{
+font-size:44px;
+margin-bottom:14px;
+color:#0a4ea3;
+}
+
+.area-box p{
+font-size:18px;
+font-weight:800;
+margin-bottom:24px;
+}
+
+.area-tags{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+justify-content:center;
+margin-top:24px;
+}
+
+.area-tags span{
+background:#eef5ff;
+padding:12px 18px;
+border-radius:999px;
+font-size:15px;
+font-weight:900;
+color:#0a4ea3;
+}
+
+/* =======================
 FOOTER
-========================= */
+======================= */
 
 .footer{
-background:#071425;
+background:#071b34;
 color:#dbeafe;
+padding:60px 20px;
 text-align:center;
-padding:28px 14px;
-font-size:13px;
-line-height:1.9;
-margin-top:40px;
-}
-
-/* =========================
-FIXED CTA
-========================= */
-
-.fixed-cta{
-position:fixed;
-left:0;
-right:0;
-bottom:0;
-z-index:99999;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:4px;
-padding:4px;
-background:rgba(255,255,255,.98);
-box-shadow:0 -4px 16px rgba(0,0,0,.16);
-}
-
-.fixed-cta a{
-overflow:hidden;
-border-radius:10px;
-}
-
-.fixed-cta img{
-height:60px;
-object-fit:cover;
-}
-
-/* =========================
-MOBILE
-========================= */
-
-@media(max-width:700px){
-
-body{
-padding-bottom:74px;
-}
-
-.logo-main{
+margin-top:80px;
+line-height:2;
 font-size:15px;
 }
 
-.logo-sub{
-font-size:9px;
+/* =======================
+FIXED
+======================= */
+
+.fixed-bar{
+position:fixed;
+left:0;
+bottom:0;
+width:100%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:8px;
+padding:8px;
+background:rgba(255,255,255,.96);
+backdrop-filter:blur(10px);
+z-index:999999;
 }
 
-.header-cta a{
-width:76px;
-height:42px;
-font-size:11px;
+.fixed-bar a{
+height:72px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:24px;
+font-weight:1000;
+color:#fff;
+border-radius:999px;
 }
 
-.warning-title{
-font-size:28px;
+.fixed-phone{
+background:#ff3131;
 }
 
-.warning-grid{
+.fixed-line{
+background:#06c755;
+}
+
+/* =======================
+MOBILE
+======================= */
+
+@media(max-width:900px){
+
+.quick-symptoms,
+.review-grid{
 grid-template-columns:1fr;
 }
 
-.cta-img{
-flex-direction:column;
-gap:12px;
+.header-center{
+display:none;
 }
 
-.section h2{
+.hero-image{
+height:980px;
+}
+
+.hero-overlay{
+padding:28px;
+align-items:flex-start;
+padding-top:60px;
+}
+
+.hero h1{
+font-size:54px;
+}
+
+.hero-lead{
 font-size:24px;
 }
 
-.fixed-cta img{
-height:56px;
+.hero-buttons a{
+width:100%;
+font-size:20px;
+}
+
+.scam-wrap{
+grid-template-columns:1fr;
+padding:30px;
+}
+
+.scam-left h2{
+font-size:40px;
+}
+
+.speed-badge{
+display:none;
 }
 
 }
@@ -459,310 +654,337 @@ height:56px;
 
 <body>
 
-<header class="header">
+<header>
 
-<div class="header-inner">
+<div class="container header-inner">
 
-<div>
-<span class="logo-main">誠和電気</span>
-<span class="logo-sub">エアコンレスキュー松戸</span>
+<div class="logo">
+誠和電気
+<small>エアコンレスキュー松戸</small>
 </div>
 
-<div class="header-cta">
+<div class="header-center">
+松戸エリア巡回中！ 最短<span>30</span>分対応
+</div>
 
-<a class="head-phone" href="tel:0358794790">
-📞 電話
-<span>今すぐ相談</span>
-</a>
-
-<a class="head-line" href="https://lin.ee/Nhppoyr">
-LINE
-<span>写真OK</span>
-</a>
-
+<div class="top-buttons">
+<a href="tel:0358794790" class="tel-btn">📞 電話</a>
+<a href="https://lin.ee/Nhppoyr" class="line-btn">LINE相談</a>
 </div>
 
 </div>
 
 </header>
 
-<main>
-
 <section class="hero">
-<img src="./hero-katsushika-anime-aircon-v2.png" alt="松戸のエアコン修理">
+
+<div class="container">
+
+<div class="hero-wrap">
+
+<div class="hero-image"></div>
+
+<div class="hero-overlay">
+
+<div class="hero-content">
+
+<div class="hero-badge">
+松戸市エリア巡回中
+</div>
+
+<h1>
+エアコンが<br>
+<span>冷えない…</span><br>
+水漏れ・異音も即対応
+</h1>
+
+<div class="hero-lead">
+松戸市周辺を修理スタッフが巡回中。<br>
+最短30分で駆けつけます。
+</div>
+
+<div class="hero-points">
+<span>作業前見積り</span>
+<span>追加料金は事前説明</span>
+<span>LINE写真相談OK</span>
+<span>無理な交換営業なし</span>
+<span>修理後1年保証</span>
+</div>
+
+<div class="hero-buttons">
+<a href="tel:0358794790" class="tel-btn">📞 今すぐ電話する</a>
+<a href="https://lin.ee/Nhppoyr" class="line-btn">LINE無料相談</a>
+</div>
+
+<div class="hero-note">
+冷えない・水漏れ・異音・電源不良など、
+まずは症状だけでもご相談ください。
+</div>
+
+</div>
+
+</div>
+
+<div class="speed-badge">
+最短<br><span>30</span><br>分
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<div class="notice">
-📞 お電話は対応中で出られない場合があります。<br>
-<span class="notice-green">
-LINEなら写真を送るだけで相談可能です
-</span>
-</div>
+<section class="section">
 
-<div class="no-sales">
-※ 無理な交換営業は行いません。まず修理可能かを確認します。
-</div>
+<div class="container">
 
-<section class="warning-section">
-
-<div class="warning-wrap">
-
-<div class="warning-badge">
-⚠ 高額請求・ぼったくり被害に注意
-</div>
-
-<h2 class="warning-title">
-「全部交換です」<br>
-と言われても、<br>
-<span>まずはご相談ください。</span>
+<h2 class="section-title">
+ぼったくり・高額請求にご注意ください
 </h2>
 
-<div class="warning-text">
+<div class="scam-wrap">
+
+<div class="scam-left">
+
+<div class="scam-badge">
+⚠ エアコン修理の高額請求トラブル増加中
+</div>
+
+<h2>
+悪質業者に<br>
+ご注意ください
+</h2>
+
+<div class="scam-text">
 
 夏場になると、
-「今すぐ交換しないと危険」
-「修理不可だから全部交換」
-と不安を煽る業者も増えます。<br><br>
+エアコン修理の高額請求トラブルが増えます。<br><br>
 
-実際には、
-数万円の修理で直るケースでも、
-高額な交換工事を提案されるケースがあります。<br><br>
+・説明なしで作業開始<br>
+・不安を煽って交換営業<br>
+・点検だけで高額請求<br><br>
 
-誠和電気では、
-まず原因確認を行い、
-修理可能かをしっかり確認します。
-
-</div>
-
-<div class="warning-grid">
-
-<div class="warning-card bad">
-
-<h3>よくあるトラブル</h3>
-
-<ul>
-<li>✖ その場で契約を急かす</li>
-<li>✖ 説明なしで追加料金</li>
-<li>✖ すぐ交換を勧める</li>
-<li>✖ 相見積りを嫌がる</li>
-</ul>
-
-</div>
-
-<div class="warning-card good">
-
-<h3>誠和電気の場合</h3>
-
-<ul>
-<li>✔ 作業前に料金説明</li>
-<li>✔ 相見積り歓迎</li>
-<li>✔ 修理優先で確認</li>
-<li>✔ 納得後のみ作業</li>
-</ul>
-
-</div>
-
-</div>
-
-<div class="warning-bottom">
-「少しでもおかしい」と感じたら、<br>
+少しでも不安を感じたら、
 まずはご相談ください。
+
+</div>
+
+<div class="scam-points">
+
+<div class="scam-point">
+✔ 作業前に必ず料金説明
+</div>
+
+<div class="scam-point">
+✔ 相見積り歓迎
+</div>
+
+<div class="scam-point">
+✔ 修理可能か先に確認
+</div>
+
+<div class="scam-point">
+✔ 作業後に高額請求することはありません
+</div>
+
+<div class="scam-point">
+✔ 修理後も安心の1年保証
+</div>
+
+</div>
+
+</div>
+
+<div class="scam-right">
+
+<div class="scam-card">
+
+<div class="scam-card-top">
+悪質業者例
+</div>
+
+<div class="scam-price ng">
+18万円
+</div>
+
+<div class="scam-desc">
+全部交換です<br>
+今日契約しないと危険
+</div>
+
+</div>
+
+<div class="arrow">
+↓
+</div>
+
+<div class="scam-card ok-card">
+
+<div class="scam-card-top ok">
+誠和電気
+</div>
+
+<div class="scam-price ok-price">
+12,000円〜
+</div>
+
+<div class="scam-desc">
+まず原因確認。<br>
+修理可能かを確認します。<br>
+修理後も安心の1年保証。
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
 
 </section>
 
-<div class="cta-img">
-
-<a href="tel:0358794790">
-<img src="./contact-phone-happy-katsushika.png" alt="今すぐ電話">
-</a>
-
-<a href="https://lin.ee/Nhppoyr">
-<img src="./phone-support-cta-katsushika.png" alt="LINE相談">
-</a>
-
-</div>
-
 <section class="section">
 
-<h2>
-冷えない・水漏れ・異音の修理事例
+<div class="container">
+
+<h2 class="section-title">
+修理事例
 </h2>
 
-<img class="section-img" src="./aircon-repair-cases-3pattern.jpg" alt="修理事例">
+<img class="section-img" src="./aircon-repair-cases-3pattern.jpg">
 
 <p class="mini-text">
-実際によくあるトラブルを、
-原因別に確認して最適な修理を行います。
+冷えない・水漏れ・異音など、
+症状に合わせて原因確認を行います。
 </p>
 
-</section>
-
-<section class="section">
-
-<div class="trust-box">
-✔ 作業前に必ずお見積り<br>
-✔ 追加費用は事前説明<br>
-✔ 無理な交換営業なし<br>
-✔ まず修理可能か確認<br>
-✔ 修理後も安心の保証対応
 </div>
 
 </section>
 
 <section class="section">
 
-<h2>
+<div class="container">
+
+<h2 class="section-title">
 料金について
 </h2>
 
-<img class="section-img" src="./trust-explanation-katsushika-aircon.png" alt="料金">
-
-<div class="price-note">
-
-工賃は内容により異なります。<br>
-部品交換・材料費が必要な場合は、
-必ず作業前に説明します。<br><br>
-
-「現地で急に高額請求」
-のような不安を減らすため、
-事前説明を大切にしています。
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2>
-対応エリア
-</h2>
-
-<img class="section-img" src="./area-matsudo-kanto.jpg" alt="対応エリア">
+<img class="section-img" src="./price-aircon.jpg">
 
 <p class="mini-text">
-松戸市を中心に、
-東京・千葉・埼玉・神奈川方面までご相談可能です。
+作業前に必ず料金説明を行います。<br>
+ご了承後のみ作業いたします。
 </p>
-
-</section>
-
-<div class="cta-img">
-
-<a href="tel:0358794790">
-<img src="./contact-phone-happy-katsushika.png" alt="今すぐ電話">
-</a>
-
-<a href="https://lin.ee/Nhppoyr">
-<img src="./phone-support-cta-katsushika.png" alt="LINE相談">
-</a>
 
 </div>
 
+</section>
+
 <section class="section">
 
-<h2>
+<div class="container">
+
+<div class="area-box">
+
+<h3>
+松戸市・関東エリア対応
+</h3>
+
+<p>
+松戸市を中心に、
+東京・千葉・埼玉・神奈川方面まで対応しています。
+</p>
+
+<div class="area-tags">
+
+<span>松戸市</span>
+<span>柏市</span>
+<span>市川市</span>
+<span>葛飾区</span>
+<span>船橋市</span>
+<span>流山市</span>
+<span>東京</span>
+<span>千葉</span>
+<span>埼玉</span>
+<span>神奈川</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
 お客様の声
 </h2>
 
-<img class="section-img" src="./repair-complete-katsushika-aircon.png" alt="口コミ">
+<div class="review-grid">
 
-<p class="mini-text">
-「説明が丁寧で安心」
-「すぐ来てくれて助かった」
-などのお声をいただいています。
-</p>
+<div class="review-card">
 
-</section>
+<h4>
+すぐ来てくれて助かった
+</h4>
 
-<section class="section">
-
-<h2>
-修理後も安心
-</h2>
-
-<img class="section-img" src="./trust-cards-blank-katsushika.png" alt="保証">
-
-</section>
-
-<section class="section">
-
-<h2 class="faq-title">
-よくある質問
-</h2>
-
-<div class="faq-item">
-<strong>
-エアコンが冷えない原因は？
-</strong>
 <p>
-ガス漏れ・室外機・基板など複数の原因があります。<br>
-現地で確認し、修理可能かを判断します。
+夜に冷えなくなり困っていましたが、
+すぐ対応してくれて助かりました。
 </p>
+
+<span>
+松戸市 / 40代女性
+</span>
+
 </div>
 
-<div class="faq-item">
-<strong>
-現地で高額請求されませんか？
-</strong>
+<div class="review-card">
+
+<h4>
+説明が丁寧で安心
+</h4>
+
 <p>
-必ず作業前に料金説明を行います。<br>
-ご了承後のみ作業します。
+料金説明が分かりやすく、
+無理な営業もありませんでした。
 </p>
+
+<span>
+柏市 / 30代男性
+</span>
+
 </div>
 
-<div class="faq-item">
-<strong>
-料金はいくらかかりますか？
-</strong>
+<div class="review-card">
+
+<h4>
+他社よりかなり安かった
+</h4>
+
 <p>
-症状により異なりますが、<br>
-必ず作業前に見積りを提示し、ご了承後に作業します。<br><br>
-
-作業後に高額請求することはありません。<br>
-追加作業・部品交換が必要な場合も、
-必ず事前に内容と金額をご説明します。<br><br>
-
-「全部交換と言われた」<br>
-「今すぐ契約を迫られた」<br>
-「料金が高すぎて不安」<br>
-そんな場合も、まずはご相談ください。<br><br>
-
-誠和電気では、
-修理できる可能性がある場合、
-まず修理を優先して確認します。<br><br>
-
-相見積りも歓迎しております。
+交換と言われましたが、
+修理で直って本当に助かりました。
 </p>
+
+<span>
+市川市 / 50代男性
+</span>
+
 </div>
 
-<div class="faq-item">
-<strong>
-どれくらいで来れますか？
-</strong>
-<p>
-エリアや混雑状況によりますが、
-最短30分〜当日対応可能です。
-</p>
+</div>
+
 </div>
 
 </section>
-
-<div class="cta-img">
-
-<a href="tel:0358794790">
-<img src="./contact-phone-happy-katsushika.png" alt="電話">
-</a>
-
-<a href="https://lin.ee/Nhppoyr">
-<img src="./phone-support-cta-katsushika.png" alt="LINE">
-</a>
-
-</div>
-
-</main>
 
 <footer class="footer">
 
@@ -772,750 +994,14 @@ LINEなら写真を送るだけで相談可能です
 
 </footer>
 
-<div class="fixed-cta">
+<div class="fixed-bar">
 
-<a href="tel:0358794790">
-<img src="./contact-phone-happy-katsushika.png" alt="電話">
-</a>
-
-<a href="https://lin.ee/Nhppoyr">
-<img src="./phone-support-cta-katsushika.png" alt="LINE">
-</a>
-
-</div>
-
-</body>
-</html>max-width:1120px;
-margin:auto;
-background:#fff;
-}
-
-/* =========================
-HEADER
-========================= */
-
-.header{
-position:sticky;
-top:0;
-z-index:9999;
-background:#fff;
-border-bottom:1px solid #e5e7eb;
-box-shadow:0 2px 12px rgba(0,0,0,.05);
-}
-
-.header-inner{
-max-width:1120px;
-margin:auto;
-padding:10px 14px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:10px;
-}
-
-.logo-main{
-display:block;
-font-weight:1000;
-font-size:18px;
-color:#0a4ea3;
-line-height:1.1;
-}
-
-.logo-sub{
-display:block;
-font-size:11px;
-font-weight:700;
-color:#667085;
-margin-top:2px;
-}
-
-.header-cta{
-display:flex;
-gap:8px;
-}
-
-.header-cta a{
-width:92px;
-height:48px;
-border-radius:14px;
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-font-size:12px;
-font-weight:1000;
-color:#fff;
-box-shadow:0 6px 18px rgba(0,0,0,.18);
-}
-
-.header-cta span{
-font-size:9px;
-margin-top:2px;
-}
-
-.head-phone{
-background:linear-gradient(135deg,#ff4040,#d90429);
-}
-
-.head-line{
-background:linear-gradient(135deg,#06c755,#049b43);
-}
-
-/* =========================
-HERO
-========================= */
-
-.hero{
-background:#fff;
-overflow:hidden;
-}
-
-.hero img{
-width:100%;
-}
-
-/* =========================
-NOTICE
-========================= */
-
-.notice{
-background:#f8fafc;
-padding:16px;
-text-align:center;
-font-size:15px;
-font-weight:800;
-line-height:1.8;
-border-top:1px solid #e5e7eb;
-border-bottom:1px solid #e5e7eb;
-}
-
-.notice-green{
-display:block;
-color:#06c755;
-font-weight:1000;
-font-size:17px;
-margin-top:4px;
-}
-
-.no-sales{
-text-align:center;
-font-size:13px;
-line-height:1.7;
-padding:10px;
-color:#555;
-}
-
-/* =========================
-WARNING
-========================= */
-
-.warning-section{
-padding:22px 14px;
-}
-
-.warning-wrap{
-background:linear-gradient(180deg,#fff,#fff5f5);
-border:2px solid #ffd1d1;
-border-radius:24px;
-padding:26px 18px;
-box-shadow:0 10px 24px rgba(0,0,0,.06);
-}
-
-.warning-badge{
-display:inline-block;
-background:#fff0f0;
-color:#d90429;
-padding:9px 14px;
-border-radius:999px;
-font-size:12px;
-font-weight:1000;
-margin-bottom:16px;
-}
-
-.warning-title{
-font-size:34px;
-line-height:1.35;
-font-weight:1000;
-margin-bottom:18px;
-color:#111827;
-letter-spacing:-1px;
-}
-
-.warning-title span{
-color:#d90429;
-}
-
-.warning-text{
-font-size:15px;
-line-height:2;
-font-weight:700;
-color:#374151;
-}
-
-.warning-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:14px;
-margin-top:24px;
-}
-
-.warning-card{
-border-radius:18px;
-padding:20px;
-}
-
-.warning-card.bad{
-background:#fff5f5;
-border:2px solid #fecaca;
-}
-
-.warning-card.good{
-background:#f0fdf4;
-border:2px solid #86efac;
-}
-
-.warning-card h3{
-margin:0 0 14px;
-font-size:20px;
-font-weight:1000;
-}
-
-.warning-card.bad h3{
-color:#d90429;
-}
-
-.warning-card.good h3{
-color:#15803d;
-}
-
-.warning-card ul{
-margin:0;
-padding-left:18px;
-}
-
-.warning-card li{
-margin-bottom:12px;
-font-size:14px;
-line-height:1.7;
-font-weight:800;
-}
-
-.warning-bottom{
-margin-top:24px;
-text-align:center;
-font-size:16px;
-line-height:1.9;
-font-weight:1000;
-}
-
-/* =========================
-CTA IMAGE
-========================= */
-
-.cta-img{
-max-width:920px;
-margin:28px auto;
-padding:0 14px;
-display:flex;
-gap:18px;
-}
-
-.cta-img a{
-flex:1;
-}
-
-.cta-img img{
-border-radius:18px;
-filter:drop-shadow(0 6px 16px rgba(0,0,0,.18));
-}
-
-/* =========================
-SECTION
-========================= */
-
-.section{
-max-width:920px;
-margin:36px auto;
-padding:0 14px;
-}
-
-.section h2{
-font-size:30px;
-line-height:1.4;
-margin:0 0 18px;
-color:#0a4ea3;
-font-weight:1000;
-letter-spacing:-1px;
-}
-
-.section-img{
-border-radius:22px;
-box-shadow:0 10px 26px rgba(0,0,0,.08);
-overflow:hidden;
-}
-
-.mini-text{
-margin:16px 0 0;
-font-size:15px;
-line-height:2;
-font-weight:700;
-color:#374151;
-}
-
-.price-note{
-margin-top:16px;
-padding:18px;
-background:#eef6ff;
-border-left:5px solid #0a4ea3;
-border-radius:12px;
-font-size:14px;
-line-height:2;
-font-weight:700;
-}
-
-.trust-box{
-background:#fff7e6;
-border:1px solid #ffd38a;
-padding:18px;
-border-radius:18px;
-margin-top:18px;
-font-size:15px;
-line-height:2;
-font-weight:900;
-}
-
-/* =========================
-FAQ
-========================= */
-
-.faq-title{
-text-align:center;
-}
-
-.faq-item{
-background:#fff;
-border-radius:18px;
-padding:20px;
-margin-bottom:14px;
-border:1px solid #e5e7eb;
-box-shadow:0 6px 16px rgba(0,0,0,.05);
-}
-
-.faq-item strong{
-display:block;
-font-size:17px;
-margin-bottom:10px;
-line-height:1.6;
-}
-
-.faq-item p{
-margin:0;
-font-size:14px;
-line-height:2;
-font-weight:700;
-color:#374151;
-}
-
-/* =========================
-FOOTER
-========================= */
-
-.footer{
-background:#071425;
-color:#dbeafe;
-text-align:center;
-padding:28px 14px;
-font-size:13px;
-line-height:1.9;
-margin-top:40px;
-}
-
-/* =========================
-FIXED CTA
-========================= */
-
-.fixed-cta{
-position:fixed;
-left:0;
-right:0;
-bottom:0;
-z-index:99999;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:4px;
-padding:4px;
-background:rgba(255,255,255,.98);
-box-shadow:0 -4px 16px rgba(0,0,0,.16);
-}
-
-.fixed-cta a{
-overflow:hidden;
-border-radius:10px;
-}
-
-.fixed-cta img{
-height:60px;
-object-fit:cover;
-}
-
-/* =========================
-MOBILE
-========================= */
-
-@media(max-width:700px){
-
-body{
-padding-bottom:74px;
-}
-
-.logo-main{
-font-size:15px;
-}
-
-.logo-sub{
-font-size:9px;
-}
-
-.header-cta a{
-width:76px;
-height:42px;
-font-size:11px;
-}
-
-.warning-title{
-font-size:28px;
-}
-
-.warning-grid{
-grid-template-columns:1fr;
-}
-
-.cta-img{
-flex-direction:column;
-gap:12px;
-}
-
-.section h2{
-font-size:24px;
-}
-
-.fixed-cta img{
-height:56px;
-}
-
-}
-
-</style>
-</head>
-
-<body>
-
-<header class="header">
-
-<div class="header-inner">
-
-<div>
-<span class="logo-main">誠和電気</span>
-<span class="logo-sub">エアコンレスキュー松戸</span>
-</div>
-
-<div class="header-cta">
-
-<a class="head-phone" href="tel:0358794790">
+<a href="tel:0358794790" class="fixed-phone">
 📞 電話
-<span>今すぐ相談</span>
 </a>
 
-<a class="head-line" href="https://lin.ee/Nhppoyr">
-LINE
-<span>写真OK</span>
-</a>
-
-</div>
-
-</div>
-
-</header>
-
-<main>
-
-<section class="hero">
-<img src="./hero-aircon.jpg" alt="松戸のエアコン修理">
-</section>
-
-<div class="notice">
-📞 お電話は対応中で出られない場合があります。<br>
-<span class="notice-green">
-LINEなら写真を送るだけで相談可能です
-</span>
-</div>
-
-<div class="no-sales">
-※ 無理な交換営業は行いません。まず修理可能かを確認します。
-</div>
-
-<section class="warning-section">
-
-<div class="warning-wrap">
-
-<div class="warning-badge">
-⚠ 高額請求・ぼったくり被害に注意
-</div>
-
-<h2 class="warning-title">
-「全部交換です」<br>
-と言われても、<br>
-<span>まずはご相談ください。</span>
-</h2>
-
-<div class="warning-text">
-
-夏場になると、
-「今すぐ交換しないと危険」
-「修理不可だから全部交換」
-と不安を煽る業者も増えます。<br><br>
-
-実際には、
-数万円の修理で直るケースでも、
-高額な交換工事を提案されるケースがあります。<br><br>
-
-誠和電気では、
-まず原因確認を行い、
-修理可能かをしっかり確認します。
-
-</div>
-
-<div class="warning-grid">
-
-<div class="warning-card bad">
-
-<h3>よくあるトラブル</h3>
-
-<ul>
-<li>✖ その場で契約を急かす</li>
-<li>✖ 説明なしで追加料金</li>
-<li>✖ すぐ交換を勧める</li>
-<li>✖ 相見積りを嫌がる</li>
-</ul>
-
-</div>
-
-<div class="warning-card good">
-
-<h3>誠和電気の場合</h3>
-
-<ul>
-<li>✔ 作業前に料金説明</li>
-<li>✔ 相見積り歓迎</li>
-<li>✔ 修理優先で確認</li>
-<li>✔ 納得後のみ作業</li>
-</ul>
-
-</div>
-
-</div>
-
-<div class="warning-bottom">
-「少しでもおかしい」と感じたら、<br>
-まずはご相談ください。
-</div>
-
-</div>
-
-</section>
-
-<div class="cta-img">
-
-<a href="tel:0358794790">
-<img src="./cta-phone.png" alt="今すぐ電話">
-</a>
-
-<a href="https://lin.ee/Nhppoyr">
-<img src="./cta-line.png" alt="LINE相談">
-</a>
-
-</div>
-
-<section class="section">
-
-<h2>
-冷えない・水漏れ・異音の修理事例
-</h2>
-
-<img class="section-img" src="./aircon-repair-cases-3pattern.jpg" alt="修理事例">
-
-<p class="mini-text">
-実際によくあるトラブルを、
-原因別に確認して最適な修理を行います。
-</p>
-
-</section>
-
-<section class="section">
-
-<div class="trust-box">
-✔ 作業前に必ずお見積り<br>
-✔ 追加費用は事前説明<br>
-✔ 無理な交換営業なし<br>
-✔ まず修理可能か確認<br>
-✔ 修理後も安心の保証対応
-</div>
-
-</section>
-
-<section class="section">
-
-<h2>
-料金について
-</h2>
-
-<img class="section-img" src="./price-aircon.jpg" alt="料金">
-
-<div class="price-note">
-
-工賃は内容により異なります。<br>
-部品交換・材料費が必要な場合は、
-必ず作業前に説明します。<br><br>
-
-「現地で急に高額請求」
-のような不安を減らすため、
-事前説明を大切にしています。
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2>
-対応エリア
-</h2>
-
-<img class="section-img" src="./area-matsudo-kanto.jpg" alt="対応エリア">
-
-<p class="mini-text">
-松戸市を中心に、
-東京・千葉・埼玉・神奈川方面までご相談可能です。
-</p>
-
-</section>
-
-<div class="cta-img">
-
-<a href="tel:0358794790">
-<img src="./cta-phone.png" alt="今すぐ電話">
-</a>
-
-<a href="https://lin.ee/Nhppoyr">
-<img src="./cta-line.png" alt="LINE相談">
-</a>
-
-</div>
-
-<section class="section">
-
-<h2>
-お客様の声
-</h2>
-
-<img class="section-img" src="./review-customers.jpg" alt="口コミ">
-
-<p class="mini-text">
-「説明が丁寧で安心」
-「すぐ来てくれて助かった」
-などのお声をいただいています。
-</p>
-
-</section>
-
-<section class="section">
-
-<h2>
-修理後も安心
-</h2>
-
-<img class="section-img" src="./guarantee-1year-aircon.jpg" alt="保証">
-
-</section>
-
-<section class="section">
-
-<h2 class="faq-title">
-よくある質問
-</h2>
-
-<div class="faq-item">
-<strong>
-エアコンが冷えない原因は？
-</strong>
-<p>
-ガス漏れ・室外機・基板など複数の原因があります。<br>
-現地で確認し、修理可能かを判断します。
-</p>
-</div>
-
-<div class="faq-item">
-<strong>
-現地で高額請求されませんか？
-</strong>
-<p>
-必ず作業前に料金説明を行います。<br>
-ご了承後のみ作業します。
-</p>
-</div>
-
-<div class="faq-item">
-<strong>
-相見積りでも大丈夫ですか？
-</strong>
-<p>
-もちろん大丈夫です。<br>
-他社様のお見積りと比較してご検討ください。
-</p>
-</div>
-
-<div class="faq-item">
-<strong>
-どれくらいで来れますか？
-</strong>
-<p>
-エリアや混雑状況によりますが、
-最短30分〜当日対応可能です。
-</p>
-</div>
-
-</section>
-
-<div class="cta-img">
-
-<a href="tel:0358794790">
-<img src="./cta-phone.png" alt="電話">
-</a>
-
-<a href="https://lin.ee/Nhppoyr">
-<img src="./cta-line.png" alt="LINE">
-</a>
-
-</div>
-
-</main>
-
-<footer class="footer">
-
-誠和電気 エアコンレスキュー松戸<br>
-松戸市拠点・関東一円対応<br>
-受付 9:00〜20:00｜03-5879-4790
-
-</footer>
-
-<div class="fixed-cta">
-
-<a href="tel:0358794790">
-<img src="./cta-phone.png" alt="電話">
-</a>
-
-<a href="https://lin.ee/Nhppoyr">
-<img src="./cta-line.png" alt="LINE">
+<a href="https://lin.ee/Nhppoyr" class="fixed-line">
+LINE相談
 </a>
 
 </div>
