@@ -40,8 +40,6 @@ max-width:1200px;
 margin:auto;
 }
 
-/* header */
-
 header{
 position:sticky;
 top:0;
@@ -98,8 +96,6 @@ background:linear-gradient(135deg,#ff5a36,#d90429);
 .line-btn{
 background:linear-gradient(135deg,#06c755,#00a63e);
 }
-
-/* hero */
 
 .hero{
 padding:28px 0 60px;
@@ -258,8 +254,6 @@ color:#e11d48;
 line-height:1;
 }
 
-/* section */
-
 .section{
 padding:80px 0;
 }
@@ -279,8 +273,6 @@ font-weight:800;
 color:#666;
 margin-bottom:44px;
 }
-
-/* quick */
 
 .quick-symptoms{
 display:grid;
@@ -313,122 +305,6 @@ font-weight:800;
 color:#444;
 }
 
-/* warning */
-
-.warning-box{
-background:#fff5f5;
-border:2px solid #fecaca;
-padding:34px;
-border-radius:28px;
-box-shadow:0 10px 24px rgba(0,0,0,.05);
-}
-
-.warning-box h3{
-font-size:38px;
-margin-bottom:20px;
-color:#d90429;
-}
-
-.warning-box li{
-margin-bottom:12px;
-font-size:18px;
-font-weight:900;
-}
-
-/* symptom */
-
-.symptom-card{
-position:relative;
-overflow:hidden;
-border-radius:36px;
-background:#fff;
-margin-bottom:40px;
-box-shadow:0 16px 36px rgba(0,0,0,.10);
-}
-
-.symptom-card img{
-height:560px;
-object-fit:cover;
-}
-
-.symptom-overlay{
-position:absolute;
-right:0;
-top:0;
-width:48%;
-height:100%;
-background:
-linear-gradient(
-90deg,
-rgba(255,255,255,0) 0%,
-rgba(255,255,255,.92) 26%,
-rgba(255,255,255,.98) 100%
-);
-display:flex;
-align-items:center;
-padding:40px;
-}
-
-.symptom-text h3{
-font-size:48px;
-margin-bottom:14px;
-color:#0a4ea3;
-}
-
-.price{
-font-size:60px;
-font-weight:1000;
-color:#e11d48;
-margin-bottom:18px;
-}
-
-.safe-points{
-display:flex;
-flex-direction:column;
-gap:10px;
-margin-bottom:22px;
-}
-
-.safe-points span{
-background:#fff;
-padding:10px 14px;
-border-radius:999px;
-font-size:14px;
-font-weight:900;
-}
-
-/* anime image replacement */
-
-.symptom-card:nth-of-type(1) img{
-content:url("./symptom-cooling-anime.png");
-}
-
-.symptom-card:nth-of-type(2) img{
-content:url("./symptom-water-anime.png");
-}
-
-.symptom-card:nth-of-type(3) img{
-content:url("./symptom-noise-anime.png");
-}
-
-/* reason */
-
-.reason-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:18px;
-}
-
-.reason-card{
-background:#fff;
-padding:28px;
-border-radius:24px;
-text-align:center;
-box-shadow:0 10px 24px rgba(0,0,0,.07);
-}
-
-/* review */
-
 .review-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
@@ -442,123 +318,57 @@ border-radius:26px;
 box-shadow:0 10px 24px rgba(0,0,0,.08);
 }
 
-/* flow */
-
-.flow-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:22px;
-}
-
-.flow-card{
-background:#fff;
-overflow:hidden;
-border-radius:28px;
-box-shadow:0 10px 24px rgba(0,0,0,.08);
-}
-
-.flow-card img{
-height:240px;
-object-fit:cover;
-}
-
-.flow-card:nth-of-type(1) img{
-content:url("./flow-phone-anime.png");
-}
-
-.flow-card:nth-of-type(2) img{
-content:url("./flow-arrival-anime.png");
-}
-
-.flow-card:nth-of-type(3) img{
-content:url("./flow-repair-anime.png");
-}
-
-.flow-body{
-padding:24px;
-}
-
-/* pricing */
-
-.price-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:18px;
-}
-
-.price-box{
-background:#fff;
-padding:30px 20px;
-border-radius:28px;
-text-align:center;
-box-shadow:0 10px 24px rgba(0,0,0,.08);
-}
-
-.big-price{
-font-size:42px;
-font-weight:1000;
-color:#e11d48;
-}
-
-/* area */
-
-.area-box{
-background:#fff;
-padding:40px;
-border-radius:30px;
-text-align:center;
-box-shadow:0 10px 24px rgba(0,0,0,.08);
-}
-
-.area-tags{
-display:flex;
-flex-wrap:wrap;
-gap:12px;
-justify-content:center;
-margin-top:24px;
-}
-
-.area-tags span{
-background:#eef5ff;
-padding:12px 18px;
-border-radius:999px;
-font-size:15px;
-font-weight:900;
+.review-card h4{
+font-size:22px;
+margin-bottom:14px;
 color:#0a4ea3;
 }
 
-/* final */
+.review-card span{
+display:block;
+margin-top:12px;
+font-size:13px;
+font-weight:900;
+color:#888;
+}
 
-.final-cta{
-position:relative;
-overflow:hidden;
-border-radius:36px;
+.faq-box{
 background:#fff;
-box-shadow:0 16px 40px rgba(0,0,0,.12);
+padding:28px;
+border-radius:28px;
+margin-bottom:18px;
+box-shadow:0 8px 24px rgba(0,0,0,.06);
 }
 
-.final-cta img{
-height:680px;
-object-fit:cover;
-content:url("./cta-phone-anime.png");
+.faq-box h3{
+font-size:24px;
+margin-bottom:12px;
+color:#0a4ea3;
 }
 
-.final-overlay{
-position:absolute;
-right:0;
-top:0;
-width:52%;
-height:100%;
-background:
-linear-gradient(
-90deg,
-rgba(255,255,255,0) 0%,
-rgba(255,255,255,.90) 24%,
-rgba(255,255,255,.98) 100%
-);
-display:flex;
-align-items:center;
-padding:60px;
+.faq-box p{
+font-weight:800;
+color:#444;
+}
+
+.cta-wide{
+background:linear-gradient(135deg,#0a4ea3,#1686e3);
+padding:60px 30px;
+border-radius:36px;
+text-align:center;
+color:#fff;
+box-shadow:0 16px 36px rgba(0,0,0,.16);
+}
+
+.cta-wide h2{
+font-size:52px;
+margin-bottom:20px;
+}
+
+.cta-wide p{
+font-size:20px;
+font-weight:800;
+margin-bottom:30px;
 }
 
 .footer{
@@ -566,6 +376,7 @@ background:#071b34;
 color:#dbeafe;
 padding:50px 20px;
 text-align:center;
+line-height:2;
 margin-top:80px;
 }
 
@@ -581,6 +392,7 @@ padding:8px;
 background:rgba(255,255,255,.96);
 backdrop-filter:blur(10px);
 z-index:999999;
+box-shadow:0 -4px 18px rgba(0,0,0,.12);
 }
 
 .fixed-bar a{
@@ -604,14 +416,6 @@ background:#06c755;
 
 @media(max-width:900px){
 
-.quick-symptoms,
-.reason-grid,
-.review-grid,
-.flow-grid,
-.price-grid{
-grid-template-columns:1fr;
-}
-
 .hero-image{
 height:900px;
 }
@@ -626,26 +430,18 @@ padding-top:60px;
 font-size:52px;
 }
 
-.symptom-overlay{
+.quick-symptoms,
+.review-grid{
+grid-template-columns:1fr;
+}
+
+.cta-wide h2{
+font-size:34px;
+}
+
+.hero-buttons a{
 width:100%;
-height:auto;
-bottom:0;
-top:auto;
-padding:26px;
-}
-
-.symptom-card img{
-height:720px;
-}
-
-.final-overlay{
-width:100%;
-padding:24px;
-align-items:flex-end;
-}
-
-.final-cta img{
-height:840px;
+font-size:20px;
 }
 
 }
@@ -672,12 +468,15 @@ height:840px;
 </header>
 
 <section class="hero">
+
 <div class="container">
+
 <div class="hero-wrap">
 
 <div class="hero-image"></div>
 
 <div class="hero-overlay">
+
 <div class="hero-content">
 
 <div class="hero-badge">
@@ -707,7 +506,12 @@ height:840px;
 <a href="https://lin.ee/Nhppoyr" class="line-btn">LINE無料相談</a>
 </div>
 
+<div class="hero-note">
+現在、葛飾区・柴又・高砂・金町周辺を中心に対応中。
 </div>
+
+</div>
+
 </div>
 
 <div class="speed-badge">
@@ -715,7 +519,9 @@ height:840px;
 </div>
 
 </div>
+
 </div>
+
 </section>
 
 <section class="section">
@@ -747,6 +553,80 @@ height:840px;
 <div class="icon">⚡</div>
 <h3>電源不良</h3>
 <p>電源が入らない</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">お客様の声</h2>
+
+<div class="review-grid">
+
+<div class="review-card">
+<h4>すぐ来てくれて助かった</h4>
+<p>真夏で冷えなくなって困っていたけど、その日に来てくれました。</p>
+<span>葛飾区 / 40代女性</span>
+</div>
+
+<div class="review-card">
+<h4>説明が丁寧だった</h4>
+<p>料金説明がちゃんとしていて安心感がありました。</p>
+<span>高砂 / 50代男性</span>
+</div>
+
+<div class="review-card">
+<h4>LINE相談が便利</h4>
+<p>写真送っただけで話が早かったです。</p>
+<span>柴又 / 30代女性</span>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">よくある質問</h2>
+
+<div class="faq-box">
+<h3>本当に当日来れますか？</h3>
+<p>巡回スタッフの位置次第で最短30分〜当日対応可能です。</p>
+</div>
+
+<div class="faq-box">
+<h3>見積り後に断れますか？</h3>
+<p>もちろん可能です。無理な営業はしません。</p>
+</div>
+
+<div class="faq-box">
+<h3>古いエアコンでも対応できますか？</h3>
+<p>まず修理可能か確認します。交換前提ではありません。</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<div class="cta-wide">
+
+<h2>今すぐご相談ください</h2>
+
+<p>
+冷えない・水漏れ・異音は早めの点検がおすすめです。
+</p>
+
+<div class="hero-buttons">
+<a href="tel:0358794790" class="tel-btn">📞 今すぐ電話</a>
+<a href="https://lin.ee/Nhppoyr" class="line-btn">LINE相談</a>
 </div>
 
 </div>
