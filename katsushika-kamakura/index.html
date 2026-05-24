@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -134,7 +135,7 @@ rgba(255,255,255,.94) 42%,
 rgba(255,255,255,.45) 65%,
 rgba(255,255,255,.05) 100%
 ),
-url("./phone-support-cta-katsushika.png");
+url("./hero-katsushika-anime-v1.png");
 background-size:cover;
 background-position:center right;
 background-repeat:no-repeat;
@@ -258,8 +259,6 @@ color:#e11d48;
 line-height:1;
 }
 
-/* sections */
-
 .section{
 padding:80px 0;
 }
@@ -280,7 +279,7 @@ color:#666;
 margin-bottom:44px;
 }
 
-/* quick */
+/* symptoms */
 
 .quick-symptoms{
 display:grid;
@@ -335,7 +334,7 @@ font-size:18px;
 font-weight:900;
 }
 
-/* symptom */
+/* symptom card */
 
 .symptom-card{
 position:relative;
@@ -375,12 +374,6 @@ margin-bottom:14px;
 color:#0a4ea3;
 }
 
-.symptom-text p{
-font-size:18px;
-font-weight:800;
-margin-bottom:18px;
-}
-
 .price{
 font-size:60px;
 font-weight:1000;
@@ -401,7 +394,20 @@ padding:10px 14px;
 border-radius:999px;
 font-size:14px;
 font-weight:900;
-box-shadow:0 4px 10px rgba(0,0,0,.06);
+}
+
+/* image replacement */
+
+.symptom-card:nth-of-type(1) img{
+content:url("./symptom-cooling-anime.png");
+}
+
+.symptom-card:nth-of-type(2) img{
+content:url("./symptom-water-anime.png");
+}
+
+.symptom-card:nth-of-type(3) img{
+content:url("./symptom-noise-anime.png");
 }
 
 /* reasons */
@@ -420,13 +426,6 @@ text-align:center;
 box-shadow:0 10px 24px rgba(0,0,0,.07);
 }
 
-.reason-card b{
-display:block;
-font-size:24px;
-margin-bottom:10px;
-color:#0a4ea3;
-}
-
 /* reviews */
 
 .review-grid{
@@ -440,20 +439,6 @@ background:#fff;
 padding:30px;
 border-radius:26px;
 box-shadow:0 10px 24px rgba(0,0,0,.08);
-}
-
-.review-card h4{
-font-size:22px;
-margin-bottom:14px;
-color:#0a4ea3;
-}
-
-.review-card span{
-display:block;
-margin-top:12px;
-font-size:13px;
-font-weight:900;
-color:#888;
 }
 
 /* flow */
@@ -476,14 +461,20 @@ height:240px;
 object-fit:cover;
 }
 
-.flow-body{
-padding:24px;
+.flow-card:nth-of-type(1) img{
+content:url("./flow-phone-anime.png");
 }
 
-.flow-body h3{
-font-size:28px;
-margin-bottom:10px;
-color:#0a4ea3;
+.flow-card:nth-of-type(2) img{
+content:url("./flow-arrival-anime.png");
+}
+
+.flow-card:nth-of-type(3) img{
+content:url("./flow-repair-anime.png");
+}
+
+.flow-body{
+padding:24px;
 }
 
 /* pricing */
@@ -506,7 +497,6 @@ box-shadow:0 10px 24px rgba(0,0,0,.08);
 font-size:42px;
 font-weight:1000;
 color:#e11d48;
-margin:12px 0;
 }
 
 /* area */
@@ -517,12 +507,6 @@ padding:40px;
 border-radius:30px;
 text-align:center;
 box-shadow:0 10px 24px rgba(0,0,0,.08);
-}
-
-.area-box h3{
-font-size:38px;
-margin-bottom:14px;
-color:#0a4ea3;
 }
 
 .area-tags{
@@ -555,6 +539,7 @@ box-shadow:0 16px 40px rgba(0,0,0,.12);
 .final-cta img{
 height:680px;
 object-fit:cover;
+content:url("./cta-phone-anime.png");
 }
 
 .final-overlay{
@@ -573,18 +558,6 @@ rgba(255,255,255,.98) 100%
 display:flex;
 align-items:center;
 padding:60px;
-}
-
-.final-box h2{
-font-size:54px;
-margin-bottom:18px;
-color:#0a4ea3;
-}
-
-.final-box p{
-font-size:20px;
-font-weight:800;
-margin-bottom:28px;
 }
 
 .final-buttons{
@@ -611,7 +584,6 @@ background:#071b34;
 color:#dbeafe;
 padding:50px 20px;
 text-align:center;
-line-height:2;
 margin-top:80px;
 }
 
@@ -629,7 +601,6 @@ padding:8px;
 background:rgba(255,255,255,.96);
 backdrop-filter:blur(10px);
 z-index:999999;
-box-shadow:0 -4px 18px rgba(0,0,0,.12);
 }
 
 .fixed-bar a{
@@ -651,31 +622,18 @@ background:#ff3131;
 background:#06c755;
 }
 
-/* mobile */
-
 @media(max-width:900px){
 
-.logo{
-font-size:22px;
+.quick-symptoms,
+.reason-grid,
+.review-grid,
+.flow-grid,
+.price-grid{
+grid-template-columns:1fr;
 }
 
 .hero-image{
 height:900px;
-}
-
-.hero-image::before{
-background:
-linear-gradient(
-180deg,
-rgba(255,255,255,.98) 0%,
-rgba(255,255,255,.95) 48%,
-rgba(255,255,255,.40) 75%,
-rgba(255,255,255,.05) 100%
-),
-url("./phone-support-cta-katsushika.png");
-background-size:cover;
-background-position:center center;
-background-repeat:no-repeat;
 }
 
 .hero-overlay{
@@ -688,39 +646,12 @@ padding-top:60px;
 font-size:52px;
 }
 
-.hero-lead{
-font-size:22px;
-}
-
-.hero-buttons a{
-width:100%;
-font-size:20px;
-}
-
-.quick-symptoms{
-grid-template-columns:1fr 1fr;
-}
-
-.reason-grid,
-.review-grid,
-.flow-grid,
-.price-grid{
-grid-template-columns:1fr;
-}
-
 .symptom-overlay{
 width:100%;
 height:auto;
 bottom:0;
 top:auto;
 padding:26px;
-background:
-linear-gradient(
-180deg,
-rgba(255,255,255,0) 0%,
-rgba(255,255,255,.92) 20%,
-rgba(255,255,255,.98) 100%
-);
 }
 
 .symptom-card img{
@@ -731,21 +662,10 @@ height:720px;
 width:100%;
 padding:24px;
 align-items:flex-end;
-background:
-linear-gradient(
-180deg,
-rgba(255,255,255,0) 0%,
-rgba(255,255,255,.92) 20%,
-rgba(255,255,255,.98) 100%
-);
 }
 
 .final-cta img{
 height:840px;
-}
-
-.final-box h2{
-font-size:38px;
 }
 
 }
@@ -772,15 +692,12 @@ font-size:38px;
 </header>
 
 <section class="hero">
-
 <div class="container">
-
 <div class="hero-wrap">
 
 <div class="hero-image"></div>
 
 <div class="hero-overlay">
-
 <div class="hero-content">
 
 <div class="hero-badge">
@@ -810,13 +727,7 @@ font-size:38px;
 <a href="https://lin.ee/Nhppoyr" class="line-btn">LINE無料相談</a>
 </div>
 
-<div class="hero-note">
-現在、葛飾区・柴又・高砂・金町周辺を中心に対応中。<br>
-冷えない・水漏れ・異音・電源不良など、まずは症状だけでもご相談ください。
 </div>
-
-</div>
-
 </div>
 
 <div class="speed-badge">
@@ -824,16 +735,13 @@ font-size:38px;
 </div>
 
 </div>
-
 </div>
-
 </section>
 
 <section class="section">
 <div class="container">
 
 <h2 class="section-title">こんな症状ありませんか？</h2>
-<p class="section-sub">放置すると高額修理になるケースがあります</p>
 
 <div class="quick-symptoms">
 
