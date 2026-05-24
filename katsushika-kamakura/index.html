@@ -16,6 +16,10 @@ padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
 background:#eef3f9;
@@ -32,7 +36,6 @@ display:block;
 
 a{
 text-decoration:none;
-color:inherit;
 }
 
 .container{
@@ -40,10 +43,6 @@ width:92%;
 max-width:1280px;
 margin:auto;
 }
-
-/* =========================
-HEADER
-========================= */
 
 header{
 position:sticky;
@@ -112,10 +111,6 @@ background:linear-gradient(135deg,#ff5a36,#d90429);
 background:linear-gradient(135deg,#06c755,#00a63e);
 }
 
-/* =========================
-HERO
-========================= */
-
 .hero{
 padding:28px 0 60px;
 }
@@ -130,7 +125,7 @@ box-shadow:0 18px 46px rgba(0,0,0,.14);
 
 .hero-image{
 position:relative;
-height:820px;
+height:860px;
 overflow:hidden;
 }
 
@@ -141,17 +136,15 @@ left:0;
 top:0;
 width:100%;
 height:100%;
-
 background:
 linear-gradient(
 90deg,
-rgba(255,255,255,.97) 0%,
-rgba(255,255,255,.94) 38%,
-rgba(255,255,255,.45) 64%,
-rgba(255,255,255,.08) 100%
+rgba(255,255,255,.98) 0%,
+rgba(255,255,255,.94) 40%,
+rgba(255,255,255,.45) 68%,
+rgba(255,255,255,.06) 100%
 ),
 url("./hero-katsushika-anime-aircon-v2.png");
-
 background-size:cover;
 background-position:center right;
 background-repeat:no-repeat;
@@ -170,7 +163,7 @@ z-index:2;
 }
 
 .hero-content{
-max-width:700px;
+max-width:720px;
 }
 
 .hero-badge{
@@ -186,7 +179,7 @@ color:#9b5a00;
 
 .hero h1{
 font-size:82px;
-line-height:1.02;
+line-height:1.05;
 font-weight:1000;
 letter-spacing:-3px;
 margin-bottom:28px;
@@ -198,10 +191,10 @@ color:#e11d48;
 }
 
 .hero-lead{
-font-size:30px;
-font-weight:1000;
+font-size:28px;
+font-weight:900;
 margin-bottom:26px;
-line-height:1.6;
+line-height:1.7;
 }
 
 .hero-points{
@@ -255,8 +248,8 @@ box-shadow:0 6px 18px rgba(0,0,0,.07);
 position:absolute;
 right:6%;
 bottom:40px;
-width:170px;
-height:170px;
+width:180px;
+height:180px;
 border-radius:50%;
 background:#fff;
 border:6px solid #1686e3;
@@ -271,21 +264,17 @@ box-shadow:0 10px 26px rgba(0,0,0,.18);
 }
 
 .speed-badge span{
-font-size:64px;
+font-size:70px;
 color:#e11d48;
 line-height:1;
 }
-
-/* =========================
-SECTION
-========================= */
 
 .section{
 padding:90px 0;
 }
 
 .section-title{
-font-size:56px;
+font-size:58px;
 font-weight:1000;
 text-align:center;
 margin-bottom:18px;
@@ -332,9 +321,36 @@ font-weight:800;
 color:#444;
 }
 
-/* =========================
-SCAM
-========================= */
+.image-section{
+background:#fff;
+border-radius:40px;
+overflow:hidden;
+box-shadow:0 18px 42px rgba(0,0,0,.08);
+margin-bottom:40px;
+}
+
+.image-section img{
+height:540px;
+object-fit:cover;
+}
+
+.image-body{
+padding:40px;
+}
+
+.image-body h3{
+font-size:46px;
+color:#0a4ea3;
+margin-bottom:18px;
+font-weight:1000;
+}
+
+.image-body p{
+font-size:18px;
+font-weight:700;
+line-height:2;
+color:#444;
+}
 
 .scam-wrap{
 display:grid;
@@ -450,10 +466,6 @@ font-weight:1000;
 color:#0a4ea3;
 }
 
-/* =========================
-REVIEW
-========================= */
-
 .review-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
@@ -485,10 +497,6 @@ font-size:13px;
 font-weight:900;
 color:#888;
 }
-
-/* =========================
-AREA
-========================= */
 
 .area-box{
 background:#fff;
@@ -527,9 +535,25 @@ font-weight:900;
 color:#0a4ea3;
 }
 
-/* =========================
-FINAL CTA
-========================= */
+.guarantee{
+background:#fff;
+padding:60px;
+border-radius:40px;
+box-shadow:0 10px 24px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.guarantee h2{
+font-size:58px;
+color:#0a4ea3;
+margin-bottom:20px;
+}
+
+.guarantee p{
+font-size:20px;
+font-weight:800;
+line-height:2;
+}
 
 .final-cta{
 position:relative;
@@ -557,7 +581,6 @@ rgba(255,255,255,0) 0%,
 rgba(255,255,255,.90) 24%,
 rgba(255,255,255,.98) 100%
 );
-
 display:flex;
 align-items:center;
 padding:60px;
@@ -594,10 +617,6 @@ font-weight:1000;
 color:#fff;
 }
 
-/* =========================
-FOOTER
-========================= */
-
 .footer{
 background:#071b34;
 color:#dbeafe;
@@ -607,10 +626,6 @@ margin-top:80px;
 line-height:2;
 font-size:15px;
 }
-
-/* =========================
-FIXED
-========================= */
 
 .fixed-bar{
 position:fixed;
@@ -644,10 +659,6 @@ background:#ff3131;
 .fixed-line{
 background:#06c755;
 }
-
-/* =========================
-MOBILE
-========================= */
 
 @media(max-width:900px){
 
@@ -692,8 +703,12 @@ padding:30px;
 font-size:40px;
 }
 
-.speed-badge{
-display:none;
+.image-section img{
+height:320px;
+}
+
+.image-body h3{
+font-size:34px;
 }
 
 .final-overlay{
@@ -762,7 +777,7 @@ font-size:40px;
 </h1>
 
 <div class="hero-lead">
-葛飾区周辺を修理スタッフが巡回中。<br>
+お近くのスタッフが巡回中。<br>
 最短30分で駆けつけます。
 </div>
 
@@ -770,7 +785,6 @@ font-size:40px;
 <span>作業前見積り</span>
 <span>追加料金は事前説明</span>
 <span>LINE写真相談OK</span>
-<span>無理な交換営業なし</span>
 <span>修理後1年保証</span>
 </div>
 
@@ -846,12 +860,64 @@ font-size:40px;
 
 <div class="container">
 
+<div class="image-section">
+<img src="./not-cooling-katsushika-aircon.png">
+<div class="image-body">
+<h3>冷えない症状</h3>
+<p>
+ガス漏れ・室外機・基板異常など、
+原因を確認しながら修理を進めます。
+</p>
+</div>
+</div>
+
+<div class="image-section">
+<img src="./water-leak-katsushika-aircon.png">
+<div class="image-body">
+<h3>水漏れ修理</h3>
+<p>
+ドレン詰まり・勾配不良など、
+水漏れ原因を確認して改善します。
+</p>
+</div>
+</div>
+
+<div class="image-section">
+<img src="./symptom-noise-katsushika-aircon.png">
+<div class="image-body">
+<h3>異音トラブル</h3>
+<p>
+ファン・モーター・内部部品などを確認し、
+異音原因を特定します。
+</p>
+</div>
+</div>
+
+<div class="image-section">
+<img src="./power-not-turning-on-katsushika-aircon.png">
+<div class="image-body">
+<h3>電源不良</h3>
+<p>
+基板・電圧・配線などを確認し、
+復旧可能かを判断します。
+</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
 <div class="scam-wrap">
 
 <div class="scam-left">
 
 <div class="scam-badge">
-⚠ エアコン修理の高額請求トラブル増加中
+⚠ 高額請求トラブル増加中
 </div>
 
 <h2>
@@ -863,50 +929,37 @@ font-size:40px;
 <div class="scam-text">
 
 夏場になると、
-エアコン修理の高額請求トラブルが急増しています。<br><br>
+エアコン修理の高額請求トラブルが急増します。<br><br>
 
-・数万円で済む修理なのに20万円以上請求<br>
-・不安を煽って即交換営業<br>
-・説明なしで勝手に作業開始<br>
-・点検だけと言われ高額請求<br><br>
+・説明なしで作業開始<br>
+・不安を煽る交換営業<br>
+・点検だけと言われ高額請求<br>
+・今契約しないと危険と言われる<br><br>
 
-少しでも不安を感じたら、
-まずはご相談ください。
+弊社では、
+まず修理可能かを確認し、
+作業前に必ず料金説明を行います。
 
 </div>
 
 <div class="scam-points">
 
 <div class="scam-point">
-✔ 少しでも「おかしい」と思ったら相見積りを
+✔ 作業前見積り
 </div>
 
 <div class="scam-point">
-✔ その場で即決しない
+✔ 追加料金は事前説明
 </div>
 
 <div class="scam-point">
-✔ まずは弊社へご相談ください
+✔ 修理後1年保証
 </div>
 
 <div class="scam-point">
 ✔ 作業後に高額請求することはありません
 </div>
 
-<div class="scam-point">
-✔ 修理後も安心の1年保証
-</div>
-
-</div>
-
-<div class="hero-buttons">
-<a href="tel:0358794790" class="tel-btn">
-📞 まず電話で確認する
-</a>
-
-<a href="https://lin.ee/Nhppoyr" class="line-btn">
-LINEで写真相談
-</a>
 </div>
 
 </div>
@@ -924,8 +977,8 @@ LINEで写真相談
 </div>
 
 <div class="scam-desc">
-全部交換です<br>
-今日契約しないと危険
+「全部交換です」<br>
+「今契約しないと危険」
 </div>
 
 </div>
@@ -945,9 +998,252 @@ LINEで写真相談
 </div>
 
 <div class="scam-desc">
-まず原因確認。<br>
-修理可能か確認します。<br>
-修理後も安心の1年保証。
+修理で直ったケース多数。<br>
+作業後に高額請求することはありません。
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="image-section">
+<img src="./professional-repair-work-katsushika.png">
+<div class="image-body">
+<h3>プロスタッフが対応</h3>
+<p>
+関東エリアを巡回しているスタッフが、
+現地で症状確認・修理対応を行います。
+</p>
+</div>
+</div>
+
+<div class="image-section">
+<img src="./repair-working-katsushika-aircon.png">
+<div class="image-body">
+<h3>現地で原因確認</h3>
+<p>
+症状だけでは判断できないケースも多いため、
+現地確認を重視しています。
+</p>
+</div>
+</div>
+
+<div class="image-section">
+<img src="./repair-complete-katsushika-aircon.png">
+<div class="image-body">
+<h3>修理後も安心</h3>
+<p>
+修理後も安心してご利用いただけるよう、
+1年保証をお付けしています。
+</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="image-section">
+<img src="./trust-explanation-katsushika-aircon.png">
+<div class="image-body">
+<h3>安心の料金説明</h3>
+<p>
+作業内容・追加費用の有無を説明し、
+ご了承後のみ作業を行います。
+</p>
+</div>
+</div>
+
+<div class="image-section">
+<img src="./trust-cards-blank-katsushika.png">
+<div class="image-body">
+<h3>地域密着対応</h3>
+<p>
+葛飾区・柴又・高砂・金町周辺を中心に、
+関東エリアまで対応しています。
+</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="area-box">
+
+<h3>
+葛飾区・関東エリア巡回対応
+</h3>
+
+<p>
+葛飾区・柴又・高砂・金町周辺を中心に、
+東京・千葉・埼玉・神奈川方面まで対応しています。
+</p>
+
+<div class="area-tags">
+
+<span>葛飾区</span>
+<span>柴又</span>
+<span>高砂</span>
+<span>金町</span>
+<span>小岩</span>
+<span>市川</span>
+<span>松戸</span>
+<span>船橋</span>
+<span>東京</span>
+<span>千葉</span>
+<span>埼玉</span>
+<span>神奈川</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+お客様の声
+</h2>
+
+<div class="review-grid">
+
+<div class="review-card">
+
+<h4>
+すぐ来てくれて助かりました
+</h4>
+
+<p>
+急に冷えなくなって困っていましたが、
+すぐ来てくれて本当に助かりました。
+</p>
+
+<span>
+葛飾区柴又 / 40代女性
+</span>
+
+</div>
+
+<div class="review-card">
+
+<h4>
+他社よりかなり安かった
+</h4>
+
+<p>
+他社では交換と言われましたが、
+修理対応で直りました。
+</p>
+
+<span>
+葛飾区高砂 / 50代男性
+</span>
+
+</div>
+
+<div class="review-card">
+
+<h4>
+LINE相談が便利でした
+</h4>
+
+<p>
+写真を送ったら症状を確認してくれて、
+話がスムーズでした。
+</p>
+
+<span>
+葛飾区金町 / 30代女性
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="guarantee">
+
+<h2>
+修理後1年保証
+</h2>
+
+<p>
+修理後も安心してご利用いただけるよう、
+施工内容に応じて1年保証をお付けしています。<br><br>
+
+万が一の不具合時もご相談ください。
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="final-cta">
+
+<img src="./hero-katsushika-kamakura-aircon.png">
+
+<div class="final-overlay">
+
+<div class="final-box">
+
+<h2>
+今すぐ相談できます
+</h2>
+
+<p>
+冷えない・水漏れ・異音は、
+放置すると高額修理につながる場合があります。<br><br>
+
+まずは症状だけでもご相談ください。
+</p>
+
+<div class="final-buttons">
+
+<a href="tel:0358794790" class="tel-btn">
+📞 今すぐ電話する
+</a>
+
+<a href="https://lin.ee/Nhppoyr" class="line-btn">
+LINE無料相談
+</a>
+
 </div>
 
 </div>
