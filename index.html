@@ -22,7 +22,7 @@ background:#eef3f9;
 color:#222;
 line-height:1.7;
 overflow-x:hidden;
-padding-bottom:90px;
+padding-bottom:92px;
 }
 
 img{
@@ -41,9 +41,9 @@ max-width:1280px;
 margin:auto;
 }
 
-/* =====================
+/* =========================
 HEADER
-===================== */
+========================= */
 
 header{
 position:sticky;
@@ -112,19 +112,18 @@ background:linear-gradient(135deg,#ff5a36,#d90429);
 background:linear-gradient(135deg,#06c755,#00a63e);
 }
 
-/* =====================
+/* =========================
 HERO
-===================== */
+========================= */
 
 .hero{
-padding:28px 0 60px;
+padding:28px 0 40px;
 }
 
 .hero-wrap{
-position:relative;
-overflow:hidden;
-border-radius:40px;
 background:#fff;
+border-radius:40px;
+overflow:hidden;
 box-shadow:0 18px 46px rgba(0,0,0,.14);
 }
 
@@ -133,9 +132,9 @@ width:100%;
 display:block;
 }
 
-/* =====================
+/* =========================
 SECTION
-===================== */
+========================= */
 
 .section{
 padding:90px 0;
@@ -158,45 +157,10 @@ color:#666;
 margin-bottom:50px;
 }
 
-.quick-symptoms{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:22px;
-}
-
-.quick-card{
-background:#fff;
-border-radius:30px;
-overflow:hidden;
-box-shadow:0 10px 26px rgba(0,0,0,.08);
-}
-
-.quick-card img{
-height:280px;
-object-fit:cover;
-}
-
-.quick-body{
-padding:28px;
-}
-
-.quick-body h3{
-font-size:34px;
-margin-bottom:12px;
-font-weight:1000;
-color:#0a4ea3;
-}
-
-.quick-body p{
-font-size:16px;
-font-weight:700;
-line-height:2;
-color:#444;
-}
-
 .section-img{
 width:100%;
 border-radius:34px;
+display:block;
 box-shadow:0 12px 26px rgba(0,0,0,.10);
 }
 
@@ -208,9 +172,49 @@ line-height:2;
 text-align:center;
 }
 
-/* =====================
+/* =========================
+CARD GRID
+========================= */
+
+.quick-symptoms{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:24px;
+}
+
+.quick-card{
+background:#fff;
+border-radius:34px;
+overflow:hidden;
+box-shadow:0 10px 26px rgba(0,0,0,.08);
+}
+
+.quick-card img{
+height:360px;
+object-fit:cover;
+}
+
+.quick-body{
+padding:34px;
+}
+
+.quick-body h3{
+font-size:46px;
+margin-bottom:12px;
+font-weight:1000;
+color:#0a4ea3;
+}
+
+.quick-body p{
+font-size:17px;
+font-weight:700;
+line-height:2;
+color:#444;
+}
+
+/* =========================
 SCAM
-===================== */
+========================= */
 
 .scam-wrap{
 display:grid;
@@ -326,45 +330,9 @@ font-weight:1000;
 color:#0a4ea3;
 }
 
-/* =====================
-REVIEW
-===================== */
-
-.review-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:24px;
-}
-
-.review-card{
-background:#fff;
-padding:34px;
-border-radius:30px;
-box-shadow:0 10px 24px rgba(0,0,0,.08);
-}
-
-.review-card h4{
-font-size:24px;
-margin-bottom:14px;
-color:#0a4ea3;
-}
-
-.review-card p{
-font-size:16px;
-font-weight:800;
-line-height:2;
-margin-bottom:14px;
-}
-
-.review-card span{
-font-size:13px;
-font-weight:900;
-color:#888;
-}
-
-/* =====================
+/* =========================
 AREA
-===================== */
+========================= */
 
 .area-box{
 background:#fff;
@@ -403,9 +371,45 @@ font-weight:900;
 color:#0a4ea3;
 }
 
-/* =====================
+/* =========================
+REVIEW
+========================= */
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
+}
+
+.review-card{
+background:#fff;
+padding:34px;
+border-radius:30px;
+box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+
+.review-card h4{
+font-size:24px;
+margin-bottom:14px;
+color:#0a4ea3;
+}
+
+.review-card p{
+font-size:16px;
+font-weight:800;
+line-height:2;
+margin-bottom:14px;
+}
+
+.review-card span{
+font-size:13px;
+font-weight:900;
+color:#888;
+}
+
+/* =========================
 FOOTER
-===================== */
+========================= */
 
 .footer{
 background:#071b34;
@@ -417,9 +421,9 @@ line-height:2;
 font-size:15px;
 }
 
-/* =====================
-FIXED CTA
-===================== */
+/* =========================
+FIXED BAR
+========================= */
 
 .fixed-bar{
 position:fixed;
@@ -454,9 +458,9 @@ background:#ff3131;
 background:#06c755;
 }
 
-/* =====================
+/* =========================
 MOBILE
-===================== */
+========================= */
 
 @media(max-width:900px){
 
@@ -469,12 +473,25 @@ grid-template-columns:1fr;
 display:none;
 }
 
+.logo{
+font-size:24px;
+}
+
+.top-buttons a{
+padding:0 16px;
+font-size:14px;
+}
+
 .section-title{
-font-size:40px;
+font-size:38px;
 }
 
 .quick-card img{
-height:240px;
+height:auto;
+}
+
+.quick-body h3{
+font-size:38px;
 }
 
 .scam-wrap{
@@ -484,15 +501,6 @@ padding:30px;
 
 .scam-left h2{
 font-size:40px;
-}
-
-.logo{
-font-size:24px;
-}
-
-.top-buttons a{
-padding:0 16px;
-font-size:14px;
 }
 
 }
@@ -545,11 +553,12 @@ font-size:14px;
 <div class="container">
 
 <h2 class="section-title">
-こんな症状ありませんか？
+よくあるエアコントラブル
 </h2>
 
 <p class="section-sub">
-放置すると高額修理につながる場合があります。
+冷えない・水漏れ・異音など、
+症状ごとに原因確認を行います。
 </p>
 
 <div class="quick-symptoms">
@@ -566,7 +575,7 @@ font-size:14px;
 
 <p>
 ガス漏れ・室外機・基板不良など、
-原因確認を行います。
+複数の原因を確認します。
 </p>
 
 </div>
@@ -584,8 +593,8 @@ font-size:14px;
 </h3>
 
 <p>
-ドレン詰まり・勾配不良など、
-症状を確認します。
+ドレン詰まり・勾配不良・内部汚れなど、
+原因確認を行います。
 </p>
 
 </div>
@@ -604,7 +613,7 @@ font-size:14px;
 
 <p>
 ファン・モーター・内部部品など、
-異常を確認します。
+異常箇所を確認します。
 </p>
 
 </div>
@@ -622,7 +631,7 @@ font-size:14px;
 </h3>
 
 <p>
-基板・電圧・配線などを確認し、
+基板・電圧・配線異常などを確認し、
 復旧可能か判断します。
 </p>
 
@@ -657,7 +666,7 @@ font-size:14px;
 <div class="scam-text">
 
 夏場になると、
-エアコン修理の高額請求トラブルが急増します。<br><br>
+エアコン修理の高額請求トラブルが増えます。<br><br>
 
 ・説明なしで作業開始<br>
 ・不安を煽って交換営業<br>
@@ -736,6 +745,25 @@ font-size:14px;
 </div>
 
 </div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+作業の流れ
+</h2>
+
+<img class="section-img" src="./flow.png">
+
+<p class="mini-text">
+お問い合わせから修理完了まで、
+丁寧にご説明しながら進めます。
+</p>
 
 </div>
 
