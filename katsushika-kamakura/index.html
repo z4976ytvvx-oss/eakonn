@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="ja">
 <head>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -67,7 +68,7 @@ gap:20px;
 }
 
 .logo{
-font-size:56px;
+font-size:54px;
 font-weight:1000;
 line-height:1;
 color:#0a4ea3;
@@ -79,7 +80,6 @@ display:block;
 font-size:14px;
 margin-top:10px;
 color:#444;
-letter-spacing:0;
 }
 
 .header-center{
@@ -168,12 +168,13 @@ color:#9b5a00;
 }
 
 .hero h1{
-font-size:96px;
+font-size:92px;
 line-height:1.02;
 font-weight:1000;
 letter-spacing:-4px;
 margin-bottom:24px;
 color:#0a4ea3;
+text-shadow:0 2px 14px rgba(255,255,255,.92);
 }
 
 .hero h1 span{
@@ -181,10 +182,11 @@ color:#e11d48;
 }
 
 .hero-lead{
-font-size:34px;
+font-size:32px;
 font-weight:1000;
 line-height:1.7;
 margin-bottom:30px;
+text-shadow:0 2px 10px rgba(255,255,255,.92);
 }
 
 .hero-points{
@@ -273,20 +275,22 @@ margin-bottom:54px;
 }
 
 /* ======================
-SYMPTOM GRID
+症状カード
 ====================== */
 
 .symptom-grid{
 display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:28px;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+margin-top:60px;
 }
 
 .symptom-card{
 position:relative;
 overflow:hidden;
-border-radius:34px;
-box-shadow:0 12px 28px rgba(0,0,0,.12);
+border-radius:36px;
+box-shadow:0 16px 40px rgba(0,0,0,.12);
+background:#fff;
 }
 
 .symptom-card img{
@@ -296,38 +300,47 @@ display:block;
 
 .symptom-text{
 position:absolute;
-left:32px;
-bottom:30px;
-z-index:5;
-max-width:70%;
+z-index:10;
+max-width:46%;
+}
+
+.left-bottom{
+left:34px;
+bottom:34px;
+}
+
+.right-bottom{
+right:34px;
+bottom:34px;
 }
 
 .symptom-text h3{
-font-size:54px;
+font-size:58px;
 font-weight:1000;
 line-height:1;
-margin-bottom:14px;
-color:#0a4ea3;
+margin-bottom:16px;
 letter-spacing:-2px;
+color:#0a4ea3;
+text-shadow:0 2px 12px rgba(255,255,255,.92);
 }
 
 .symptom-text p{
 font-size:16px;
-font-weight:1000;
-line-height:1.9;
+font-weight:900;
+line-height:2;
 color:#222;
 text-shadow:0 2px 10px rgba(255,255,255,.96);
 }
 
 /* ======================
-BIG IMAGE
+大型画像セクション
 ====================== */
 
 .image-section{
 position:relative;
 overflow:hidden;
-border-radius:40px;
-box-shadow:0 18px 40px rgba(0,0,0,.12);
+border-radius:42px;
+box-shadow:0 18px 46px rgba(0,0,0,.14);
 }
 
 .image-section img{
@@ -337,32 +350,35 @@ display:block;
 
 .image-overlay{
 position:absolute;
-left:0;
 top:0;
 width:100%;
 height:100%;
-padding:70px;
 display:flex;
 align-items:center;
+padding:70px;
 z-index:5;
 }
 
-.image-text{
-max-width:640px;
+.image-overlay.left{
+justify-content:flex-start;
 }
 
-.image-text.right{
-margin-left:auto;
-text-align:left;
+.image-overlay.right{
+justify-content:flex-end;
+}
+
+.image-text{
+max-width:620px;
 }
 
 .image-text h2{
-font-size:74px;
-line-height:1.05;
+font-size:78px;
 font-weight:1000;
+line-height:1.05;
+margin-bottom:24px;
 letter-spacing:-3px;
-margin-bottom:22px;
 color:#0a4ea3;
+text-shadow:0 2px 14px rgba(255,255,255,.94);
 }
 
 .image-text p{
@@ -370,8 +386,8 @@ font-size:22px;
 font-weight:900;
 line-height:2;
 color:#222;
-text-shadow:0 2px 10px rgba(255,255,255,.96);
-margin-bottom:26px;
+margin-bottom:28px;
+text-shadow:0 2px 12px rgba(255,255,255,.96);
 }
 
 .image-mini-points{
@@ -382,10 +398,11 @@ gap:12px;
 
 .image-mini-points span{
 background:rgba(255,255,255,.92);
-padding:12px 16px;
+padding:12px 18px;
 border-radius:999px;
 font-size:14px;
 font-weight:1000;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
 }
 
 /* ======================
@@ -654,7 +671,7 @@ font-size:15px;
 
 .hero-overlay,
 .image-overlay{
-padding:28px;
+padding:26px;
 align-items:flex-start;
 }
 
@@ -663,7 +680,7 @@ font-size:54px;
 }
 
 .hero-lead{
-font-size:24px;
+font-size:22px;
 }
 
 .hero-buttons a{
@@ -699,7 +716,8 @@ font-size:42px;
 }
 
 .image-text p{
-font-size:18px;
+font-size:16px;
+line-height:1.9;
 }
 
 .fixed-bar a{
@@ -707,9 +725,33 @@ font-size:22px;
 height:70px;
 }
 
+.symptom-text{
+max-width:70%;
+}
+
+.symptom-text h3{
+font-size:42px;
+}
+
+.symptom-text p{
+font-size:14px;
+line-height:1.9;
+}
+
+.left-bottom{
+left:22px;
+bottom:22px;
+}
+
+.right-bottom{
+right:22px;
+bottom:22px;
+}
+
 }
 
 </style>
+
 </head>
 
 <body>
@@ -720,7 +762,9 @@ height:70px;
 
 <div class="logo">
 関東エアコン本舗
-<small>葛飾区・柴又・高砂・金町周辺対応</small>
+<small>
+葛飾区・柴又・高砂・金町周辺対応
+</small>
 </div>
 
 <div class="header-center">
@@ -764,16 +808,25 @@ height:70px;
 </div>
 
 <div class="hero-points">
+
 <span>作業前見積り</span>
 <span>追加料金は事前説明</span>
 <span>LINE写真相談OK</span>
 <span>無理な交換営業なし</span>
 <span>修理後1年保証</span>
+
 </div>
 
 <div class="hero-buttons">
-<a href="tel:0358794790" class="tel-btn">📞 今すぐ電話する</a>
-<a href="https://lin.ee/Nhppoyr" class="line-btn">LINE無料相談</a>
+
+<a href="tel:0358794790" class="tel-btn">
+📞 今すぐ電話する
+</a>
+
+<a href="https://lin.ee/Nhppoyr" class="line-btn">
+LINE無料相談
+</a>
+
 </div>
 
 </div>
@@ -781,7 +834,7 @@ height:70px;
 </div>
 
 <div class="speed-badge">
-最短<br>
+最短
 <span>30</span>
 分
 </div>
@@ -811,12 +864,17 @@ height:70px;
 
 <img src="./not-cooling-katsushika-aircon.png">
 
-<div class="symptom-text">
-<h3>冷えない</h3>
+<div class="symptom-text left-bottom">
+
+<h3>
+冷えない
+</h3>
+
 <p>
 ガス漏れ・室外機・基板不良など、
-原因確認を行います。
+症状に合わせて原因確認を行います。
 </p>
+
 </div>
 
 </div>
@@ -825,12 +883,17 @@ height:70px;
 
 <img src="./water-leak-katsushika-aircon.png">
 
-<div class="symptom-text">
-<h3>水漏れ</h3>
+<div class="symptom-text right-bottom">
+
+<h3>
+水漏れ
+</h3>
+
 <p>
-ドレン詰まり・勾配不良など、
-症状を確認します。
+ドレン詰まり・勾配不良・内部汚れなど、
+原因確認を行います。
 </p>
+
 </div>
 
 </div>
@@ -839,12 +902,17 @@ height:70px;
 
 <img src="./symptom-noise-katsushika-aircon.png">
 
-<div class="symptom-text">
-<h3>異音</h3>
+<div class="symptom-text left-bottom">
+
+<h3>
+異音
+</h3>
+
 <p>
 ファン・モーター・内部部品など、
 異常箇所を確認します。
 </p>
+
 </div>
 
 </div>
@@ -853,12 +921,17 @@ height:70px;
 
 <img src="./power-not-turning-on-katsushika-aircon.png">
 
-<div class="symptom-text">
-<h3>電源不良</h3>
+<div class="symptom-text right-bottom">
+
+<h3>
+電源不良
+</h3>
+
 <p>
 基板・電圧・配線異常などを確認し、
 復旧可能か判断します。
 </p>
+
 </div>
 
 </div>
@@ -877,9 +950,9 @@ height:70px;
 
 <img src="./professional-repair-work-katsushika.png">
 
-<div class="image-overlay">
+<div class="image-overlay right">
 
-<div class="image-text right">
+<div class="image-text">
 
 <h2>
 修理作業イメージ
@@ -894,9 +967,11 @@ height:70px;
 </p>
 
 <div class="image-mini-points">
+
 <span>地域密着</span>
 <span>迅速対応</span>
 <span>修理後1年保証</span>
+
 </div>
 
 </div>
@@ -1025,7 +1100,7 @@ height:70px;
 
 <img src="./repair-complete-katsushika-aircon.png">
 
-<div class="image-overlay">
+<div class="image-overlay left">
 
 <div class="image-text">
 
@@ -1043,9 +1118,11 @@ height:70px;
 </p>
 
 <div class="image-mini-points">
+
 <span>明朗会計</span>
 <span>追加料金事前説明</span>
 <span>修理後1年保証</span>
+
 </div>
 
 </div>
