@@ -10,11 +10,24 @@ body{
 background:#eef2f7;
 color:#111;
 padding-bottom:120px;
+overflow-x:hidden;
 }
 
 img{
 width:100%;
 display:block;
+}
+
+.section{
+padding:26px 20px;
+}
+
+.hero-card{
+position:relative;
+overflow:hidden;
+border-radius:34px;
+background:#fff;
+box-shadow:0 12px 40px rgba(0,0,0,.08);
 }
 
 .header{
@@ -26,7 +39,7 @@ align-items:center;
 gap:20px;
 position:sticky;
 top:0;
-z-index:999;
+z-index:9999;
 box-shadow:0 4px 18px rgba(0,0,0,.08);
 }
 
@@ -36,24 +49,24 @@ flex-direction:column;
 }
 
 .logo{
-font-size:58px;
+font-size:56px;
 font-weight:900;
 line-height:1;
-color:#0b56b3;
 letter-spacing:-2px;
+color:#0b56b3;
 }
 
 .logo-sub{
 margin-top:10px;
-font-size:24px;
+font-size:22px;
 font-weight:700;
 }
 
 .header-center{
 font-size:42px;
 font-weight:900;
-text-align:center;
 line-height:1.3;
+text-align:center;
 }
 
 .header-center span{
@@ -73,7 +86,7 @@ font-size:34px;
 font-weight:900;
 color:#fff;
 text-decoration:none;
-box-shadow:0 10px 25px rgba(0,0,0,.12);
+box-shadow:0 10px 24px rgba(0,0,0,.14);
 }
 
 .red{
@@ -84,43 +97,28 @@ background:linear-gradient(135deg,#ff6a3d,#ff0048);
 background:linear-gradient(135deg,#18d94e,#00b63e);
 }
 
-.section{
-padding:28px 20px;
-}
-
-.hero-card{
-position:relative;
-overflow:hidden;
-border-radius:36px;
-background:#fff;
-box-shadow:0 12px 40px rgba(0,0,0,.08);
-}
-
-.hero-card img{
-width:100%;
-}
-
 .overlay-left{
 position:absolute;
-left:6%;
-top:12%;
+left:5%;
+top:13%;
 width:42%;
 }
 
 .overlay-right{
 position:absolute;
-right:5%;
-top:16%;
-width:38%;
+right:-4%;
+top:14%;
+width:36%;
 }
 
 .overlay-title{
-font-size:76px;
+font-size:64px;
 font-weight:900;
-line-height:1.05;
+line-height:1.1;
+letter-spacing:-2px;
 color:#0b56b3;
 margin-bottom:26px;
-letter-spacing:-3px;
+padding-left:30px;
 }
 
 .overlay-title.pink{
@@ -128,30 +126,31 @@ color:#ff1f59;
 }
 
 .overlay-text{
-font-size:34px;
+font-size:31px;
 font-weight:800;
-line-height:1.7;
-margin-bottom:28px;
-color:#111;
+line-height:1.8;
+margin-bottom:30px;
+padding-left:30px;
 }
 
 .tags{
 display:flex;
 flex-wrap:wrap;
 gap:14px;
+padding-left:30px;
 }
 
 .tags span{
 background:#fff;
 padding:16px 24px;
 border-radius:999px;
-font-size:26px;
+font-size:24px;
 font-weight:800;
 box-shadow:0 6px 16px rgba(0,0,0,.08);
 }
 
 .warning{
-padding:70px 24px;
+padding:80px 24px;
 text-align:center;
 }
 
@@ -159,50 +158,14 @@ text-align:center;
 font-size:72px;
 line-height:1.2;
 font-weight:900;
+margin-bottom:26px;
 color:#ff1f59;
-margin-bottom:30px;
 }
 
 .warning p{
 font-size:36px;
-font-weight:700;
 line-height:1.8;
-}
-
-.area-box{
-background:#fff;
-border-radius:34px;
-padding:60px 30px;
-text-align:center;
-}
-
-.area-title{
-font-size:66px;
-font-weight:900;
-color:#0b56b3;
-margin-bottom:24px;
-}
-
-.area-text{
-font-size:34px;
 font-weight:700;
-margin-bottom:30px;
-}
-
-.area-tags{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:16px;
-}
-
-.area-tags span{
-background:#eef4ff;
-padding:16px 22px;
-border-radius:999px;
-font-size:26px;
-font-weight:800;
-color:#0b56b3;
 }
 
 .bottom-fixed{
@@ -214,7 +177,7 @@ display:flex;
 gap:12px;
 padding:12px;
 background:#fff;
-z-index:9999;
+z-index:99999;
 box-shadow:0 -8px 30px rgba(0,0,0,.12);
 }
 
@@ -252,19 +215,32 @@ font-size:20px;
 padding:16px 20px;
 }
 
-.overlay-left,
+.overlay-left{
+left:5%;
+top:11%;
+width:42%;
+}
+
 .overlay-right{
-width:46%;
+right:-2%;
+top:12%;
+width:40%;
 }
 
 .overlay-title{
 font-size:38px;
 margin-bottom:14px;
+padding-left:10px;
 }
 
 .overlay-text{
 font-size:18px;
 margin-bottom:16px;
+padding-left:10px;
+}
+
+.tags{
+padding-left:10px;
 }
 
 .tags span{
@@ -280,18 +256,6 @@ font-size:38px;
 font-size:18px;
 }
 
-.area-title{
-font-size:38px;
-}
-
-.area-text{
-font-size:18px;
-}
-
-.area-tags span{
-font-size:14px;
-}
-
 .bottom-fixed a{
 font-size:22px;
 padding:18px 8px;
@@ -300,15 +264,13 @@ padding:18px 8px;
 }
 </style>
 
-
-
-
-
 <header class="header">
 
 <div class="logo-wrap">
 <div class="logo">関東エアコン本舗</div>
-<div class="logo-sub">葛飾区・柴又・高砂・金町周辺対応</div>
+<div class="logo-sub">
+葛飾区・柴又・高砂・金町周辺対応
+</div>
 </div>
 
 <div class="header-center">
@@ -316,15 +278,16 @@ padding:18px 8px;
 </div>
 
 <div class="header-buttons">
-<a href="tel:0358794790" class="header-btn red">📞 電話</a>
-<a href="https://lin.ee/Nhppoyr" class="header-btn green">LINE相談</a>
+<a href="tel:0358794790" class="header-btn red">
+📞 電話
+</a>
+
+<a href="https://lin.ee/Nhppoyr" class="header-btn green">
+LINE相談
+</a>
 </div>
 
 </header>
-
-
-
-
 
 <section class="section">
 
@@ -358,10 +321,6 @@ padding:18px 8px;
 
 </section>
 
-
-
-
-
 <section class="section">
 
 <div class="hero-card">
@@ -390,10 +349,6 @@ padding:18px 8px;
 </div>
 
 </section>
-
-
-
-
 
 <section class="section">
 
@@ -424,10 +379,6 @@ padding:18px 8px;
 
 </section>
 
-
-
-
-
 <section class="section">
 
 <div class="hero-card">
@@ -456,10 +407,6 @@ padding:18px 8px;
 </div>
 
 </section>
-
-
-
-
 
 <section class="section">
 
@@ -490,10 +437,6 @@ padding:18px 8px;
 
 </section>
 
-
-
-
-
 <section class="section">
 
 <div class="hero-card">
@@ -522,10 +465,6 @@ padding:18px 8px;
 </div>
 
 </section>
-
-
-
-
 
 <section class="section">
 
@@ -556,10 +495,6 @@ padding:18px 8px;
 
 </section>
 
-
-
-
-
 <section class="section">
 
 <div class="hero-card">
@@ -589,40 +524,25 @@ padding:18px 8px;
 
 </section>
 
-
-
-
-
-<section class="section warning">
-
-<h2>
-放置すると高額修理につながる場合があります
-</h2>
-
-<p>
-「冷えない」「水漏れ」「異音」をそのまま放置すると、<br>
-コンプレッサーや基板交換が必要になる場合があります。
-</p>
-
-</section>
-
-
-
-
-
 <section class="section">
 
-<div class="area-box">
+<div class="hero-card">
 
-<div class="area-title">
-葛飾区・関東エリア対応
+<img src="./area-matsudo-kanto.jpg">
+
+<div class="overlay-left">
+
+<div class="overlay-title">
+葛飾区・<br>
+関東エリア対応
 </div>
 
-<div class="area-text">
-葛飾区を中心に、東京・千葉・埼玉・神奈川方面まで対応しています。
+<div class="overlay-text">
+葛飾区を中心に、東京・千葉・埼玉・神奈川方面まで対応しています。<br>
+最短30分で巡回スタッフが対応。
 </div>
 
-<div class="area-tags">
+<div class="tags">
 <span>葛飾区</span>
 <span>柴又</span>
 <span>高砂</span>
@@ -637,11 +557,22 @@ padding:18px 8px;
 
 </div>
 
+</div>
+
 </section>
 
+<section class="warning">
 
+<h2>
+放置すると高額修理につながる場合があります
+</h2>
 
+<p>
+「冷えない」「水漏れ」「異音」を放置すると、<br>
+コンプレッサー・基板交換になるケースがあります。
+</p>
 
+</section>
 
 <div class="bottom-fixed">
 
