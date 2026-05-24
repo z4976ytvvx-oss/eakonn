@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>葛飾区のエアコン修理｜関東エアコン本舗</title>
+<title>葛飾区のエアコン修理｜最短30分対応｜関東エアコン本舗</title>
+
+<meta name="description" content="葛飾区のエアコン修理なら関東エアコン本舗。冷えない・水漏れ・異音・電源不良に最短30分対応。">
 
 <style>
 
@@ -15,10 +17,21 @@ box-sizing:border-box;
 }
 
 body{
-font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
 background:#f4f8fc;
 color:#222;
+line-height:1.7;
 overflow-x:hidden;
+padding-bottom:90px;
+}
+
+img{
+width:100%;
+display:block;
+}
+
+a{
+text-decoration:none;
 }
 
 .container{
@@ -27,37 +40,42 @@ max-width:1200px;
 margin:auto;
 }
 
+/* header */
+
 header{
 position:sticky;
 top:0;
-z-index:9999;
-background:#fff;
-box-shadow:0 2px 10px rgba(0,0,0,.08);
+z-index:99999;
+background:rgba(255,255,255,.96);
+backdrop-filter:blur(10px);
+box-shadow:0 2px 14px rgba(0,0,0,.08);
 }
 
 .header-inner{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:18px 0;
+padding:16px 0;
+gap:16px;
 }
 
 .logo{
 font-size:34px;
 font-weight:1000;
+line-height:1.1;
 color:#0a4ea3;
-line-height:1.2;
 }
 
 .logo small{
 display:block;
 font-size:12px;
+margin-top:6px;
 color:#666;
 }
 
 .top-buttons{
 display:flex;
-gap:12px;
+gap:10px;
 }
 
 .top-buttons a{
@@ -67,21 +85,24 @@ border-radius:999px;
 display:flex;
 align-items:center;
 justify-content:center;
+font-size:15px;
 font-weight:1000;
 color:#fff;
-text-decoration:none;
+box-shadow:0 8px 20px rgba(0,0,0,.12);
 }
 
 .tel-btn{
-background:#ff3131;
+background:linear-gradient(135deg,#ff5a36,#d90429);
 }
 
 .line-btn{
-background:#06c755;
+background:linear-gradient(135deg,#06c755,#00a63e);
 }
 
+/* hero */
+
 .hero{
-padding:30px 0;
+padding:28px 0 60px;
 }
 
 .hero-wrap{
@@ -89,22 +110,34 @@ position:relative;
 overflow:hidden;
 border-radius:36px;
 background:#fff;
-box-shadow:0 16px 40px rgba(0,0,0,.12);
+box-shadow:0 18px 46px rgba(0,0,0,.14);
 }
 
 .hero-image{
-height:760px;
+position:relative;
+height:780px;
+overflow:hidden;
+}
+
+.hero-image::before{
+content:"";
+position:absolute;
+left:0;
+top:0;
+width:100%;
+height:100%;
 background:
 linear-gradient(
 90deg,
 rgba(255,255,255,.98) 0%,
-rgba(255,255,255,.92) 42%,
-rgba(255,255,255,.40) 65%,
+rgba(255,255,255,.94) 42%,
+rgba(255,255,255,.45) 65%,
 rgba(255,255,255,.05) 100%
 ),
 url("./phone-support-cta-katsushika.png");
 background-size:cover;
 background-position:center right;
+background-repeat:no-repeat;
 }
 
 .hero-overlay{
@@ -116,10 +149,11 @@ height:100%;
 display:flex;
 align-items:center;
 padding:70px;
+z-index:2;
 }
 
 .hero-content{
-max-width:650px;
+max-width:680px;
 }
 
 .hero-badge{
@@ -130,12 +164,14 @@ border-radius:999px;
 font-size:14px;
 font-weight:1000;
 margin-bottom:20px;
+color:#9b5a00;
 }
 
 .hero h1{
-font-size:78px;
-line-height:1.05;
+font-size:76px;
+line-height:1.04;
 font-weight:1000;
+letter-spacing:-2px;
 margin-bottom:24px;
 color:#0a4ea3;
 }
@@ -154,7 +190,7 @@ margin-bottom:24px;
 display:flex;
 flex-wrap:wrap;
 gap:10px;
-margin-bottom:26px;
+margin-bottom:28px;
 }
 
 .hero-points span{
@@ -163,18 +199,18 @@ padding:10px 16px;
 border-radius:999px;
 font-size:14px;
 font-weight:900;
-box-shadow:0 4px 10px rgba(0,0,0,.08);
+box-shadow:0 4px 12px rgba(0,0,0,.08);
 }
 
 .hero-buttons{
 display:flex;
 gap:14px;
 flex-wrap:wrap;
-margin-bottom:24px;
+margin-bottom:20px;
 }
 
 .hero-buttons a{
-height:78px;
+height:76px;
 padding:0 34px;
 border-radius:999px;
 display:flex;
@@ -183,7 +219,7 @@ justify-content:center;
 font-size:24px;
 font-weight:1000;
 color:#fff;
-text-decoration:none;
+box-shadow:0 14px 28px rgba(0,0,0,.16);
 }
 
 .hero-note{
@@ -192,13 +228,15 @@ padding:18px;
 border-radius:18px;
 font-size:15px;
 font-weight:800;
-line-height:1.8;
+line-height:1.9;
+max-width:620px;
+box-shadow:0 6px 18px rgba(0,0,0,.07);
 }
 
 .speed-badge{
 position:absolute;
 right:6%;
-bottom:50px;
+bottom:40px;
 width:160px;
 height:160px;
 border-radius:50%;
@@ -209,15 +247,411 @@ align-items:center;
 justify-content:center;
 text-align:center;
 font-weight:1000;
-font-size:24px;
 color:#0a4ea3;
+z-index:2;
+box-shadow:0 10px 26px rgba(0,0,0,.18);
 }
 
 .speed-badge span{
-font-size:60px;
+font-size:58px;
 color:#e11d48;
 line-height:1;
 }
+
+/* sections */
+
+.section{
+padding:80px 0;
+}
+
+.section-title{
+font-size:48px;
+font-weight:1000;
+text-align:center;
+margin-bottom:16px;
+color:#0a4ea3;
+}
+
+.section-sub{
+text-align:center;
+font-size:18px;
+font-weight:800;
+color:#666;
+margin-bottom:44px;
+}
+
+/* quick */
+
+.quick-symptoms{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+}
+
+.quick-card{
+background:#fff;
+padding:28px 18px;
+border-radius:24px;
+text-align:center;
+box-shadow:0 8px 24px rgba(0,0,0,.06);
+}
+
+.quick-card .icon{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.quick-card h3{
+font-size:22px;
+margin-bottom:8px;
+color:#0a4ea3;
+}
+
+.quick-card p{
+font-size:14px;
+font-weight:800;
+color:#444;
+}
+
+/* warning */
+
+.warning-box{
+background:#fff5f5;
+border:2px solid #fecaca;
+padding:34px;
+border-radius:28px;
+box-shadow:0 10px 24px rgba(0,0,0,.05);
+}
+
+.warning-box h3{
+font-size:38px;
+margin-bottom:20px;
+color:#d90429;
+}
+
+.warning-box li{
+margin-bottom:12px;
+font-size:18px;
+font-weight:900;
+}
+
+/* symptom */
+
+.symptom-card{
+position:relative;
+overflow:hidden;
+border-radius:36px;
+background:#fff;
+margin-bottom:40px;
+box-shadow:0 16px 36px rgba(0,0,0,.10);
+}
+
+.symptom-card img{
+height:560px;
+object-fit:cover;
+}
+
+.symptom-overlay{
+position:absolute;
+right:0;
+top:0;
+width:48%;
+height:100%;
+background:
+linear-gradient(
+90deg,
+rgba(255,255,255,0) 0%,
+rgba(255,255,255,.92) 26%,
+rgba(255,255,255,.98) 100%
+);
+display:flex;
+align-items:center;
+padding:40px;
+}
+
+.symptom-text h3{
+font-size:48px;
+margin-bottom:14px;
+color:#0a4ea3;
+}
+
+.symptom-text p{
+font-size:18px;
+font-weight:800;
+margin-bottom:18px;
+}
+
+.price{
+font-size:60px;
+font-weight:1000;
+color:#e11d48;
+margin-bottom:18px;
+}
+
+.safe-points{
+display:flex;
+flex-direction:column;
+gap:10px;
+margin-bottom:22px;
+}
+
+.safe-points span{
+background:#fff;
+padding:10px 14px;
+border-radius:999px;
+font-size:14px;
+font-weight:900;
+box-shadow:0 4px 10px rgba(0,0,0,.06);
+}
+
+/* reasons */
+
+.reason-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+}
+
+.reason-card{
+background:#fff;
+padding:28px;
+border-radius:24px;
+text-align:center;
+box-shadow:0 10px 24px rgba(0,0,0,.07);
+}
+
+.reason-card b{
+display:block;
+font-size:24px;
+margin-bottom:10px;
+color:#0a4ea3;
+}
+
+/* reviews */
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+}
+
+.review-card{
+background:#fff;
+padding:30px;
+border-radius:26px;
+box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+
+.review-card h4{
+font-size:22px;
+margin-bottom:14px;
+color:#0a4ea3;
+}
+
+.review-card span{
+display:block;
+margin-top:12px;
+font-size:13px;
+font-weight:900;
+color:#888;
+}
+
+/* flow */
+
+.flow-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+}
+
+.flow-card{
+background:#fff;
+overflow:hidden;
+border-radius:28px;
+box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+
+.flow-card img{
+height:240px;
+object-fit:cover;
+}
+
+.flow-body{
+padding:24px;
+}
+
+.flow-body h3{
+font-size:28px;
+margin-bottom:10px;
+color:#0a4ea3;
+}
+
+/* pricing */
+
+.price-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+}
+
+.price-box{
+background:#fff;
+padding:30px 20px;
+border-radius:28px;
+text-align:center;
+box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+
+.big-price{
+font-size:42px;
+font-weight:1000;
+color:#e11d48;
+margin:12px 0;
+}
+
+/* area */
+
+.area-box{
+background:#fff;
+padding:40px;
+border-radius:30px;
+text-align:center;
+box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+
+.area-box h3{
+font-size:38px;
+margin-bottom:14px;
+color:#0a4ea3;
+}
+
+.area-tags{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+justify-content:center;
+margin-top:24px;
+}
+
+.area-tags span{
+background:#eef5ff;
+padding:12px 18px;
+border-radius:999px;
+font-size:15px;
+font-weight:900;
+color:#0a4ea3;
+}
+
+/* final */
+
+.final-cta{
+position:relative;
+overflow:hidden;
+border-radius:36px;
+background:#fff;
+box-shadow:0 16px 40px rgba(0,0,0,.12);
+}
+
+.final-cta img{
+height:680px;
+object-fit:cover;
+}
+
+.final-overlay{
+position:absolute;
+right:0;
+top:0;
+width:52%;
+height:100%;
+background:
+linear-gradient(
+90deg,
+rgba(255,255,255,0) 0%,
+rgba(255,255,255,.90) 24%,
+rgba(255,255,255,.98) 100%
+);
+display:flex;
+align-items:center;
+padding:60px;
+}
+
+.final-box h2{
+font-size:54px;
+margin-bottom:18px;
+color:#0a4ea3;
+}
+
+.final-box p{
+font-size:20px;
+font-weight:800;
+margin-bottom:28px;
+}
+
+.final-buttons{
+display:flex;
+flex-direction:column;
+gap:16px;
+}
+
+.final-buttons a{
+height:78px;
+border-radius:999px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:24px;
+font-weight:1000;
+color:#fff;
+}
+
+/* footer */
+
+.footer{
+background:#071b34;
+color:#dbeafe;
+padding:50px 20px;
+text-align:center;
+line-height:2;
+margin-top:80px;
+}
+
+/* fixed */
+
+.fixed-bar{
+position:fixed;
+left:0;
+bottom:0;
+width:100%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:8px;
+padding:8px;
+background:rgba(255,255,255,.96);
+backdrop-filter:blur(10px);
+z-index:999999;
+box-shadow:0 -4px 18px rgba(0,0,0,.12);
+}
+
+.fixed-bar a{
+height:64px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+font-weight:1000;
+color:#fff;
+border-radius:999px;
+}
+
+.fixed-phone{
+background:#ff3131;
+}
+
+.fixed-line{
+background:#06c755;
+}
+
+/* mobile */
 
 @media(max-width:900px){
 
@@ -226,7 +660,10 @@ font-size:22px;
 }
 
 .hero-image{
-height:860px;
+height:900px;
+}
+
+.hero-image::before{
 background:
 linear-gradient(
 180deg,
@@ -238,16 +675,17 @@ rgba(255,255,255,.05) 100%
 url("./phone-support-cta-katsushika.png");
 background-size:cover;
 background-position:center center;
+background-repeat:no-repeat;
 }
 
 .hero-overlay{
 padding:28px;
 align-items:flex-start;
-padding-top:50px;
+padding-top:60px;
 }
 
 .hero h1{
-font-size:48px;
+font-size:52px;
 }
 
 .hero-lead{
@@ -259,15 +697,55 @@ width:100%;
 font-size:20px;
 }
 
-.speed-badge{
-width:120px;
-height:120px;
-bottom:220px;
-right:20px;
+.quick-symptoms{
+grid-template-columns:1fr 1fr;
 }
 
-.speed-badge span{
-font-size:40px;
+.reason-grid,
+.review-grid,
+.flow-grid,
+.price-grid{
+grid-template-columns:1fr;
+}
+
+.symptom-overlay{
+width:100%;
+height:auto;
+bottom:0;
+top:auto;
+padding:26px;
+background:
+linear-gradient(
+180deg,
+rgba(255,255,255,0) 0%,
+rgba(255,255,255,.92) 20%,
+rgba(255,255,255,.98) 100%
+);
+}
+
+.symptom-card img{
+height:720px;
+}
+
+.final-overlay{
+width:100%;
+padding:24px;
+align-items:flex-end;
+background:
+linear-gradient(
+180deg,
+rgba(255,255,255,0) 0%,
+rgba(255,255,255,.92) 20%,
+rgba(255,255,255,.98) 100%
+);
+}
+
+.final-cta img{
+height:840px;
+}
+
+.final-box h2{
+font-size:38px;
 }
 
 }
@@ -334,7 +812,7 @@ font-size:40px;
 
 <div class="hero-note">
 現在、葛飾区・柴又・高砂・金町周辺を中心に対応中。<br>
-冷えない・水漏れ・異音・電源不良など、まずはご相談ください。
+冷えない・水漏れ・異音・電源不良など、まずは症状だけでもご相談ください。
 </div>
 
 </div>
@@ -350,6 +828,53 @@ font-size:40px;
 </div>
 
 </section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">こんな症状ありませんか？</h2>
+<p class="section-sub">放置すると高額修理になるケースがあります</p>
+
+<div class="quick-symptoms">
+
+<div class="quick-card">
+<div class="icon">❄️</div>
+<h3>冷えない</h3>
+<p>ぬるい風しか出ない</p>
+</div>
+
+<div class="quick-card">
+<div class="icon">💧</div>
+<h3>水漏れ</h3>
+<p>室内機から水が落ちる</p>
+</div>
+
+<div class="quick-card">
+<div class="icon">🔊</div>
+<h3>異音</h3>
+<p>ガタガタ・ブーン音</p>
+</div>
+
+<div class="quick-card">
+<div class="icon">⚡</div>
+<h3>電源不良</h3>
+<p>電源が入らない</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<footer class="footer">
+関東エアコン本舗<br>
+葛飾区・柴又・高砂・金町周辺対応
+</footer>
+
+<div class="fixed-bar">
+<a href="tel:0358794790" class="fixed-phone">📞 電話</a>
+<a href="https://lin.ee/Nhppoyr" class="fixed-line">LINE相談</a>
+</div>
 
 </body>
 </html>
