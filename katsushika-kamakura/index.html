@@ -6,7 +6,7 @@
 
 <title>葛飾区のエアコン修理｜関東エアコン本舗｜最短30分対応</title>
 
-<meta name="description" content="葛飾区のエアコン修理なら関東エアコン本舗。冷えない・水漏れ・異音・電源不良に最短30分対応。修理後1年保証。">
+<meta name="description" content="葛飾区のエアコン修理なら関東エアコン本舗。冷えない・水漏れ・異音・電源不良に最短30分対応。追加料金事前説明・修理後1年保証。">
 
 <style>
 
@@ -16,13 +16,17 @@ padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
 background:#eef3f9;
 color:#222;
-line-height:1.7;
 overflow-x:hidden;
-padding-bottom:90px;
+line-height:1.7;
+padding-bottom:100px;
 }
 
 img{
@@ -37,7 +41,7 @@ color:inherit;
 
 .container{
 width:92%;
-max-width:1400px;
+max-width:1380px;
 margin:auto;
 }
 
@@ -51,7 +55,7 @@ top:0;
 z-index:99999;
 background:rgba(255,255,255,.96);
 backdrop-filter:blur(10px);
-box-shadow:0 2px 14px rgba(0,0,0,.08);
+box-shadow:0 2px 16px rgba(0,0,0,.08);
 }
 
 .header-inner{
@@ -59,57 +63,60 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:18px 0;
-gap:16px;
+gap:20px;
 }
 
 .logo{
-font-size:34px;
+font-size:56px;
 font-weight:1000;
-line-height:1.1;
+line-height:1;
 color:#0a4ea3;
+letter-spacing:-2px;
 }
 
 .logo small{
 display:block;
-font-size:12px;
-margin-top:6px;
-color:#666;
+font-size:14px;
+margin-top:10px;
+color:#444;
+letter-spacing:0;
 }
 
 .header-center{
-font-size:18px;
+font-size:24px;
 font-weight:1000;
 }
 
 .header-center span{
-font-size:42px;
+font-size:60px;
 color:#e11d48;
+line-height:1;
 }
 
 .top-buttons{
 display:flex;
-gap:10px;
+gap:14px;
 }
 
 .top-buttons a{
-height:58px;
-padding:0 24px;
+height:68px;
+padding:0 30px;
 border-radius:999px;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:16px;
+font-size:20px;
 font-weight:1000;
 color:#fff;
-box-shadow:0 8px 20px rgba(0,0,0,.12);
+box-shadow:0 10px 24px rgba(0,0,0,.14);
 }
 
 .tel-btn{
-background:linear-gradient(135deg,#ff5a36,#d90429);
+background:linear-gradient(135deg,#ff6237,#e60023);
 }
 
 .line-btn{
-background:linear-gradient(135deg,#06c755,#00a63e);
+background:linear-gradient(135deg,#06c755,#00a83a);
 }
 
 /* ======================
@@ -117,43 +124,20 @@ HERO
 ====================== */
 
 .hero{
-padding:28px 0 70px;
+padding:34px 0 70px;
 }
 
-.hero-wrap{
+.hero-card{
 position:relative;
 overflow:hidden;
 border-radius:42px;
+box-shadow:0 22px 50px rgba(0,0,0,.14);
 background:#fff;
-box-shadow:0 18px 46px rgba(0,0,0,.14);
 }
 
-.hero-image{
-position:relative;
-height:860px;
-overflow:hidden;
-}
-
-.hero-image::before{
-content:"";
-position:absolute;
-left:0;
-top:0;
+.hero-card img{
+display:block;
 width:100%;
-height:100%;
-background:
-linear-gradient(
-90deg,
-rgba(255,255,255,.97) 0%,
-rgba(255,255,255,.93) 42%,
-rgba(255,255,255,.40) 68%,
-rgba(255,255,255,.05) 100%
-),
-url("./hero-katsushika-anime-aircon-v2.png");
-
-background-size:cover;
-background-position:center right;
-background-repeat:no-repeat;
 }
 
 .hero-overlay{
@@ -162,33 +146,33 @@ left:0;
 top:0;
 width:100%;
 height:100%;
+padding:70px;
 display:flex;
 align-items:center;
-padding:70px;
-z-index:2;
+z-index:5;
 }
 
 .hero-content{
-max-width:720px;
+max-width:760px;
 }
 
 .hero-badge{
 display:inline-block;
 background:#fff3cd;
-padding:12px 18px;
+padding:14px 22px;
 border-radius:999px;
-font-size:14px;
+font-size:15px;
 font-weight:1000;
-margin-bottom:22px;
+margin-bottom:26px;
 color:#9b5a00;
 }
 
 .hero h1{
-font-size:84px;
+font-size:96px;
 line-height:1.02;
 font-weight:1000;
-letter-spacing:-3px;
-margin-bottom:28px;
+letter-spacing:-4px;
+margin-bottom:24px;
 color:#0a4ea3;
 }
 
@@ -197,82 +181,70 @@ color:#e11d48;
 }
 
 .hero-lead{
-font-size:30px;
+font-size:34px;
 font-weight:1000;
-margin-bottom:26px;
 line-height:1.7;
+margin-bottom:30px;
 }
 
 .hero-points{
 display:flex;
 flex-wrap:wrap;
-gap:12px;
-margin-bottom:30px;
+gap:14px;
+margin-bottom:34px;
 }
 
 .hero-points span{
-background:#fff;
-padding:12px 18px;
+background:rgba(255,255,255,.92);
+padding:14px 20px;
 border-radius:999px;
-font-size:14px;
-font-weight:900;
-box-shadow:0 4px 12px rgba(0,0,0,.08);
+font-size:15px;
+font-weight:1000;
+box-shadow:0 4px 14px rgba(0,0,0,.08);
 }
 
 .hero-buttons{
 display:flex;
-gap:14px;
+gap:16px;
 flex-wrap:wrap;
-margin-bottom:24px;
 }
 
 .hero-buttons a{
-height:78px;
-padding:0 34px;
+height:84px;
+padding:0 42px;
 border-radius:999px;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:24px;
+font-size:28px;
 font-weight:1000;
 color:#fff;
-box-shadow:0 14px 28px rgba(0,0,0,.16);
-}
-
-.hero-note{
-background:rgba(255,255,255,.92);
-padding:18px;
-border-radius:18px;
-font-size:15px;
-font-weight:800;
-line-height:2;
-max-width:620px;
-box-shadow:0 6px 18px rgba(0,0,0,.07);
+box-shadow:0 16px 34px rgba(0,0,0,.18);
 }
 
 .speed-badge{
 position:absolute;
-right:6%;
-bottom:40px;
-width:180px;
-height:180px;
+right:5%;
+bottom:50px;
+width:190px;
+height:190px;
 border-radius:50%;
 background:#fff;
-border:6px solid #1686e3;
+border:8px solid #1686e3;
 display:flex;
 align-items:center;
 justify-content:center;
-text-align:center;
+flex-direction:column;
 font-weight:1000;
 color:#0a4ea3;
-z-index:2;
-box-shadow:0 10px 26px rgba(0,0,0,.18);
+box-shadow:0 12px 30px rgba(0,0,0,.16);
+z-index:10;
 }
 
 .speed-badge span{
-font-size:70px;
-color:#e11d48;
+font-size:74px;
 line-height:1;
+color:#e11d48;
 }
 
 /* ======================
@@ -284,119 +256,187 @@ padding:90px 0;
 }
 
 .section-title{
-font-size:58px;
+font-size:72px;
 font-weight:1000;
 text-align:center;
-margin-bottom:18px;
+margin-bottom:20px;
 color:#0a4ea3;
-letter-spacing:-2px;
+letter-spacing:-3px;
 }
 
 .section-sub{
+font-size:22px;
+font-weight:900;
 text-align:center;
-font-size:20px;
-font-weight:800;
 color:#555;
-margin-bottom:50px;
-line-height:2;
+margin-bottom:54px;
 }
 
 /* ======================
-症状カード
+SYMPTOM GRID
 ====================== */
 
 .symptom-grid{
 display:grid;
 grid-template-columns:repeat(4,1fr);
-gap:26px;
-margin-top:50px;
+gap:28px;
 }
 
 .symptom-card{
 position:relative;
 overflow:hidden;
 border-radius:34px;
-background:#fff;
-min-height:520px;
-box-shadow:0 12px 30px rgba(0,0,0,.08);
+box-shadow:0 12px 28px rgba(0,0,0,.12);
 }
 
 .symptom-card img{
 width:100%;
-height:100%;
-object-fit:cover;
 display:block;
 }
 
-.symptom-overlay{
+.symptom-text{
 position:absolute;
-left:0;
-bottom:0;
-width:100%;
-padding:34px;
-background:
-linear-gradient(
-to top,
-rgba(255,255,255,.98) 0%,
-rgba(255,255,255,.88) 45%,
-rgba(255,255,255,0) 100%
-);
+left:32px;
+bottom:30px;
+z-index:5;
+max-width:70%;
 }
 
-.symptom-overlay h3{
-font-size:52px;
+.symptom-text h3{
+font-size:54px;
 font-weight:1000;
-line-height:1.1;
-margin-bottom:16px;
+line-height:1;
+margin-bottom:14px;
 color:#0a4ea3;
 letter-spacing:-2px;
 }
 
-.symptom-overlay p{
-font-size:17px;
-font-weight:700;
-line-height:2;
-color:#333;
+.symptom-text p{
+font-size:16px;
+font-weight:1000;
+line-height:1.9;
+color:#222;
+text-shadow:0 2px 10px rgba(255,255,255,.96);
 }
 
 /* ======================
-TRUST
+BIG IMAGE
 ====================== */
 
-.trust-wrap{
+.image-section{
+position:relative;
+overflow:hidden;
+border-radius:40px;
+box-shadow:0 18px 40px rgba(0,0,0,.12);
+}
+
+.image-section img{
+width:100%;
+display:block;
+}
+
+.image-overlay{
+position:absolute;
+left:0;
+top:0;
+width:100%;
+height:100%;
+padding:70px;
+display:flex;
+align-items:center;
+z-index:5;
+}
+
+.image-text{
+max-width:640px;
+}
+
+.image-text.right{
+margin-left:auto;
+text-align:left;
+}
+
+.image-text h2{
+font-size:74px;
+line-height:1.05;
+font-weight:1000;
+letter-spacing:-3px;
+margin-bottom:22px;
+color:#0a4ea3;
+}
+
+.image-text p{
+font-size:22px;
+font-weight:900;
+line-height:2;
+color:#222;
+text-shadow:0 2px 10px rgba(255,255,255,.96);
+margin-bottom:26px;
+}
+
+.image-mini-points{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+}
+
+.image-mini-points span{
+background:rgba(255,255,255,.92);
+padding:12px 16px;
+border-radius:999px;
+font-size:14px;
+font-weight:1000;
+}
+
+/* ======================
+SCAM
+====================== */
+
+.scam-wrap{
 display:grid;
-grid-template-columns:1.1fr .9fr;
-gap:36px;
+grid-template-columns:1.2fr .8fr;
+gap:34px;
 background:#fff;
-border-radius:42px;
 padding:60px;
+border-radius:40px;
 box-shadow:0 18px 42px rgba(0,0,0,.08);
 }
 
-.trust-left h2{
-font-size:64px;
-line-height:1.2;
+.scam-badge{
+display:inline-block;
+background:#fff1f2;
+border:2px solid #fecdd3;
+padding:12px 18px;
+border-radius:999px;
+font-size:15px;
 font-weight:1000;
-margin-bottom:28px;
-letter-spacing:-2px;
+margin-bottom:24px;
+color:#d90429;
 }
 
-.trust-text{
+.scam-left h2{
+font-size:68px;
+line-height:1.1;
+margin-bottom:24px;
+font-weight:1000;
+letter-spacing:-3px;
+}
+
+.scam-text{
 font-size:18px;
 font-weight:700;
-line-height:2.1;
-margin-bottom:30px;
+line-height:2;
+margin-bottom:26px;
 color:#444;
 }
 
-.trust-points{
+.scam-points{
 display:flex;
 flex-direction:column;
 gap:14px;
-margin-bottom:34px;
 }
 
-.trust-point{
+.scam-point{
 background:#f8fbff;
 border:1px solid #dbeafe;
 padding:18px;
@@ -406,19 +446,22 @@ font-weight:1000;
 color:#0a4ea3;
 }
 
-.trust-right{
+.scam-right{
 display:flex;
 flex-direction:column;
 justify-content:center;
-gap:20px;
+gap:18px;
 }
 
-.trust-card{
+.scam-card{
+padding:34px;
+border-radius:30px;
+text-align:center;
+}
+
+.ng-card{
 background:#fff5f5;
 border:3px solid #fecaca;
-border-radius:30px;
-padding:36px;
-text-align:center;
 }
 
 .ok-card{
@@ -426,89 +469,38 @@ background:#f0fdf4;
 border:3px solid #86efac;
 }
 
-.trust-top{
-font-size:24px;
+.scam-card-top{
+font-size:26px;
 font-weight:1000;
-margin-bottom:16px;
-color:#d90429;
+margin-bottom:14px;
 }
 
-.trust-top.ok{
-color:#15803d;
-}
-
-.trust-price{
+.scam-price{
 font-size:72px;
 font-weight:1000;
 line-height:1;
 margin-bottom:18px;
 }
 
-.trust-price.ng{
+.ng{
 color:#d90429;
 }
 
-.ok-price{
+.ok{
 color:#16a34a;
 }
 
-.trust-desc{
+.scam-desc{
 font-size:16px;
-font-weight:800;
+font-weight:900;
 line-height:2;
 }
 
 .arrow{
-font-size:46px;
-text-align:center;
+font-size:52px;
 font-weight:1000;
+text-align:center;
 color:#0a4ea3;
-}
-
-/* ======================
-FULL IMAGE
-====================== */
-
-.full-image{
-border-radius:36px;
-overflow:hidden;
-box-shadow:0 12px 30px rgba(0,0,0,.10);
-}
-
-/* ======================
-REVIEW
-====================== */
-
-.review-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:24px;
-}
-
-.review-card{
-background:#fff;
-padding:34px;
-border-radius:30px;
-box-shadow:0 10px 24px rgba(0,0,0,.08);
-}
-
-.review-card h4{
-font-size:24px;
-margin-bottom:14px;
-color:#0a4ea3;
-}
-
-.review-card p{
-font-size:16px;
-font-weight:800;
-line-height:2;
-margin-bottom:14px;
-}
-
-.review-card span{
-font-size:13px;
-font-weight:900;
-color:#888;
 }
 
 /* ======================
@@ -520,19 +512,20 @@ background:#fff;
 padding:54px;
 border-radius:34px;
 text-align:center;
-box-shadow:0 10px 24px rgba(0,0,0,.08);
+box-shadow:0 12px 26px rgba(0,0,0,.08);
 }
 
 .area-box h3{
-font-size:44px;
-margin-bottom:14px;
+font-size:52px;
+font-weight:1000;
+margin-bottom:16px;
 color:#0a4ea3;
 }
 
 .area-box p{
-font-size:18px;
-font-weight:800;
-margin-bottom:24px;
+font-size:20px;
+font-weight:900;
+margin-bottom:28px;
 }
 
 .area-tags{
@@ -540,7 +533,6 @@ display:flex;
 flex-wrap:wrap;
 gap:12px;
 justify-content:center;
-margin-top:24px;
 }
 
 .area-tags span{
@@ -548,8 +540,45 @@ background:#eef5ff;
 padding:12px 18px;
 border-radius:999px;
 font-size:15px;
-font-weight:900;
+font-weight:1000;
 color:#0a4ea3;
+}
+
+/* ======================
+REVIEWS
+====================== */
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
+}
+
+.review-card{
+background:#fff;
+padding:36px;
+border-radius:30px;
+box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+
+.review-card h4{
+font-size:28px;
+font-weight:1000;
+margin-bottom:16px;
+color:#0a4ea3;
+}
+
+.review-card p{
+font-size:16px;
+font-weight:900;
+line-height:2;
+margin-bottom:16px;
+}
+
+.review-card span{
+font-size:13px;
+font-weight:1000;
+color:#777;
 }
 
 /* ======================
@@ -559,15 +588,15 @@ FOOTER
 .footer{
 background:#071b34;
 color:#dbeafe;
-padding:60px 20px;
+padding:70px 20px;
 text-align:center;
-margin-top:80px;
 line-height:2;
 font-size:15px;
+margin-top:90px;
 }
 
 /* ======================
-FIXED CTA
+FIXED BAR
 ====================== */
 
 .fixed-bar{
@@ -577,22 +606,22 @@ bottom:0;
 width:100%;
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:8px;
-padding:8px;
+gap:10px;
+padding:10px;
 background:rgba(255,255,255,.96);
 backdrop-filter:blur(10px);
 z-index:999999;
 }
 
 .fixed-bar a{
-height:72px;
+height:76px;
+border-radius:999px;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:24px;
+font-size:28px;
 font-weight:1000;
 color:#fff;
-border-radius:999px;
 }
 
 .fixed-phone{
@@ -609,28 +638,28 @@ MOBILE
 
 @media(max-width:900px){
 
-.symptom-grid,
-.review-grid{
-grid-template-columns:1fr;
-gap:20px;
-}
-
 .header-center{
 display:none;
 }
 
-.hero-image{
-height:980px;
+.logo{
+font-size:36px;
 }
 
-.hero-overlay{
+.top-buttons a{
+height:54px;
+padding:0 18px;
+font-size:15px;
+}
+
+.hero-overlay,
+.image-overlay{
 padding:28px;
 align-items:flex-start;
-padding-top:60px;
 }
 
 .hero h1{
-font-size:56px;
+font-size:54px;
 }
 
 .hero-lead{
@@ -640,36 +669,42 @@ font-size:24px;
 .hero-buttons a{
 width:100%;
 font-size:20px;
-}
-
-.trust-wrap{
-grid-template-columns:1fr;
-padding:30px;
-}
-
-.trust-left h2{
-font-size:42px;
+height:72px;
 }
 
 .speed-badge{
 display:none;
 }
 
-.symptom-card{
-min-height:460px;
-}
-
-.symptom-overlay{
-padding:26px;
-}
-
-.symptom-overlay h3{
+.section-title{
 font-size:42px;
 }
 
-.symptom-overlay p{
-font-size:15px;
-line-height:1.9;
+.symptom-grid,
+.review-grid{
+grid-template-columns:1fr;
+}
+
+.scam-wrap{
+grid-template-columns:1fr;
+padding:30px;
+}
+
+.scam-left h2{
+font-size:42px;
+}
+
+.image-text h2{
+font-size:42px;
+}
+
+.image-text p{
+font-size:18px;
+}
+
+.fixed-bar a{
+font-size:22px;
+height:70px;
 }
 
 }
@@ -705,9 +740,9 @@ line-height:1.9;
 
 <div class="container">
 
-<div class="hero-wrap">
+<div class="hero-card">
 
-<div class="hero-image"></div>
+<img src="./hero-katsushika-kamakura-aircon.png">
 
 <div class="hero-overlay">
 
@@ -741,17 +776,14 @@ line-height:1.9;
 <a href="https://lin.ee/Nhppoyr" class="line-btn">LINE無料相談</a>
 </div>
 
-<div class="hero-note">
-冷えない・水漏れ・異音・電源不良など、
-まずは症状だけでもご相談ください。
-</div>
-
 </div>
 
 </div>
 
 <div class="speed-badge">
-最短<br><span>30</span><br>分
+最短<br>
+<span>30</span>
+分
 </div>
 
 </div>
@@ -765,7 +797,7 @@ line-height:1.9;
 <div class="container">
 
 <h2 class="section-title">
-こんな症状ありませんか？
+症状別の修理対応
 </h2>
 
 <p class="section-sub">
@@ -779,17 +811,12 @@ line-height:1.9;
 
 <img src="./not-cooling-katsushika-aircon.png">
 
-<div class="symptom-overlay">
-
-<h3>
-冷えない
-</h3>
-
+<div class="symptom-text">
+<h3>冷えない</h3>
 <p>
 ガス漏れ・室外機・基板不良など、
 原因確認を行います。
 </p>
-
 </div>
 
 </div>
@@ -798,17 +825,12 @@ line-height:1.9;
 
 <img src="./water-leak-katsushika-aircon.png">
 
-<div class="symptom-overlay">
-
-<h3>
-水漏れ
-</h3>
-
+<div class="symptom-text">
+<h3>水漏れ</h3>
 <p>
 ドレン詰まり・勾配不良など、
 症状を確認します。
 </p>
-
 </div>
 
 </div>
@@ -817,17 +839,12 @@ line-height:1.9;
 
 <img src="./symptom-noise-katsushika-aircon.png">
 
-<div class="symptom-overlay">
-
-<h3>
-異音
-</h3>
-
+<div class="symptom-text">
+<h3>異音</h3>
 <p>
 ファン・モーター・内部部品など、
-異常を確認します。
+異常箇所を確認します。
 </p>
-
 </div>
 
 </div>
@@ -836,16 +853,51 @@ line-height:1.9;
 
 <img src="./power-not-turning-on-katsushika-aircon.png">
 
-<div class="symptom-overlay">
-
-<h3>
-電源不良
-</h3>
-
+<div class="symptom-text">
+<h3>電源不良</h3>
 <p>
-基板・電圧・配線などを確認し、
+基板・電圧・配線異常などを確認し、
 復旧可能か判断します。
 </p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="image-section">
+
+<img src="./professional-repair-work-katsushika.png">
+
+<div class="image-overlay">
+
+<div class="image-text right">
+
+<h2>
+修理作業イメージ
+</h2>
+
+<p>
+内部点検・電装確認・ガス圧確認など、
+症状に合わせて原因を特定します。<br><br>
+
+無理な交換営業は行わず、
+まず修理可能かを確認します。
+</p>
+
+<div class="image-mini-points">
+<span>地域密着</span>
+<span>迅速対応</span>
+<span>修理後1年保証</span>
+</div>
 
 </div>
 
@@ -861,76 +913,76 @@ line-height:1.9;
 
 <div class="container">
 
-<div class="trust-wrap">
+<div class="scam-wrap">
 
-<div class="trust-left">
+<div class="scam-left">
+
+<div class="scam-badge">
+⚠ エアコン修理の高額請求トラブル増加中
+</div>
 
 <h2>
-ぼったくり・<br>
-高額請求に<br>
-ご注意ください
+ぼったくり業者・<br>
+高額請求にご注意ください
 </h2>
 
-<div class="trust-text">
+<div class="scam-text">
 
 夏場になると、
-エアコン修理の高額請求トラブルが増えています。<br><br>
+エアコン修理の高額請求トラブルが増加します。<br><br>
 
 ・説明なしで作業開始<br>
-・不安を煽って交換営業<br>
-・点検だけで高額請求<br><br>
+・不安を煽る交換営業<br>
+・点検のみで高額請求<br>
+・「今日契約しないと危険」と急かす<br><br>
 
-少しでも不安を感じたら、
-まずはご相談ください。
+実際に、
+「交換と言われたが修理で直った」
+ケースも多くあります。
 
 </div>
 
-<div class="trust-points">
+<div class="scam-points">
 
-<div class="trust-point">
+<div class="scam-point">
 ✔ 作業前に必ず料金説明
 </div>
 
-<div class="trust-point">
+<div class="scam-point">
 ✔ 相見積り歓迎
 </div>
 
-<div class="trust-point">
+<div class="scam-point">
 ✔ 修理可能か先に確認
 </div>
 
-<div class="trust-point">
-✔ 作業後に高額請求することはありません
+<div class="scam-point">
+✔ 無理な交換営業なし
 </div>
 
-<div class="trust-point">
+<div class="scam-point">
 ✔ 修理後も安心の1年保証
 </div>
 
 </div>
 
-<div class="hero-buttons">
-<a href="tel:0358794790" class="tel-btn">📞 まず電話する</a>
-<a href="https://lin.ee/Nhppoyr" class="line-btn">LINE相談</a>
 </div>
 
+<div class="scam-right">
+
+<div class="scam-card ng-card">
+
+<div class="scam-card-top ng">
+悪質業者の例
 </div>
 
-<div class="trust-right">
-
-<div class="trust-card">
-
-<div class="trust-top">
-悪質業者例
+<div class="scam-price ng">
+180,000円
 </div>
 
-<div class="trust-price ng">
-18万円
-</div>
-
-<div class="trust-desc">
+<div class="scam-desc">
 全部交換です<br>
-今日契約しないと危険
+今日しかこの金額は無理
 </div>
 
 </div>
@@ -939,19 +991,19 @@ line-height:1.9;
 ↓
 </div>
 
-<div class="trust-card ok-card">
+<div class="scam-card ok-card">
 
-<div class="trust-top ok">
+<div class="scam-card-top ok">
 関東エアコン本舗
 </div>
 
-<div class="trust-price ok-price">
+<div class="scam-price ok">
 12,000円〜
 </div>
 
-<div class="trust-desc">
-まず原因確認。<br>
-修理可能かを確認します。<br>
+<div class="scam-desc">
+まず原因確認を行います。<br>
+修理可能かを確認し、<br>
 修理後も安心の1年保証。
 </div>
 
@@ -969,28 +1021,37 @@ line-height:1.9;
 
 <div class="container">
 
-<h2 class="section-title">
-修理作業イメージ
-</h2>
+<div class="image-section">
 
-<div class="full-image">
-<img src="./professional-repair-work-katsushika.png">
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<div class="container">
-
-<h2 class="section-title">
-修理後も安心の1年保証
-</h2>
-
-<div class="full-image">
 <img src="./repair-complete-katsushika-aircon.png">
+
+<div class="image-overlay">
+
+<div class="image-text">
+
+<h2>
+作業後も安心
+</h2>
+
+<p>
+作業後に高額請求を行うことはありません。<br><br>
+
+症状・原因・料金を説明した上で、
+ご了承後のみ作業いたします。<br><br>
+
+修理後1年保証付き。
+</p>
+
+<div class="image-mini-points">
+<span>明朗会計</span>
+<span>追加料金事前説明</span>
+<span>修理後1年保証</span>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -1004,7 +1065,7 @@ line-height:1.9;
 <div class="area-box">
 
 <h3>
-葛飾区・関東エリア対応
+葛飾区・関東エリア巡回対応
 </h3>
 
 <p>
@@ -1088,7 +1149,7 @@ LINE相談が便利でした
 </h4>
 
 <p>
-写真を送ったら症状を確認してくれて、
+写真を送ったら症状確認してくれて、
 話がスムーズでした。
 すぐ来てもらえて安心しました。
 </p>
