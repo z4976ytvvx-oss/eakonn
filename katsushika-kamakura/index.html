@@ -1,12 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
 <title>葛飾区のエアコン修理｜関東エアコン本舗｜最短30分対応</title>
 
-<meta name="description" content="葛飾区のエアコン修理なら関東エアコン本舗。冷えない・水漏れ・異音・電源不良に最短30分対応。追加料金事前説明・修理後1年保証。">
+<meta name="description" content="葛飾区のエアコン修理なら関東エアコン本舗。冷えない・水漏れ・異音・電源不良も最短30分対応。作業前見積り・追加料金事前説明・修理後1年保証。">
 
 <style>
 
@@ -18,11 +19,11 @@ box-sizing:border-box;
 
 body{
 font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
-background:#eef3f9;
-color:#222;
+background:#edf2f8;
+color:#111;
 overflow-x:hidden;
-line-height:1.7;
-padding-bottom:100px;
+line-height:1.8;
+padding-bottom:110px;
 }
 
 img{
@@ -41,8 +42,6 @@ max-width:1400px;
 margin:auto;
 }
 
-/* HEADER */
-
 header{
 position:sticky;
 top:0;
@@ -57,112 +56,109 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:18px 0;
+gap:20px;
 }
 
 .logo{
-font-size:54px;
+font-size:58px;
 font-weight:1000;
 line-height:1;
 color:#0a4ea3;
-letter-spacing:-2px;
+letter-spacing:-3px;
 }
 
 .logo small{
 display:block;
 font-size:18px;
 margin-top:10px;
-color:#444;
-font-weight:900;
+color:#333;
+letter-spacing:0;
 }
 
 .header-center{
-font-size:32px;
+font-size:34px;
 font-weight:1000;
 }
 
 .header-center span{
-font-size:64px;
+font-size:76px;
 color:#e11d48;
+line-height:1;
 }
 
-.header-buttons{
+.top-buttons{
 display:flex;
 gap:14px;
 }
 
-.header-buttons a{
-height:74px;
-padding:0 34px;
+.top-buttons a{
+height:86px;
+padding:0 40px;
 border-radius:999px;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:26px;
+font-size:30px;
 font-weight:1000;
 color:#fff;
-box-shadow:0 10px 24px rgba(0,0,0,.14);
+box-shadow:0 10px 24px rgba(0,0,0,.12);
 }
 
 .tel-btn{
-background:linear-gradient(135deg,#ff5a36,#d90429);
+background:linear-gradient(135deg,#ff6633,#e60023);
 }
 
 .line-btn{
 background:linear-gradient(135deg,#06c755,#00a63e);
 }
 
-/* HERO */
-
-.hero{
-padding:28px 0 90px;
+.section{
+padding:90px 0;
 }
 
-.hero-card{
+.hero{
+padding-top:40px;
+}
+
+.hero-box{
 position:relative;
 overflow:hidden;
-border-radius:42px;
-box-shadow:0 24px 50px rgba(0,0,0,.14);
+border-radius:44px;
+box-shadow:0 16px 42px rgba(0,0,0,.10);
 background:#fff;
 }
 
-.hero-card img{
+.hero-image{
 width:100%;
 display:block;
 }
 
-.hero-overlay{
+.hero-content{
 position:absolute;
-left:7%;
+left:70px;
 top:50%;
 transform:translateY(-50%);
-max-width:42%;
+max-width:620px;
 }
 
-.hero-overlay h1{
-font-size:96px;
+.hero-content h1{
+font-size:98px;
 line-height:1;
-letter-spacing:-4px;
 font-weight:1000;
+letter-spacing:-5px;
 margin-bottom:26px;
 color:#0a4ea3;
-
-text-shadow:
-0 2px 12px rgba(255,255,255,.95),
-0 0 30px rgba(255,255,255,.92);
 }
 
-.hero-overlay h1 span{
+.hero-content h1 span{
 color:#e11d48;
 }
 
-.hero-overlay p{
-font-size:28px;
+.hero-content p{
+font-size:34px;
 font-weight:900;
-line-height:1.9;
-margin-bottom:30px;
-
-text-shadow:
-0 2px 10px rgba(255,255,255,.95);
+line-height:1.8;
+margin-bottom:34px;
 }
 
 .hero-tags{
@@ -173,281 +169,164 @@ margin-bottom:34px;
 }
 
 .hero-tags span{
-background:rgba(255,255,255,.92);
-padding:14px 20px;
+background:rgba(255,255,255,.94);
+padding:14px 22px;
 border-radius:999px;
-font-size:15px;
+font-size:16px;
 font-weight:1000;
-backdrop-filter:blur(10px);
+box-shadow:0 4px 14px rgba(0,0,0,.08);
 }
 
-.hero-cta{
+.hero-buttons{
 display:flex;
 gap:18px;
 flex-wrap:wrap;
 }
 
-.hero-cta a{
-height:86px;
+.hero-buttons a{
+height:88px;
 padding:0 40px;
 border-radius:999px;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:28px;
+font-size:30px;
 font-weight:1000;
 color:#fff;
-box-shadow:0 14px 30px rgba(0,0,0,.18);
+box-shadow:0 10px 24px rgba(0,0,0,.16);
 }
 
-/* SECTION */
-
-.section{
-padding:110px 0;
-}
-
-.section-head{
-text-align:center;
-margin-bottom:60px;
-}
-
-.section-head h2{
-font-size:68px;
+.section-title{
+font-size:82px;
 font-weight:1000;
-letter-spacing:-2px;
-color:#0a4ea3;
-margin-bottom:16px;
-}
-
-.section-head p{
-font-size:22px;
-font-weight:800;
-line-height:2;
-color:#444;
-}
-
-/* SYMPTOMS */
-
-.symptoms-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:34px;
-}
-
-.symptom-card{
-position:relative;
-overflow:hidden;
-border-radius:40px;
-background:#fff;
-box-shadow:0 16px 38px rgba(0,0,0,.10);
-}
-
-.symptom-card img{
-width:100%;
-display:block;
-}
-
-.overlay{
-position:absolute;
-top:50%;
-transform:translateY(-50%);
-max-width:38%;
-z-index:5;
-}
-
-.left .overlay{
-left:7%;
-}
-
-.right .overlay{
-right:7%;
-}
-
-.overlay h3{
-font-size:68px;
 line-height:1;
-font-weight:1000;
-letter-spacing:-2px;
-margin-bottom:20px;
+margin-bottom:30px;
 color:#0a4ea3;
-
-text-shadow:
-0 2px 12px rgba(255,255,255,.95),
-0 0 28px rgba(255,255,255,.92);
+letter-spacing:-4px;
 }
 
-.overlay p{
-font-size:18px;
+.section-text{
+font-size:30px;
 font-weight:900;
 line-height:2;
-color:#222;
-
-text-shadow:
-0 2px 10px rgba(255,255,255,.95);
+margin-bottom:36px;
 }
 
-.tags{
-display:flex;
-flex-wrap:wrap;
-gap:12px;
-margin-top:24px;
-}
-
-.tags span{
-background:rgba(255,255,255,.92);
-padding:12px 18px;
-border-radius:999px;
-font-size:14px;
-font-weight:1000;
-backdrop-filter:blur(10px);
-}
-
-/* LARGE IMAGE SECTION */
-
-.large-card{
+.symptom-box{
 position:relative;
 overflow:hidden;
 border-radius:42px;
-box-shadow:0 18px 40px rgba(0,0,0,.12);
+background:#fff;
+box-shadow:0 14px 34px rgba(0,0,0,.08);
 }
 
-.large-card img{
+.symptom-image{
 width:100%;
 display:block;
 }
 
-.large-overlay{
+.symptom-content{
 position:absolute;
-left:7%;
 top:50%;
 transform:translateY(-50%);
-max-width:42%;
+max-width:480px;
 }
 
-.large-overlay h3{
-font-size:72px;
-line-height:1;
-font-weight:1000;
-letter-spacing:-2px;
-margin-bottom:24px;
-color:#0a4ea3;
-
-text-shadow:
-0 2px 12px rgba(255,255,255,.95),
-0 0 28px rgba(255,255,255,.92);
+.left{
+left:70px;
 }
 
-.large-overlay p{
-font-size:20px;
-font-weight:900;
-line-height:2;
-margin-bottom:24px;
-
-text-shadow:
-0 2px 10px rgba(255,255,255,.95);
+.right{
+right:70px;
 }
 
-.point-list{
+.symptom-tags{
 display:flex;
-flex-direction:column;
+flex-wrap:wrap;
 gap:14px;
 }
 
-.point{
-background:rgba(255,255,255,.92);
-padding:16px 18px;
-border-radius:18px;
-font-size:15px;
+.symptom-tags span{
+background:rgba(255,255,255,.94);
+padding:14px 22px;
+border-radius:999px;
+font-size:16px;
 font-weight:1000;
-backdrop-filter:blur(10px);
+box-shadow:0 4px 12px rgba(0,0,0,.08);
 }
 
-/* REVIEW */
-
-.review-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:26px;
-}
-
-.review-card{
+.trust-box{
+position:relative;
+overflow:hidden;
+border-radius:42px;
 background:#fff;
-padding:36px;
-border-radius:30px;
-box-shadow:0 12px 28px rgba(0,0,0,.08);
-}
-
-.review-card h4{
-font-size:30px;
-margin-bottom:18px;
-color:#0a4ea3;
-}
-
-.review-card p{
-font-size:17px;
-font-weight:800;
-line-height:2;
-margin-bottom:16px;
-}
-
-.review-card span{
-font-size:14px;
-font-weight:900;
-color:#666;
-}
-
-/* AREA */
-
-.area-box{
-background:#fff;
-padding:60px;
-border-radius:40px;
-text-align:center;
 box-shadow:0 14px 34px rgba(0,0,0,.08);
 }
 
-.area-box h3{
-font-size:54px;
-margin-bottom:20px;
-color:#0a4ea3;
+.trust-content{
+position:absolute;
+left:70px;
+top:50%;
+transform:translateY(-50%);
+max-width:540px;
 }
 
-.area-box p{
-font-size:20px;
-font-weight:800;
+.trust-points{
+display:flex;
+flex-wrap:wrap;
+gap:16px;
+margin-top:30px;
+}
+
+.trust-points div{
+background:rgba(255,255,255,.94);
+padding:16px 24px;
+border-radius:999px;
+font-size:18px;
+font-weight:1000;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.cta-section{
+position:relative;
+overflow:hidden;
+border-radius:42px;
+box-shadow:0 14px 34px rgba(0,0,0,.08);
+}
+
+.cta-content{
+position:absolute;
+left:70px;
+top:50%;
+transform:translateY(-50%);
+max-width:540px;
+}
+
+.cta-content h2{
+font-size:88px;
+font-weight:1000;
+line-height:1;
+margin-bottom:26px;
+color:#0a4ea3;
+letter-spacing:-4px;
+}
+
+.cta-content p{
+font-size:32px;
+font-weight:900;
 line-height:2;
 margin-bottom:30px;
 }
 
-.area-tags{
-display:flex;
-flex-wrap:wrap;
-gap:14px;
-justify-content:center;
-}
-
-.area-tags span{
-background:#eef5ff;
-padding:14px 20px;
-border-radius:999px;
-font-size:15px;
-font-weight:1000;
-color:#0a4ea3;
-}
-
-/* FOOTER */
-
-footer{
-background:#071b34;
+.footer{
+background:#081b34;
 color:#dbeafe;
 padding:70px 20px;
 text-align:center;
-line-height:2.2;
-font-size:16px;
+font-size:18px;
+line-height:2;
 margin-top:80px;
 }
-
-/* FIXED */
 
 .fixed-bar{
 position:fixed;
@@ -456,119 +335,93 @@ bottom:0;
 width:100%;
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:8px;
-padding:8px;
+gap:10px;
+padding:10px;
 background:rgba(255,255,255,.96);
-backdrop-filter:blur(12px);
+backdrop-filter:blur(10px);
 z-index:999999;
 }
 
 .fixed-bar a{
-height:84px;
+height:86px;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:30px;
+font-size:32px;
 font-weight:1000;
 color:#fff;
 border-radius:999px;
 }
 
 .fixed-phone{
-background:#ff3131;
+background:#ff2f2f;
 }
 
 .fixed-line{
 background:#06c755;
 }
 
-/* MOBILE */
-
 @media(max-width:900px){
 
 .logo{
-font-size:32px;
+font-size:30px;
 }
 
 .logo small{
-font-size:12px;
+font-size:11px;
 }
 
 .header-center{
 display:none;
 }
 
-.header-buttons a{
-height:56px;
-padding:0 18px;
+.top-buttons a{
+height:58px;
+padding:0 20px;
 font-size:18px;
 }
 
-.hero-overlay{
-left:7%;
-right:7%;
-max-width:80%;
+.hero-content,
+.symptom-content,
+.trust-content,
+.cta-content{
+left:34px !important;
+right:34px !important;
+top:auto;
+bottom:40px;
+transform:none;
+max-width:none;
 }
 
-.hero-overlay h1{
-font-size:56px;
+.hero-content h1,
+.section-title,
+.cta-content h2{
+font-size:54px;
+line-height:1.1;
 }
 
-.hero-overlay p{
+.hero-content p,
+.section-text,
+.cta-content p{
 font-size:18px;
+line-height:1.8;
 }
 
-.hero-cta a{
+.hero-buttons a{
 width:100%;
 font-size:22px;
 height:72px;
 }
 
-.section-head h2{
-font-size:44px;
-}
-
-.section-head p{
-font-size:17px;
-}
-
-.symptoms-grid{
-grid-template-columns:1fr;
-}
-
-.overlay,
-.large-overlay{
-top:auto;
-bottom:7%;
-transform:none;
-max-width:78%;
-left:7% !important;
-right:auto !important;
-}
-
-.overlay h3,
-.large-overlay h3{
-font-size:44px;
-}
-
-.overlay p,
-.large-overlay p{
-font-size:15px;
-line-height:1.8;
-}
-
-.review-grid{
-grid-template-columns:1fr;
-}
-
 .fixed-bar a{
-font-size:22px;
-height:72px;
+font-size:24px;
+height:74px;
 }
 
 }
 
 </style>
+
 </head>
 
 <body>
@@ -586,7 +439,7 @@ height:72px;
 関東エリア巡回中！ 最短<span>30</span>分対応
 </div>
 
-<div class="header-buttons">
+<div class="top-buttons">
 <a href="tel:0358794790" class="tel-btn">📞 電話</a>
 <a href="https://lin.ee/Nhppoyr" class="line-btn">LINE相談</a>
 </div>
@@ -595,15 +448,15 @@ height:72px;
 
 </header>
 
-<section class="hero">
+<section class="section hero">
 
 <div class="container">
 
-<div class="hero-card">
+<div class="hero-box">
 
-<img src="./hero-katsushika-kamakura-aircon.png">
+<img src="./hero-katsushika-anime-aircon-v2.png" class="hero-image">
 
-<div class="hero-overlay">
+<div class="hero-content">
 
 <h1>
 エアコンが<br>
@@ -619,12 +472,11 @@ height:72px;
 <div class="hero-tags">
 <span>作業前見積り</span>
 <span>追加料金事前説明</span>
-<span>LINE写真相談OK</span>
 <span>無理な交換営業なし</span>
 <span>修理後1年保証</span>
 </div>
 
-<div class="hero-cta">
+<div class="hero-buttons">
 <a href="tel:0358794790" class="tel-btn">📞 今すぐ電話する</a>
 <a href="https://lin.ee/Nhppoyr" class="line-btn">LINE無料相談</a>
 </div>
@@ -641,35 +493,22 @@ height:72px;
 
 <div class="container">
 
-<div class="section-head">
+<div class="symptom-box">
 
-<h2>
-よくある症状
+<img src="./not-cooling-katsushika-aircon.png" class="symptom-image">
+
+<div class="symptom-content left">
+
+<h2 class="section-title">
+冷えない
 </h2>
 
-<p>
-冷えない・水漏れ・異音・電源不良など、
-放置すると高額修理につながる場合があります。
-</p>
-
-</div>
-
-<div class="symptoms-grid">
-
-<div class="symptom-card left">
-
-<img src="./not-cooling-katsushika-aircon.png">
-
-<div class="overlay">
-
-<h3>冷えない</h3>
-
-<p>
-ガス漏れ・室外機・基板不良など、
+<p class="section-text">
+ガス漏れ・室外機・基板不良など、<br>
 症状に合わせて原因確認を行います。
 </p>
 
-<div class="tags">
+<div class="symptom-tags">
 <span>ガス圧確認</span>
 <span>室外機確認</span>
 <span>基板点検</span>
@@ -679,20 +518,30 @@ height:72px;
 
 </div>
 
-<div class="symptom-card right">
+</div>
 
-<img src="./water-leak-katsushika-aircon.png">
+</section>
 
-<div class="overlay">
+<section class="section">
 
-<h3>水漏れ</h3>
+<div class="container">
 
-<p>
-ドレン詰まり・勾配不良・内部汚れなど、
+<div class="symptom-box">
+
+<img src="./water-leak-katsushika-aircon.png" class="symptom-image">
+
+<div class="symptom-content right">
+
+<h2 class="section-title">
+水漏れ
+</h2>
+
+<p class="section-text">
+ドレン詰まり・勾配不良・内部汚れなど、<br>
 原因確認を行います。
 </p>
 
-<div class="tags">
+<div class="symptom-tags">
 <span>ドレン洗浄</span>
 <span>内部確認</span>
 <span>配管確認</span>
@@ -702,45 +551,65 @@ height:72px;
 
 </div>
 
-<div class="symptom-card right">
+</div>
 
-<img src="./symptom-noise-katsushika-aircon.png">
+</section>
 
-<div class="overlay">
+<section class="section">
 
-<h3>異音</h3>
+<div class="container">
 
-<p>
-ファン・モーター・内部部品など、
+<div class="symptom-box">
+
+<img src="./symptom-noise-katsushika-aircon.png" class="symptom-image">
+
+<div class="symptom-content left">
+
+<h2 class="section-title">
+異音
+</h2>
+
+<p class="section-text">
+ファン・モーター・内部部品など、<br>
 異常箇所を確認します。
 </p>
 
-<div class="tags">
+<div class="symptom-tags">
+<span>ファン確認</span>
 <span>モーター確認</span>
 <span>内部点検</span>
-<span>異音確認</span>
 </div>
 
 </div>
 
 </div>
 
-<div class="symptom-card left">
+</div>
 
-<img src="./power-not-turning-on-katsushika-aircon.png">
+</section>
 
-<div class="overlay">
+<section class="section">
 
-<h3>電源不良</h3>
+<div class="container">
 
-<p>
-基板・電圧・配線異常などを確認し、
+<div class="symptom-box">
+
+<img src="./power-not-turning-on-katsushika-aircon.png" class="symptom-image">
+
+<div class="symptom-content right">
+
+<h2 class="section-title">
+電源不良
+</h2>
+
+<p class="section-text">
+基板・電圧・配線異常などを確認し、<br>
 復旧可能か判断します。
 </p>
 
-<div class="tags">
+<div class="symptom-tags">
 <span>電圧確認</span>
-<span>基板点検</span>
+<span>基板確認</span>
 <span>配線確認</span>
 </div>
 
@@ -750,56 +619,31 @@ height:72px;
 
 </div>
 
-</div>
-
 </section>
 
 <section class="section">
 
 <div class="container">
 
-<div class="section-head">
-
-<h2>
-修理作業イメージ
-</h2>
-
-<p>
-無理な交換営業は行わず、
-まず修理可能かを確認します。
-</p>
-
-</div>
-
-<div class="large-card">
+<div class="trust-box">
 
 <img src="./professional-repair-work-katsushika.png">
 
-<div class="large-overlay">
+<div class="trust-content">
 
-<h3>
-原因を確認してから作業
-</h3>
+<h2 class="section-title">
+修理作業イメージ
+</h2>
 
-<p>
-症状・原因・料金を説明した上で、
-ご了承後のみ作業いたします。
+<p class="section-text">
+経験豊富なスタッフが、<br>
+症状・原因を確認しながら丁寧に修理します。
 </p>
 
-<div class="point-list">
-
-<div class="point">
-✔ 明朗会計
-</div>
-
-<div class="point">
-✔ 追加料金事前説明
-</div>
-
-<div class="point">
-✔ 修理後1年保証
-</div>
-
+<div class="trust-points">
+<div>原因説明をしてから作業</div>
+<div>無理な交換営業なし</div>
+<div>修理後1年保証</div>
 </div>
 
 </div>
@@ -814,48 +658,29 @@ height:72px;
 
 <div class="container">
 
-<div class="section-head">
-
-<h2>
-作業後も安心
-</h2>
-
-<p>
-作業後の高額請求や
-無理な営業は行いません。
-</p>
-
-</div>
-
-<div class="large-card">
+<div class="trust-box">
 
 <img src="./repair-complete-katsushika-aircon.png">
 
-<div class="large-overlay">
+<div class="trust-content">
 
-<h3>
-修理後1年保証付き
-</h3>
+<h2 class="section-title">
+作業後も安心
+</h2>
 
-<p>
-作業後も安心してご利用いただけるよう、
-修理後1年保証をお付けしています。
+<p class="section-text">
+作業後に高額請求を行うことはありません。<br><br>
+
+症状・原因・料金を説明した上で、<br>
+ご了承後のみ作業いたします。<br><br>
+
+修理後1年保証付き。
 </p>
 
-<div class="point-list">
-
-<div class="point">
-✔ 明朗会計
-</div>
-
-<div class="point">
-✔ 追加料金事前説明
-</div>
-
-<div class="point">
-✔ 修理後1年保証
-</div>
-
+<div class="trust-points">
+<div>明朗会計</div>
+<div>追加料金事前説明</div>
+<div>修理後1年保証</div>
 </div>
 
 </div>
@@ -870,69 +695,61 @@ height:72px;
 
 <div class="container">
 
-<div class="section-head">
+<div class="trust-box">
+
+<img src="./trust-explanation-katsushika-aircon.png">
+
+<div class="trust-content">
+
+<h2 class="section-title">
+ぼったくり対策
+</h2>
+
+<p class="section-text">
+説明なし作業・高額請求・不安を煽る交換営業。<br><br>
+
+そういった修理トラブル相談が増えています。<br><br>
+
+まずは症状だけでもご相談ください。
+</p>
+
+<div class="trust-points">
+<div>相見積り歓迎</div>
+<div>作業前料金説明</div>
+<div>追加請求なし</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="cta-section">
+
+<img src="./phone-support-cta-katsushika.png">
+
+<div class="cta-content">
 
 <h2>
-お客様の声
+今すぐ相談
 </h2>
 
 <p>
-葛飾区周辺のお客様から
-多数ご相談いただいています。
+冷えない・水漏れ・異音・電源不良など、<br>
+まずは症状だけでもご相談ください。
 </p>
 
+<div class="hero-buttons">
+<a href="tel:0358794790" class="tel-btn">📞 電話する</a>
+<a href="https://lin.ee/Nhppoyr" class="line-btn">LINE相談</a>
 </div>
-
-<div class="review-grid">
-
-<div class="review-card">
-
-<h4>
-すぐ来てくれて助かった
-</h4>
-
-<p>
-夜に冷えなくなって困っていましたが、
-電話後すぐ来てくれて助かりました。
-</p>
-
-<span>
-葛飾区 / 40代女性
-</span>
-
-</div>
-
-<div class="review-card">
-
-<h4>
-説明が丁寧だった
-</h4>
-
-<p>
-料金説明も分かりやすく、
-無理な営業もなく安心でした。
-</p>
-
-<span>
-高砂 / 30代男性
-</span>
-
-</div>
-
-<div class="review-card">
-
-<h4>
-交換しなくて済んだ
-</h4>
-
-<p>
-他社では交換と言われましたが、
-修理で直って助かりました。
-</p>
-
-<span>
-金町 / 50代男性
-</span>
 
 </div>
 
@@ -946,29 +763,20 @@ height:72px;
 
 <div class="container">
 
-<div class="area-box">
+<div class="cta-section">
 
-<h3>
-葛飾区・関東エリア対応
-</h3>
+<img src="./fast-arrival-katsushika-aircon.png">
+
+<div class="cta-content">
+
+<h2>
+最短30分
+</h2>
 
 <p>
-葛飾区を中心に、
-東京・千葉・埼玉・神奈川方面まで対応しています。
+葛飾区周辺を巡回中。<br>
+お急ぎの場合もご相談ください。
 </p>
-
-<div class="area-tags">
-
-<span>葛飾区</span>
-<span>柴又</span>
-<span>高砂</span>
-<span>金町</span>
-<span>小岩</span>
-<span>松戸市</span>
-<span>柏市</span>
-<span>市川市</span>
-<span>埼玉</span>
-<span>神奈川</span>
 
 </div>
 
@@ -978,7 +786,7 @@ height:72px;
 
 </section>
 
-<footer>
+<footer class="footer">
 
 関東エアコン本舗<br>
 葛飾区・柴又・高砂・金町周辺対応<br>
