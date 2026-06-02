@@ -1,905 +1,505 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>松戸市のエアコン修理｜誠和電気 エアコンレスキュー松戸</title>
+<title>松戸のエアコン修理｜誠和電気 エアコンレスキュー｜冷えない・水漏れ・異音対応</title>
+<meta name="description" content="松戸拠点のエアコン修理なら誠和電気。冷えない・水漏れ・異音・風が出ない・臭いなどに対応。作業前見積り、明朗会計、修理後1年保証。松戸市を中心に関東一円対応。">
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+*{box-sizing:border-box;}
 
 body{
-font-family:
-"Hiragino Kaku Gothic ProN",
-"Yu Gothic",
-sans-serif;
-background:#eef3f8;
-color:#111;
-padding-bottom:130px;
+  margin:0;
+  background:#fff;
+  color:#111827;
+  font-family:system-ui,-apple-system,"Segoe UI","Yu Gothic",Meiryo,sans-serif;
+  padding-bottom:82px;
 }
 
 img{
-display:block;
-width:100%;
+  width:100%;
+  max-width:100%;
+  height:auto;
+  display:block;
 }
 
 a{
-text-decoration:none;
-color:inherit;
+  text-decoration:none;
+  color:inherit;
 }
 
-.container{
-max-width:1600px;
-margin:auto;
+main{
+  max-width:1120px;
+  margin:auto;
+  background:#fff;
 }
-
-/* ======================
-HEADER
-====================== */
 
 .header{
-position:sticky;
-top:0;
-z-index:9999;
-background:#fff;
-padding:22px 20px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:20px;
-box-shadow:0 4px 20px rgba(0,0,0,0.08);
+  position:sticky;
+  top:0;
+  z-index:999;
+  background:#fff;
+  border-bottom:1px solid #e5e7eb;
 }
 
-.logo-wrap{
-display:flex;
-flex-direction:column;
+.header-inner{
+  max-width:1120px;
+  margin:auto;
+  padding:9px 12px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
 }
 
 .logo{
-font-size:54px;
-font-weight:900;
-line-height:0.95;
-color:#1357c8;
+  line-height:1.15;
+  min-width:112px;
+}
+
+.logo-main{
+  display:block;
+  font-weight:950;
+  color:#073b86;
+  font-size:15px;
 }
 
 .logo-sub{
-font-size:18px;
-font-weight:700;
-margin-top:8px;
+  display:block;
+  color:#667085;
+  font-size:10px;
+  font-weight:700;
+  margin-top:2px;
 }
 
-.header-center{
-font-size:48px;
-font-weight:900;
-line-height:1.15;
-white-space:nowrap;
+.header-cta{
+  display:flex;
+  gap:7px;
+  align-items:center;
+  flex-shrink:0;
 }
 
-.header-center span{
-font-size:100px;
-color:#ff2767;
+.header-cta a{
+  width:86px;
+  height:44px;
+  border-radius:12px;
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  font-weight:950;
+  font-size:12px;
+  line-height:1.15;
+  box-shadow:0 5px 14px rgba(0,0,0,.20);
 }
 
-.header-buttons{
-display:flex;
-gap:18px;
+.header-cta span{
+  display:block;
+  font-size:9px;
+  font-weight:800;
+  margin-top:2px;
 }
 
-.header-btn{
-padding:24px 38px;
-border-radius:999px;
-font-size:38px;
-font-weight:900;
-color:#fff;
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
+.head-phone{
+  background:linear-gradient(135deg,#ff3b3b,#d71920);
 }
 
-.phone-btn{
-background:linear-gradient(135deg,#ff7139,#ff005d);
+.head-line{
+  background:linear-gradient(135deg,#06c755,#049b43);
 }
-
-.line-btn{
-background:linear-gradient(135deg,#15d84f,#00be49);
-}
-
-/* ======================
-HERO
-====================== */
 
 .hero{
-position:relative;
-margin:20px;
-border-radius:40px;
-overflow:hidden;
+  position:relative;
+  background:#fff;
+  overflow:hidden;
 }
 
-.hero img{
-width:100%;
+.notice{
+  text-align:center;
+  font-size:14px;
+  padding:14px 12px;
+  background:#f8fafc;
+  font-weight:700;
+  line-height:1.7;
+  border-top:1px solid #edf2f7;
+  border-bottom:1px solid #edf2f7;
 }
 
-.hero-overlay{
-position:absolute;
-left:6%;
-top:50%;
-transform:translateY(-50%);
-max-width:540px;
-color:#fff;
+.no-sales{
+  text-align:center;
+  font-size:13px;
+  color:#555;
+  margin:10px 12px 0;
+  line-height:1.6;
 }
 
-.hero-overlay h1{
-font-size:88px;
-line-height:1.05;
-font-weight:900;
-margin-bottom:28px;
-text-shadow:0 5px 20px rgba(0,0,0,0.4);
+.cta-img{
+  max-width:900px;
+  margin:26px auto;
+  padding:0 14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+  overflow:hidden;
 }
 
-.hero-overlay p{
-font-size:34px;
-line-height:1.8;
-font-weight:700;
-margin-bottom:36px;
-text-shadow:0 3px 12px rgba(0,0,0,0.35);
+.cta-img a{
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
-.hero-tags{
-display:flex;
-flex-wrap:wrap;
-gap:16px;
+.cta-img img{
+  width:100% !important;
+  max-width:360px !important;
+  height:auto !important;
+  object-fit:contain !important;
+  margin:auto;
+  filter:drop-shadow(0 6px 14px rgba(0,0,0,.20));
 }
 
-.hero-tags span{
-background:#fff;
-color:#1357c8;
-padding:15px 24px;
-border-radius:999px;
-font-size:22px;
-font-weight:900;
+.section{
+  max-width:900px;
+  margin:30px auto;
+  padding:0 14px;
+  overflow:hidden;
 }
 
-/* ======================
-WARNING
-====================== */
-
-.warning{
-padding:90px 20px;
-text-align:center;
+.section h2{
+  color:#073b86;
+  font-size:22px;
+  line-height:1.35;
+  margin:0 0 14px;
 }
 
-.warning h2{
-font-size:74px;
-line-height:1.3;
-font-weight:900;
-color:#ff2767;
-margin-bottom:40px;
+.section-img{
+  border-radius:16px;
+  box-shadow:0 8px 24px rgba(0,0,0,.08);
 }
 
-.warning p{
-font-size:38px;
-line-height:1.8;
-font-weight:700;
+.mini-text{
+  text-align:center;
+  margin:12px 0;
+  font-size:14px;
+  line-height:1.75;
+  color:#333;
 }
 
-/* ======================
-SECTIONS
-====================== */
-
-.feature-section{
-display:grid;
-grid-template-columns:1fr 1fr;
-background:#fff;
-margin:40px 20px;
-border-radius:40px;
-overflow:hidden;
-box-shadow:0 8px 30px rgba(0,0,0,0.08);
+.price-note{
+  background:#eef6ff;
+  padding:14px;
+  border-left:5px solid #073b86;
+  margin:14px 0;
+  font-size:14px;
+  line-height:1.8;
 }
 
-.feature-image img{
-height:100%;
-object-fit:cover;
+.trust-box{
+  background:#fff7e6;
+  border:1px solid #ffd38a;
+  padding:15px;
+  border-radius:14px;
+  margin:14px 0;
+  font-size:14px;
+  font-weight:800;
+  line-height:1.85;
 }
 
-.feature-content{
-display:flex;
-flex-direction:column;
-justify-content:center;
+.faq-title{
+  text-align:center;
+  color:#073b86;
 }
 
-.feature-content h2{
-font-size:78px;
-line-height:1.1;
-font-weight:900;
-color:#1357c8;
-margin-bottom:30px;
+.faq-item{
+  border:1px solid #e5e7eb;
+  border-radius:14px;
+  padding:16px;
+  margin-bottom:12px;
+  background:#fff;
+  font-size:14px;
+  line-height:1.75;
+  box-shadow:0 4px 14px rgba(0,0,0,.04);
 }
 
-.feature-content p{
-font-size:36px;
-line-height:1.75;
-font-weight:700;
-margin-bottom:35px;
+.faq-item strong{
+  display:block;
+  margin-bottom:6px;
+  font-size:15px;
+  color:#111827;
 }
 
-.feature-tags{
-display:flex;
-flex-wrap:wrap;
-gap:16px;
+.faq-item p{
+  margin:0;
 }
 
-.feature-tags span{
-background:#f5f5f5;
-padding:16px 24px;
-border-radius:999px;
-font-size:22px;
-font-weight:900;
+.footer{
+  background:#071425;
+  color:#dbeafe;
+  text-align:center;
+  padding:22px 10px;
+  font-size:13px;
+  line-height:1.7;
 }
-
-/* ======================
-画像別 微調整
-====================== */
-
-/* 冷えない */
-
-.cooling-section .feature-content{
-padding:70px 65px 70px 95px;
-}
-
-/* 水漏れ */
-
-.water-section .feature-content{
-padding:70px 60px 70px 90px;
-}
-
-/* 異音 */
-
-.noise-section .feature-content{
-padding:70px 70px 70px 105px;
-}
-
-/* 電源 */
-
-.power-section .feature-content{
-padding:70px 70px 70px 95px;
-}
-
-/* ぼったくり */
-
-.trust-section .feature-content{
-padding:70px 75px 70px 120px;
-}
-
-/* 修理 */
-
-.work-section .feature-content{
-padding:70px 70px 70px 105px;
-}
-
-/* 安心 */
-
-.complete-section .feature-content{
-padding:70px 75px 70px 125px;
-}
-
-/* ======================
-AREA
-====================== */
-
-.area-section{
-position:relative;
-margin:60px 20px;
-border-radius:40px;
-overflow:hidden;
-}
-
-.area-overlay{
-position:absolute;
-left:7%;
-top:50%;
-transform:translateY(-50%);
-max-width:540px;
-color:#fff;
-}
-
-.area-overlay h2{
-font-size:76px;
-line-height:1.15;
-font-weight:900;
-margin-bottom:28px;
-text-shadow:0 5px 20px rgba(0,0,0,0.45);
-}
-
-.area-overlay p{
-font-size:34px;
-line-height:1.8;
-font-weight:700;
-margin-bottom:35px;
-text-shadow:0 3px 10px rgba(0,0,0,0.35);
-}
-
-.area-tags{
-display:flex;
-flex-wrap:wrap;
-gap:14px;
-}
-
-.area-tags span{
-background:#fff;
-color:#1357c8;
-padding:14px 22px;
-border-radius:999px;
-font-size:20px;
-font-weight:900;
-}
-
-/* ======================
-PRICE
-====================== */
-
-.price{
-background:#fff;
-margin:50px 20px;
-border-radius:40px;
-padding:70px;
-}
-
-.price h2{
-font-size:72px;
-font-weight:900;
-color:#1357c8;
-text-align:center;
-margin-bottom:50px;
-}
-
-.price-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:30px;
-}
-
-.price-card{
-background:#f7f9fc;
-padding:40px;
-border-radius:30px;
-}
-
-.price-card h3{
-font-size:40px;
-margin-bottom:18px;
-}
-
-.price-card p{
-font-size:34px;
-font-weight:900;
-color:#ff2767;
-}
-
-/* ======================
-COMPANY
-====================== */
-
-.company{
-background:#fff;
-margin:50px 20px;
-padding:70px;
-border-radius:40px;
-}
-
-.company h2{
-font-size:72px;
-font-weight:900;
-color:#1357c8;
-margin-bottom:50px;
-}
-
-.company-table{
-display:grid;
-grid-template-columns:260px 1fr;
-border-top:1px solid #ddd;
-font-size:32px;
-}
-
-.company-table div{
-padding:26px 10px;
-border-bottom:1px solid #ddd;
-}
-
-/* ======================
-FIXED CTA
-====================== */
 
 .fixed-cta{
-position:fixed;
-left:0;
-bottom:0;
-width:100%;
-padding:14px;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:14px;
-background:rgba(255,255,255,0.95);
-backdrop-filter:blur(10px);
-z-index:99999;
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:9999;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:4px;
+  padding:4px;
+  background:rgba(255,255,255,.98);
+  box-shadow:0 -4px 16px rgba(0,0,0,.18);
 }
 
-.fixed-btn{
-height:110px;
-border-radius:999px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:48px;
-font-weight:900;
-color:#fff;
-box-shadow:0 10px 30px rgba(0,0,0,0.2);
+.fixed-cta a{
+  overflow:hidden;
+  border-radius:10px;
+  background:#fff;
 }
 
-.fixed-phone{
-background:linear-gradient(135deg,#ff7139,#ff005d);
+.fixed-cta img{
+  width:100% !important;
+  height:58px !important;
+  object-fit:contain !important;
 }
 
-.fixed-line{
-background:linear-gradient(135deg,#15d84f,#00be49);
+@media(max-width:700px){
+  body{
+    padding-bottom:74px;
+  }
+
+  .logo-main{
+    font-size:13px;
+  }
+
+  .logo-sub{
+    font-size:9px;
+  }
+
+  .header-cta{
+    gap:5px;
+  }
+
+  .header-cta a{
+    width:72px;
+    height:40px;
+    border-radius:10px;
+    font-size:11px;
+  }
+
+  .header-cta span{
+    font-size:8px;
+  }
+
+  .cta-img{
+    flex-direction:column;
+    gap:12px;
+    margin:22px auto;
+  }
+
+  .cta-img img{
+    max-width:100% !important;
+  }
+
+  .section{
+    margin:26px auto;
+  }
+
+  .fixed-cta img{
+    height:54px !important;
+  }
 }
-
-/* ======================
-SP
-====================== */
-
-@media(max-width:900px){
-
-.logo{
-font-size:40px;
-}
-
-.logo-sub{
-font-size:13px;
-}
-
-.header-center{
-font-size:26px;
-white-space:normal;
-}
-
-.header-center span{
-font-size:58px;
-}
-
-.header-btn{
-font-size:22px;
-padding:16px 20px;
-}
-
-.hero-overlay{
-max-width:75%;
-}
-
-.hero-overlay h1{
-font-size:54px;
-}
-
-.hero-overlay p{
-font-size:22px;
-}
-
-.warning h2{
-font-size:48px;
-}
-
-.warning p{
-font-size:28px;
-}
-
-.feature-section{
-grid-template-columns:1fr;
-}
-
-.cooling-section .feature-content,
-.water-section .feature-content,
-.noise-section .feature-content,
-.power-section .feature-content,
-.trust-section .feature-content,
-.work-section .feature-content,
-.complete-section .feature-content{
-padding:42px;
-}
-
-.feature-content h2{
-font-size:52px;
-}
-
-.feature-content p{
-font-size:28px;
-}
-
-.area-overlay h2{
-font-size:48px;
-}
-
-.area-overlay p{
-font-size:24px;
-}
-
-.price-grid{
-grid-template-columns:1fr;
-}
-
-.company-table{
-grid-template-columns:1fr;
-}
-
-.fixed-btn{
-font-size:32px;
-height:90px;
-}
-
-}
-
 </style>
 </head>
 
 <body>
 
-<div class="container">
-
 <header class="header">
+  <div class="header-inner">
+    <div class="logo">
+      <span class="logo-main">誠和電気</span>
+      <span class="logo-sub">エアコンレスキュー松戸</span>
+    </div>
 
-<div class="logo-wrap">
-<div class="logo">誠和電気</div>
-<div class="logo-sub">エアコンレスキュー松戸</div>
-</div>
-
-<div class="header-center">
-松戸エリア巡回中！ 最短<span>30</span>分対応
-</div>
-
-<div class="header-buttons">
-<a href="tel:09012345678" class="header-btn phone-btn">📞電話</a>
-<a href="#" class="header-btn line-btn">LINE相談</a>
-</div>
-
+    <div class="header-cta">
+      <a class="head-phone" href="tel:0358794790">
+        電話
+        <span>今すぐ相談</span>
+      </a>
+      <a class="head-line" href="https://lin.ee/Nhppoyr">
+        LINE
+        <span>写真でOK</span>
+      </a>
+    </div>
+  </div>
 </header>
 
-<!-- HERO -->
-
-<section class="hero">
-
-<img src="hero-katsushika-kamakura-aircon.png">
-
-<div class="hero-overlay">
-
-<h1>
-エアコンが冷えない…<br>
-水漏れ・異音も即対応
-</h1>
-
-<p>
-松戸市周辺を修理スタッフが巡回中。<br>
-最短30分で駆けつけます。
-</p>
-
-<div class="hero-tags">
-<span>追加請求なし</span>
-<span>修理後保証</span>
-<span>最短30分</span>
-</div>
-
-</div>
-
-</section>
-
-<!-- WARNING -->
-
-<section class="warning">
-
-<h2>
-放置すると高額修理につながる場合があります
-</h2>
-
-<p>
-「冷えない」「水漏れ」「異音」を放置すると、<br>
-コンプレッサー・基板交換になるケースがあります。
-</p>
-
-</section>
-
-<!-- 冷えない -->
-
-<section class="feature-section cooling-section">
-
-<div class="feature-image">
-<img src="not-cooling-katsushika-aircon.png">
-</div>
-
-<div class="feature-content">
-
-<h2>冷えない</h2>
-
-<p>
-ガス漏れ・室外機・基板不良など、<br>
-複数の原因を確認します。
-</p>
-
-<div class="feature-tags">
-<span>ガス圧確認</span>
-<span>室外機確認</span>
-<span>基板点検</span>
-</div>
-
-</div>
-
-</section>
-
-<!-- 水漏れ -->
-
-<section class="feature-section water-section">
-
-<div class="feature-image">
-<img src="water-leak-katsushika-aircon.png">
-</div>
-
-<div class="feature-content">
-
-<h2>水漏れ</h2>
-
-<p>
-ドレン詰まり・勾配不良・内部汚れなど、<br>
-原因確認を行います。
-</p>
-
-<div class="feature-tags">
-<span>ドレン洗浄</span>
-<span>内部確認</span>
-<span>配管確認</span>
-</div>
-
-</div>
-
-</section>
-
-<!-- 異音 -->
-
-<section class="feature-section noise-section">
-
-<div class="feature-image">
-<img src="symptom-noise-katsushika-aircon.png">
-</div>
-
-<div class="feature-content">
-
-<h2>異音</h2>
-
-<p>
-ファン・モーター・内部部品など、<br>
-異常箇所を確認します。
-</p>
-
-<div class="feature-tags">
-<span>ファン確認</span>
-<span>モーター確認</span>
-<span>内部点検</span>
-</div>
-
-</div>
-
-</section>
-
-<!-- 電源 -->
-
-<section class="feature-section power-section">
-
-<div class="feature-image">
-<img src="power-not-turning-on-katsushika-aircon.png">
-</div>
-
-<div class="feature-content">
-
-<h2>電源不良</h2>
-
-<p>
-基板・電圧・配線異常などを確認し、<br>
-復旧可能か判断します。
-</p>
-
-<div class="feature-tags">
-<span>基板確認</span>
-<span>電圧確認</span>
-<span>配線点検</span>
-</div>
-
-</div>
-
-</section>
-
-<!-- TRUST -->
-
-<section class="feature-section trust-section">
-
-<div class="feature-image">
-<img src="trust-explanation-katsushika-aircon.png">
-</div>
-
-<div class="feature-content">
-
-<h2>ぼったくり撲滅</h2>
-
-<p>
-症状・原因・料金を説明した上で、<br>
-ご了承後のみ作業いたします。
-</p>
-
-<div class="feature-tags">
-<span>追加請求なし</span>
-<span>明朗会計</span>
-<span>無理な交換営業なし</span>
-</div>
-
-</div>
-
-</section>
-
-<!-- WORK -->
-
-<section class="feature-section work-section">
-
-<div class="feature-image">
-<img src="professional-repair-work-katsushika.png">
-</div>
-
-<div class="feature-content">
-
-<h2>修理作業</h2>
-
-<p>
-経験豊富なスタッフが、<br>
-丁寧に原因確認・修理を行います。
-</p>
-
-<div class="feature-tags">
-<span>修理経験多数</span>
-<span>地域密着</span>
-<span>即日対応</span>
-</div>
-
-</div>
-
-</section>
-
-<!-- COMPLETE -->
-
-<section class="feature-section complete-section">
-
-<div class="feature-image">
-<img src="repair-complete-katsushika-aircon.png">
-</div>
-
-<div class="feature-content">
-
-<h2>作業後も安心</h2>
-
-<p>
-作業後に高額請求を行うことはありません。<br>
-修理後保証付きです。
-</p>
-
-<div class="feature-tags">
-<span>追加請求なし</span>
-<span>修理後保証</span>
-<span>明朗会計</span>
-</div>
-
-</div>
-
-</section>
-
-<!-- AREA -->
-
-<section class="area-section">
-
-<img src="area-katsushika-kanto-wide.png">
-
-<div class="area-overlay">
-
-<h2>松戸市・関東エリア対応</h2>
-
-<p>
-松戸市を中心に、
-千葉・東京・埼玉方面まで対応しています。
-</p>
-
-<div class="area-tags">
-<span>松戸市</span>
-<span>小金</span>
-<span>新松戸</span>
-<span>北小金</span>
-<span>柏市</span>
-<span>市川市</span>
-<span>流山</span>
-<span>葛飾区</span>
-</div>
-
-</div>
-
-</section>
-
-<!-- PRICE -->
-
-<section class="price">
-
-<h2>料金目安</h2>
-
-<div class="price-grid">
-
-<div class="price-card">
-<h3>点検・軽作業</h3>
-<p>8,000円〜</p>
-</div>
-
-<div class="price-card">
-<h3>ガス補充</h3>
-<p>15,000円〜</p>
-</div>
-
-<div class="price-card">
-<h3>修理作業</h3>
-<p>10,000円〜</p>
-</div>
-
-<div class="price-card">
-<h3>交換工事</h3>
-<p>30,000円〜</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- COMPANY -->
-
-<section class="company">
-
-<h2>会社情報</h2>
-
-<div class="company-table">
-
-<div>会社名</div>
-<div>誠和電気 エアコンレスキュー松戸</div>
-
-<div>対応エリア</div>
-<div>松戸市・柏市・流山・市川市・葛飾区</div>
-
-<div>営業時間</div>
-<div>24時間受付</div>
-
-<div>電話番号</div>
-<div>090-1234-5678</div>
-
-<div>LINE受付</div>
-<div>24時間対応</div>
-
-</div>
-
-</section>
-
-</div>
-
-<!-- FIXED -->
+<main>
+
+  <section class="hero">
+    <img src="./hero-aircon.jpg" alt="松戸のエアコン修理 誠和電気">
+  </section>
+
+  <div class="notice">
+    お電話は対応中で出られない場合があります。<br>
+    <span style="color:#06c755;font-weight:900;">LINEならすぐ確認できます（写真送るだけOK）</span>
+  </div>
+
+  <p class="no-sales">
+    ※無理な営業は行いません。まずは修理できるかを確認します。
+  </p>
+
+  <div class="cta-img">
+    <a href="tel:0358794790">
+      <img src="./cta-phone.png" alt="今すぐ電話する">
+    </a>
+    <a href="https://lin.ee/Nhppoyr">
+      <img src="./cta-line.png" alt="LINEで相談する">
+    </a>
+  </div>
+
+  <section class="section">
+    <h2>冷えない・水漏れ・異音の修理事例</h2>
+    <img class="section-img" src="./aircon-repair-cases-3pattern.jpg" alt="エアコン修理 ビフォーアフター">
+    <p class="mini-text">
+      実際によくあるトラブルを、原因別に確認して最適な修理を行います。
+    </p>
+  </section>
+
+  <section class="section">
+    <div class="trust-box">
+      ✔ 作業前に必ずお見積り<br>
+      ✔ 追加費用は事前説明<br>
+      ✔ 無理な交換営業はしません<br>
+      ✔ まず修理できるかを確認します<br>
+      ✔ 修理後も安心の1年保証
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>料金について</h2>
+    <img class="section-img" src="./price-aircon.jpg" alt="エアコン修理 料金表">
+    <div class="price-note">
+      工賃は内容により異なります。部品交換・材料費が必要な場合は、作業前に必ず説明します。
+      「現地で急に高額請求」のような不安を減らすため、事前説明を大切にしています。
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>対応エリア</h2>
+    <img class="section-img" src="./area-matsudo-kanto.jpg" alt="松戸拠点 関東一円対応">
+    <p class="mini-text">
+      松戸市を中心に、千葉・東京・埼玉・神奈川方面までご相談可能です。
+      対応可否は当日の予約状況により異なります。
+    </p>
+  </section>
+
+  <div class="cta-img">
+    <a href="tel:0358794790">
+      <img src="./cta-phone.png" alt="今すぐ電話する">
+    </a>
+    <a href="https://lin.ee/Nhppoyr">
+      <img src="./cta-line.png" alt="LINEで相談する">
+    </a>
+  </div>
+
+  <section class="section">
+    <h2>お客様の声</h2>
+    <img class="section-img" src="./review-customers.jpg" alt="松戸 エアコン修理 お客様の声">
+    <p class="mini-text">
+      「すぐ来て助かった」「説明が丁寧で安心」など、地域のお客様に選ばれる対応を目指しています。
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>修理後も安心</h2>
+    <img class="section-img" src="./guarantee-1year-aircon.jpg" alt="エアコン修理 1年保証">
+  </section>
+
+  <section class="section">
+    <h2 class="faq-title">よくある質問</h2>
+
+    <div class="faq-item">
+      <strong>エアコンが冷えない原因は何ですか？</strong>
+      <p>
+        ガス漏れ・室外機の不良・基板トラブルなど複数の原因があります。<br>
+        <strong>現地で原因を特定し、その場で修理可能か判断します。</strong>
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <strong>水漏れはすぐ直りますか？</strong>
+      <p>
+        ドレン詰まりなどであれば、その場で改善できるケースが多いです。<br>
+        <strong>放置すると悪化するため早めの対応をおすすめします。</strong>
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <strong>料金はいくらかかりますか？</strong>
+      <p>
+        症状により異なりますが、<br>
+        <strong>必ず作業前に見積りを提示し、了承後に作業します。</strong><br>
+        現地でいきなり高額請求することはありません。
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <strong>本当に追加料金はありませんか？</strong>
+      <p>
+        はい。部品交換が必要な場合も含め、<br>
+        <strong>すべて事前説明→納得後に作業</strong>となります。
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <strong>どのくらいで来れますか？</strong>
+      <p>
+        エリアや混雑状況によりますが、<br>
+        <strong>最短30分〜当日対応可能です。</strong>
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <strong>松戸以外も対応していますか？</strong>
+      <p>
+        松戸市を中心に、東京・千葉・埼玉・神奈川など関東一円対応可能です。
+      </p>
+    </div>
+  </section>
+
+  <div class="cta-img">
+    <a href="tel:0358794790">
+      <img src="./cta-phone.png" alt="電話する">
+    </a>
+    <a href="https://lin.ee/Nhppoyr">
+      <img src="./cta-line.png" alt="LINE相談">
+    </a>
+  </div>
+
+</main>
+
+<footer class="footer">
+  誠和電気 エアコンレスキュー｜松戸拠点・関東一円対応<br>
+  受付時間 9:00〜20:00｜電話 03-5879-4790
+</footer>
 
 <div class="fixed-cta">
-
-<a href="tel:09012345678" class="fixed-btn fixed-phone">
-📞 電話
-</a>
-
-<a href="#" class="fixed-btn fixed-line">
-LINE相談
-</a>
-
+  <a href="tel:0358794790">
+    <img src="./cta-phone.png" alt="電話する">
+  </a>
+  <a href="https://lin.ee/Nhppoyr">
+    <img src="./cta-line.png" alt="LINE相談">
+  </a>
 </div>
 
 </body>
