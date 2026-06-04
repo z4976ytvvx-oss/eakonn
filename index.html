@@ -128,12 +128,84 @@ main{
   border-bottom:1px solid #edf2f7;
 }
 
+.warning-visual{
+  max-width:900px;
+  margin:18px auto 0;
+  padding:0 14px;
+}
+
+.warning-card{
+  position:relative;
+  overflow:hidden;
+  border-radius:18px;
+  box-shadow:0 10px 28px rgba(0,0,0,.12);
+  background:#fff;
+}
+
+.warning-card img{
+  width:100%;
+  display:block;
+}
+
+.warning-copy{
+  position:absolute;
+  left:4%;
+  top:6%;
+  width:46%;
+  background:rgba(255,255,255,.88);
+  border:2px solid rgba(215,25,32,.25);
+  border-radius:16px;
+  padding:18px;
+  backdrop-filter:blur(4px);
+}
+
+.warning-copy h2{
+  margin:0 0 10px;
+  color:#d71920;
+  font-size:28px;
+  line-height:1.22;
+  font-weight:950;
+}
+
+.warning-copy p{
+  margin:0;
+  color:#111827;
+  font-size:15px;
+  line-height:1.7;
+  font-weight:850;
+}
+
+.warning-points{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+  margin-top:12px;
+}
+
+.warning-points span{
+  background:#fff;
+  border:1px solid #ffd6d6;
+  border-radius:999px;
+  padding:8px 10px;
+  text-align:center;
+  color:#073b86;
+  font-size:12px;
+  font-weight:950;
+  box-shadow:0 4px 10px rgba(0,0,0,.06);
+}
+
 .no-sales{
   text-align:center;
-  font-size:13px;
-  color:#555;
-  margin:10px 12px 0;
-  line-height:1.6;
+  font-size:15px;
+  color:#073b86;
+  background:#eef6ff;
+  border:1px solid #cfe4ff;
+  border-radius:12px;
+  padding:12px 14px;
+  max-width:900px;
+  margin:16px auto 0;
+  line-height:1.7;
+  font-weight:900;
 }
 
 .cta-img{
@@ -300,6 +372,49 @@ main{
     font-size:8px;
   }
 
+  .warning-visual{
+    margin-top:14px;
+    padding:0 12px;
+  }
+
+  .warning-copy{
+    position:relative;
+    left:auto;
+    top:auto;
+    width:100%;
+    border-radius:0 0 16px 16px;
+    border:2px solid #ff4d4f;
+    border-top:0;
+    background:#fff7f7;
+    padding:16px;
+  }
+
+  .warning-card{
+    border-radius:16px;
+  }
+
+  .warning-copy h2{
+    font-size:22px;
+  }
+
+  .warning-copy p{
+    font-size:14px;
+  }
+
+  .warning-points{
+    grid-template-columns:1fr;
+  }
+
+  .warning-points span{
+    font-size:13px;
+    padding:10px;
+  }
+
+  .no-sales{
+    margin:14px 12px 0;
+    font-size:13px;
+  }
+
   .cta-img{
     flex-direction:column;
     gap:12px;
@@ -353,6 +468,25 @@ main{
     お電話は対応中で出られない場合があります。<br>
     <span style="color:#06c755;font-weight:900;">LINEならすぐ確認できます（写真送るだけOK）</span>
   </div>
+
+  <section class="warning-visual">
+    <div class="warning-card">
+      <img src="./high-price-warning-aircon.jpg" alt="エアコン修理の高額請求注意">
+      <div class="warning-copy">
+        <h2>高額修理・交換営業にご注意ください</h2>
+        <p>
+          「交換しかない」と言われても、修理で直るケースがあります。<br>
+          誠和電気は、まず修理できるかを確認します。
+        </p>
+        <div class="warning-points">
+          <span>無理な交換営業なし</span>
+          <span>作業前見積り</span>
+          <span>追加料金は事前説明</span>
+          <span>納得後のみ作業</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <p class="no-sales">
     ※無理な営業は行いません。まずは修理できるかを確認します。
