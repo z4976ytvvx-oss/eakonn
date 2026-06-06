@@ -1208,6 +1208,403 @@ body{
 }
 </style>
 
+
+<style>
+/* ===== 4 SYMPTOM CARDS VISIBILITY FIX ===== */
+.symptom-summary{
+  display:grid !important;
+  grid-template-columns:repeat(4,1fr) !important;
+  gap:14px !important;
+  margin-top:18px !important;
+}
+
+.summary-card{
+  position:relative !important;
+  min-height:132px !important;
+  padding:22px 14px 18px !important;
+  border-radius:18px !important;
+  background:linear-gradient(180deg,#ffffff 0%,#f8fbff 100%) !important;
+  border:2px solid #d7e8ff !important;
+  box-shadow:0 10px 22px rgba(7,59,134,.10) !important;
+  text-align:center !important;
+  overflow:hidden !important;
+}
+
+.summary-card::before{
+  content:"" !important;
+  position:absolute !important;
+  top:0 !important;
+  left:0 !important;
+  right:0 !important;
+  height:6px !important;
+  background:linear-gradient(90deg,#073b86,#2f80ed) !important;
+}
+
+.summary-card strong{
+  display:block !important;
+  color:#073b86 !important;
+  font-size:22px !important;
+  line-height:1.25 !important;
+  font-weight:1000 !important;
+  margin:0 0 12px !important;
+  letter-spacing:-.03em !important;
+}
+
+.summary-card p{
+  margin:0 !important;
+  color:#111827 !important;
+  font-size:14px !important;
+  line-height:1.75 !important;
+  font-weight:900 !important;
+}
+
+@media(max-width:700px){
+  .symptom-summary{
+    grid-template-columns:repeat(2,1fr) !important;
+    gap:10px !important;
+  }
+
+  .summary-card{
+    min-height:126px !important;
+    padding:19px 10px 15px !important;
+    border-radius:15px !important;
+  }
+
+  .summary-card strong{
+    font-size:19px !important;
+    margin-bottom:9px !important;
+  }
+
+  .summary-card p{
+    font-size:12px !important;
+    line-height:1.65 !important;
+  }
+}
+</style>
+
+
+<style>
+/* ===== FINAL TEXT FRAME DESIGN UPGRADE ===== */
+
+/* 全体のカード感を統一 */
+.summary-card,
+.trust-card,
+.price-card,
+.flow-card,
+.review-card,
+.faq-item,
+.consult-card{
+  position:relative !important;
+  background:linear-gradient(180deg,#ffffff 0%,#f8fbff 100%) !important;
+  border:1.8px solid #d8e8ff !important;
+  border-radius:18px !important;
+  box-shadow:0 10px 24px rgba(7,59,134,.09) !important;
+  overflow:hidden !important;
+}
+
+.summary-card::before,
+.trust-card::before,
+.price-card::before,
+.flow-card::before,
+.review-card::before,
+.faq-item::before,
+.consult-card::before{
+  content:"" !important;
+  position:absolute !important;
+  top:0 !important;
+  left:0 !important;
+  right:0 !important;
+  height:5px !important;
+  background:linear-gradient(90deg,#073b86,#2f80ed) !important;
+}
+
+/* 症状の大きい画像横テキスト枠 */
+.symptom-text,
+.overlay-text,
+.area-text,
+.warranty-text{
+  background:linear-gradient(180deg,rgba(255,255,255,.97) 0%,rgba(244,249,255,.96) 100%) !important;
+  border:1.8px solid #d8e8ff !important;
+  border-radius:20px !important;
+  box-shadow:0 16px 34px rgba(7,59,134,.16) !important;
+  padding:24px 22px !important;
+  text-align:left !important;
+  overflow:hidden !important;
+}
+
+.symptom-text::before,
+.overlay-text::before,
+.area-text::before,
+.warranty-text::before{
+  content:"" !important;
+  position:absolute !important;
+  top:0 !important;
+  left:0 !important;
+  right:0 !important;
+  height:6px !important;
+  background:linear-gradient(90deg,#073b86,#2f80ed) !important;
+}
+
+.symptom-text h3,
+.overlay-text h3,
+.area-text h3,
+.warranty-text h3{
+  color:#073b86 !important;
+  font-size:31px !important;
+  line-height:1.22 !important;
+  font-weight:1000 !important;
+  letter-spacing:-.04em !important;
+  margin:0 0 14px !important;
+  text-align:left !important;
+}
+
+.symptom-text p,
+.overlay-text p,
+.area-text p,
+.warranty-text p{
+  color:#111827 !important;
+  font-size:15px !important;
+  line-height:1.95 !important;
+  font-weight:850 !important;
+  margin:0 !important;
+  text-align:left !important;
+}
+
+.symptom-tags{
+  justify-content:flex-start !important;
+  gap:8px !important;
+  margin-top:16px !important;
+}
+
+.symptom-tags span,
+.area-tags span{
+  background:linear-gradient(180deg,#f3f8ff,#eaf3ff) !important;
+  color:#073b86 !important;
+  border:1px solid #c8def8 !important;
+  border-radius:999px !important;
+  padding:8px 12px !important;
+  font-size:12px !important;
+  font-weight:950 !important;
+  box-shadow:0 4px 10px rgba(7,59,134,.06) !important;
+}
+
+/* 安心カード */
+.trust-card{
+  min-height:118px !important;
+  padding:22px 12px 16px !important;
+}
+
+.trust-card strong{
+  font-size:19px !important;
+  line-height:1.25 !important;
+  margin-bottom:9px !important;
+}
+
+.trust-card span{
+  color:#111827 !important;
+  font-size:13px !important;
+  line-height:1.65 !important;
+  font-weight:850 !important;
+}
+
+/* 黄色の大きい説明枠を高級感ある注意ボックスへ */
+.trust-box{
+  position:relative !important;
+  background:linear-gradient(180deg,#fffaf0 0%,#fff4dc 100%) !important;
+  border:1.8px solid #ffd58a !important;
+  border-radius:18px !important;
+  padding:20px 22px !important;
+  box-shadow:0 10px 24px rgba(180,116,0,.10) !important;
+  color:#111827 !important;
+  font-size:15px !important;
+  line-height:2 !important;
+  font-weight:900 !important;
+}
+
+.trust-box::before{
+  content:"安心ポイント" !important;
+  display:inline-block !important;
+  background:#073b86 !important;
+  color:#fff !important;
+  border-radius:999px !important;
+  padding:5px 12px !important;
+  font-size:12px !important;
+  line-height:1.2 !important;
+  font-weight:950 !important;
+  margin-bottom:10px !important;
+}
+
+/* 料金カード */
+.price-card{
+  padding:20px 16px !important;
+}
+
+.price-card strong{
+  font-size:17px !important;
+  font-weight:1000 !important;
+}
+
+.price-card span{
+  display:block !important;
+  font-size:24px !important;
+  font-weight:1000 !important;
+  color:#d71920 !important;
+  margin-top:4px !important;
+}
+
+.price-note{
+  background:linear-gradient(180deg,#eef6ff,#e7f1ff) !important;
+  border:1.8px solid #cfe4ff !important;
+  border-left:7px solid #073b86 !important;
+  border-radius:16px !important;
+  padding:18px 20px !important;
+  box-shadow:0 8px 20px rgba(7,59,134,.08) !important;
+  font-size:14px !important;
+  line-height:1.9 !important;
+  font-weight:850 !important;
+}
+
+/* 流れカード */
+.flow-card{
+  padding:20px 18px !important;
+  min-height:94px !important;
+}
+
+.flow-card strong{
+  color:#073b86 !important;
+  font-size:17px !important;
+  font-weight:1000 !important;
+  margin-bottom:8px !important;
+}
+
+/* 口コミ */
+.review-card{
+  padding:20px 20px !important;
+}
+
+.review-card strong{
+  color:#073b86 !important;
+  font-size:18px !important;
+  font-weight:1000 !important;
+}
+
+/* FAQ */
+.faq-item{
+  padding:20px 20px !important;
+}
+
+.faq-item strong{
+  color:#073b86 !important;
+  font-size:17px !important;
+  font-weight:1000 !important;
+}
+
+/* セクション見出しも少し強く */
+.section h2{
+  position:relative !important;
+  display:inline-block !important;
+  color:#073b86 !important;
+  font-size:28px !important;
+  line-height:1.3 !important;
+  font-weight:1000 !important;
+  letter-spacing:-.04em !important;
+  margin-bottom:18px !important;
+}
+
+.section h2::after{
+  content:"" !important;
+  position:absolute !important;
+  left:0 !important;
+  bottom:-6px !important;
+  width:64px !important;
+  height:4px !important;
+  border-radius:999px !important;
+  background:linear-gradient(90deg,#073b86,#2f80ed) !important;
+}
+
+/* 4つの症状カード */
+.symptom-summary{
+  gap:14px !important;
+}
+
+.summary-card{
+  min-height:138px !important;
+  padding:24px 14px 18px !important;
+}
+
+.summary-card strong{
+  font-size:22px !important;
+  line-height:1.25 !important;
+  margin-bottom:12px !important;
+}
+
+.summary-card p{
+  font-size:14px !important;
+  line-height:1.75 !important;
+  font-weight:900 !important;
+}
+
+/* スマホ調整 */
+@media(max-width:700px){
+  .section h2{
+    font-size:24px !important;
+  }
+
+  .symptom-text,
+  .overlay-text,
+  .area-text,
+  .warranty-text{
+    padding:20px 17px !important;
+    border-radius:0 0 18px 18px !important;
+  }
+
+  .symptom-text h3,
+  .overlay-text h3,
+  .area-text h3,
+  .warranty-text h3{
+    font-size:25px !important;
+    text-align:left !important;
+  }
+
+  .symptom-text p,
+  .overlay-text p,
+  .area-text p,
+  .warranty-text p{
+    font-size:14px !important;
+    line-height:1.85 !important;
+  }
+
+  .trust-box{
+    padding:18px 16px !important;
+    font-size:14px !important;
+  }
+
+  .summary-card{
+    min-height:128px !important;
+    padding:21px 10px 15px !important;
+  }
+
+  .summary-card strong{
+    font-size:19px !important;
+  }
+
+  .summary-card p{
+    font-size:12px !important;
+  }
+
+  .trust-card{
+    min-height:108px !important;
+  }
+
+  .price-card,
+  .flow-card,
+  .review-card,
+  .faq-item{
+    padding:18px 16px !important;
+  }
+}
+</style>
+
 </head>
 
 <body>
