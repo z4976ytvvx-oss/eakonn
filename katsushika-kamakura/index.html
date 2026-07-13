@@ -1664,43 +1664,41 @@ body{
 }
 
 .hero-final-buttons{
-  position:absolute !important;
+  position:relative !important;
   z-index:50 !important;
-  left:6% !important;
-  bottom:32px !important;
-  width:620px !important;
-  max-width:58% !important;
+  left:auto !important;
+  bottom:auto !important;
+  width:100% !important;
+  max-width:760px !important;
+  margin:18px auto 0 !important;
+  padding:0 14px !important;
+
   display:grid !important;
   grid-template-columns:1fr 1fr !important;
-  gap:10px !important;
+  gap:14px !important;
 }
 
 .hero-final-buttons a{
   display:block !important;
   overflow:hidden !important;
-  border-radius:14px !important;
+  border-radius:16px !important;
   line-height:0 !important;
-  box-shadow:0 10px 22px rgba(0,0,0,.22) !important;
-  background:transparent !important;
+  box-shadow:0 10px 22px rgba(0,0,0,.18) !important;
 }
 
 .hero-final-buttons a img{
   display:block !important;
   width:100% !important;
   height:auto !important;
-  max-width:none !important;
-  object-fit:contain !important;
   margin:0 !important;
-  padding:0 !important;
 }
 
 @media(max-width:700px){
   .hero-final-buttons{
-    left:5% !important;
-    right:5% !important;
-    bottom:12px !important;
-    width:90% !important;
-    max-width:90% !important;
+    width:100% !important;
+    max-width:100% !important;
+    margin:12px auto 0 !important;
+    padding:0 10px !important;
     gap:7px !important;
   }
 
