@@ -123,26 +123,48 @@ main{
   height:auto;
   display:block;
 }
-
 .hero-cta{
+  width:100%;
+  max-width:820px;
+  margin:16px auto 0;
+  padding:0 14px 14px;
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:12px;
-  padding:12px 16px;
+  gap:14px;
   background:#fff;
 }
 
 .hero-cta a{
   display:block;
+  width:100%;
+  height:118px;
   overflow:hidden;
-  border-radius:12px;
+  border-radius:16px;
   line-height:0;
+  background:#fff;
+  box-shadow:0 10px 22px rgba(0,0,0,.18);
 }
 
 .hero-cta img{
-  width:100%;
-  height:auto;
   display:block;
+  width:100%;
+  height:100%;
+  max-width:none;
+  object-fit:cover;
+  object-position:center;
+  margin:0;
+  padding:0;
+}
+
+/* 電話画像の見た目を微調整 */
+.hero-cta a:first-child img{
+  transform:scale(1.02);
+}
+
+/* LINE画像は画像内余白が少し違うので補正 */
+.hero-cta a:last-child img{
+  transform:scale(1.10);
+}
 }
 
 .notice{
@@ -397,14 +419,26 @@ main{
     font-size:8px;
   }
 
-  .hero-cta{
-    gap:6px;
-    padding:7px;
-  }
+.hero-cta{
+  max-width:100%;
+  margin:10px auto 0;
+  padding:0 8px 10px;
+  gap:6px;
+}
 
-  .hero-cta a{
-    border-radius:7px;
-  }
+.hero-cta a{
+  height:72px;
+  border-radius:10px;
+}
+
+.hero-cta a:first-child img{
+  transform:scale(1.03);
+}
+
+.hero-cta a:last-child img{
+  transform:scale(1.11);
+}
+  
 
   .warning-visual{
     margin-top:14px;
