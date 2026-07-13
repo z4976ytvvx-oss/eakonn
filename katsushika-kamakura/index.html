@@ -1630,11 +1630,11 @@ body{
   >
 
 <div class="hero-final-buttons">
-  <a href="tel:05017854822" aria-label="すぐに電話する">
+  <a class="hero-phone-image" href="tel:05017854822" aria-label="すぐに電話する">
     <img src="./cta-phone-kanto.png" alt="すぐに電話する">
   </a>
 
-  <a href="https://lin.ee/Nhppoyr" aria-label="LINEで無料相談">
+  <a class="hero-line-image" href="https://lin.ee/Nhppoyr" aria-label="LINEで無料相談">
     <img src="./cta-line-kanto.png" alt="LINEで無料相談">
   </a>
 </div>
@@ -1665,14 +1665,10 @@ body{
 
 .hero-final-buttons{
   position:relative !important;
-  z-index:50 !important;
-  left:auto !important;
-  bottom:auto !important;
   width:100% !important;
-  max-width:760px !important;
+  max-width:820px !important;
   margin:18px auto 0 !important;
   padding:0 14px !important;
-
   display:grid !important;
   grid-template-columns:1fr 1fr !important;
   gap:14px !important;
@@ -1680,33 +1676,57 @@ body{
 
 .hero-final-buttons a{
   display:block !important;
+  width:100% !important;
+  height:118px !important;
   overflow:hidden !important;
   border-radius:16px !important;
   line-height:0 !important;
+  background:#fff !important;
   box-shadow:0 10px 22px rgba(0,0,0,.18) !important;
 }
 
-.hero-final-buttons a img{
+.hero-final-buttons img{
   display:block !important;
   width:100% !important;
-  height:auto !important;
+  height:100% !important;
+  max-width:none !important;
+  object-fit:cover !important;
+  object-position:center !important;
   margin:0 !important;
+  padding:0 !important;
+}
+
+/* 電話画像はそのまま */
+.hero-phone-image img{
+  transform:scale(1.02) !important;
+}
+
+/* LINE画像は画像内余白が広いので少し拡大 */
+.hero-line-image img{
+  transform:scale(1.10) !important;
 }
 
 @media(max-width:700px){
   .hero-final-buttons{
-    width:100% !important;
     max-width:100% !important;
-    margin:12px auto 0 !important;
-    padding:0 10px !important;
-    gap:7px !important;
+    margin:10px auto 0 !important;
+    padding:0 8px !important;
+    gap:6px !important;
   }
 
   .hero-final-buttons a{
+    height:72px !important;
     border-radius:10px !important;
   }
-}
 
+  .hero-phone-image img{
+    transform:scale(1.03) !important;
+  }
+
+  .hero-line-image img{
+    transform:scale(1.11) !important;
+  }
+}
 </style>
 
   <div class="notice">
