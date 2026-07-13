@@ -1640,12 +1640,13 @@ body{
       <small>写真でOK</small>
     </a>
   </div>
-<style>
-/* ===== HERO FINAL POSITION ===== */
+</section>
 
+<style>
 .hero.hero-final{
   position:relative !important;
   width:100% !important;
+  height:auto !important;
   overflow:hidden !important;
   background:#fff !important;
 }
@@ -1666,12 +1667,11 @@ body{
 
 .hero-final-buttons{
   position:absolute !important;
-  z-index:10 !important;
+  z-index:50 !important;
   left:6% !important;
   bottom:32px !important;
   width:430px !important;
   max-width:44% !important;
-
   display:grid !important;
   grid-template-columns:1fr 1fr !important;
   gap:10px !important;
@@ -1681,15 +1681,12 @@ body{
   min-height:58px !important;
   border-radius:14px !important;
   color:#fff !important;
-
   display:flex !important;
   flex-direction:column !important;
   align-items:center !important;
   justify-content:center !important;
-
   text-align:center !important;
   box-shadow:0 10px 22px rgba(0,0,0,.22) !important;
-  border:1px solid rgba(255,255,255,.25) !important;
 }
 
 .hero-final-buttons strong{
@@ -1703,44 +1700,29 @@ body{
   display:block !important;
   margin-top:4px !important;
   font-size:10px !important;
-  line-height:1.1 !important;
   font-weight:900 !important;
 }
 
 .hero-final-phone{
-  background:linear-gradient(
-    135deg,
-    #ff4747 0%,
-    #d71920 52%,
-    #9f1118 100%
-  ) !important;
+  background:linear-gradient(135deg,#ff4747,#d71920,#9f1118) !important;
 }
 
 .hero-final-line{
-  background:linear-gradient(
-    135deg,
-    #16d267 0%,
-    #06b554 50%,
-    #078442 100%
-  ) !important;
+  background:linear-gradient(135deg,#16d267,#06b554,#078442) !important;
 }
 
 @media(max-width:700px){
-
   .hero-final-buttons{
     left:5% !important;
     right:5% !important;
-    bottom:14px !important;
-
+    bottom:12px !important;
     width:90% !important;
     max-width:90% !important;
-
     gap:7px !important;
   }
 
   .hero-final-buttons a{
     min-height:50px !important;
-    border-radius:12px !important;
   }
 
   .hero-final-buttons strong{
@@ -1752,7 +1734,6 @@ body{
   }
 }
 </style>
-  </section>
 
   <div class="notice">
     葛飾区鎌倉を拠点に、東京・千葉・埼玉・神奈川までご相談可能。<br>
