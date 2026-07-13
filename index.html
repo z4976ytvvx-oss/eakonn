@@ -111,10 +111,38 @@ main{
   background:linear-gradient(135deg,#06c755,#049b43);
 }
 
+/* ===== HERO ===== */
+
 .hero{
-  position:relative;
   background:#fff;
   overflow:hidden;
+}
+
+.hero-main{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+.hero-cta{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  padding:12px 16px;
+  background:#fff;
+}
+
+.hero-cta a{
+  display:block;
+  overflow:hidden;
+  border-radius:12px;
+  line-height:0;
+}
+
+.hero-cta img{
+  width:100%;
+  height:auto;
+  display:block;
 }
 
 .notice{
@@ -369,6 +397,15 @@ main{
     font-size:8px;
   }
 
+  .hero-cta{
+    gap:6px;
+    padding:7px;
+  }
+
+  .hero-cta a{
+    border-radius:7px;
+  }
+
   .warning-visual{
     margin-top:14px;
     padding:0 12px;
@@ -437,41 +474,78 @@ main{
 
 <header class="header">
   <div class="header-inner">
+
     <div class="logo">
       <span class="logo-main">誠和電気</span>
       <span class="logo-sub">エアコンレスキュー松戸</span>
     </div>
 
     <div class="header-cta">
+
       <a class="head-phone" href="tel:05017854822">
         電話
         <span>050-1785-4822</span>
       </a>
+
       <a class="head-line" href="https://lin.ee/Nhppoyr">
         LINE
         <span>写真でOK</span>
       </a>
+
     </div>
+
   </div>
 </header>
 
 <main>
 
+  <!-- ===== NEW HERO ===== -->
+
   <section class="hero">
-    <img src="./hero-aircon.jpg" alt="松戸のエアコン修理 誠和電気">
+
+    <img
+      class="hero-main"
+      src="./hero-kanto-aircon-repair.png"
+      alt="関東一円対応 エアコン修理"
+    >
+
+    <div class="hero-cta">
+
+      <a href="tel:05017854822">
+        <img
+          src="./cta-phone-kanto.png"
+          alt="050-1785-4822 今すぐ電話する"
+        >
+      </a>
+
+      <a href="https://lin.ee/Nhppoyr">
+        <img
+          src="./cta-line-kanto.png"
+          alt="LINEで相談する"
+        >
+      </a>
+
+    </div>
+
   </section>
+
+  <!-- ===== HERO END ===== -->
 
   <div class="notice">
     お電話は対応中で出られない場合があります。<br>
-    <span style="color:#06c755;font-weight:900;">LINEならすぐ確認できます（写真送るだけOK）</span>
+    <span style="color:#06c755;font-weight:900;">
+      LINEならすぐ確認できます（写真送るだけOK）
+    </span>
   </div>
 
   <section class="warning-visual">
+
     <div class="warning-card">
       <img src="./high-price-warning-aircon.jpg" alt="高額修理注意">
     </div>
 
     <div class="warning-copy">
+
       <h2>高額修理・交換営業にご注意ください</h2>
 
       <p>
@@ -486,7 +560,9 @@ main{
         <span>追加料金は事前説明</span>
         <span>納得後のみ作業</span>
       </div>
+
     </div>
+
   </section>
 
   <p class="no-sales">
@@ -494,23 +570,35 @@ main{
   </p>
 
   <div class="cta-img">
+
     <a href="tel:05017854822">
       <img src="./cta-phone.png" alt="今すぐ電話する">
     </a>
+
     <a href="https://lin.ee/Nhppoyr">
       <img src="./cta-line.png" alt="LINEで相談する">
     </a>
+
   </div>
 
   <section class="section">
+
     <h2>冷えない・水漏れ・異音の修理事例</h2>
-    <img class="section-img" src="./aircon-repair-before-after-kanto.jpg.png" alt="エアコン修理 ビフォーアフター">
+
+    <img
+      class="section-img"
+      src="./aircon-repair-before-after-kanto.jpg.png"
+      alt="エアコン修理 ビフォーアフター"
+    >
+
     <p class="mini-text">
       実際によくあるトラブルを、原因別に確認して最適な修理を行います。
     </p>
+
   </section>
 
   <section class="section">
+
     <div class="trust-box">
       ✔ 作業前に必ずお見積り<br>
       ✔ 追加費用は事前説明<br>
@@ -518,52 +606,92 @@ main{
       ✔ まず修理できるかを確認します<br>
       ✔ 修理後も安心の1年保証
     </div>
+
   </section>
 
   <section class="section">
+
     <h2>料金について</h2>
-    <img class="section-img" src="./price-aircon.jpg" alt="エアコン修理 料金表">
+
+    <img
+      class="section-img"
+      src="./price-aircon.jpg"
+      alt="エアコン修理 料金表"
+    >
+
     <div class="price-note">
       工賃は内容により異なります。部品交換・材料費が必要な場合は、作業前に必ず説明します。
       「現地で急に高額請求」のような不安を減らすため、事前説明を大切にしています。
     </div>
+
   </section>
 
   <section class="section">
+
     <h2>対応エリア</h2>
-    <img class="section-img" src="./area-matsudo-kanto.jpg" alt="松戸拠点 関東一円対応">
+
+    <img
+      class="section-img"
+      src="./area-matsudo-kanto.jpg"
+      alt="松戸拠点 関東一円対応"
+    >
+
     <p class="mini-text">
       松戸市を中心に、千葉・東京・埼玉・神奈川方面までご相談可能です。
       対応可否は当日の予約状況により異なります。
     </p>
+
   </section>
 
   <div class="cta-img">
+
     <a href="tel:05017854822">
       <img src="./cta-phone.png" alt="今すぐ電話する">
     </a>
+
     <a href="https://lin.ee/Nhppoyr">
       <img src="./cta-line.png" alt="LINEで相談する">
     </a>
+
   </div>
 
   <section class="section">
+
     <h2>お客様の声</h2>
-    <img class="section-img" src="./review-customers.jpg" alt="松戸 エアコン修理 お客様の声">
+
+    <img
+      class="section-img"
+      src="./review-customers.jpg"
+      alt="松戸 エアコン修理 お客様の声"
+    >
+
     <p class="mini-text">
       「すぐ来て助かった」「説明が丁寧で安心」など、地域のお客様に選ばれる対応を目指しています。
     </p>
+
   </section>
 
   <section class="section">
+
     <h2>修理後も安心</h2>
-    <img class="section-img" src="./guarantee-1year-aircon.jpg" alt="エアコン修理 1年保証">
+
+    <img
+      class="section-img"
+      src="./guarantee-1year-aircon.jpg"
+      alt="エアコン修理 1年保証"
+    >
+
   </section>
 
   <section class="section">
+
     <h2>ご依頼から修理完了までの流れ</h2>
 
-    <img class="section-img" src="./workflow-aircon.jpg" alt="エアコン修理の流れ">
+    <img
+      class="section-img"
+      src="./workflow-aircon.jpg"
+      alt="エアコン修理の流れ"
+    >
 
     <p class="mini-text">
       ① 電話・LINE相談<br>
@@ -579,9 +707,11 @@ main{
       ご納得いただいてから作業を開始します。<br>
       無理な交換営業や高額請求は行いません。
     </div>
+
   </section>
 
   <section class="section">
+
     <h2 class="faq-title">よくある質問</h2>
 
     <div class="faq-item">
@@ -631,12 +761,15 @@ main{
         松戸市を中心に、東京・千葉・埼玉・神奈川など関東一円対応可能です。
       </p>
     </div>
+
   </section>
 
   <section class="section">
+
     <h2>会社概要</h2>
 
     <div class="trust-box">
+
       <strong>店舗名</strong><br>
       誠和電気｜エアコンレスキュー松戸<br><br>
 
@@ -660,16 +793,21 @@ main{
       まず修理できるかを確認し、
       本当に必要な工事だけをご提案します。<br>
       地域の皆様に長く信頼していただける町の電気屋を目指しています。
+
     </div>
+
   </section>
 
   <div class="cta-img">
+
     <a href="tel:05017854822">
       <img src="./cta-phone.png" alt="電話する">
     </a>
+
     <a href="https://lin.ee/Nhppoyr">
       <img src="./cta-line.png" alt="LINE相談">
     </a>
+
   </div>
 
 </main>
@@ -680,16 +818,16 @@ main{
 </footer>
 
 <div class="fixed-cta">
+
   <a href="tel:05017854822">
     <img src="./cta-phone.png" alt="電話する">
   </a>
+
   <a href="https://lin.ee/Nhppoyr">
     <img src="./cta-line.png" alt="LINE相談">
   </a>
+
 </div>
 
 </body>
 </html>
-
-
-
