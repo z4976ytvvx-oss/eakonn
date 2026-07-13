@@ -1629,17 +1629,15 @@ body{
     alt="葛飾区のエアコン修理 関東エアコン本舗"
   >
 
-  <div class="hero-final-buttons">
-    <a class="hero-final-phone" href="tel:05017854822">
-      <strong>電話する</strong>
-      <small>今すぐ相談</small>
-    </a>
+<div class="hero-final-buttons">
+  <a href="tel:05017854822" aria-label="すぐに電話する">
+    <img src="./cta-phone-kanto.png" alt="すぐに電話する">
+  </a>
 
-    <a class="hero-final-line" href="https://lin.ee/Nhppoyr">
-      <strong>LINE相談</strong>
-      <small>写真でOK</small>
-    </a>
-  </div>
+  <a href="https://lin.ee/Nhppoyr" aria-label="LINEで無料相談">
+    <img src="./cta-line-kanto.png" alt="LINEで無料相談">
+  </a>
+</div>
 </section>
 
 <style>
@@ -1670,45 +1668,30 @@ body{
   z-index:50 !important;
   left:6% !important;
   bottom:32px !important;
-  width:430px !important;
-  max-width:44% !important;
+  width:620px !important;
+  max-width:58% !important;
   display:grid !important;
   grid-template-columns:1fr 1fr !important;
   gap:10px !important;
 }
 
 .hero-final-buttons a{
-  min-height:58px !important;
+  display:block !important;
+  overflow:hidden !important;
   border-radius:14px !important;
-  color:#fff !important;
-  display:flex !important;
-  flex-direction:column !important;
-  align-items:center !important;
-  justify-content:center !important;
-  text-align:center !important;
+  line-height:0 !important;
   box-shadow:0 10px 22px rgba(0,0,0,.22) !important;
+  background:transparent !important;
 }
 
-.hero-final-buttons strong{
+.hero-final-buttons a img{
   display:block !important;
-  font-size:18px !important;
-  line-height:1.1 !important;
-  font-weight:1000 !important;
-}
-
-.hero-final-buttons small{
-  display:block !important;
-  margin-top:4px !important;
-  font-size:10px !important;
-  font-weight:900 !important;
-}
-
-.hero-final-phone{
-  background:linear-gradient(135deg,#ff4747,#d71920,#9f1118) !important;
-}
-
-.hero-final-line{
-  background:linear-gradient(135deg,#16d267,#06b554,#078442) !important;
+  width:100% !important;
+  height:auto !important;
+  max-width:none !important;
+  object-fit:contain !important;
+  margin:0 !important;
+  padding:0 !important;
 }
 
 @media(max-width:700px){
@@ -1722,17 +1705,10 @@ body{
   }
 
   .hero-final-buttons a{
-    min-height:50px !important;
-  }
-
-  .hero-final-buttons strong{
-    font-size:15px !important;
-  }
-
-  .hero-final-buttons small{
-    font-size:9px !important;
+    border-radius:10px !important;
   }
 }
+
 </style>
 
   <div class="notice">
