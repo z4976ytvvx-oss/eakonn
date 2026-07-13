@@ -1623,28 +1623,135 @@ body{
 </header>
 
 <main>
+<section class="hero hero-final">
+  <img
+    src="./hero-katsushika-aircon-repair.jpg"
+    alt="葛飾区のエアコン修理 関東エアコン本舗"
+  >
 
-  <section class="hero">
-    <img src="./hero-katsushika-aircon-repair.jpg" alt="葛飾区のエアコン修理 関東エアコン本舗">
-    <div class="hero-text">
-      <div class="hero-kicker">葛飾区鎌倉拠点・関東一円対応</div>
-      <h1>突然エアコンが<br>冷えない</h1>
-      <p class="hero-main">緊急修理・当日対応<br>まずはご相談ください</p>
-      <p class="hero-sub">
-        冷えない・水漏れ・異音・電源不良・ガス補充まで対応。<br>
-        交換しかないと言われたエアコンでも、修理で直るケースがあります。
-      </p>
-      <div class="hero-tags">
-        <span>作業前見積り</span>
-        <span>無理な交換営業なし</span>
-        <span>施工箇所1年保証</span>
-        <span>LINE写真相談OK</span>
-      </div>
-      <div class="hero-buttons">
-        <a class="hero-phone" href="tel:05017854822">電話する<small>今すぐ相談</small></a>
-        <a class="hero-line" href="https://lin.ee/Nhppoyr">LINE相談<small>写真でOK</small></a>
-      </div>
-    </div>
+  <div class="hero-final-buttons">
+    <a class="hero-final-phone" href="tel:05017854822">
+      <strong>電話する</strong>
+      <small>今すぐ相談</small>
+    </a>
+
+    <a class="hero-final-line" href="https://lin.ee/Nhppoyr">
+      <strong>LINE相談</strong>
+      <small>写真でOK</small>
+    </a>
+  </div>
+<style>
+/* ===== HERO FINAL POSITION ===== */
+
+.hero.hero-final{
+  position:relative !important;
+  width:100% !important;
+  overflow:hidden !important;
+  background:#fff !important;
+}
+
+.hero.hero-final::before,
+.hero.hero-final::after{
+  display:none !important;
+  content:none !important;
+}
+
+.hero.hero-final > img{
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  object-fit:contain !important;
+  object-position:center top !important;
+}
+
+.hero-final-buttons{
+  position:absolute !important;
+  z-index:10 !important;
+  left:6% !important;
+  bottom:32px !important;
+  width:430px !important;
+  max-width:44% !important;
+
+  display:grid !important;
+  grid-template-columns:1fr 1fr !important;
+  gap:10px !important;
+}
+
+.hero-final-buttons a{
+  min-height:58px !important;
+  border-radius:14px !important;
+  color:#fff !important;
+
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+
+  text-align:center !important;
+  box-shadow:0 10px 22px rgba(0,0,0,.22) !important;
+  border:1px solid rgba(255,255,255,.25) !important;
+}
+
+.hero-final-buttons strong{
+  display:block !important;
+  font-size:18px !important;
+  line-height:1.1 !important;
+  font-weight:1000 !important;
+}
+
+.hero-final-buttons small{
+  display:block !important;
+  margin-top:4px !important;
+  font-size:10px !important;
+  line-height:1.1 !important;
+  font-weight:900 !important;
+}
+
+.hero-final-phone{
+  background:linear-gradient(
+    135deg,
+    #ff4747 0%,
+    #d71920 52%,
+    #9f1118 100%
+  ) !important;
+}
+
+.hero-final-line{
+  background:linear-gradient(
+    135deg,
+    #16d267 0%,
+    #06b554 50%,
+    #078442 100%
+  ) !important;
+}
+
+@media(max-width:700px){
+
+  .hero-final-buttons{
+    left:5% !important;
+    right:5% !important;
+    bottom:14px !important;
+
+    width:90% !important;
+    max-width:90% !important;
+
+    gap:7px !important;
+  }
+
+  .hero-final-buttons a{
+    min-height:50px !important;
+    border-radius:12px !important;
+  }
+
+  .hero-final-buttons strong{
+    font-size:15px !important;
+  }
+
+  .hero-final-buttons small{
+    font-size:9px !important;
+  }
+}
+</style>
   </section>
 
   <div class="notice">
