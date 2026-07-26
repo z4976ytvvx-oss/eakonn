@@ -444,31 +444,21 @@ main{
 ========================= */
 
 .fixed-cta{
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    transform:none;
 
-  position:fixed;
+    width:100%;
+    margin:0;
+    padding:0;
 
-  left:50%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:0;
 
-  bottom:8px;
-
-  transform:translateX(-50%);
-
-  width:min(1040px, calc(100% - 48px));
-
-  z-index:9999;
-
-  display:grid;
-
-  grid-template-columns:1fr 1fr;
-
-  gap:10px;
-
-  padding:0;
-
-  background:transparent;
-
-  box-shadow:none;
-
+    z-index:99999;
 }
 
 .fixed-cta a{
@@ -615,15 +605,18 @@ main{
     margin:26px auto;
   }
 
-  .fixed-cta{
-    width:calc(100% - 10px);
-    bottom:5px;
-    gap:5px;
+.fixed-cta{
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    gap:0;
+    transform:none;
 }
 
 .fixed-cta a{
-    border-radius:10px;
-    height:auto;
+    border-radius:0;
+    height:58px;
 }
 
 .fixed-cta img{
