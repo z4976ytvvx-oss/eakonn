@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="ja">
 <head>
@@ -5,17 +6,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>松戸のエアコン修理｜誠和電気 エアコンレスキュー｜冷えない・水漏れ・異音対応</title>
-<meta name="description" content="松戸拠点のエアコン修理なら誠和電気。冷えない・水漏れ・異音・風が出ない・臭いなどに対応。作業前見積り、明朗会計、修理後1年保証。松戸市を中心に関東一円対応。">
+
+<meta
+  name="description"
+  content="松戸拠点のエアコン修理なら誠和電気。冷えない・水漏れ・異音・風が出ない・臭いなどに対応。作業前見積り、明朗会計、修理後1年保証。松戸市を中心に関東一円対応。"
+>
 
 <style>
-*{box-sizing:border-box;}
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
 
 body{
   margin:0;
   background:#fff;
   color:#111827;
   font-family:system-ui,-apple-system,"Segoe UI","Yu Gothic",Meiryo,sans-serif;
-  padding-bottom:82px;
+  padding-bottom:88px;
 }
 
 img{
@@ -26,8 +37,8 @@ img{
 }
 
 a{
-  text-decoration:none;
   color:inherit;
+  text-decoration:none;
 }
 
 main{
@@ -36,12 +47,17 @@ main{
   background:#fff;
 }
 
+/* =========================
+   HEADER
+========================= */
+
 .header{
   position:sticky;
   top:0;
   z-index:999;
   background:#fff;
   border-bottom:1px solid #e5e7eb;
+  box-shadow:0 3px 14px rgba(0,0,0,.05);
 }
 
 .header-inner{
@@ -61,9 +77,9 @@ main{
 
 .logo-main{
   display:block;
-  font-weight:950;
   color:#073b86;
   font-size:15px;
+  font-weight:950;
 }
 
 .logo-sub{
@@ -76,42 +92,53 @@ main{
 
 .header-cta{
   display:flex;
-  gap:7px;
   align-items:center;
+  gap:7px;
   flex-shrink:0;
 }
 
 .header-cta a{
-  width:86px;
-  height:44px;
-  border-radius:12px;
+  width:110px;
+  height:54px;
+  border-radius:13px;
   color:#fff;
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
+  text-align:center;
+  box-shadow:0 6px 16px rgba(0,0,0,.20);
+  overflow:hidden;
+}
+
+.header-cta a:active{
+  transform:scale(.98);
+}
+
+.header-cta strong{
+  font-size:15px;
   font-weight:950;
-  font-size:12px;
-  line-height:1.15;
-  box-shadow:0 5px 14px rgba(0,0,0,.20);
+  line-height:1;
 }
 
 .header-cta span{
   display:block;
   font-size:9px;
   font-weight:800;
-  margin-top:2px;
+  margin-top:5px;
 }
 
 .head-phone{
-  background:linear-gradient(135deg,#ff3b3b,#d71920);
+  background:linear-gradient(135deg,#ff5353 0%,#e52229 50%,#b90913 100%);
 }
 
 .head-line{
-  background:linear-gradient(135deg,#06c755,#049b43);
+  background:linear-gradient(135deg,#48d86f 0%,#06c755 50%,#00963d 100%);
 }
 
-/* ===== HERO ===== */
+/* =========================
+   HERO
+========================= */
 
 .hero{
   background:#fff;
@@ -123,49 +150,93 @@ main{
   height:auto;
   display:block;
 }
-.hero-cta{
+
+/* =========================
+   CTA BUTTONS
+========================= */
+
+.cta-buttons{
   width:100%;
-  max-width:820px;
-  margin:16px auto 0;
-  padding:0 14px 14px;
+  max-width:900px;
+  margin:24px auto;
+  padding:0 14px;
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:14px;
-  background:#fff;
 }
 
-.hero-cta a{
-  display:block;
-  width:100%;
-  height:118px;
+.hero .cta-buttons{
+  max-width:820px;
+  margin:16px auto 0;
+  padding-bottom:14px;
+}
+
+.cta-button{
+  min-height:118px;
+  border-radius:18px;
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  position:relative;
   overflow:hidden;
-  border-radius:16px;
-  line-height:0;
-  background:#fff;
-  box-shadow:0 10px 22px rgba(0,0,0,.18);
+  box-shadow:0 10px 24px rgba(0,0,0,.20);
+  transition:transform .15s ease;
 }
 
-.hero-cta img{
-  display:block;
-  width:100%;
-  height:100%;
-  max-width:none;
-  object-fit:cover;
-  object-position:center;
-  margin:0;
-  padding:0;
+.cta-button:active{
+  transform:scale(.98);
 }
 
-/* 電話画像の見た目を微調整 */
-.hero-cta a:first-child img{
-  transform:scale(1.02);
+.cta-button::before{
+  content:"";
+  position:absolute;
+  top:-70%;
+  left:-15%;
+  width:65%;
+  height:220%;
+  background:rgba(255,255,255,.10);
+  transform:rotate(22deg);
+  pointer-events:none;
 }
 
-/* LINE画像は画像内余白が少し違うので補正 */
-.hero-cta a:last-child img{
-  transform:scale(1.10);
+.cta-button-phone{
+  background:linear-gradient(135deg,#ff5353 0%,#eb262d 48%,#b90913 100%);
 }
 
+.cta-button-line{
+  background:linear-gradient(135deg,#48d86f 0%,#06c755 48%,#00963d 100%);
+}
+
+.cta-small{
+  position:relative;
+  z-index:1;
+  font-size:13px;
+  font-weight:900;
+  margin-bottom:5px;
+}
+
+.cta-main{
+  position:relative;
+  z-index:1;
+  font-size:27px;
+  font-weight:950;
+  line-height:1.15;
+}
+
+.cta-sub{
+  position:relative;
+  z-index:1;
+  font-size:13px;
+  font-weight:850;
+  margin-top:7px;
+}
+
+/* =========================
+   NOTICE
+========================= */
 
 .notice{
   text-align:center;
@@ -178,6 +249,15 @@ main{
   border-bottom:1px solid #edf2f7;
 }
 
+.notice-line{
+  color:#06c755;
+  font-weight:900;
+}
+
+/* =========================
+   WARNING
+========================= */
+
 .warning-visual{
   max-width:900px;
   margin:18px auto 0;
@@ -187,7 +267,7 @@ main{
 .warning-card{
   position:relative;
   overflow:hidden;
-  border-radius:18px;
+  border-radius:18px 18px 0 0;
   box-shadow:0 10px 28px rgba(0,0,0,.12);
   background:#fff;
 }
@@ -204,6 +284,7 @@ main{
   border-radius:0 0 18px 18px;
   padding:24px;
   text-align:center;
+  box-shadow:0 10px 28px rgba(0,0,0,.08);
 }
 
 .warning-copy h2{
@@ -242,45 +323,22 @@ main{
 }
 
 .no-sales{
-  text-align:center;
-  font-size:15px;
-  color:#073b86;
-  background:#eef6ff;
-  border:1px solid #cfe4ff;
-  border-radius:12px;
-  padding:12px 14px;
   max-width:900px;
   margin:16px auto 0;
+  padding:12px 14px;
+  border:1px solid #cfe4ff;
+  border-radius:12px;
+  background:#eef6ff;
+  color:#073b86;
+  text-align:center;
+  font-size:15px;
   line-height:1.7;
   font-weight:900;
 }
 
-.cta-img{
-  max-width:900px;
-  margin:26px auto;
-  padding:0 14px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:18px;
-  overflow:hidden;
-}
-
-.cta-img a{
-  flex:1;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-.cta-img img{
-  width:100% !important;
-  max-width:360px !important;
-  height:auto !important;
-  object-fit:contain !important;
-  margin:auto;
-  filter:drop-shadow(0 6px 14px rgba(0,0,0,.20));
-}
+/* =========================
+   SECTIONS
+========================= */
 
 .section{
   max-width:900px;
@@ -290,10 +348,10 @@ main{
 }
 
 .section h2{
+  margin:0 0 14px;
   color:#073b86;
   font-size:22px;
   line-height:1.35;
-  margin:0 0 14px;
 }
 
 .section-img{
@@ -302,32 +360,36 @@ main{
 }
 
 .mini-text{
-  text-align:center;
   margin:12px 0;
+  color:#333;
+  text-align:center;
   font-size:14px;
   line-height:1.75;
-  color:#333;
 }
 
 .price-note{
-  background:#eef6ff;
-  padding:14px;
-  border-left:5px solid #073b86;
   margin:14px 0;
+  padding:14px;
+  background:#eef6ff;
+  border-left:5px solid #073b86;
   font-size:14px;
   line-height:1.8;
 }
 
 .trust-box{
+  margin:14px 0;
+  padding:15px;
   background:#fff7e6;
   border:1px solid #ffd38a;
-  padding:15px;
   border-radius:14px;
-  margin:14px 0;
   font-size:14px;
   font-weight:800;
   line-height:1.85;
 }
+
+/* =========================
+   FAQ
+========================= */
 
 .faq-title{
   text-align:center;
@@ -335,26 +397,35 @@ main{
 }
 
 .faq-item{
+  margin-bottom:12px;
+  padding:16px;
+  background:#fff;
   border:1px solid #e5e7eb;
   border-radius:14px;
-  padding:16px;
-  margin-bottom:12px;
-  background:#fff;
+  box-shadow:0 4px 14px rgba(0,0,0,.04);
   font-size:14px;
   line-height:1.75;
-  box-shadow:0 4px 14px rgba(0,0,0,.04);
 }
 
 .faq-item strong{
   display:block;
   margin-bottom:6px;
-  font-size:15px;
   color:#111827;
+  font-size:15px;
 }
 
 .faq-item p{
   margin:0;
 }
+
+.faq-item p strong{
+  display:inline;
+  margin:0;
+}
+
+/* =========================
+   FOOTER
+========================= */
 
 .footer{
   background:#071425;
@@ -365,6 +436,10 @@ main{
   line-height:1.7;
 }
 
+/* =========================
+   FIXED CTA
+========================= */
+
 .fixed-cta{
   position:fixed;
   left:0;
@@ -373,27 +448,78 @@ main{
   z-index:9999;
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:4px;
-  padding:4px;
-  background:rgba(255,255,255,.98);
-  box-shadow:0 -4px 16px rgba(0,0,0,.18);
+  gap:8px;
+  padding:7px;
+  background:rgba(255,255,255,.97);
+  box-shadow:0 -5px 18px rgba(0,0,0,.20);
 }
 
 .fixed-cta a{
+  height:67px;
+  border-radius:14px;
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  position:relative;
   overflow:hidden;
-  border-radius:10px;
-  background:#fff;
 }
 
-.fixed-cta img{
-  width:100% !important;
-  height:58px !important;
-  object-fit:contain !important;
+.fixed-cta a:active{
+  transform:scale(.98);
 }
+
+.fixed-cta a::before{
+  content:"";
+  position:absolute;
+  top:-100%;
+  left:-10%;
+  width:55%;
+  height:280%;
+  background:rgba(255,255,255,.10);
+  transform:rotate(22deg);
+  pointer-events:none;
+}
+
+.fixed-small{
+  position:relative;
+  z-index:1;
+  font-size:10px;
+  font-weight:900;
+  line-height:1;
+  margin-bottom:4px;
+}
+
+.fixed-main{
+  position:relative;
+  z-index:1;
+  font-size:18px;
+  font-weight:950;
+  line-height:1.1;
+}
+
+.fixed-sub{
+  position:relative;
+  z-index:1;
+  font-size:9px;
+  font-weight:800;
+  margin-top:4px;
+}
+
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:700px){
+
   body{
-    padding-bottom:74px;
+    padding-bottom:82px;
+  }
+
+  .header-inner{
+    padding:7px 9px;
   }
 
   .logo-main{
@@ -409,56 +535,66 @@ main{
   }
 
   .header-cta a{
-    width:72px;
-    height:40px;
+    width:76px;
+    height:43px;
     border-radius:10px;
-    font-size:11px;
+  }
+
+  .header-cta strong{
+    font-size:12px;
   }
 
   .header-cta span{
     font-size:8px;
+    margin-top:3px;
   }
 
-.hero-cta{
-  max-width:100%;
-  margin:10px auto 0;
-  padding:0 8px 10px;
-  gap:6px;
-}
+  .cta-buttons{
+    max-width:100%;
+    margin:16px auto;
+    padding:0 8px;
+    gap:7px;
+  }
 
-.hero-cta a{
-  height:72px;
-  border-radius:10px;
-}
+  .hero .cta-buttons{
+    margin:10px auto 0;
+    padding:0 8px 10px;
+  }
 
-.hero-cta a:first-child img{
-  transform:scale(1.03);
-}
+  .cta-button{
+    min-height:82px;
+    border-radius:12px;
+  }
 
-.hero-cta a:last-child img{
-  transform:scale(1.11);
-}
-  
+  .cta-small{
+    font-size:9px;
+    margin-bottom:4px;
+  }
+
+  .cta-main{
+    font-size:18px;
+  }
+
+  .cta-sub{
+    font-size:10px;
+    margin-top:5px;
+  }
 
   .warning-visual{
     margin-top:14px;
     padding:0 12px;
   }
 
-  .warning-copy{
-    position:relative;
-    left:auto;
-    top:auto;
-    width:100%;
-    border-radius:0 0 16px 16px;
-    border:2px solid #ff4d4f;
-    border-top:0;
-    background:#fff7f7;
-    padding:16px;
+  .warning-card{
+    border-radius:16px 16px 0 0;
   }
 
-  .warning-card{
-    border-radius:16px;
+  .warning-copy{
+    border:2px solid #ff4d4f;
+    border-top:0;
+    border-radius:0 0 16px 16px;
+    background:#fff7f7;
+    padding:16px;
   }
 
   .warning-copy h2{
@@ -474,8 +610,8 @@ main{
   }
 
   .warning-points span{
-    font-size:13px;
     padding:10px;
+    font-size:13px;
   }
 
   .no-sales{
@@ -483,22 +619,30 @@ main{
     font-size:13px;
   }
 
-  .cta-img{
-    flex-direction:column;
-    gap:12px;
-    margin:22px auto;
-  }
-
-  .cta-img img{
-    max-width:100% !important;
-  }
-
   .section{
     margin:26px auto;
   }
 
-  .fixed-cta img{
-    height:54px !important;
+  .fixed-cta{
+    gap:5px;
+    padding:5px;
+  }
+
+  .fixed-cta a{
+    height:64px;
+    border-radius:11px;
+  }
+
+  .fixed-small{
+    font-size:9px;
+  }
+
+  .fixed-main{
+    font-size:16px;
+  }
+
+  .fixed-sub{
+    font-size:8px;
   }
 }
 </style>
@@ -516,13 +660,21 @@ main{
 
     <div class="header-cta">
 
-      <a class="head-phone" href="tel:05017854822">
-        電話
-        <span>050-1785-4822</span>
+      <a
+        class="head-phone"
+        href="tel:05017854822"
+        aria-label="誠和電気へ電話する"
+      >
+        <strong>電話</strong>
+        <span>今すぐ相談</span>
       </a>
 
-      <a class="head-line" href="https://lin.ee/Nhppoyr">
-        LINE
+      <a
+        class="head-line"
+        href="https://lin.ee/Nhppoyr"
+        aria-label="誠和電気へLINEで相談する"
+      >
+        <strong>LINE</strong>
         <span>写真でOK</span>
       </a>
 
@@ -533,50 +685,52 @@ main{
 
 <main>
 
-  <!-- ===== NEW HERO ===== -->
-
   <section class="hero">
 
     <img
       class="hero-main"
       src="./hero-aircon.jpg"
-      hero-alt="松戸のエアコン修理 誠和電気 エアコンレスキュー"
+      alt="松戸のエアコン修理 誠和電気 エアコンレスキュー"
     >
 
-  <div class="hero-cta">
+    <div class="cta-buttons">
 
-  <a href="tel:05017854822">
-    <img
-      src="./katsushika-kamakura/cta-phone-kanto.png"
-      alt="050-1785-4822 今すぐ電話する"
-    >
-  </a>
+      <a
+        class="cta-button cta-button-phone"
+        href="tel:05017854822"
+      >
+        <span class="cta-small">最短30分・当日対応</span>
+        <span class="cta-main">今すぐ電話する</span>
+        <span class="cta-sub">受付 9:00〜20:00</span>
+      </a>
 
-  <a href="https://lin.ee/Nhppoyr">
-    <img
-      src="./katsushika-kamakura/cta-line-kanto.png"
-      alt="LINEで相談する"
-    >
-  </a>
-
+      <a
+        class="cta-button cta-button-line"
+        href="https://lin.ee/Nhppoyr"
+      >
+        <span class="cta-small">写真を送るだけ</span>
+        <span class="cta-main">LINEで無料相談</span>
+        <span class="cta-sub">概算見積りOK</span>
+      </a>
 
     </div>
 
   </section>
 
-  <!-- ===== HERO END ===== -->
-
   <div class="notice">
     お電話は対応中で出られない場合があります。<br>
-    <span style="color:#06c755;font-weight:900;">
-      LINEならすぐ確認できます（写真送るだけOK）
+    <span class="notice-line">
+      LINEならすぐ確認できます（写真を送るだけOK）
     </span>
   </div>
 
   <section class="warning-visual">
 
     <div class="warning-card">
-      <img src="./high-price-warning-aircon.jpg" alt="高額修理注意">
+      <img
+        src="./high-price-warning-aircon.jpg"
+        alt="エアコンの高額修理や交換営業への注意"
+      >
     </div>
 
     <div class="warning-copy">
@@ -584,8 +738,8 @@ main{
       <h2>高額修理・交換営業にご注意ください</h2>
 
       <p>
-        「交換しかない」と言われても修理で直るケースがあります。<br>
-        誠和電気はまず修理可能かを確認し、
+        「交換しかない」と言われても、修理で直るケースがあります。<br>
+        誠和電気は、まず修理可能かを確認し、
         無理な交換営業は行いません。
       </p>
 
@@ -604,14 +758,24 @@ main{
     ※無理な営業は行いません。まずは修理できるかを確認します。
   </p>
 
-  <div class="cta-img">
+  <div class="cta-buttons">
 
-    <a href="tel:05017854822">
-      <img src="./cta-phone.png" alt="今すぐ電話する">
+    <a
+      class="cta-button cta-button-phone"
+      href="tel:05017854822"
+    >
+      <span class="cta-small">最短30分・緊急修理</span>
+      <span class="cta-main">今すぐ電話する</span>
+      <span class="cta-sub">受付 9:00〜20:00</span>
     </a>
 
-    <a href="https://lin.ee/Nhppoyr">
-      <img src="./cta-line.png" alt="LINEで相談する">
+    <a
+      class="cta-button cta-button-line"
+      href="https://lin.ee/Nhppoyr"
+    >
+      <span class="cta-small">写真を送るだけ</span>
+      <span class="cta-main">LINEで無料相談</span>
+      <span class="cta-sub">概算見積りOK</span>
     </a>
 
   </div>
@@ -623,7 +787,7 @@ main{
     <img
       class="section-img"
       src="./aircon-repair-before-after-kanto.jpg.png"
-      alt="エアコン修理 ビフォーアフター"
+      alt="エアコン修理のビフォーアフター"
     >
 
     <p class="mini-text">
@@ -651,12 +815,14 @@ main{
     <img
       class="section-img"
       src="./price-aircon.jpg"
-      alt="エアコン修理 料金表"
+      alt="エアコン修理の料金表"
     >
 
     <div class="price-note">
-      工賃は内容により異なります。部品交換・材料費が必要な場合は、作業前に必ず説明します。
-      「現地で急に高額請求」のような不安を減らすため、事前説明を大切にしています。
+      工賃は内容により異なります。
+      部品交換・材料費が必要な場合は、作業前に必ず説明します。
+      「現地で急に高額請求」のような不安を減らすため、
+      事前説明を大切にしています。
     </div>
 
   </section>
@@ -668,7 +834,7 @@ main{
     <img
       class="section-img"
       src="./area-matsudo-kanto.jpg"
-      alt="松戸拠点 関東一円対応"
+      alt="松戸拠点で関東一円対応"
     >
 
     <p class="mini-text">
@@ -678,14 +844,24 @@ main{
 
   </section>
 
-  <div class="cta-img">
+  <div class="cta-buttons">
 
-    <a href="tel:05017854822">
-      <img src="./cta-phone.png" alt="今すぐ電話する">
+    <a
+      class="cta-button cta-button-phone"
+      href="tel:05017854822"
+    >
+      <span class="cta-small">最短30分・緊急修理</span>
+      <span class="cta-main">今すぐ電話する</span>
+      <span class="cta-sub">受付 9:00〜20:00</span>
     </a>
 
-    <a href="https://lin.ee/Nhppoyr">
-      <img src="./cta-line.png" alt="LINEで相談する">
+    <a
+      class="cta-button cta-button-line"
+      href="https://lin.ee/Nhppoyr"
+    >
+      <span class="cta-small">写真を送るだけ</span>
+      <span class="cta-main">LINEで無料相談</span>
+      <span class="cta-sub">概算見積りOK</span>
     </a>
 
   </div>
@@ -697,11 +873,12 @@ main{
     <img
       class="section-img"
       src="./review-customers.jpg"
-      alt="松戸 エアコン修理 お客様の声"
+      alt="松戸のエアコン修理をご利用いただいたお客様の声"
     >
 
     <p class="mini-text">
-      「すぐ来て助かった」「説明が丁寧で安心」など、地域のお客様に選ばれる対応を目指しています。
+      「すぐ来て助かった」「説明が丁寧で安心」など、
+      地域のお客様に選ばれる対応を目指しています。
     </p>
 
   </section>
@@ -713,7 +890,7 @@ main{
     <img
       class="section-img"
       src="./guarantee-1year-aircon.jpg"
-      alt="エアコン修理 1年保証"
+      alt="エアコン修理後の1年保証"
     >
 
   </section>
@@ -725,7 +902,7 @@ main{
     <img
       class="section-img"
       src="./workflow-aircon.jpg"
-      alt="エアコン修理の流れ"
+      alt="エアコン修理のご依頼から完了までの流れ"
     >
 
     <p class="mini-text">
@@ -752,7 +929,7 @@ main{
     <div class="faq-item">
       <strong>エアコンが冷えない原因は何ですか？</strong>
       <p>
-        ガス漏れ・室外機の不良・基板トラブルなど複数の原因があります。<br>
+        ガス漏れ・室外機の不良・基板トラブルなど、複数の原因があります。<br>
         <strong>現地で原因を特定し、その場で修理可能か判断します。</strong>
       </p>
     </div>
@@ -761,7 +938,7 @@ main{
       <strong>水漏れはすぐ直りますか？</strong>
       <p>
         ドレン詰まりなどであれば、その場で改善できるケースが多いです。<br>
-        <strong>放置すると悪化して修理できなくなる為早めの対応をおすすめします。</strong>
+        <strong>放置すると悪化する場合があるため、早めの対応をおすすめします。</strong>
       </p>
     </div>
 
@@ -777,8 +954,8 @@ main{
     <div class="faq-item">
       <strong>本当に追加料金はありませんか？</strong>
       <p>
-        はい。部品交換が必要な場合も含め、<br>
-        <strong>すべて事前説明→納得後に作業</strong>となります。
+        部品交換や追加作業が必要な場合も、<br>
+        <strong>すべて事前説明を行い、ご納得後に作業します。</strong>
       </p>
     </div>
 
@@ -786,14 +963,14 @@ main{
       <strong>どのくらいで来れますか？</strong>
       <p>
         エリアや混雑状況によりますが、<br>
-        <strong>最短30分〜当日対応可能です。</strong>
+        <strong>最短30分から当日対応が可能です。</strong>
       </p>
     </div>
 
     <div class="faq-item">
       <strong>松戸以外も対応していますか？</strong>
       <p>
-        松戸市を中心に、東京・千葉・埼玉・神奈川など関東一円対応可能です。
+        松戸市を中心に、東京・千葉・埼玉・神奈川など関東一円に対応可能です。
       </p>
     </div>
 
@@ -811,6 +988,12 @@ main{
       <strong>所在地</strong><br>
       千葉県松戸市西馬橋4-451<br><br>
 
+      <strong>電話番号</strong><br>
+      050-1785-4822<br><br>
+
+      <strong>受付時間</strong><br>
+      9:00〜20:00<br><br>
+
       <strong>対応内容</strong><br>
       エアコン修理・点検<br>
       水漏れ修理<br>
@@ -820,7 +1003,7 @@ main{
       交換工事<br><br>
 
       <strong>対応エリア</strong><br>
-      松戸市を中心に千葉・東京・埼玉・神奈川方面まで対応<br><br>
+      松戸市を中心に、千葉・東京・埼玉・神奈川方面まで対応<br><br>
 
       <strong>方針</strong><br>
       お客様に安心・笑顔・快適な涼しさをお届けするため、
@@ -833,16 +1016,24 @@ main{
 
   </section>
 
-  <div class="cta-img">
+  <div class="cta-buttons">
 
-    <a href="tel:05017854822">
-      <img src="./cta-phone.png" alt="電話する">
+    <a
+      class="cta-button cta-button-phone"
+      href="tel:05017854822"
+    >
+      <span class="cta-small">最短30分・緊急修理</span>
+      <span class="cta-main">今すぐ電話する</span>
+      <span class="cta-sub">受付 9:00〜20:00</span>
     </a>
 
-
-    
-    <a href="https://lin.ee/Nhppoyr">
-      <img src="./cta-line.png" alt="LINE相談">
+    <a
+      class="cta-button cta-button-line"
+      href="https://lin.ee/Nhppoyr"
+    >
+      <span class="cta-small">写真を送るだけ</span>
+      <span class="cta-main">LINEで無料相談</span>
+      <span class="cta-sub">概算見積りOK</span>
     </a>
 
   </div>
@@ -854,20 +1045,29 @@ main{
   受付時間 9:00〜20:00｜電話 050-1785-4822
 </footer>
 
-  
 <div class="fixed-cta">
 
-  <a href="tel:05017854822">
-    <img src="./cta-phone.png" alt="電話する">
+  <a
+    class="cta-button-phone"
+    href="tel:05017854822"
+    aria-label="誠和電気へ今すぐ電話する"
+  >
+    <span class="fixed-small">最短30分・緊急修理</span>
+    <span class="fixed-main">☎ 今すぐ電話する</span>
+    <span class="fixed-sub">受付 9:00〜20:00</span>
   </a>
 
-  <a href="https://lin.ee/Nhppoyr">
-    <img src="./cta-line.png" alt="LINE相談">
+  <a
+    class="cta-button-line"
+    href="https://lin.ee/Nhppoyr"
+    aria-label="誠和電気へLINEで無料相談する"
+  >
+    <span class="fixed-small">写真を送るだけ</span>
+    <span class="fixed-main">LINEで無料相談</span>
+    <span class="fixed-sub">概算見積りOK</span>
   </a>
 
 </div>
 
 </body>
 </html>
-
-
