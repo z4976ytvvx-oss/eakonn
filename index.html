@@ -441,17 +441,31 @@ main{
 ========================= */
 
 .fixed-cta{
+
   position:fixed;
-  left:0;
-  right:0;
-  bottom:0;
+
+  left:50%;
+
+  bottom:8px;
+
+  transform:translateX(-50%);
+
+  width:min(1040px, calc(100% - 48px));
+
   z-index:9999;
+
   display:grid;
+
   grid-template-columns:1fr 1fr;
-  gap:4px;
-  padding:4px 6px;
-  background:rgba(255,255,255,.97);
-  box-shadow:0 -5px 18px rgba(0,0,0,.20);
+
+  gap:10px;
+
+  padding:0;
+
+  background:transparent;
+
+  box-shadow:none;
+
 }
 
 .fixed-cta a{
