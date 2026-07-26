@@ -437,7 +437,9 @@ main{
 }
 
 /* =========================
+
    FIXED CTA
+
 ========================= */
 
 .fixed-cta{
@@ -469,57 +471,37 @@ main{
 }
 
 .fixed-cta a{
-  height:46px;
-  border-radius:10px;
-  color:#fff;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  position:relative;
+
+  display:block;
+
   overflow:hidden;
+
+  border-radius:14px;
+
+  line-height:0;
+
+  box-shadow:0 5px 16px rgba(0,0,0,.20);
+
+}
+
+.fixed-cta img{
+
+  display:block;
+
+  width:100%;
+
+  height:72px;
+
+  object-fit:cover;
+
+  object-position:center;
+
 }
 
 .fixed-cta a:active{
-  transform:scale(.98);
-}
 
-.fixed-cta a::before{
-  content:"";
-  position:absolute;
-  top:-100%;
-  left:-10%;
-  width:55%;
-  height:280%;
-  background:rgba(255,255,255,.10);
-  transform:rotate(22deg);
-  pointer-events:none;
-}
+  transform:scale(.985);
 
-.fixed-small{
-  position:relative;
-  z-index:1;
-  font-size:7px;
-  font-weight:900;
-  line-height:1;
-  margin-bottom:4px;
-}
-
-.fixed-main{
-  position:relative;
-  z-index:1;
-  font-size:14px;
-  font-weight:950;
-  line-height:1.1;
-}
-
-.fixed-sub{
-  position:relative;
-  z-index:1;
-  font-size:7px;
-  font-weight:800;
-  margin-top:4px;
 }
 
 /* =========================
@@ -638,30 +620,21 @@ main{
   }
 
   .fixed-cta{
-    gap:2px;
-    padding:2px3px;
-  }
-
-  .fixed-cta a{
-    height:46px;
-    border-radius:11px;
-  }
-
-  .fixed-small{
-    font-size:9px;
-  }
-
-  .fixed-main{
-    font-size:14px;
-  }
-
-  .fixed-sub{
-    font-size:8px;
-  }
+    width:calc(100% - 300px);
+    bottom:5px;
+    gap:5px;
 }
-    .fixed-sub{
-    font-size:8px;
-  }
+
+.fixed-cta a{
+    border-radius:10px;
+    height:auto;
+}
+
+.fixed-cta img{
+    width:100%;
+    height:58px;
+    display:block;
+    object-fit:cover;
 }
 
 /* ↓↓↓ここに貼る↓↓↓ */
@@ -1106,23 +1079,39 @@ main{
 <div class="fixed-cta">
 
   <a
-    class="cta-button-phone"
+
     href="tel:05017854822"
+
     aria-label="誠和電気へ今すぐ電話する"
+
   >
-    <span class="fixed-small">最短30分・緊急修理</span>
-    <span class="fixed-main">☎ 今すぐ電話する</span>
-    <span class="fixed-sub">受付 9:00〜20:00</span>
+
+    <img
+
+      src="./cta-phone-fixed.png"
+
+      alt="今すぐ電話する 050-1785-4822"
+
+    >
+
   </a>
 
   <a
-    class="cta-button-line"
+
     href="https://lin.ee/Nhppoyr"
+
     aria-label="誠和電気へLINEで無料相談する"
+
   >
-    <span class="fixed-small">写真を送るだけ</span>
-    <span class="fixed-main">LINEで無料相談</span>
-    <span class="fixed-sub">概算見積りOK</span>
+
+    <img
+
+      src="./cta-line-fixed.png"
+
+      alt="LINEで無料相談"
+
+    >
+
   </a>
 
 </div>
