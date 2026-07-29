@@ -446,11 +446,11 @@ main{
   z-index:99999;
 
   display:grid;
-  grid-template-columns:55% 45%; /* 電話を少し大きく */
+  grid-template-columns:1fr 1fr; /* 左右同じ幅 */
   gap:0;
 
   width:100%;
-  max-width:680px;
+  max-width:680px; /* 全体だけ小さくする */
   margin:0 auto;
 
   padding:0;
@@ -479,7 +479,7 @@ body{
 @media (max-width:600px){
 
   .fixed-cta{
-    grid-template-columns:55% 45%;
+    grid-template-columns:1fr 1fr;
     max-width:100%;
   }
 
