@@ -446,11 +446,11 @@ main{
   z-index:99999;
 
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:55% 45%; /* 電話を少し大きく */
   gap:0;
 
   width:100%;
-  max-width:760px;   /* ←900→760に縮小 */
+  max-width:680px;
   margin:0 auto;
 
   padding:0;
@@ -469,16 +469,17 @@ main{
 .fixed-cta img{
   display:block;
   width:100%;
-  height:auto;       /* ←切らない */
+  height:auto;
 }
 
 body{
-  padding-bottom:64px;
+  padding-bottom:52px;
 }
 
 @media (max-width:600px){
 
   .fixed-cta{
+    grid-template-columns:55% 45%;
     max-width:100%;
   }
 
@@ -488,7 +489,7 @@ body{
   }
 
   body{
-    padding-bottom:58px;
+    padding-bottom:50px;
   }
 }
 </style>
