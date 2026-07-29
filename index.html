@@ -447,7 +447,7 @@ main{
 
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:4px;
+  gap:0;
 
   width:100%;
   max-width:900px;
@@ -461,7 +461,7 @@ main{
 .fixed-cta a{
   display:block;
   width:100%;
-  height:72px;
+  height:56px;
   overflow:hidden;
   border-radius:0;
   box-shadow:none;
@@ -472,21 +472,22 @@ main{
   width:100%;
   height:100%;
   object-fit:cover;
+  object-position:center;
 }
 
 @media (max-width:600px){
 
   body{
-    padding-bottom:72px;
+    padding-bottom:56px;
   }
 
   .fixed-cta{
-    gap:2px;
+    gap:0;
     padding:0;
   }
 
   .fixed-cta a{
-    height:68px;
+    height:56px;
   }
 }
 </style>
