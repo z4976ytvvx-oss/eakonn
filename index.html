@@ -450,8 +450,8 @@ main{
   gap:0;
 
   width:100%;
-  max-width:900px;
-  margin:auto;
+  max-width:760px;   /* ←900→760に縮小 */
+  margin:0 auto;
 
   padding:0;
   background:transparent;
@@ -461,7 +461,6 @@ main{
 .fixed-cta a{
   display:block;
   width:100%;
-  height:56px;
   overflow:hidden;
   border-radius:0;
   box-shadow:none;
@@ -470,24 +469,26 @@ main{
 .fixed-cta img{
   display:block;
   width:100%;
-  height:100%;
-  object-fit:cover;
-  object-position:center;
+  height:auto;       /* ←切らない */
+}
+
+body{
+  padding-bottom:64px;
 }
 
 @media (max-width:600px){
 
-  body{
-    padding-bottom:56px;
-  }
-
   .fixed-cta{
-    gap:0;
-    padding:0;
+    max-width:100%;
   }
 
-  .fixed-cta a{
-    height:56px;
+  .fixed-cta img{
+    width:100%;
+    height:auto;
+  }
+
+  body{
+    padding-bottom:58px;
   }
 }
 </style>
