@@ -1430,7 +1430,7 @@ body{
   font-weight:900 !important;
 }
 
-.trust-box::before{
+.trust-points::before{
   content:"安心ポイント" !important;
   display:inline-block !important;
   background:#073b86 !important;
@@ -1838,7 +1838,7 @@ body{
       <div class="trust-card"><strong>交換営業なし</strong><span>まず修理できるか確認</span></div>
       <div class="trust-card"><strong>1年保証</strong><span>同一工事の不具合に対応</span></div>
     </div>
-    <div class="trust-box">
+    <div class="trust-box trust-points">
       ✔ 作業前に必ずお見積り<br>
       ✔ 追加費用は事前説明<br>
       ✔ 無理な交換営業はしません<br>
@@ -1965,7 +1965,13 @@ body{
     <div class="faq-item"><strong>エアコンが冷えない原因は何ですか？</strong><p>ガス漏れ・室外機の不良・基板トラブルなど複数の原因があります。<br><strong>現地で原因を特定し、その場で修理可能か判断します。</strong></p></div>
     <div class="faq-item"><strong>水漏れはすぐ直りますか？</strong><p>ドレン詰まりなどであれば、その場で改善できるケースが多いです。<br><strong>放置すると悪化するため早めの対応をおすすめします。</strong></p></div>
     <div class="faq-item"><strong>料金はいくらかかりますか？</strong><p>症状により異なりますが、<br><strong>必ず作業前に見積りを提示し、了承後に作業します。</strong><br>現地でいきなり高額請求することはありません。</p></div>
-    <div class="faq-item"><strong>本当に追加料金はありませんか？</strong><p>部品交換が必要な場合も含め、<br><strong>すべて事前説明→納得後に作業</strong>となります。</p></div>
+    <div class="faq-item">
+  <strong>追加料金が発生することはありますか？</strong>
+  <p>
+    部品交換や追加作業が必要な場合は、作業前に内容と料金をご説明します。<br>
+    <strong>ご納得いただく前に追加作業を行うことはありません。</strong>
+  </p>
+</div>
     <div class="faq-item"><strong>どのくらいで来れますか？</strong><p>エリアや混雑状況によりますが、<br><strong>最短30分〜当日対応可能です。</strong></p></div>
   </section>
 
@@ -2015,6 +2021,31 @@ body{
     <strong>LINEで無料相談</strong>
   </a>
 </div>
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'phone_click', {
+          event_category: 'contact',
+          event_label: this.getAttribute('href')
+        });
+      }
+    });
+  });
+
+  document.querySelectorAll('a[href*="lin.ee"]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'line_click', {
+          event_category: 'contact',
+          event_label: this.getAttribute('href')
+        });
+      }
+    });
+  });
+});
+</script>
 </body>
 </html>
 
