@@ -2022,8 +2022,10 @@ body{
   </a>
 </div>
   <script>
+    
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
+  
     link.addEventListener('click', function () {
       if (typeof gtag === 'function') {
         gtag('event', 'phone_click', {
