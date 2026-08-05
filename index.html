@@ -24,6 +24,21 @@
 
   gtag('config', 'G-7GMS620NE7');
 </script>
+  <script>
+function trackPhoneClick(){
+  gtag('event','phone_click',{
+    event_category:'contact',
+    event_label:'phone'
+  });
+}
+
+function trackLineClick(){
+  gtag('event','line_click',{
+    event_category:'contact',
+    event_label:'line'
+  });
+}
+</script>
 <style>
 *{
   box-sizing:border-box;
@@ -520,6 +535,7 @@ body{
       <a
         class="head-phone"
         href="tel:05017854822"
+        onclick="trackPhoneClick()"
         aria-label="誠和電気へ電話する"
       >
         <strong>電話</strong>
@@ -555,6 +571,7 @@ body{
       <a
         class="cta-button cta-button-phone"
         href="tel:05017854822"
+        onclick="trackPhoneClick()"
       >
         <span class="cta-small">最短30分・当日対応</span>
         <span class="cta-main">今すぐ電話する</span>
@@ -620,6 +637,7 @@ body{
     <a
       class="cta-button cta-button-phone"
       href="tel:05017854822"
+      onclick="trackPhoneClick()"
     >
       <span class="cta-small">最短30分・緊急修理</span>
       <span class="cta-main">今すぐ電話する</span>
@@ -706,6 +724,7 @@ body{
     <a
       class="cta-button cta-button-phone"
       href="tel:05017854822"
+      onclick="trackPhoneClick()"
     >
       <span class="cta-small">最短30分・緊急修理</span>
       <span class="cta-main">今すぐ電話する</span>
@@ -923,6 +942,7 @@ body{
     <a
       class="cta-button cta-button-phone"
       href="tel:05017854822"
+      onclick="trackPhoneClick()"
     >
       <span class="cta-small">最短30分・緊急修理</span>
       <span class="cta-main">今すぐ電話する</span>
@@ -952,6 +972,7 @@ body{
   <a
 
     href="tel:05017854822"
+    onclick="trackPhoneClick()"
 
     aria-label="誠和電気へ今すぐ電話する"
 
