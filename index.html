@@ -5,11 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  
-
 <title>松戸のエアコン修理｜誠和電気 エアコンレスキュー｜冷えない・水漏れ・異音対応</title>
-
-  
 <meta
   name="description"
   content="松戸拠点のエアコン修理なら誠和電気。冷えない・水漏れ・異音・風が出ない・臭いなどに対応。作業前見積り、明朗会計、修理後1年保証。松戸市を中心に関東一円対応。"
@@ -21,23 +17,14 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-7GMS620NE7');
-</script>
-  <script>
-function trackPhoneClick(){
-  gtag('event','phone_click',{
-    event_category:'contact',
-    event_label:'phone'
-  });
-}
 
-function trackLineClick(){
-  gtag('event','line_click',{
-    event_category:'contact',
-    event_label:'line'
-  });
-}
+  function trackContact(type){
+    gtag('event', type + '_click', {
+      event_category: 'contact',
+      event_label: type
+    });
+  }
 </script>
 <style>
 *{
@@ -53,7 +40,7 @@ body{
   background:#fff;
   color:#111827;
   font-family:system-ui,-apple-system,"Segoe UI","Yu Gothic",Meiryo,sans-serif;
-  padding-bottom:88px;
+  padding-bottom:52px;
 }
 
 img{
@@ -176,6 +163,65 @@ main{
   width:100%;
   height:auto;
   display:block;
+}
+
+.repair-case{
+  width:100%;
+  max-width:900px;
+  margin:40px auto;
+  padding:0 14px;
+}
+
+.repair-case h2{
+  margin:0 0 16px;
+  color:#073b86;
+  font-size:26px;
+  font-weight:950;
+  text-align:center;
+}
+
+.repair-case img{
+  border-radius:16px;
+  box-shadow:0 10px 28px rgba(0,0,0,.14);
+}
+
+.flood-campaign{
+  width:100%;
+  max-width:900px;
+  margin:28px auto;
+  padding:0 14px;
+}
+
+.flood-campaign img{
+  border-radius:16px;
+  box-shadow:0 10px 28px rgba(0,0,0,.16);
+}
+
+.flood-campaign-buttons{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:16px;
+}
+
+.flood-campaign-buttons a{
+  min-height:58px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:14px;
+  color:#fff;
+  font-size:17px;
+  font-weight:950;
+  box-shadow:0 7px 18px rgba(0,0,0,.16);
+}
+
+.flood-phone{
+  background:linear-gradient(135deg,#ff3b3b,#d71920);
+}
+
+.flood-line{
+  background:linear-gradient(135deg,#06c755,#049b43);
 }
 
 /* =========================
@@ -414,6 +460,40 @@ main{
   line-height:1.85;
 }
 
+.flow-title{
+  margin-bottom:18px;
+  color:#073b86;
+  font-size:18px;
+  font-weight:900;
+  text-align:center;
+}
+
+.flow-steps{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.flow-steps strong{
+  color:#073b86;
+}
+
+.flow-divider{
+  margin:22px 0;
+  border:0;
+  border-top:1px solid #e5e7eb;
+}
+
+.flow-assurance{
+  text-align:center;
+  line-height:2;
+}
+
+.flow-assurance strong:first-child{
+  color:#d71920;
+  font-size:18px;
+}
+
 /* =========================
    FAQ
 ========================= */
@@ -470,11 +550,11 @@ main{
   z-index:99999;
 
   display:grid;
-  grid-template-columns:1fr 1fr; /* 左右同じ幅 */
+  grid-template-columns:1fr 1fr;
   gap:0;
 
   width:100%;
-  max-width:680px; /* 全体だけ小さくする */
+  max-width:680px;
   margin:0 auto;
 
   padding:0;
@@ -486,37 +566,64 @@ main{
   display:block;
   width:100%;
   overflow:hidden;
-  border-radius:0;
-  box-shadow:none;
 }
 
 .fixed-cta img{
-  display:block;
   width:100%;
   height:auto;
 }
 
-body{
-  padding-bottom:52px;
-}
+@media (max-width:700px){
 
-@media (max-width:600px){
-
-  .fixed-cta{
-    grid-template-columns:1fr 1fr;
-    max-width:100%;
+  .repair-case{
+    margin:28px auto;
+    padding:0 8px;
   }
 
-  .fixed-cta img{
-    width:100%;
-    height:auto;
+  .repair-case h2{
+    font-size:22px;
+  }
+
+  .repair-case img{
+    border-radius:10px;
+  }
+
+  .flood-campaign{
+    margin:20px auto;
+    padding:0 8px;
+  }
+
+  .flood-campaign img{
+    border-radius:10px;
+  }
+
+  .flood-campaign-buttons{
+    gap:7px;
+    margin-top:10px;
+  }
+
+  .flood-campaign-buttons a{
+    min-height:52px;
+    border-radius:10px;
+    font-size:14px;
+  }
+
+  .cta-button{
+    min-height:96px;
+  }
+
+  .cta-main{
+    font-size:20px;
+  }
+
+  .fixed-cta{
+    max-width:100%;
   }
 
   body{
     padding-bottom:50px;
   }
 }
-  
 </style>
 </head>
 
@@ -535,7 +642,7 @@ body{
       <a
         class="head-phone"
         href="tel:05017854822"
-        onclick="trackPhoneClick()"
+        onclick="trackContact('phone')"
         aria-label="誠和電気へ電話する"
       >
         <strong>電話</strong>
@@ -545,7 +652,7 @@ body{
       <a
         class="head-line"
         href="https://lin.ee/Nhppoyr"
-        onclick="trackLineClick()"
+        onclick="trackContact('line')"
         aria-label="誠和電気へLINEで相談する"
       >
         <strong>LINE</strong>
@@ -563,8 +670,12 @@ body{
 
     <img
       class="hero-main"
-      src="./hero-aircon.jpg"
-      alt="松戸のエアコン修理 誠和電気 エアコンレスキュー"
+      src="./seiwa-aircon-hero-1600.webp?v=20260819-2"
+      alt="関東一円対応のエアコン修理専門店。冷えない、水漏れ、異音・異臭に最短30分で対応"
+      width="1600"
+      height="1067"
+      fetchpriority="high"
+      decoding="async"
     >
 
     <div class="cta-buttons">
@@ -572,7 +683,7 @@ body{
       <a
         class="cta-button cta-button-phone"
         href="tel:05017854822"
-        onclick="trackPhoneClick()"
+        onclick="trackContact('phone')"
       >
         <span class="cta-small">最短30分・当日対応</span>
         <span class="cta-main">今すぐ電話する</span>
@@ -582,7 +693,7 @@ body{
       <a
         class="cta-button cta-button-line"
         href="https://lin.ee/Nhppoyr"
-        onclick="trackLineClick()"
+        onclick="trackContact('line')"
       >
         <span class="cta-small">写真を送るだけ</span>
         <span class="cta-main">LINEで無料相談</span>
@@ -592,99 +703,27 @@ body{
     </div>
 
   </section>
-<!-- 冠水被害20%OFFバナー -->
-<section class="flood-campaign">
-  <img
-    src="./seiwa_aircon_flood_damage.png"
-    alt="千葉県内の冠水被害に遭われた方へ エアコン修理費用20%OFF"
-    width="1536"
-    height="1024"
-  >
 
-  <div class="flood-campaign-buttons">
-    <a
-      href="tel:05017854822"
-      class="flood-phone"
-      onclick="trackPhoneClick()"
+  <section class="flood-campaign" aria-label="冠水被害エアコン修理キャンペーン">
+    <img
+      src="./seiwa_aircon_flood_damage.png?v=20260819-2"
+      alt="千葉県内の冠水被害に遭われた方へ、エアコン修理費用20%OFF"
+      width="1536"
+      height="1024"
+      loading="lazy"
+      decoding="async"
     >
-      今すぐ電話で相談
-    </a>
 
-    <a
-      href="https://lin.ee/Nhppoyr"
-      class="flood-line"
-      onclick="trackLineClick()"
-    >
-      LINEで無料相談
-    </a>
-  </div>
-</section>
+    <div class="flood-campaign-buttons">
+      <a class="flood-phone" href="tel:05017854822" onclick="trackContact('phone')">
+        今すぐ電話で相談
+      </a>
+      <a class="flood-line" href="https://lin.ee/Nhppoyr" onclick="trackContact('line')">
+        LINEで無料相談
+      </a>
+    </div>
+  </section>
 
-<style>
-.flood-campaign {
-  width: 100%;
-  max-width: 900px;
-  margin: 28px auto;
-  padding: 0 14px;
-}
-
-.flood-campaign > img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 16px;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
-}
-
-.flood-campaign-buttons {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-top: 16px;
-}
-
-.flood-campaign-buttons a {
-  min-height: 58px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  border-radius: 14px;
-  font-size: 17px;
-  font-weight: 950;
-  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.16);
-}
-
-.flood-phone {
-  background: linear-gradient(135deg, #ff3b3b, #d71920);
-}
-
-.flood-line {
-  background: linear-gradient(135deg, #06c755, #049b43);
-}
-
-@media (max-width: 700px) {
-  .flood-campaign {
-    margin: 20px auto;
-    padding: 0 8px;
-  }
-
-  .flood-campaign > img {
-    border-radius: 10px;
-  }
-
-  .flood-campaign-buttons {
-    gap: 7px;
-    margin-top: 10px;
-  }
-
-  .flood-campaign-buttons a {
-    min-height: 52px;
-    border-radius: 10px;
-    font-size: 14px;
-  }
-}
-</style>
   <section class="repair-case">
   <h2>実際のエアコン修理事例</h2>
 
@@ -696,46 +735,6 @@ body{
     loading="lazy"
   >
 </section>
-
-<style>
-.repair-case {
-  width: 100%;
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 14px;
-}
-
-.repair-case h2 {
-  margin: 0 0 16px;
-  color: #073b86;
-  font-size: 26px;
-  font-weight: 950;
-  text-align: center;
-}
-
-.repair-case img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 16px;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
-}
-
-@media (max-width: 700px) {
-  .repair-case {
-    margin: 28px auto;
-    padding: 0 8px;
-  }
-
-  .repair-case h2 {
-    font-size: 22px;
-  }
-
-  .repair-case img {
-    border-radius: 10px;
-  }
-}
-</style>
   <div class="notice">
     お電話は対応中で出られない場合があります。<br>
     <span class="notice-line">
@@ -782,7 +781,7 @@ body{
     <a
       class="cta-button cta-button-phone"
       href="tel:05017854822"
-      onclick="trackPhoneClick()"
+      onclick="trackContact('phone')"
     >
       <span class="cta-small">最短30分・緊急修理</span>
       <span class="cta-main">今すぐ電話する</span>
@@ -792,7 +791,7 @@ body{
     <a
       class="cta-button cta-button-line"
       href="https://lin.ee/Nhppoyr"
-      onclick="trackLineClick()"
+      onclick="trackContact('line')"
     >
       <span class="cta-small">写真を送るだけ</span>
       <span class="cta-main">LINEで無料相談</span>
@@ -870,7 +869,7 @@ body{
     <a
       class="cta-button cta-button-phone"
       href="tel:05017854822"
-      onclick="trackPhoneClick()"
+      onclick="trackContact('phone')"
     >
       <span class="cta-small">最短30分・緊急修理</span>
       <span class="cta-main">今すぐ電話する</span>
@@ -880,7 +879,7 @@ body{
     <a
       class="cta-button cta-button-line"
       href="https://lin.ee/Nhppoyr"
-      onclick="trackLineClick()"
+      onclick="trackContact('line')"
     >
       <span class="cta-small">写真を送るだけ</span>
       <span class="cta-main">LINEで無料相談</span>
@@ -928,52 +927,51 @@ body{
       alt="エアコン修理のご依頼から完了までの流れ"
     >
 
-    <p class="mini-text">
-      <div class="trust-box">
+    <div class="trust-box">
 
-  <div style="font-size:18px;font-weight:900;color:#073b86;margin-bottom:18px;text-align:center;">
+  <div class="flow-title">
     ご依頼から修理完了まで
   </div>
 
-  <div style="display:flex;flex-direction:column;gap:16px;">
+  <div class="flow-steps">
 
     <div>
-      <strong style="color:#073b86;">① 電話・LINEでご相談</strong><br>
+      <strong>① 電話・LINEでご相談</strong><br>
       症状をお伺いし、ご訪問日時を調整します。
     </div>
 
     <div>
-      <strong style="color:#073b86;">② ご訪問</strong><br>
+      <strong>② ご訪問</strong><br>
       ご指定の場所へお伺いします。
     </div>
 
     <div>
-      <strong style="color:#073b86;">③ 点検・原因調査</strong><br>
+      <strong>③ 点検・原因調査</strong><br>
       エアコンの状態を確認し、故障原因を特定します。
     </div>
 
     <div>
-      <strong style="color:#073b86;">④ お見積り・ご説明</strong><br>
+      <strong>④ お見積り・ご説明</strong><br>
       作業内容と料金をご説明し、ご納得いただいてから作業します。
     </div>
 
     <div>
-      <strong style="color:#073b86;">⑤ 修理作業</strong><br>
+      <strong>⑤ 修理作業</strong><br>
       修理可能な場合は交換ではなく修理を優先して対応します。
     </div>
 
     <div>
-      <strong style="color:#073b86;">⑥ 動作確認・完了</strong><br>
+      <strong>⑥ 動作確認・完了</strong><br>
       正常に動作することをご一緒に確認して作業完了です。
     </div>
 
   </div>
 
-  <hr style="margin:22px 0;border:none;border-top:1px solid #e5e7eb;">
+  <hr class="flow-divider">
 
-  <div style="text-align:center;line-height:2;">
+  <div class="flow-assurance">
 
-    <strong style="font-size:18px;color:#d71920;">
+    <strong>
       作業前に必ず料金をご説明します
     </strong><br>
 
@@ -986,7 +984,6 @@ body{
   </div>
 
 </div>
-    </div>
 
   </section>
 
@@ -1089,7 +1086,7 @@ body{
     <a
       class="cta-button cta-button-phone"
       href="tel:05017854822"
-      onclick="trackPhoneClick()"
+      onclick="trackContact('phone')"
     >
       <span class="cta-small">最短30分・緊急修理</span>
       <span class="cta-main">今すぐ電話する</span>
@@ -1099,7 +1096,7 @@ body{
     <a
       class="cta-button cta-button-line"
       href="https://lin.ee/Nhppoyr"
-      onclick="trackLineClick()"
+      onclick="trackContact('line')"
     >
       <span class="cta-small">写真を送るだけ</span>
       <span class="cta-main">LINEで無料相談</span>
@@ -1116,45 +1113,31 @@ body{
 </footer>
 
 <div class="fixed-cta">
-
   <a
-
     href="tel:05017854822"
-    onclick="trackPhoneClick()"
-
+    onclick="trackContact('phone')"
     aria-label="誠和電気へ今すぐ電話する"
-
   >
-
     <img
-
-      src="./cta-phone-fixed.png"
-
+      src="./cta-phone-fixed.png?v=20260819-2"
       alt="今すぐ電話する 050-1785-4822"
-
+      width="2172"
+      height="724"
     >
-
   </a>
 
   <a
-
     href="https://lin.ee/Nhppoyr"
-    onclick="trackLineClick()"
-
+    onclick="trackContact('line')"
     aria-label="誠和電気へLINEで無料相談する"
-
   >
-
     <img
-
-      src="./cta-line-fixed.png"
-
+      src="./cta-line-fixed.png?v=20260819-2"
       alt="LINEで無料相談"
-
+      width="2172"
+      height="724"
     >
-
   </a>
-
 </div>
 
 </body>
